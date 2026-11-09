@@ -25,6 +25,16 @@ How to read them (X usually blocks direct reading):
 1. Find posts with web search, e.g. `site:x.com KpsZSU drones November 9`.
 2. Read a single X post through the public embed service (no login needed), with Bash: `curl -sL "https://publish.x.com/oembed?url=https%3A%2F%2Fx.com%2F<account>%2Fstatus%2F<id>"`. The JSON's `html` field contains the post text and date.
 3. Read Telegram channels through their public preview, with Bash: `curl -sL -A "Mozilla/5.0" https://t.me/s/<channel>` (e.g. `kpszsu`). Each post sits in a `tgme_widget_message_text` block, with its number in `data-post="<channel>/<n>"` and its time in a `datetime` attribute. Cite the single post as `https://t.me/<channel>/<n>`.
+**Minimum checklist, every run (report each as read / not read):**
+- [ ] Telegram `kpszsu` (Ukraine Air Force: overnight launch and interception numbers)
+- [ ] Telegram `GeneralStaffZSU` (General Staff: losses tally, strikes on Russia)
+- [ ] Telegram `mod_russia` (Russian MoD: shoot-down claims, territorial claims)
+- [ ] At least two X searches (`site:x.com ...`) for the night's main attacks, with any useful post read through the embed service
+- [ ] ISW / Critical Threats latest assessment
+- [ ] The headline leads file
+
+**Nationwide overnight attacks** (e.g. "Russia launched 317 drones and 6 missiles") have no single location. Don't skip them: update the stat `"Russian drones and missiles launched at Ukraine (latest night)"` (category `shootdowns`, same label every day) with Ukraine's Air Force launched/downed numbers in `ukraine` and the Russian MoD's claim in `russia`. Separately, add map events only for named places that were hit.
+
 4. Cite the X or Telegram post URL itself. These are **that side's claim**: an event whose only sources are X/Telegram/official sites must be `ONE_PARTY` (or `DISPUTED`), never `CONFIRMED`. The validator enforces this.
 
 Preferred sources, in roughly this order:
