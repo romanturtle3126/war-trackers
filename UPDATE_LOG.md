@@ -2,6 +2,15 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-09 01:58 Toronto — OK
+- Added 3 event(s):
+  - `kremenchuk-1108` 2026-11-08 [ONE_PARTY] Drones hit apartment block and hotel in Kremenchuk
+  - `odesa-energy-1108` 2026-11-08 [ONE_PARTY] Massive Russian attack on Odesa region energy infrastructure
+  - `komysh-1108` 2026-11-08 [CONFIRMED] Komyshuvakha hit again; two rescuers injured at Nov 2 strike site
+- Stats: 2 updated, 0 added
+- 6 new source link(s)
+- Totals: 118 events, 29 stats, 185 sources; coverage 2026-10-10 to 2026-11-09
+
 ## 2026-11-09 01:10 Toronto — OK
 - Added 5 event(s):
   - `dnipro-energy-1108` 2026-11-08 [CONFIRMED] Second day of strikes on energy grid; blackouts in Dnipro and other oblasts
