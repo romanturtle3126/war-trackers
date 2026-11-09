@@ -3,56 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#161b22">
+<meta name="theme-color" content="#000000">
 <meta name="color-scheme" content="dark">
 <title>Ukraine Ops Map</title>
-<meta name="description" content="Open-source map of recent incidents in the Russia-Ukraine war, with sourced and status-labelled claims. Updated daily.">
+<meta name="description" content="Map of recent events in the Russia-Ukraine war, sourced and status-labelled. Updated daily.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="app">
   <header>
-    <div class="title">
-      <h1 id="apptitle">Ukraine Ops Map</h1>
+    <div class="titlebar">
+      <div class="titles">
+        <h1><span class="live" aria-hidden="true"></span><span id="apptitle">UKRAINE OPS MAP</span></h1>
+        <div id="updated" class="sub">Loading…</div>
+      </div>
       <select id="mapswitch" aria-label="Choose map" hidden></select>
-      <button id="refresh" class="iconbtn" aria-label="Refresh data" title="Refresh data">⟳</button>
+      <button id="refresh" class="hbtn" aria-label="Refresh data">⟳</button>
+      <button id="labelsbtn" class="hbtn pill" aria-label="What the labels mean">Labels <i>i</i></button>
     </div>
-    <div id="updated" class="updated">Loading…</div>
-    <nav id="tabs">
-      <button data-tab="map" class="active">Map</button>
-      <button data-tab="timeline">Timeline</button>
-      <button data-tab="stats">Stats</button>
-      <button data-tab="feed">Feed</button>
-      <button data-tab="sources">Sources</button>
-    </nav>
+    <div id="chips" class="chips" role="group" aria-label="Filter by front"></div>
   </header>
-  <div id="chips" class="chips" role="group" aria-label="Filter by region"></div>
-  <div id="ptr" class="ptr" aria-hidden="true">↓ Pull to refresh</div>
 
-  <section id="tab-map" class="tab active">
-    <div id="mapwrap">
-      <svg id="map" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of events"></svg>
-      <div class="zoom"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button><button id="zreset" aria-label="Reset view">⟲</button></div>
-      <div id="legend" class="legend"></div>
-      <button id="offscreen" class="offscreen" hidden></button>
-    </div>
-    <div id="replay">
-      <button id="play" aria-label="Play replay">▶</button>
-      <input id="day" type="range" min="0" max="0" value="0" aria-label="Replay day">
-      <span id="daylabel"></span>
-      <label class="all"><input type="checkbox" id="cumul" checked> cumulative</label>
-    </div>
-  </section>
+  <main>
+    <section id="tab-map" class="tab active">
+      <div id="mapwrap">
+        <svg id="map" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of events"></svg>
+        <div class="ctrls">
+          <button id="zin" aria-label="Zoom in">+</button>
+          <button id="zout" aria-label="Zoom out">−</button>
+          <button id="zfit" aria-label="Fit Ukraine">FIT</button>
+          <span id="presets"></span>
+        </div>
+        <button id="offscreen" class="offscreen" hidden></button>
+        <div id="replay" class="replay">
+          <button id="play" aria-label="Play replay"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+          <div class="rp-body">
+            <div class="rp-top"><b id="daylabel"></b><span id="daycount"></span></div>
+            <input id="day" type="range" min="0" max="0" value="0" aria-label="Replay day">
+            <div class="rp-bot"><span id="dayfirst"></span><span>REPLAY · PRESS ▶</span><span id="daylast"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tab-feed" class="tab"><div id="feed"></div></section>
+    <section id="tab-stats" class="tab"><div id="stats"></div></section>
+  </main>
 
-  <section id="tab-timeline" class="tab"><div id="timeline"></div></section>
-  <section id="tab-stats" class="tab"><p class="note">Contested figures. Each side's claim is shown side by side with independent estimates where they exist. Neither side's numbers are verified by this app.</p><div id="stats"></div></section>
-  <section id="tab-feed" class="tab"><p class="note warn">Auto-pulled headlines from open news feeds, refreshed daily. <b>Unverified until reviewed.</b></p><div id="feedmeta" class="note"></div><div id="feed"></div></section>
-  <section id="tab-sources" class="tab"><div id="notes"></div><h3>Citations</h3><ol id="sources"></ol></section>
+  <nav id="tabs">
+    <button data-tab="map" class="active"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4"/></svg>Map</button>
+    <button data-tab="feed"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Feed</button>
+    <button data-tab="stats"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Stats</button>
+  </nav>
 
-  <div id="sheet" class="sheet" aria-hidden="true">
-    <div class="grip"></div>
-    <div id="sheetbody"></div>
-  </div>
+  <div id="sheet" class="sheet" aria-hidden="true"><div class="grip"></div><div id="sheetbody"></div></div>
+  <div id="modal" class="modal" hidden><div class="mbox" role="dialog" aria-label="What the labels mean"><div id="modalbody"></div><button id="modalclose" class="mclose">Close</button></div></div>
 </div>
 <script src="js/app.js"></script>
 </body>

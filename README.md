@@ -20,12 +20,14 @@ A map of recent events in the Russia-Ukraine war. Every event is sourced and lab
 
 ## Using it
 
-- **Region chips** under the tabs filter the map and the timeline. Tap several to combine them; tap **All** to reset.
-- **Tap a dot** for the event card with sources. Swipe it down, tap ×, or press Back to close it.
-- **▶** replays events day by day; untick *cumulative* to see one day at a time.
-- **"N events outside view · Show all"** zooms out to include events deep in Russia.
-- **Refresh:** tap ⟳ in the top-right, or pull down on the Timeline, Stats, Feed or Sources tab. The app also refreshes itself when you reopen it.
-- The header shows **Data updated &lt;date&gt;**. If it says *offline: saved copy* or *offline: built-in copy*, the phone couldn't reach the internet, so you're seeing the last copy it had.
+- **Chips** (North & East, South & Dnipro, Kyiv & rear, Russia/Crimea & sea) filter the map and the Feed. Tap several to combine; **All** resets.
+- **Markers:** colour = front. A **dashed red ring** = disputed. **Expanding rings** = events on the day shown in the replay card. A **cyan glow** and **NEW** tag = added since you last opened the app. **Labels ⓘ** explains it all.
+- **Tap a dot** for its card (what happened + sources). Swipe it down, tap ×, or press Back to close.
+- **▶** replays day by day; markers pop in as each day arrives. Drag the slider to jump to a day.
+- **+ / − / FIT / EAST** glide the map; **FIT** shows all of Ukraine, **EAST** zooms to the eastern front. **+N off-map** appears when events (e.g. deep in Russia) are outside the view; tap it to include them.
+- **Feed** lists every event, newest first; tap one to fly the map to it. **Stats** shows each side's figures side by side.
+- **Refresh:** tap ⟳, or pull down on Feed or Stats. The app also refreshes itself when reopened. The header shows **Data updated &lt;date&gt;**; **OFFLINE** means you're seeing the last copy the phone saved.
+- If your phone has *Settings → Accessibility → Visibility enhancements → Remove animations* turned on, the app respects it and stays still.
 
 ## How the daily update works
 
