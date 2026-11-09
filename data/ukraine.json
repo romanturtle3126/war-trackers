@@ -2,16 +2,13 @@
  "schemaVersion": 1,
  "map": "ukraine",
  "meta": {
-  "lastUpdated": "2026-11-07T07:45:00-05:00",
-  "coverage": "2026-10-10 to 2026-11-07",
+  "lastUpdated": "2026-11-09T01:10:11-05:00",
+  "coverage": "2026-10-10 to 2026-11-09",
   "notes": [
-   "Refreshed Nov 7, 2026 (morning, Toronto time) from web reporting plus read-only X checks; adds Nov 6-7 items and revises the Komyshuvakha toll to 55.",
+   "Refreshed Nov 9, 2026 (UTC morning) from Kyiv Independent (Nov 8-9 items) and the ISW Nov 8 assessment via the Critical Threats mirror.",
+   "ISW's own site was not used. No new Ukrainian General Staff loss tally, UN HRMMU report or Russian MoD figures were read this run, so stats were not refreshed. Web search surfaced little for Nov 8-9, so coverage is partial.",
    "Coordinates are city-level or approximate (see coordPrecision); markers flagged 'oblast' are not geolocated.",
-   "Casualty figures are as reported by the cited outlet at time of writing and may have been revised.",
-   "X was read (read-only search of @KyivIndependent, @DefenceU, @KpsZSU, @GeneralStaffUA, @ZelenskyyUa, @Reuters since Nov 6 12:00 UTC). X-only claims are never marked Confirmed.",
-   "ISW's own site blocked automated reads; ISW Nov 6 was read via the Critical Threats mirror. ISW's Nov 7 assessment was not yet published at refresh time. No new UK MoD intelligence update or UN HRMMU monthly report was found.",
-   "Russian MoD overnight and morning claims for Nov 6-7 were read via TASS and RIA relays. MoD cumulative equipment tally updated from the Nov 7 TASS release.",
-   "Ufa, Kstovo, Yaroslavl, Ryazan, Adygea, Afipsky, Oryol, Saratov, Moscow and some deep-strike markers lie outside the default map view; see the Timeline."
+   "Casualty figures are as reported by the cited outlet at time of writing and may have been revised."
   ]
  },
  "events": [
@@ -3208,6 +3205,116 @@
      "url": "https://tass.com/defense/2214177"
     }
    ]
+  },
+  {
+   "id": "dnipro-energy-1108",
+   "date": "2026-11-08",
+   "region": "south",
+   "oblast": "Dnipropetrovsk",
+   "front": "Dnipropetrovsk",
+   "type": "energy",
+   "status": "CONFIRMED",
+   "title": "Second day of strikes on energy grid; blackouts in Dnipro and other oblasts",
+   "caption": "Per ISW's Nov 8 assessment, Ukraine's Air Force reported Russia launched 164 strike drones (112 jet-powered) and three Kh-59/69 cruise missiles overnight on Nov 7-8, with 137 drones intercepted. ISW reports power outages in Dnipropetrovsk, Zhytomyr, Rivne, Kharkiv, Odesa and Chernihiv oblasts, about 600,000 people without power in Dnipro city and Dnipropetrovsk Oblast, and 140 high-rise buildings without heat in Zhytomyr Oblast. Marker at Dnipro city, approximate; the attack hit several regions.",
+   "lat": 48.46,
+   "lon": 35.05,
+   "coordPrecision": "approx",
+   "sources": [
+    {
+     "id": "isw_1108",
+     "title": "ISW/Critical Threats: Russian Offensive Campaign Assessment, November 8, 2026",
+     "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-november-8-2026"
+    }
+   ]
+  },
+  {
+   "id": "rostov-1108",
+   "date": "2026-11-08",
+   "region": "russia",
+   "oblast": "Rostov Oblast, Russia",
+   "front": "Russia (rear)",
+   "type": "deep-strike",
+   "status": "ONE_PARTY",
+   "title": "Drones damage Mius River bridge on R-280 and Sulin substation in Rostov Oblast",
+   "caption": "Rostov Governor Yuri Slyusar said Ukrainian drone strikes on the morning of Nov 8 damaged the bridge over the Mius River at km 97 of the R-280 highway (Neklinovsky district), shutting the approach road, and a transformer at the Sulin substation in Millerovsky district, cutting power to several villages; no casualties were reported. Kyiv Independent said it could not verify the claims; monitoring channel Exilenova+ said an FP-2 drone hit the bridge. ISW assessed the strikes as likely. The road links Rostov Oblast with occupied Mariupol, Melitopol and Crimea. Marker at Rostov Oblast centre, not geolocated.",
+   "lat": 47.23,
+   "lon": 39.72,
+   "coordPrecision": "oblast",
+   "sources": [
+    {
+     "id": "ki_rostov_1108",
+     "title": "Kyiv Independent: Ukrainian drones hit key bridge, power stations in Russia's Rostov Oblast, governor says (Nov 8)",
+     "url": "https://kyivindependent.com/ukrainian-drones-hit-key-bridge-power-stations-in-russias-rostov-oblast-governor-says/"
+    },
+    {
+     "id": "isw_1108",
+     "title": "ISW/Critical Threats: Russian Offensive Campaign Assessment, November 8, 2026",
+     "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-november-8-2026"
+    }
+   ]
+  },
+  {
+   "id": "enerhodar-1108",
+   "date": "2026-11-08",
+   "region": "south",
+   "oblast": "Zaporizhzhia",
+   "front": "Zaporizhzhia",
+   "type": "energy",
+   "status": "CONFIRMED",
+   "title": "Zaporizhzhia NPP loses all off-site power for hours",
+   "caption": "The IAEA said the Russian-held Zaporizhzhia nuclear power plant lost its only 330 kV external power line around midday on Nov 8 and ran on emergency diesel generators for cooling and safety functions. Director General Rafael Grossi called it the 27th such event of the conflict. Power was later restored. The cause and location of the fault were not yet known. Marker at Enerhodar, near the plant, approximate.",
+   "lat": 47.51,
+   "lon": 34.65,
+   "coordPrecision": "approx",
+   "sources": [
+    {
+     "id": "ki_zNPP_1109",
+     "title": "Kyiv Independent: Power to Zaporizhzhia nuclear power plant cut, restored, IAEA says (Nov 9)",
+     "url": "https://kyivindependent.com/power-to-zaporizhzhia-nuclear-power-plant-cut-restored-iaea-says/"
+    }
+   ]
+  },
+  {
+   "id": "dobropillia-1108",
+   "date": "2026-11-08",
+   "region": "donbas",
+   "oblast": "Donetsk",
+   "front": "Pokrovsk / Dobropillia",
+   "type": "frontline",
+   "status": "UNVERIFIED",
+   "title": "ISW: Russian forces advance or infiltrate in and south of Dobropillya",
+   "caption": "ISW's Nov 8 assessment says Russian forces advanced or infiltrated in and south of Dobropillya and reportedly fought in Nadiya; a possible infiltration near Novoyavlenka is unconfirmed. ISW reported no confirmed Russian advances in northern Sumy, Kharkiv, Kupiansk, Lyman, Kostiantynivka or western Zaporizhzhia, and Ukrainian counterattacks near Borova, Balka Zhuravka and southeast of Orikhiv. This is an analyst's assessment.",
+   "lat": 48.46,
+   "lon": 37.08,
+   "coordPrecision": "city",
+   "sources": [
+    {
+     "id": "isw_1108",
+     "title": "ISW/Critical Threats: Russian Offensive Campaign Assessment, November 8, 2026",
+     "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-november-8-2026"
+    }
+   ]
+  },
+  {
+   "id": "kirishi-1109",
+   "date": "2026-11-09",
+   "region": "russia",
+   "oblast": "Leningrad Oblast, Russia",
+   "front": "Russia (rear)",
+   "type": "deep-strike",
+   "status": "UNVERIFIED",
+   "title": "Reported drone attack on Kirishi (Kinef) refinery in Leningrad Oblast",
+   "caption": "Ukrainian monitoring channels Exilenova+ and Supernova+ reported large explosions and fires at the Kirishi Petroleum Organic Synthesis (Kinef) refinery, Russia's second-largest, overnight into Nov 9; Kyiv Independent cited eyewitness footage and NASA FIRMS hotspots. Leningrad Governor Aleksandr Drozdenko said 113 drones were shot down over the region. No Ukrainian government confirmation had been published at the time of the report, which was still developing.",
+   "lat": 59.45,
+   "lon": 32.02,
+   "coordPrecision": "city",
+   "sources": [
+    {
+     "id": "ki_kirishi_1109",
+     "title": "Kyiv Independent: Ukrainian forces reportedly strike Russia's second-largest oil refinery in overnight drone attack (Nov 9)",
+     "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russias-second-largest-oil-refinery-in-overnight-drone-attack/"
+    }
+   ]
   }
  ],
  "stats": [
@@ -4650,6 +4757,26 @@
    "id": "x_defence_1107",
    "title": "X: @DefenceU — combat losses of the enemy to November 7, 2026",
    "url": "https://x.com/DefenceU/status/2118970163341185190"
+  },
+  {
+   "id": "isw_1108",
+   "title": "ISW/Critical Threats: Russian Offensive Campaign Assessment, November 8, 2026",
+   "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-november-8-2026"
+  },
+  {
+   "id": "ki_rostov_1108",
+   "title": "Kyiv Independent: Ukrainian drones hit key bridge, power stations in Russia's Rostov Oblast, governor says (Nov 8)",
+   "url": "https://kyivindependent.com/ukrainian-drones-hit-key-bridge-power-stations-in-russias-rostov-oblast-governor-says/"
+  },
+  {
+   "id": "ki_zNPP_1109",
+   "title": "Kyiv Independent: Power to Zaporizhzhia nuclear power plant cut, restored, IAEA says (Nov 9)",
+   "url": "https://kyivindependent.com/power-to-zaporizhzhia-nuclear-power-plant-cut-restored-iaea-says/"
+  },
+  {
+   "id": "ki_kirishi_1109",
+   "title": "Kyiv Independent: Ukrainian forces reportedly strike Russia's second-largest oil refinery in overnight drone attack (Nov 9)",
+   "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russias-second-largest-oil-refinery-in-overnight-drone-attack/"
   }
  ]
 }
