@@ -14,6 +14,19 @@ You are updating `data/ukraine.json`, the data behind a public map of the Russia
 
 Look for events in the window. Open every page you cite; only cite URLs you actually opened.
 
+**Start with the leads list.** `data/ukraine-feed.json` holds 100+ headlines pulled from news RSS feeds about 30 minutes before this run (Kyiv Independent, Ukrinform, Ukrainska Pravda, Guardian, BBC, UN News, Al Jazeera, UK MoD). Read every item from the research window and treat each as a *lead*: open the article itself before using it. A headline alone is never a source.
+
+**Official statements on X and Telegram.** Each side's officials post first on X and Telegram. Check them for overnight attack numbers, interception claims, governors' casualty reports and MoD claims:
+- Ukraine: Air Force `@KpsZSU` (Telegram `kpszsu`), General Staff `@GeneralStaffUA` (Telegram `GeneralStaffZSU`), Ministry of Defence `@DefenceU`, President `@ZelenskyyUa`, State Emergency Service `@DSNSgovua`, regional governors (e.g. Kharkiv `synegubov`, Dnipropetrovsk `dnipropetrovskaODA`, Zaporizhzhia `zoda_gov_ua`, Odesa `odeskaODA`, Sumy `Sumy_news_ODA`).
+- Russia: Ministry of Defence (Telegram `mod_russia`, X `@mod_russia`), governors of Belgorod (`vvgladkov`), Kursk, Bryansk (`avbogomaz`), Rostov, Krasnodar operational HQ.
+- Monitors and outlets: `@KyivIndependent`, `@Reuters`, `@AP`, `@ISWResearch`.
+
+How to read them (X usually blocks direct reading):
+1. Find posts with web search, e.g. `site:x.com KpsZSU drones November 9`.
+2. Read a single X post through the public embed service (no login needed), with Bash: `curl -sL "https://publish.x.com/oembed?url=https%3A%2F%2Fx.com%2F<account>%2Fstatus%2F<id>"`. The JSON's `html` field contains the post text and date.
+3. Read Telegram channels through their public preview, with Bash: `curl -sL -A "Mozilla/5.0" https://t.me/s/<channel>` (e.g. `kpszsu`). Each post sits in a `tgme_widget_message_text` block, with its number in `data-post="<channel>/<n>"` and its time in a `datetime` attribute. Cite the single post as `https://t.me/<channel>/<n>`.
+4. Cite the X or Telegram post URL itself. These are **that side's claim**: an event whose only sources are X/Telegram/official sites must be `ONE_PARTY` (or `DISPUTED`), never `CONFIRMED`. The validator enforces this.
+
 Preferred sources, in roughly this order:
 - **ISW** Russian Offensive Campaign Assessment (understandingwar.org; if blocked, the same text on criticalthreats.org). Use it for front-line movements, geolocated footage, and assessed advances.
 - **Wire services and major outlets:** Reuters, AP, AFP, BBC, The Guardian, Kyiv Independent, Ukrainska Pravda, Meduza, Mediazona, UN News / OHCHR (HRMMU).
@@ -36,10 +49,20 @@ Also refresh `stats` whose figures have new numbers (General Staff daily loss ta
 
 ## 3. Positions: never invent coordinates
 
-- Use the coordinates of the named city/town/village from a gazetteer you know well (city centre). Set `coordPrecision: "city"`.
-- If the report names only a district or "near X", use X's coordinates with `"approx"`.
-- If only the province is known, use the province's main city or centre with `"oblast"`.
-- Never place a marker at a precise spot the sources don't give. Coordinates must be inside lat 40–62, lon 18–62.
+Always take coordinates from the built-in place list (48,000 towns and villages from GeoNames), never from memory:
+
+```
+node scripts/place.mjs "Pokrovsk" "Kupiansk" "Kirishi"
+```
+
+It prints matching places, biggest first, with their lat/lon. Many villages share a name, so pick the one in the right oblast.
+
+- Every new event needs `"place"`: the town or village its position is based on, spelled as the lookup accepts it. Copy that place's `lat`/`lon` (rounded to 2–4 decimals).
+- `coordPrecision: "city"` when the source names that town; the marker must be within 15 km of it.
+- `"approx"` when the source says "near X" or names only a district or area: use X, within 40 km.
+- `"oblast"` when only the province is known: use the province's main city, within 200 km.
+- If a place is "NOT FOUND", try the Ukrainian transliteration or another spelling, or use the nearest larger town with `"approx"`.
+- The merge rejects new events with a missing or unknown `place`, or a marker too far from it.
 
 ## 4. Write the incoming file
 
@@ -63,7 +86,7 @@ Create `data/incoming/ukraine.json` (create the folder if needed):
 Rules:
 - New ids follow `place-MMDD` (lowercase, dashes), e.g. `odesa-1109`; add `-2` if taken. Check existing ids first.
 - Source ids follow `<outlet>_<MMDD>` or similar (e.g. `ki_1109`, `isw_1108`, `reuters_kharkiv_1109`). A new id must not already exist with a different URL.
-- Each event needs: id, date, region, oblast, front, type, status, title, caption, lat, lon, coordPrecision, sources (and optionally numbers). No other fields.
+- Each new event needs: id, date, region, oblast, front, type, status, title, caption, lat, lon, coordPrecision, place, sources (and optionally numbers). No other fields.
 - `region` values: `north` (Sumy, Chernihiv, Kharkiv incl. Kupiansk), `donbas` (Donetsk, Luhansk), `south` (Zaporizhzhia, Dnipropetrovsk, Kherson, Mykolaiv, Odesa), `crimea-sea` (Crimea, Black Sea, Sea of Azov), `rear` (Kyiv and all other Ukrainian regions), `russia` (anywhere in Russia incl. border oblasts).
 - `date` is the day the event happened (Kyiv time), not the publication day.
 - If you found nothing new, write the file with `"events": []` and an honest note. That is a valid result.
@@ -93,6 +116,8 @@ git push -u origin HEAD
 
 If the merge failed, still commit and push `UPDATE_LOG.md` alone on the same branch name so the failure is recorded. A GitHub workflow re-validates the branch, merges it into `main` and publishes it. If the branch name already exists, add `-2`.
 
-## 7. Report
+## 7. Alert and report
 
-End with a short summary: how many events were added or updated (ids and labels), which stats changed, what you could not read, and whether the merge passed.
+**If anything failed**, send one phone notification with the `PushNotification` tool, starting with `Ukraine Ops Map update FAILED:` and the reason in one short sentence. This covers: the merge still rejected after 3 tries, `git push` refused, or you could not reach any news source. If everything worked, send no notification.
+
+Then end with a short summary: how many events were added or updated (ids and labels), which stats changed, which sources (including X/Telegram) you could or could not read, and whether the merge passed.

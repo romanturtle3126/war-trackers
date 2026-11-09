@@ -6,6 +6,8 @@
 //  - Events are merged by id. New ids are added; a matching id replaces the old event. Nothing is ever deleted.
 //  - An existing event's date cannot change. New events must be dated within the last MAX_AGE_DAYS days.
 //  - Stats are merged by exact label. Sources are added to the registry; an existing source id cannot change url.
+//  - New events (and events whose position changes) need a `place` that exists in the GeoNames place list,
+//    and the marker must be near it: city 15 km, approx 40 km, oblast 200 km (scripts/lib/places.mjs).
 //  - At most MAX_NEW new events and MAX_UPDATED updated events per run.
 //  - The merged file must pass validate-core, and every NEW source URL must not be a dead link (404/410/no such host).
 //  - On success: data file rewritten, meta.lastUpdated bumped, UPDATE_LOG.md appended, incoming file deleted. Exit 0.
@@ -14,6 +16,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validate, checkLinks } from "./lib/validate-core.mjs";
+import { checkPlace } from "./lib/places.mjs";
 
 const MAX_NEW = 40, MAX_UPDATED = 30, MAX_AGE_DAYS = 10, MAX_NOTES = 10;
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -84,9 +87,11 @@ for (const e of inEvents) {
     if (old.date !== e.date) { problems.push(`event "${e.id}": cannot change the date of an existing event (${old.date} → ${e.date})`); continue; }
     if (JSON.stringify(old) === JSON.stringify(e)) continue;
     const changed = [...new Set([...Object.keys(old), ...Object.keys(e)])].filter((k) => JSON.stringify(old[k]) !== JSON.stringify(e[k]));
+    if (["lat", "lon", "place", "coordPrecision"].some((k) => changed.includes(k))) { const pe = checkPlace(e); if (pe) problems.push(`event "${e.id}": ${pe}`); }
     next.events[i] = e; updated.push({ e, changed, oldStatus: old.status });
   } else {
     if (typeof e.date === "string" && e.date < minDate) { problems.push(`new event "${e.id}" is dated ${e.date}, older than ${MAX_AGE_DAYS} days — only recent events can be added`); continue; }
+    { const pe = checkPlace(e); if (pe) problems.push(`new event "${e.id}": ${pe}`); }
     next.events.push(e); byId.set(e.id, next.events.length - 1); added.push(e);
   }
 }

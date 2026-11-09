@@ -33,11 +33,11 @@ A map of recent events in the Russia-Ukraine war. Every event is sourced and lab
 
 | When (Toronto) | What | Where |
 |---|---|---|
-| ~6:00 AM | A **Claude cloud routine** researches the past ~24 h (ISW, Reuters, AP, BBC, Kyiv Independent, official statements of both sides), writes new and corrected events, and runs `scripts/merge-update.mjs`. That script validates everything and only changes the data if it all passes. | claude.ai/code/routines |
+| ~5:30 AM | **Publish data and website** pulls ~100 free news headlines; the routine uses them as leads. | GitHub → Actions |
+| ~6:00 AM | A **Claude cloud routine** researches the past ~24 h (the headline leads, ISW, Kyiv Independent, wires, and both sides' official statements on X and Telegram), writes new and corrected events, and runs `scripts/merge-update.mjs`. That script validates everything and only changes the data if it all passes. | claude.ai/code/routines |
 | right after | GitHub workflow **Accept daily data update** checks that only data files changed, re-validates, merges into `main` and publishes. | GitHub → Actions |
-| ~6:45 AM | GitHub workflow **Publish data and website** pulls free news headlines (Feed tab), validates, and publishes the site and data. | GitHub → Actions |
 
-Safety rules built into the merge: events are merged by id and **never deleted**; at most 40 new and 30 changed events per day; new events must be dated within the last 10 days; no invented or out-of-area coordinates; every event needs a source; "Confirmed" needs an independent (non-government, non-social) source; dead links are rejected. If anything fails, the old data stays as it was and the reason is written to `UPDATE_LOG.md`.
+Safety rules built into the merge: events are merged by id and **never deleted**; at most 40 new and 30 changed events per day; new events must be dated within the last 10 days; every new marker must be within 15 km of a real town from a 48,000-place list (GeoNames), 40 km if approximate; every event needs a source; "Confirmed" needs an independent (non-government, non-social) source; dead links are rejected. If anything fails, the old data stays as it was and the reason is written to `UPDATE_LOG.md`.
 
 The research instructions live in [`UPDATE_PROMPT.md`](UPDATE_PROMPT.md). Edit that file to change what it looks for.
 
@@ -46,6 +46,11 @@ The research instructions live in [`UPDATE_PROMPT.md`](UPDATE_PROMPT.md). Edit t
 - **In the app:** the header's *Data updated* date should be today, after about 6:15 AM.
 - **On GitHub:** open [`UPDATE_LOG.md`](UPDATE_LOG.md). Each morning adds a section at the top: **OK** (with the events it added) or **FAILED** (with the reason; the data was left unchanged).
 - **The routine itself:** https://claude.ai/code/routines → *Ukraine Ops Map daily update* → recent runs.
+
+### Alerts when something goes wrong
+
+- **Phone notification:** if a morning run fails (merge rejected, push refused, sources unreachable), the routine sends a push notification starting *"Ukraine Ops Map update FAILED"* to the Claude app on your phone. No news is good news: successful runs stay quiet.
+- **Email + GitHub issue:** every day at 10 AM Toronto, the **Stale data check** workflow looks at the data's age. If it hasn't changed in 30+ hours, it opens an issue titled *"Map data is stale…"* (GitHub emails you) and closes it again once data is fresh.
 
 ### How to pause it
 
@@ -88,4 +93,4 @@ android/             Capacitor Android project (app id com.aaron.ukraineopsmap)
 The app always tries the live data on GitHub Pages first, then the last copy saved on the phone, then the copy built into the APK, so it works offline.
 Adding the Middle East map later: add an entry to `web/maps.json` plus `data/middle-east.json` (same schema). The app shows a map switcher automatically. See the end of `data/SCHEMA.md`.
 
-Map borders: Natural Earth (public domain), with Crimea shown as part of Ukraine. The red dashed front line is illustrative only.
+Place coordinates: GeoNames (CC BY 4.0), rebuilt with `scripts/build-places.mjs`. Map borders: Natural Earth (public domain), with Crimea shown as part of Ukraine. The red dashed front line is illustrative only.

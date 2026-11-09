@@ -38,6 +38,7 @@ The map's settings (region list, allowed coordinate box, default view) live in `
   "caption": "What happened, in one to three plain sentences, with numbers as reported and claims attributed.",
   "lat": 49.99, "lon": 36.23,
   "coordPrecision": "city",
+  "place": "Kharkiv",
   "sources": [ { "id": "ki_1101", "title": "Kyiv Independent: ...", "url": "https://..." } ],
   "numbers": { "label": "...", "ukraine": {"value": "...", "source": "id or null"}, "russia": {"value": "...", "source": "id or null"}, "independent": {"value": "...", "source": "id"} }
 }
@@ -55,6 +56,7 @@ The map's settings (region list, allowed coordinate box, default view) live in `
 | `title` | yes | Short headline, max 140 chars. |
 | `caption` | yes | "What happened", max 1500 chars. |
 | `lat`, `lon` | yes | Numbers inside the map's `bounds` (Ukraine: lat 40–62, lon 18–62). Never invented: use the named place's coordinates and set `coordPrecision`. |
+| `place` | new events | The town/village the position is based on, as found by `node scripts/place.mjs "<name>"` (GeoNames list in `scripts/geo-data/places.json`). The marker must be within 15 km (`city`), 40 km (`approx`) or 200 km (`oblast`) of it. Required for events added by the daily update; older events may lack it. |
 | `coordPrecision` | yes | `city` (the named town/city), `approx` (somewhere near the named place), `oblast` (only the province is known; marker sits at its centre). |
 | `sources` | yes | At least one `{id, title, url}`. Every `id` must also be in the top-level `sources` list with the same url. |
 | `numbers` | no | Side-by-side figures for a contested count. Required in spirit for `DISPUTED` events. |

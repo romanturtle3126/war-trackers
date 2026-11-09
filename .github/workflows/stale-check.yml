@@ -1,0 +1,39 @@
+name: Stale data check
+
+# Safety net: if the daily update hasn't changed the data for 30+ hours (routine broken, paused, or its
+# GitHub access lost), open a GitHub issue and fail. GitHub emails the repo owner about both.
+on:
+  schedule:
+    - cron: "0 15 * * *" # 15:00 UTC = 10 AM Toronto (11 AM in summer)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check data age
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          UPDATED=$(node -e "console.log(require('./data/ukraine.json').meta.lastUpdated)")
+          AGE_H=$(node -e "console.log(Math.floor((Date.now()-Date.parse('$UPDATED'))/36e5))")
+          echo "Data last updated $UPDATED ($AGE_H hours ago)"
+          if [ "$AGE_H" -lt 30 ]; then echo "Fresh."; exit 0; fi
+          TITLE="Map data is stale: last updated $AGE_H hours ago"
+          BODY="The daily update hasn't changed data/ukraine.json since $UPDATED. Check UPDATE_LOG.md and the routine's recent runs at https://claude.ai/code/routines. Common causes: routine paused, Claude GitHub App removed, or the repo made private. This issue closes itself once data is fresh again (close it by hand otherwise)."
+          OPEN=$(gh issue list --label stale-data --state open --json number --jq '.[0].number')
+          gh label create stale-data --color d93f0b --description "Daily data update missed" 2>/dev/null || true
+          if [ -n "$OPEN" ]; then gh issue comment "$OPEN" --body "Still stale: $AGE_H hours since $UPDATED."; else gh issue create --title "$TITLE" --body "$BODY" --label stale-data; fi
+          echo "::error::$TITLE"
+          exit 1
+      - name: Close stale issue when fresh
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for n in $(gh issue list --label stale-data --state open --json number --jq '.[].number'); do gh issue close "$n" --comment "Data is fresh again."; done

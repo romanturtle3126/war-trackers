@@ -91,8 +91,9 @@ export function validate(doc, mapCfg, opts = {}) {
       if (e.status === "CONFIRMED" && e.sources.every((s) => s && isPartyUrl(s.url)))
         E.push(`${at}: CONFIRMED needs at least one independent source (all sources are official/state/social)`);
     }
-    const extra = Object.keys(e).filter((k) => !["id", "date", "region", "oblast", "front", "type", "status", "title", "caption", "lat", "lon", "coordPrecision", "sources", "numbers"].includes(k));
+    const extra = Object.keys(e).filter((k) => !["id", "date", "region", "oblast", "front", "type", "status", "title", "caption", "lat", "lon", "coordPrecision", "sources", "numbers", "place"].includes(k));
     if (extra.length) E.push(`${at}: unknown field(s) ${extra.join(", ")}`);
+    if (e.place != null && !str(e.place, 80)) E.push(`${at}: place must be a short town/city name`);
     if (e.numbers != null) checkNumbers(e.numbers, `${at} numbers`, E, ref, false);
   });
 
