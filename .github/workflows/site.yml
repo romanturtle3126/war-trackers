@@ -1,0 +1,72 @@
+name: Publish data and website
+
+# 1) Daily (and on demand): pull free RSS headlines into data/ukraine-feed.json and commit them.
+# 2) Every time: validate data/ukraine.json and publish web/ + data/ to GitHub Pages.
+#    If validation fails, nothing is published and the previous good data stays live.
+# The daily AI research (events/stats) is done by the Claude routine, which pushes to main and triggers this workflow.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "web/**"
+      - "scripts/**"
+      - ".github/workflows/site.yml"
+  schedule:
+    - cron: "45 11 * * *" # 11:45 UTC = 6:45 AM Toronto in winter, 7:45 AM in summer
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  feeds:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Pull RSS/Atom headlines
+        run: node scripts/fetch-feeds.mjs ukraine
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ukraine-feed.json
+          if git diff --cached --quiet; then echo "No headline changes"; exit 0; fi
+          git commit -m "Headlines $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase origin main && git push && exit 0; sleep 5; done
+          exit 1
+
+  deploy:
+    needs: feeds
+    if: ${{ !cancelled() && needs.feeds.result != 'failure' }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate data (blocks publishing if invalid)
+        run: node scripts/validate.mjs data/ukraine.json
+      - name: Build site
+        run: node scripts/build-web.mjs _site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

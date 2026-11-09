@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#161b22">
+<meta name="color-scheme" content="dark">
+<title>Ukraine Ops Map</title>
+<meta name="description" content="Open-source map of recent incidents in the Russia-Ukraine war, with sourced and status-labelled claims. Updated daily.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="title">
+      <h1 id="apptitle">Ukraine Ops Map</h1>
+      <select id="mapswitch" aria-label="Choose map" hidden></select>
+      <button id="refresh" class="iconbtn" aria-label="Refresh data" title="Refresh data">⟳</button>
+    </div>
+    <div id="updated" class="updated">Loading…</div>
+    <nav id="tabs">
+      <button data-tab="map" class="active">Map</button>
+      <button data-tab="timeline">Timeline</button>
+      <button data-tab="stats">Stats</button>
+      <button data-tab="feed">Feed</button>
+      <button data-tab="sources">Sources</button>
+    </nav>
+  </header>
+  <div id="chips" class="chips" role="group" aria-label="Filter by region"></div>
+  <div id="ptr" class="ptr" aria-hidden="true">↓ Pull to refresh</div>
+
+  <section id="tab-map" class="tab active">
+    <div id="mapwrap">
+      <svg id="map" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of events"></svg>
+      <div class="zoom"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button><button id="zreset" aria-label="Reset view">⟲</button></div>
+      <div id="legend" class="legend"></div>
+      <button id="offscreen" class="offscreen" hidden></button>
+    </div>
+    <div id="replay">
+      <button id="play" aria-label="Play replay">▶</button>
+      <input id="day" type="range" min="0" max="0" value="0" aria-label="Replay day">
+      <span id="daylabel"></span>
+      <label class="all"><input type="checkbox" id="cumul" checked> cumulative</label>
+    </div>
+  </section>
+
+  <section id="tab-timeline" class="tab"><div id="timeline"></div></section>
+  <section id="tab-stats" class="tab"><p class="note">Contested figures. Each side's claim is shown side by side with independent estimates where they exist. Neither side's numbers are verified by this app.</p><div id="stats"></div></section>
+  <section id="tab-feed" class="tab"><p class="note warn">Auto-pulled headlines from open news feeds, refreshed daily. <b>Unverified until reviewed.</b></p><div id="feedmeta" class="note"></div><div id="feed"></div></section>
+  <section id="tab-sources" class="tab"><div id="notes"></div><h3>Citations</h3><ol id="sources"></ol></section>
+
+  <div id="sheet" class="sheet" aria-hidden="true">
+    <div class="grip"></div>
+    <div id="sheetbody"></div>
+  </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

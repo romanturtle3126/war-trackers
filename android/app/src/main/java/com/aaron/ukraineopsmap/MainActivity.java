@@ -1,0 +1,5 @@
+package com.aaron.ukraineopsmap;
+
+import com.getcapacitor.BridgeActivity;
+
+public class MainActivity extends BridgeActivity {}

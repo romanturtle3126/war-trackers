@@ -1,0 +1,53 @@
+name: Accept daily data update
+
+# The daily Claude routine pushes its result to a branch named claude/data-YYYY-MM-DD.
+# This workflow is the gatekeeper: it only accepts changes to the data files and the update log,
+# re-runs the validator, merges into main, publishes the site, and deletes the branch.
+on:
+  push:
+    branches: ["claude/**"]
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: accept-update
+  cancel-in-progress: false
+
+jobs:
+  accept:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Only data files may change
+        run: |
+          git fetch origin main
+          CHANGED=$(git diff --name-only origin/main...HEAD)
+          echo "Changed files:"; echo "$CHANGED"
+          BAD=$(echo "$CHANGED" | grep -v -E '^(data/ukraine\.json|data/incoming/.*\.json|UPDATE_LOG\.md)$' || true)
+          if [ -n "$BAD" ]; then echo "::error::Daily update touched files it is not allowed to change: $BAD"; exit 1; fi
+          if [ -z "$CHANGED" ]; then echo "Nothing to merge"; fi
+
+      - name: Validate
+        run: node scripts/validate.mjs data/ukraine.json
+
+      - name: Merge into main and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B main origin/main
+          git merge --no-edit --no-ff "origin/$BRANCH" -m "Daily data update ($BRANCH)"
+          node scripts/validate.mjs data/ukraine.json
+          for i in 1 2 3; do git push origin main && break; sleep 5; git pull --no-rebase origin main; done
+          git push origin --delete "$BRANCH" || true
+          gh workflow run site.yml --ref main

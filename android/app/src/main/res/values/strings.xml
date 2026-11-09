@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Ukraine Ops Map</string>
+    <string name="title_activity_main">Ukraine Ops Map</string>
+    <string name="package_name">com.aaron.ukraineopsmap</string>
+    <string name="custom_url_scheme">com.aaron.ukraineopsmap</string>
+</resources>
