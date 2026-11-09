@@ -33,7 +33,7 @@ How to read them (X usually blocks direct reading):
 - [ ] ISW / Critical Threats latest assessment
 - [ ] The headline leads file
 
-**Nationwide overnight attacks** (e.g. "Russia launched 317 drones and 6 missiles") have no single location. Don't skip them: update the stat `"Russian drones and missiles launched at Ukraine (latest night)"` (category `shootdowns`, same label every day) with Ukraine's Air Force launched/downed numbers in `ukraine` and the Russian MoD's claim in `russia`. Separately, add map events only for named places that were hit.
+**Nationwide overnight attacks** (e.g. "Russia launched 317 drones and 6 missiles") have no single location. Don't skip them: add a stat labelled exactly like the existing ones, `"Russian drones and missiles launched at Ukraine (night of Nov 8-9)"` (category `shootdowns`, one per night) with Ukraine's Air Force launched/downed numbers in `ukraine` and the Russian MoD's claim in `russia`. Separately, add map events only for named places that were hit.
 
 4. Cite the X or Telegram post URL itself. These are **that side's claim**: an event whose only sources are X/Telegram/official sites must be `ONE_PARTY` (or `DISPUTED`), never `CONFIRMED`. The validator enforces this.
 
