@@ -2,11 +2,11 @@
  "schemaVersion": 1,
  "map": "ukraine",
  "meta": {
-  "lastUpdated": "2026-11-09T01:58:55-05:00",
+  "lastUpdated": "2026-11-09T06:05:39-05:00",
   "coverage": "2026-10-10 to 2026-11-09",
   "notes": [
-   "Refreshed Nov 9, 2026 (about 07:30 UTC) from the Kyiv Independent daily casualty roundup, Ukrinform (regional governors relayed), and the Ukrainian General Staff Telegram channel (t.me/GeneralStaffZSU, posts 42846-42847) and Air Force channel (t.me/kpszsu), which were read directly.",
-   "Ukrainska Pravda (blocked by Cloudflare), X posts and the Russian MoD channel were not read this run, and the ISW Nov 9 assessment was not yet published; the Nov 8 ISW assessment is already in the map. Kremenchuk and Odesa events rest on Ukrainian official statements relayed by Ukrinform and are labelled ONE_PARTY.",
+   "Refreshed Nov 9, 2026 (about 06:30 Toronto, 11:30 UTC) from the Telegram channels of the Ukrainian General Staff (GeneralStaffZSU), Air Force (kpszsu) and Russian MoD (mod_russia), the headline leads file, and the Kyiv Independent.",
+   "X searches and the ISW Nov 9 assessment were not read this run (ISW had not yet published); Ukrainska Pravda returned HTTP 403. The Morozov plant strike and the Vasylkove capture rest on one side's official statements only and are labelled ONE_PARTY.",
    "Coordinates are city-level or approximate (see coordPrecision); markers flagged 'oblast' are not geolocated.",
    "Casualty figures are as reported by the cited outlet at time of writing and may have been revised."
   ]
@@ -3391,6 +3391,50 @@
      "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russias-second-largest-oil-refinery-in-overnight-drone-attack/"
     }
    ]
+  },
+  {
+   "id": "morozova-1109",
+   "date": "2026-11-09",
+   "region": "russia",
+   "oblast": "Leningrad Oblast, Russia",
+   "front": "Russia (rear)",
+   "type": "deep-strike",
+   "status": "ONE_PARTY",
+   "title": "Ukraine's General Staff says it hit Morozov plant near St Petersburg",
+   "caption": "Ukraine's General Staff said on Telegram that Ukrainian forces struck the Morozov Plant (solid rocket fuel and explosives, a Rostec enterprise) near St Petersburg overnight into Nov 9 and damaged three production workshops; the extent of damage is still being assessed. The claim is Ukraine's alone; no independent confirmation or Russian comment was read. Marker at the settlement of Imeni Morozova.",
+   "lat": 59.9757,
+   "lon": 31.0376,
+   "coordPrecision": "city",
+   "place": "Imeni Morozova",
+   "sources": [
+    {
+     "id": "gs_morozov_1109",
+     "title": "General Staff of Ukraine (Telegram): fuel for Iskanders under attack, plant near St Petersburg hit (Nov 9)",
+     "url": "https://t.me/GeneralStaffZSU/42850"
+    }
+   ]
+  },
+  {
+   "id": "vasylkove-1109",
+   "date": "2026-11-09",
+   "region": "south",
+   "oblast": "Zaporizhzhia",
+   "front": "Zaporizhzhia",
+   "type": "claim",
+   "status": "ONE_PARTY",
+   "title": "Russia's MoD claims capture of Vasylkove in Zaporizhzhia Oblast",
+   "caption": "Russia's Defence Ministry said on Telegram that its Vostok group of forces 'liberated' the settlement of Vasylkove in Zaporizhzhia Oblast. No Ukrainian response or independent confirmation was read, and the ministry's post does not say which of several villages of that name it means; the marker is an approximate position based on a Vasylkove in the oblast's northeast.",
+   "lat": 47.8072,
+   "lon": 35.8562,
+   "coordPrecision": "approx",
+   "place": "Vasylkove",
+   "sources": [
+    {
+     "id": "mod_vasylkove_1109",
+     "title": "Russian MoD (Telegram): Vostok group liberated Vasylkove (Nov 9)",
+     "url": "https://t.me/mod_russia/68881"
+    }
+   ]
   }
  ],
  "stats": [
@@ -3956,6 +4000,20 @@
      "source": "newsru_mod_1105"
     }
    ]
+  },
+  {
+   "label": "Russian drones and missiles launched at Ukraine (night of Nov 8-9)",
+   "category": "shootdowns",
+   "asOf": "2026-11-09",
+   "ukraine": {
+    "value": "317 attack drones (105 jet-powered Shahed-type, plus decoys); 271 Shaheds (81 jet) and 5 other drones downed or suppressed, 276 targets in total as of 08:00; hits at 31 locations, debris at 9 (Air Force/General Staff)",
+    "source": "gs_air_1109"
+   },
+   "russia": {
+    "value": "No launch count published; MoD claims drone strikes on the Hlobyne plant (Poltava), substations near Bila Tserkva, Kryvyi Rih and Cherkasy, a Vinnytsia traction substation and a dry cargo ship southwest of Odesa",
+    "source": "mod_strikes_1109"
+   },
+   "independent": []
   }
  ],
  "sources": [
@@ -4883,6 +4941,26 @@
    "id": "ki_daily_1109",
    "title": "Kyiv Independent: Russian attacks kill 7 across Ukraine over the past day (Nov 9)",
    "url": "https://kyivindependent.com/russian-attacks-kill-5-injure-10-in-ukraine-over-the-past-day-striking-zaporizhzhia-oblast-over-700-times/"
+  },
+  {
+   "id": "gs_air_1109",
+   "title": "General Staff of Ukraine (Telegram): 276 hostile targets downed/suppressed, night of Nov 9",
+   "url": "https://t.me/GeneralStaffZSU/42847"
+  },
+  {
+   "id": "mod_strikes_1109",
+   "title": "Russian MoD (Telegram): overnight strikes on Ukraine (Nov 9)",
+   "url": "https://t.me/mod_russia/68878"
+  },
+  {
+   "id": "gs_morozov_1109",
+   "title": "General Staff of Ukraine (Telegram): fuel for Iskanders under attack, plant near St Petersburg hit (Nov 9)",
+   "url": "https://t.me/GeneralStaffZSU/42850"
+  },
+  {
+   "id": "mod_vasylkove_1109",
+   "title": "Russian MoD (Telegram): Vostok group liberated Vasylkove (Nov 9)",
+   "url": "https://t.me/mod_russia/68881"
   }
  ]
 }

@@ -2,6 +2,14 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-09 06:05 Toronto — OK
+- Added 2 event(s):
+  - `morozova-1109` 2026-11-09 [ONE_PARTY] Ukraine's General Staff says it hit Morozov plant near St Petersburg
+  - `vasylkove-1109` 2026-11-09 [ONE_PARTY] Russia's MoD claims capture of Vasylkove in Zaporizhzhia Oblast
+- Stats: 0 updated, 1 added
+- 4 new source link(s)
+- Totals: 120 events, 30 stats, 189 sources; coverage 2026-10-10 to 2026-11-09
+
 ## 2026-11-09 01:58 Toronto — OK
 - Added 3 event(s):
   - `kremenchuk-1108` 2026-11-08 [ONE_PARTY] Drones hit apartment block and hotel in Kremenchuk
