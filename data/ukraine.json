@@ -2,11 +2,11 @@
  "schemaVersion": 1,
  "map": "ukraine",
  "meta": {
-  "lastUpdated": "2026-11-09T01:10:11-05:00",
+  "lastUpdated": "2026-11-09T01:58:55-05:00",
   "coverage": "2026-10-10 to 2026-11-09",
   "notes": [
-   "Refreshed Nov 9, 2026 (UTC morning) from Kyiv Independent (Nov 8-9 items) and the ISW Nov 8 assessment via the Critical Threats mirror.",
-   "ISW's own site was not used. No new Ukrainian General Staff loss tally, UN HRMMU report or Russian MoD figures were read this run, so stats were not refreshed. Web search surfaced little for Nov 8-9, so coverage is partial.",
+   "Refreshed Nov 9, 2026 (about 07:30 UTC) from the Kyiv Independent daily casualty roundup, Ukrinform (regional governors relayed), and the Ukrainian General Staff Telegram channel (t.me/GeneralStaffZSU, posts 42846-42847) and Air Force channel (t.me/kpszsu), which were read directly.",
+   "Ukrainska Pravda (blocked by Cloudflare), X posts and the Russian MoD channel were not read this run, and the ISW Nov 9 assessment was not yet published; the Nov 8 ISW assessment is already in the map. Kremenchuk and Odesa events rest on Ukrainian official statements relayed by Ukrinform and are labelled ONE_PARTY.",
    "Coordinates are city-level or approximate (see coordPrecision); markers flagged 'oblast' are not geolocated.",
    "Casualty figures are as reported by the cited outlet at time of writing and may have been revised."
   ]
@@ -3296,6 +3296,82 @@
    ]
   },
   {
+   "id": "kremenchuk-1108",
+   "date": "2026-11-08",
+   "region": "rear",
+   "oblast": "Poltava",
+   "front": "Rear (Poltava)",
+   "type": "drone",
+   "status": "ONE_PARTY",
+   "title": "Drones hit apartment block and hotel in Kremenchuk",
+   "caption": "Poltava regional military administration head Vitalii Diakivnych said Russian drones hit an apartment building and a hotel in Kremenchuk on the evening of Nov 8, starting fires. He reported a 16-year-old boy seriously injured, 15 people rescued by emergency crews and four injured by 21:30 local time. Figures are the Ukrainian official account as relayed by Ukrinform; no independent confirmation was read.",
+   "lat": 49.0625,
+   "lon": 33.4048,
+   "coordPrecision": "city",
+   "place": "Kremenchuk",
+   "sources": [
+    {
+     "id": "ukrinform_kremenchuk_1108",
+     "title": "Ukrinform: Russian forces strike residential building, hotel in Kremenchuk (Nov 8)",
+     "url": "https://www.ukrinform.net/rubric-ato/4182734-russian-forces-strike-residential-building-hotel-in-kremenchuk.html"
+    },
+    {
+     "id": "ukrinform_kremenchuk_toll_1108",
+     "title": "Ukrinform: Injury toll in Russian strikes on Kremenchuk rises to four (Nov 8)",
+     "url": "https://www.ukrinform.net/rubric-ato/4182743-injury-toll-in-russian-strikes-on-kremenchuk-rises-to-four.html"
+    }
+   ]
+  },
+  {
+   "id": "odesa-energy-1108",
+   "date": "2026-11-08",
+   "region": "south",
+   "oblast": "Odesa",
+   "front": "Odesa",
+   "type": "energy",
+   "status": "ONE_PARTY",
+   "title": "Massive Russian attack on Odesa region energy infrastructure",
+   "caption": "Odesa regional military administration head Oleh Kiper said on Telegram that Russia launched a massive attack on energy infrastructure in Odesa Oblast on the evening of Nov 8, causing power outages in the northern part of the region; DTEK crews began repairs. Ukrinform also noted one person was killed in an overnight attack on the region. Ukrainian official claim only. Marker at Odesa city, approximate; affected sites were not specified.",
+   "lat": 46.4857,
+   "lon": 30.7438,
+   "coordPrecision": "approx",
+   "place": "Odesa",
+   "sources": [
+    {
+     "id": "ukrinform_odesa_energy_1108",
+     "title": "Ukrinform: Russian forces launch massive attack on Odesa region energy infrastructure (Nov 8)",
+     "url": "https://www.ukrinform.net/rubric-ato/4182739-russian-forces-launch-massive-attack-on-odesa-regions-energy-infrastructure.html"
+    }
+   ]
+  },
+  {
+   "id": "komysh-1108",
+   "date": "2026-11-08",
+   "region": "south",
+   "oblast": "Dnipropetrovsk",
+   "front": "Dnipropetrovsk",
+   "type": "drone",
+   "status": "CONFIRMED",
+   "title": "Komyshuvakha hit again; two rescuers injured at Nov 2 strike site",
+   "caption": "Ukrinform reported two rescuers were injured in a Russian drone attack on Komyshuvakha on Nov 8, and the Kyiv Independent said the village was hit again after the Nov 2 strike that killed 55 people. President Zelensky said people may still be trapped under the rubble.",
+   "lat": 47.7149,
+   "lon": 35.5241,
+   "coordPrecision": "city",
+   "place": "Komyshuvakha",
+   "sources": [
+    {
+     "id": "ukrinform_komysh_1108",
+     "title": "Ukrinform: Two rescuers injured in Russian drone attack on Komyshuvakha (Nov 8)",
+     "url": "https://www.ukrinform.net/rubric-ato/4182730-two-rescuers-injured-in-russian-drone-attack-on-komyshuvakha.html"
+    },
+    {
+     "id": "ki_daily_1109",
+     "title": "Kyiv Independent: Russian attacks kill 7 across Ukraine over the past day (Nov 9)",
+     "url": "https://kyivindependent.com/russian-attacks-kill-5-injure-10-in-ukraine-over-the-past-day-striking-zaporizhzhia-oblast-over-700-times/"
+    }
+   ]
+  },
+  {
    "id": "kirishi-1109",
    "date": "2026-11-09",
    "region": "russia",
@@ -3321,10 +3397,10 @@
   {
    "label": "Russian military personnel losses (cumulative, since Feb 24, 2022)",
    "category": "casualties",
-   "asOf": "2026-11-07",
+   "asOf": "2026-11-09",
    "ukraine": {
-    "value": "~1,604,110 killed and wounded (+2,280 in a day), Nov 7",
-    "source": "ki_gs_1107"
+    "value": "~1,609,380 killed and wounded (+2,980 in a day), Nov 9",
+    "source": "ukrinform_gs_1109"
    },
    "russia": {
     "value": "No official cumulative figure published",
@@ -3358,10 +3434,10 @@
   {
    "label": "Russian equipment losses (cumulative)",
    "category": "equipment",
-   "asOf": "2026-11-07",
+   "asOf": "2026-11-09",
    "ukraine": {
-    "value": "12,456 tanks; 25,654 AFVs; 52,000 artillery; 2,257 MLRS; 1,747 air defence; 452 aircraft; 356 helicopters (General Staff, Nov 7)",
-    "source": "mod_ua_1107"
+    "value": "12,462 tanks; 25,683 AFVs; 52,112 artillery; 2,263 MLRS; 1,753 air defence; 452 aircraft; 356 helicopters (General Staff, Nov 9)",
+    "source": "ukrinform_gs_1109"
    },
    "russia": {
     "value": "No official figure published",
@@ -4777,6 +4853,36 @@
    "id": "ki_kirishi_1109",
    "title": "Kyiv Independent: Ukrainian forces reportedly strike Russia's second-largest oil refinery in overnight drone attack (Nov 9)",
    "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russias-second-largest-oil-refinery-in-overnight-drone-attack/"
+  },
+  {
+   "id": "ukrinform_gs_1109",
+   "title": "Ukrinform: Russian losses in Ukraine war rise by 2,980 over past day (General Staff, Nov 9)",
+   "url": "https://www.ukrinform.net/rubric-ato/4182776-russian-losses-in-ukraine-war-rise-by-2980-over-past-day.html"
+  },
+  {
+   "id": "ukrinform_kremenchuk_1108",
+   "title": "Ukrinform: Russian forces strike residential building, hotel in Kremenchuk (Nov 8)",
+   "url": "https://www.ukrinform.net/rubric-ato/4182734-russian-forces-strike-residential-building-hotel-in-kremenchuk.html"
+  },
+  {
+   "id": "ukrinform_kremenchuk_toll_1108",
+   "title": "Ukrinform: Injury toll in Russian strikes on Kremenchuk rises to four (Nov 8)",
+   "url": "https://www.ukrinform.net/rubric-ato/4182743-injury-toll-in-russian-strikes-on-kremenchuk-rises-to-four.html"
+  },
+  {
+   "id": "ukrinform_odesa_energy_1108",
+   "title": "Ukrinform: Russian forces launch massive attack on Odesa region energy infrastructure (Nov 8)",
+   "url": "https://www.ukrinform.net/rubric-ato/4182739-russian-forces-launch-massive-attack-on-odesa-regions-energy-infrastructure.html"
+  },
+  {
+   "id": "ukrinform_komysh_1108",
+   "title": "Ukrinform: Two rescuers injured in Russian drone attack on Komyshuvakha (Nov 8)",
+   "url": "https://www.ukrinform.net/rubric-ato/4182730-two-rescuers-injured-in-russian-drone-attack-on-komyshuvakha.html"
+  },
+  {
+   "id": "ki_daily_1109",
+   "title": "Kyiv Independent: Russian attacks kill 7 across Ukraine over the past day (Nov 9)",
+   "url": "https://kyivindependent.com/russian-attacks-kill-5-injure-10-in-ukraine-over-the-past-day-striking-zaporizhzhia-oblast-over-700-times/"
   }
  ]
 }
