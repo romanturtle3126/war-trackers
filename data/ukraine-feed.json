@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-09T05:23:05+00:00",
+  "lastUpdated": "2026-11-09T06:06:43+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
@@ -47,6 +47,18 @@
  },
  "items": [
   {
+   "headline": "Russian forces launch 819 attacks on Zaporizhzhia region over past day, six injured",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4182774-russian-forces-launch-819-attacks-on-zaporizhzhia-region-over-past-day-six-injured.html",
+   "date": "2026-11-09T05:54:00.000Z"
+  },
+  {
+   "headline": "Russian drone hits private property in Poltava region, fire breaks out",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4182769-russian-drone-hits-private-property-in-poltava-region-fire-breaks-out.html",
+   "date": "2026-11-09T05:30:00.000Z"
+  },
+  {
    "headline": "Estonian FM: Putin is the only one who can stop war, Ukraine must join NATO",
    "source": "Ukrinform",
    "link": "https://www.ukrinform.net/rubric-polytics/4182768-estonian-fm-putin-is-the-only-one-who-can-stop-war-ukraine-must-join-nato.html",
@@ -81,6 +93,12 @@
    "source": "Ukrinform",
    "link": "https://www.ukrinform.net/rubric-society/4182714-schools-in-zhytomyr-without-heating-after-russian-attack-to-switch-to-remote-learning.html",
    "date": "2026-11-09T03:52:00.000Z"
+  },
+  {
+   "headline": "Trump says Ukraine will have a \"little bit different shape\" after war ends",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/09/8061867/",
+   "date": "2026-11-09T03:50:00.000Z"
   },
   {
    "headline": "Ukraine will likely 'end up with a little bit different shape' after war, Trump tells 60 Minutes",
@@ -135,6 +153,18 @@
    "source": "Ukrinform",
    "link": "https://www.ukrinform.net/rubric-ato/4182610-ukraines-air-assault-forces-adapt-western-combat-tactics-and-training-methods-to-battlefield-needs.html",
    "date": "2026-11-08T23:32:00.000Z"
+  },
+  {
+   "headline": "Moldova launches power line connecting it to Romania and stops buying Russian gas – photo",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/09/8061864/",
+   "date": "2026-11-08T23:20:00.000Z"
+  },
+  {
+   "headline": "Russia attacks Kremenchuk: seven injured, apartment block and hotel damaged – photos",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/09/8061846/",
+   "date": "2026-11-08T22:43:00.000Z"
   },
   {
    "headline": "Another stage of search operations completed in Puzhnyky, no mass grave found",
@@ -251,22 +281,10 @@
    "date": "2026-11-08T16:18:59.000Z"
   },
   {
-   "headline": "Zelensky instructs government to introduce free public transport programme in Kyiv",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-ato/4182702-zelensky-instructs-government-to-introduce-free-public-transport-programme-in-kyiv.html",
-   "date": "2026-11-08T15:52:00.000Z"
-  },
-  {
    "headline": "Zelenskyy: Russia conducted major rotation of troops and equipment in Oleshky",
    "source": "Ukrainska Pravda",
    "link": "https://www.pravda.com.ua/eng/news/2026/11/08/8061833/",
    "date": "2026-11-08T15:45:00.000Z"
-  },
-  {
-   "headline": "Traffic partially restored on Kyiv’s North Bridge",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-society/4182700-traffic-partially-restored-on-kyivs-north-bridge.html",
-   "date": "2026-11-08T15:28:00.000Z"
   },
   {
    "headline": "3 people, including child, die in Kyiv Oblast from improperly running generator as Russia slams power grids across Ukraine",
@@ -383,28 +401,10 @@
    "date": "2026-11-08T09:18:00.000Z"
   },
   {
-   "headline": "First Oleshky evacuees discharged from hospital: what we know about the others",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/08/8061784/",
-   "date": "2026-11-08T09:06:00.000Z"
-  },
-  {
-   "headline": "Turkish President Erdoğan discusses efforts to end war in Ukraine with Trump",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/08/8061785/",
-   "date": "2026-11-08T09:06:00.000Z"
-  },
-  {
    "headline": "Russian attacks kill 8, injure 19 in Ukraine over the past day, striking Zaporizhzhia Oblast over 700 times",
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/russian-attacks-kill-5-injure-10-in-ukraine-over-the-past-day-striking-zaporizhzhia-oblast-over-700-times/",
    "date": "2026-11-08T08:59:28.000Z"
-  },
-  {
-   "headline": "Zaporizhzhia Nuclear Power Plant experiences another blackout",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/08/8061781/",
-   "date": "2026-11-08T08:36:00.000Z"
   },
   {
    "headline": "General Staff: Russia has lost 1,606,400 troops in Ukraine since Feb. 24, 2022",
