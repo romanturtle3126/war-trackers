@@ -2,11 +2,11 @@
  "schemaVersion": 1,
  "map": "ukraine",
  "meta": {
-  "lastUpdated": "2026-11-09T06:05:39-05:00",
+  "lastUpdated": "2026-11-10T06:06:21-05:00",
   "coverage": "2026-10-10 to 2026-11-09",
   "notes": [
-   "Refreshed Nov 9, 2026 (about 06:30 Toronto, 11:30 UTC) from the Telegram channels of the Ukrainian General Staff (GeneralStaffZSU), Air Force (kpszsu) and Russian MoD (mod_russia), the headline leads file, and the Kyiv Independent.",
-   "X searches and the ISW Nov 9 assessment were not read this run (ISW had not yet published); Ukrainska Pravda returned HTTP 403. The Morozov plant strike and the Vasylkove capture rest on one side's official statements only and are labelled ONE_PARTY.",
+   "Refreshed Nov 10, 2026 (UTC morning) from the Telegram channels of the Ukrainian General Staff (GeneralStaffZSU), Air Force (kpszsu, alert posts only) and Russian MoD (mod_russia), ISW Nov 9 assessment, the headline leads file, Kyiv Independent and Ukrinform.",
+   "X searches returned no usable posts. Ukrainska Pravda returned HTTP 403, so its Kharkiv and Dnipro items were not used. The Air Force overnight summary was read via the General Staff post. ISW Nov 10 not yet published. Russia's MoD claim of Nikolske (Sumy Oblast, Nov 10) was not added: no matching village could be placed in Sumy Oblast.",
    "Coordinates are city-level or approximate (see coordPrecision); markers flagged 'oblast' are not geolocated.",
    "Casualty figures are as reported by the cited outlet at time of writing and may have been revised."
   ]
@@ -3207,6 +3207,29 @@
    ]
   },
   {
+   "id": "berdyansk-1107",
+   "date": "2026-11-07",
+   "region": "south",
+   "oblast": "Zaporizhzhia (occupied)",
+   "front": "Zaporizhzhia",
+   "type": "deep-strike",
+   "status": "ONE_PARTY",
+   "title": "Ukraine says it struck Russian 'Rubicon' drone unit base in Berdyansk",
+   "caption": "Ukraine's Southern Defense Forces announced on Nov 9 a joint strike on a base of Russia's 'Rubicon' drone unit in occupied Berdyansk, about 107 km behind the front. The General Staff dates the attack to Nov 7 and says a temporary deployment point and drone control point were hit; enemy losses are still being clarified. The Kyiv Independent could not independently verify the claim.",
+   "lat": 46.7558,
+   "lon": 36.7882,
+   "coordPrecision": "city",
+   "place": "Berdyansk",
+   "sources": [
+    {
+     "id": "ki_rubicon_1109",
+     "title": "Kyiv Independent: Ukrainian forces strike elite Russian 'Rubicon' drone unit in occupied territory (Nov 9)",
+     "url": "https://kyivindependent.com/ukrainian-forces-strike-elite-russian-rubicon-drone-unit-in-occupied-territory/"
+    }
+   ],
+   "read": "full"
+  },
+  {
    "id": "dnipro-energy-1108",
    "date": "2026-11-08",
    "region": "south",
@@ -3378,9 +3401,9 @@
    "oblast": "Leningrad Oblast, Russia",
    "front": "Russia (rear)",
    "type": "deep-strike",
-   "status": "UNVERIFIED",
-   "title": "Reported drone attack on Kirishi (Kinef) refinery in Leningrad Oblast",
-   "caption": "Ukrainian monitoring channels Exilenova+ and Supernova+ reported large explosions and fires at the Kirishi Petroleum Organic Synthesis (Kinef) refinery, Russia's second-largest, overnight into Nov 9; Kyiv Independent cited eyewitness footage and NASA FIRMS hotspots. Leningrad Governor Aleksandr Drozdenko said 113 drones were shot down over the region. No Ukrainian government confirmation had been published at the time of the report, which was still developing.",
+   "status": "CONFIRMED",
+   "title": "Fires at Kirishi (Kinef) refinery in Leningrad Oblast after drone attack",
+   "caption": "Ukrainian monitoring channels Exilenova+ and Supernova+ reported large explosions and fires at the Kirishi Petroleum Organic Synthesis (Kinef) refinery, Russia's second-largest, overnight into Nov 9; Kyiv Independent cited eyewitness footage and NASA FIRMS hotspots. Leningrad Governor Aleksandr Drozdenko said 113 drones were shot down over the region. ISW says geolocated footage published Nov 8 shows large fires at the Kirishinefteorgsintez refinery. Ukrainian authorities had not claimed the strike in the sources read.",
    "lat": 59.45,
    "lon": 32.02,
    "coordPrecision": "city",
@@ -3389,8 +3412,15 @@
      "id": "ki_kirishi_1109",
      "title": "Kyiv Independent: Ukrainian forces reportedly strike Russia's second-largest oil refinery in overnight drone attack (Nov 9)",
      "url": "https://kyivindependent.com/ukrainian-forces-reportedly-strike-russias-second-largest-oil-refinery-in-overnight-drone-attack/"
+    },
+    {
+     "id": "isw_1109",
+     "title": "ISW: Russian Offensive Campaign Assessment, November 9, 2026",
+     "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-november-9-2026"
     }
-   ]
+   ],
+   "place": "Kirishi",
+   "read": "full"
   },
   {
    "id": "morozova-1109",
@@ -3421,9 +3451,9 @@
    "oblast": "Zaporizhzhia",
    "front": "Zaporizhzhia",
    "type": "claim",
-   "status": "ONE_PARTY",
+   "status": "DISPUTED",
    "title": "Russia's MoD claims capture of Vasylkove in Zaporizhzhia Oblast",
-   "caption": "Russia's Defence Ministry said on Telegram that its Vostok group of forces 'liberated' the settlement of Vasylkove in Zaporizhzhia Oblast. No Ukrainian response or independent confirmation was read, and the ministry's post does not say which of several villages of that name it means; the marker is an approximate position based on a Vasylkove in the oblast's northeast.",
+   "caption": "Russia's Defence Ministry said on Telegram that its Vostok group of forces 'liberated' the settlement of Vasylkove in Zaporizhzhia Oblast. No Ukrainian response or independent confirmation was read, and the ministry's post does not say which of several villages of that name it means; the marker is an approximate position based on a Vasylkove in the oblast's northeast. ISW assesses Russian forces are very unlikely to hold any control there, since the settlement is about 18 km from the nearest assessed Russian position, and says neither side advanced on Nov 9. Russian MoD later published a servicemember's account of the assault (Nov 10).",
    "lat": 47.8072,
    "lon": 35.8562,
    "coordPrecision": "approx",
@@ -3433,18 +3463,110 @@
      "id": "mod_vasylkove_1109",
      "title": "Russian MoD (Telegram): Vostok group liberated Vasylkove (Nov 9)",
      "url": "https://t.me/mod_russia/68881"
+    },
+    {
+     "id": "isw_1109",
+     "title": "ISW: Russian Offensive Campaign Assessment, November 9, 2026",
+     "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-november-9-2026"
     }
-   ]
+   ],
+   "claims": [
+    {
+     "who": "Russia's MoD",
+     "says": "Vostok group liberated Vasylkove, Zaporizhzhia Oblast.",
+     "source": "mod_vasylkove_1109"
+    },
+    {
+     "who": "ISW",
+     "says": "Russian forces are very unlikely to retain any semblance of control; the village is about 18 km from the nearest assessed Russian position.",
+     "source": "isw_1109"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "trypillia-1109",
+   "date": "2026-11-09",
+   "region": "rear",
+   "oblast": "Kyiv",
+   "front": "Rear (Kyiv)",
+   "type": "energy",
+   "status": "ONE_PARTY",
+   "title": "Russian strike hits Trypillia thermal power plant again",
+   "caption": "Centrenergo, the plant's operator, said Russia struck the Trypillia thermal power plant south of Kyiv again on Nov 9 and that the consequences are 'extremely serious'; damage still needs inspection. CEO Serhii Isachenko said attackers now combine ballistic missiles and jet-powered drones against one target despite protective structures. No casualties were reported in the articles read. The account is the company's; no independent damage assessment was read.",
+   "lat": 50.118,
+   "lon": 30.7814,
+   "coordPrecision": "city",
+   "place": "Trypillia",
+   "sources": [
+    {
+     "id": "ki_trypillia_1109",
+     "title": "Kyiv Independent: Energy company warns of 'extremely serious' consequences after Russian forces strike Trypillia Thermal Power Plant (Nov 9)",
+     "url": "https://kyivindependent.com/energy-company-warns-of-extremely-serious-consequences-after-russian-forces-strike-trypillia-thermal-power-plant/"
+    },
+    {
+     "id": "ukrinform_trypillia_1109",
+     "title": "Ukrinform: Russia strikes Trypillia TPP again (Nov 9)",
+     "url": "https://www.ukrinform.net/rubric-economy/4183030-russia-strikes-trypillia-tpp-again.html"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "enerhodar-1109",
+   "date": "2026-11-09",
+   "region": "south",
+   "oblast": "Zaporizhzhia (occupied)",
+   "front": "Zaporizhzhia",
+   "type": "drone",
+   "status": "UNVERIFIED",
+   "title": "IAEA: drone strikes kill workers at Zaporizhzhia nuclear and thermal plants",
+   "caption": "The IAEA said a drone strike killed an employee of the Zaporizhzhia Nuclear Power Plant in Russian-occupied Enerhodar, and another drone killed an employee of the nearby Zaporizhzhia thermal power plant. Director General Rafael Grossi called the attacks unacceptable. The IAEA did not say who carried them out, and the Kyiv Independent report gave no attribution.",
+   "lat": 47.4905,
+   "lon": 34.662,
+   "coordPrecision": "city",
+   "place": "Enerhodar",
+   "sources": [
+    {
+     "id": "ki_znpp_1109",
+     "title": "Kyiv Independent: Drone strike kills worker at Zaporizhzhia Nuclear Power Plant, IAEA says (Nov 9)",
+     "url": "https://kyivindependent.com/drone-strike-kills-worker-at-zaporizhzhia-nuclear-power-plant-iaea-says/"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "dnipro-1109",
+   "date": "2026-11-09",
+   "region": "south",
+   "oblast": "Dnipropetrovsk",
+   "front": "Dnipropetrovsk",
+   "type": "energy",
+   "status": "ONE_PARTY",
+   "title": "Russian attacks cause large-scale power outages in Dnipro and Kamianske",
+   "caption": "Dnipropetrovsk regional military administration head Oleksandr Hanzha said on Telegram that large-scale power outages hit the region again on Nov 9 after Russian attacks, affecting parts of Dnipro and Kamianske. Ukrinform reported no casualties; it noted a day-long blackout in Dnipro on Nov 8. Ukrainian official account only.",
+   "lat": 48.4666,
+   "lon": 35.0407,
+   "coordPrecision": "approx",
+   "place": "Dnipro",
+   "sources": [
+    {
+     "id": "ukrinform_dnipro_1109",
+     "title": "Ukrinform: Russian attacks trigger power outages in parts of Dnipro and Kamianske (Nov 9)",
+     "url": "https://www.ukrinform.net/rubric-ato/4183083-russian-attacks-trigger-power-outages-in-parts-of-dnipro-and-kamianske.html"
+    }
+   ],
+   "read": "full"
   }
  ],
  "stats": [
   {
    "label": "Russian military personnel losses (cumulative, since Feb 24, 2022)",
    "category": "casualties",
-   "asOf": "2026-11-09",
+   "asOf": "2026-11-10",
    "ukraine": {
-    "value": "~1,609,380 killed and wounded (+2,980 in a day), Nov 9",
-    "source": "ukrinform_gs_1109"
+    "value": "~1,611,600 killed and wounded (+2,220 in a day), Nov 10; Nov 8 was the record day at +2,980",
+    "source": "gs_ops_1110"
    },
    "russia": {
     "value": "No official cumulative figure published",
@@ -3459,7 +3581,8 @@
      "value": "ISW: at least 698,000 Russian casualties since Mar 11, 2025 (from General Staff data)",
      "source": "isw_1031"
     }
-   ]
+   ],
+   "status": "ONE_PARTY"
   },
   {
    "label": "Ukrainian military losses (Oct 24-30, 2026)",
@@ -4012,6 +4135,36 @@
    "russia": {
     "value": "No launch count published; MoD claims drone strikes on the Hlobyne plant (Poltava), substations near Bila Tserkva, Kryvyi Rih and Cherkasy, a Vinnytsia traction substation and a dry cargo ship southwest of Odesa",
     "source": "mod_strikes_1109"
+   },
+   "independent": []
+  },
+  {
+   "label": "Russian drones and missiles launched at Ukraine (night of Nov 9-10)",
+   "category": "shootdowns",
+   "asOf": "2026-11-10",
+   "status": "DISPUTED",
+   "ukraine": {
+    "value": "1 Iskander-M ballistic missile (from Millerovo) and 162 Shahed-type strike drones (96 jet-powered) plus decoys; 135 drones downed or suppressed as of 07:30 (70 jet); hits at 19 locations, debris at 9 (General Staff/Air Force)",
+    "source": "gs_air_1110"
+   },
+   "russia": {
+    "value": "No launch count published; MoD claims drone strikes on a 330 kV substation in Vilnohirsk, a 154 kV substation in Kremenchuk, 110 kV substations at Pereiaslav and Yahotyn, and dry cargo ships and a tanker in the Black Sea",
+    "source": "mod_strikes_1110"
+   },
+   "independent": []
+  },
+  {
+   "label": "Ukrainian drones shot down over Russia (Nov 9-10)",
+   "category": "shootdowns",
+   "asOf": "2026-11-10",
+   "status": "ONE_PARTY",
+   "ukraine": {
+    "value": "No count published",
+    "source": null
+   },
+   "russia": {
+    "value": "155 fixed-wing drones overnight over Novgorod, Bryansk, Belgorod, Kursk, Kaluga, Oryol and Smolensk oblasts, Krasnodar Krai and Crimea (MoD)",
+    "source": "mod_pvo_1110"
    },
    "independent": []
   }
@@ -4961,6 +5114,61 @@
    "id": "mod_vasylkove_1109",
    "title": "Russian MoD (Telegram): Vostok group liberated Vasylkove (Nov 9)",
    "url": "https://t.me/mod_russia/68881"
+  },
+  {
+   "id": "gs_ops_1110",
+   "title": "General Staff of Ukraine (Telegram): operational information as of 08:00 Nov 10",
+   "url": "https://t.me/GeneralStaffZSU/42855"
+  },
+  {
+   "id": "gs_air_1110",
+   "title": "General Staff of Ukraine (Telegram): 135 targets downed/suppressed overnight Nov 10",
+   "url": "https://t.me/GeneralStaffZSU/42856"
+  },
+  {
+   "id": "mod_strikes_1110",
+   "title": "Russian MoD (Telegram): strikes on energy sites and ships overnight Nov 10",
+   "url": "https://t.me/mod_russia/68897"
+  },
+  {
+   "id": "mod_pvo_1110",
+   "title": "Russian MoD (Telegram): 155 Ukrainian drones shot down overnight Nov 10",
+   "url": "https://t.me/mod_russia/68898"
+  },
+  {
+   "id": "ki_war_1109",
+   "title": "Kyiv Independent: Ukraine war latest: Russia suffers record daily losses for 2nd time in a month (Nov 9)",
+   "url": "https://kyivindependent.com/ukraine-war-latest-russia-suffers-record-daily-losses-for-2nd-time-in-a-month/"
+  },
+  {
+   "id": "isw_1109",
+   "title": "ISW: Russian Offensive Campaign Assessment, November 9, 2026",
+   "url": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-november-9-2026"
+  },
+  {
+   "id": "ki_trypillia_1109",
+   "title": "Kyiv Independent: Energy company warns of 'extremely serious' consequences after Russian forces strike Trypillia Thermal Power Plant (Nov 9)",
+   "url": "https://kyivindependent.com/energy-company-warns-of-extremely-serious-consequences-after-russian-forces-strike-trypillia-thermal-power-plant/"
+  },
+  {
+   "id": "ukrinform_trypillia_1109",
+   "title": "Ukrinform: Russia strikes Trypillia TPP again (Nov 9)",
+   "url": "https://www.ukrinform.net/rubric-economy/4183030-russia-strikes-trypillia-tpp-again.html"
+  },
+  {
+   "id": "ki_znpp_1109",
+   "title": "Kyiv Independent: Drone strike kills worker at Zaporizhzhia Nuclear Power Plant, IAEA says (Nov 9)",
+   "url": "https://kyivindependent.com/drone-strike-kills-worker-at-zaporizhzhia-nuclear-power-plant-iaea-says/"
+  },
+  {
+   "id": "ki_rubicon_1109",
+   "title": "Kyiv Independent: Ukrainian forces strike elite Russian 'Rubicon' drone unit in occupied territory (Nov 9)",
+   "url": "https://kyivindependent.com/ukrainian-forces-strike-elite-russian-rubicon-drone-unit-in-occupied-territory/"
+  },
+  {
+   "id": "ukrinform_dnipro_1109",
+   "title": "Ukrinform: Russian attacks trigger power outages in parts of Dnipro and Kamianske (Nov 9)",
+   "url": "https://www.ukrinform.net/rubric-ato/4183083-russian-attacks-trigger-power-outages-in-parts-of-dnipro-and-kamianske.html"
   }
  ]
 }

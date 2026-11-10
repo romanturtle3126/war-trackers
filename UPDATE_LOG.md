@@ -2,6 +2,20 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-10 06:06 Toronto — Ukraine — OK
+- Added 4 event(s):
+  - `trypillia-1109` 2026-11-09 [ONE_PARTY] Russian strike hits Trypillia thermal power plant again
+  - `enerhodar-1109` 2026-11-09 [UNVERIFIED] IAEA: drone strikes kill workers at Zaporizhzhia nuclear and thermal plants
+  - `berdyansk-1107` 2026-11-07 [ONE_PARTY] Ukraine says it struck Russian 'Rubicon' drone unit base in Berdyansk
+  - `dnipro-1109` 2026-11-09 [ONE_PARTY] Russian attacks cause large-scale power outages in Dnipro and Kamianske
+- Updated 2 event(s):
+  - `kirishi-1109` changed status, title, caption, sources, place, read (status UNVERIFIED → CONFIRMED)
+  - `vasylkove-1109` changed status, caption, sources, claims, read (status ONE_PARTY → DISPUTED)
+- Stats: 1 updated, 2 added
+- 11 new source link(s)
+- Totals: 124 events, 32 stats, 200 sources; coverage 2026-10-10 to 2026-11-09
+- warning: source "ki_war_1109" is not used by any event or stat
+
 ## 2026-11-09 19:52 Toronto — Middle East — OK
 - Added 4 event(s):
   - `riyadh-1108` 2026-11-08 [DISPUTED] Missile: Aramco building, King Abdullah Financial District, Riyadh
