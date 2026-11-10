@@ -2,6 +2,16 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-09 19:52 Toronto — Middle East — OK
+- Added 4 event(s):
+  - `riyadh-1108` 2026-11-08 [DISPUTED] Missile: Aramco building, King Abdullah Financial District, Riyadh
+  - `taiz-1107` 2026-11-07 [DISPUTED] Strikes: market in Taiz province, Yemen
+  - `medina-pipeline-1109` 2026-11-09 [ONE_PARTY] Attack: East-West oil pipeline, Medina region, Saudi Arabia
+  - `nuseirat-1109` 2026-11-09 [ONE_PARTY] Flood-related collapses at displacement camps, central Gaza
+- 5 new source link(s)
+- Totals: 48 events, 18 stats, 71 sources; coverage 2026-10-06 to 2026-11-09
+- warning: link https://www.timesofisrael.com/board-of-peace-warns-israel-to-send-more-winter-aid-to-gaza-as-idf-says-supplies-delivered/ returned 403 (site may block bots)
+
 ## 2026-11-09 06:05 Toronto — OK
 - Added 2 event(s):
   - `morozova-1109` 2026-11-09 [ONE_PARTY] Ukraine's General Staff says it hit Morozov plant near St Petersburg
