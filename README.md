@@ -1,20 +1,20 @@
-# Ukraine Ops Map + Mideast Ops Map
+# World Conflicts Map
 
 Two maps in one app: recent events in the **Russia-Ukraine war** and in the **Middle East wars** (Gaza and the West Bank, Lebanon and Syria, the Iran war with the Gulf, Hormuz and Yemen, Iraq). Switch between them with the **UKRAINE / MIDDLE EAST** bar at the top. Every event is sourced and labelled **Confirmed**, **One party's claim**, **Disputed** or **Unverified**. It runs as an Android app (and as a web page). Both maps' data update themselves every morning.
 
-- **App download (latest APK):** https://github.com/romanturtle3126/war-trackers/releases/latest
-- **Web version:** https://romanturtle3126.github.io/war-trackers/
-- **Live data files:** https://romanturtle3126.github.io/war-trackers/data/ukraine.json and `.../data/middle-east.json`
+- **App download (latest APK):** https://github.com/romanturtle3126/world-conflicts-map/releases/latest
+- **Web version:** https://romanturtle3126.github.io/world-conflicts-map/
+- **Live data files:** https://romanturtle3126.github.io/world-conflicts-map/data/ukraine.json and `.../data/middle-east.json`
 - **What changed each day:** [`UPDATE_LOG.md`](UPDATE_LOG.md)
 
 ## Install on your Samsung Galaxy S23+
 
-1. On the phone, open **Chrome** and go to `github.com/romanturtle3126/war-trackers/releases/latest`.
-2. Under **Assets**, tap the file named `UkraineOpsMap-1.<number>.apk`. If Chrome warns that the file may be harmful, tap **Download anyway**.
+1. On the phone, open **Chrome** and go to `github.com/romanturtle3126/world-conflicts-map/releases/latest`.
+2. Under **Assets**, tap the file named `WorldConflicts-1.<number>.apk`. If Chrome warns that the file may be harmful, tap **Download anyway**.
 3. When the download finishes, tap **Open**. (Or open the **My Files** app → **Downloads** → tap the `.apk`.)
 4. The first time, Android says *"For your security, your phone is not allowed to install unknown apps from this source."* Tap **Settings**, turn on **Allow from this source** for Chrome (or My Files), then press Back.
 5. Tap **Install**. If **Google Play Protect** shows *"Unsafe app blocked"* or *"Scan app?"*, tap **More details → Install anyway** (or **Install without scanning**). It warns because the app isn't from the Play Store.
-6. Tap **Open**. The "Ukraine Ops Map" icon (dark radar) is now in your app drawer.
+6. Tap **Open**. The "World Conflicts" icon (dark radar) is now in your app drawer.
 
 **Updating the app:** you only need a new APK when the app itself changes, not for daily data. Repeat the steps above and tap **Update**. It installs over the old one and keeps your settings. Afterwards you can turn **Install unknown apps** back off (Settings → Apps → ⋮ → Special access → Install unknown apps → Chrome).
 
@@ -34,7 +34,7 @@ Two maps in one app: recent events in the **Russia-Ukraine war** and in the **Mi
 
 ## Middle East: daily update
 
-A second Claude routine, **Mideast Ops Map daily update** (https://claude.ai/code/routines/trig_01U3NjELU4x4ZqGigkYYEStq), runs every day at about **6:30 AM Toronto**, 30 minutes after the Ukraine one. It follows [`UPDATE_PROMPT_MIDDLE_EAST.md`](UPDATE_PROMPT_MIDDLE_EAST.md) with the same method as Ukraine: the headline leads, each party's official X and Telegram posts, UKMTO, UN OCHA and ISW, a required checklist, and the same merge safety checks. It pushes to a `claude/data-me-<date>` branch, and the same **Accept daily data update** workflow merges it. A failure sends a phone notification starting *"Mideast Ops Map update FAILED"*, and the stale-data check covers both maps.
+A second Claude routine, **World Conflicts Map: Middle East daily update** (https://claude.ai/code/routines/trig_01U3NjELU4x4ZqGigkYYEStq), runs every day at about **6:30 AM Toronto**, 30 minutes after the Ukraine one. It follows [`UPDATE_PROMPT_MIDDLE_EAST.md`](UPDATE_PROMPT_MIDDLE_EAST.md) with the same method as Ukraine: the headline leads, each party's official X and Telegram posts, UKMTO, UN OCHA and ISW, a required checklist, and the same merge safety checks. It pushes to a `claude/data-me-<date>` branch, and the same **Accept daily data update** workflow merges it. A failure sends a phone notification starting *"World Conflicts Map (Middle East) update FAILED"*, and the stale-data check covers both maps.
 
 ## How the daily update works (Ukraine)
 
@@ -52,11 +52,11 @@ The research instructions live in [`UPDATE_PROMPT.md`](UPDATE_PROMPT.md). Edit t
 
 - **In the app:** the header's *Data updated* date should be today, after about 6:15 AM.
 - **On GitHub:** open [`UPDATE_LOG.md`](UPDATE_LOG.md). Each morning adds a section at the top: **OK** (with the events it added) or **FAILED** (with the reason; the data was left unchanged).
-- **The routine itself:** https://claude.ai/code/routines → *Ukraine Ops Map daily update* → recent runs.
+- **The routine itself:** https://claude.ai/code/routines → *World Conflicts Map: Ukraine daily update* → recent runs.
 
 ### Alerts when something goes wrong
 
-- **Phone notification:** if a morning run fails (merge rejected, push refused, sources unreachable), the routine sends a push notification starting *"Ukraine Ops Map update FAILED"* to the Claude app on your phone. No news is good news: successful runs stay quiet.
+- **Phone notification:** if a morning run fails (merge rejected, push refused, sources unreachable), the routine sends a push notification starting *"World Conflicts Map (Ukraine) update FAILED"* to the Claude app on your phone. No news is good news: successful runs stay quiet.
 - **Email + GitHub issue:** every day at 10 AM Toronto, the **Stale data check** workflow looks at the data's age. If it hasn't changed in 30+ hours, it opens an issue titled *"Map data is stale…"* (GitHub emails you) and closes it again once data is fresh.
 
 ### How to pause it

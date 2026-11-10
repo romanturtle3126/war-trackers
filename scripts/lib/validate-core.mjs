@@ -187,7 +187,7 @@ export async function checkLinks(urls, { timeoutMs = 15000, concurrency = 6 } = 
   async function one(url) {
     const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), timeoutMs);
     try {
-      const r = await fetch(url, { method: "GET", redirect: "follow", signal: ctl.signal, headers: { "User-Agent": "Mozilla/5.0 (war-trackers link check)", Accept: "text/html,*/*" } });
+      const r = await fetch(url, { method: "GET", redirect: "follow", signal: ctl.signal, headers: { "User-Agent": "Mozilla/5.0 (world-conflicts-map link check)", Accept: "text/html,*/*" } });
       if (r.status === 404 || r.status === 410) E.push(`link ${url} returned ${r.status} (page does not exist)`);
       else if (!r.ok) W.push(`link ${url} returned ${r.status} (site may block bots)`);
       try { await r.body?.cancel(); } catch {}

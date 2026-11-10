@@ -1,8 +1,8 @@
 {
-  "name": "war-trackers",
+  "name": "world-conflicts-map",
   "private": true,
   "version": "1.0.0",
-  "description": "Ukraine Ops Map: sourced, status-labelled war events on a map, as a web page and an Android app.",
+  "description": "World Conflicts Map: sourced, status-labelled events from current wars (Ukraine, Middle East) on a map, as a web page and an Android app.",
   "type": "module",
   "scripts": {
     "validate": "node scripts/validate.mjs data/ukraine.json",

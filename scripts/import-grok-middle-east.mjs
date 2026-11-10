@@ -1,4 +1,4 @@
-// One-time conversion: Grok "Middle East Conflict Live Map" data/*.json -> war-trackers data/middle-east.json
+// One-time conversion: Grok "Middle East Conflict Live Map" data/*.json -> data/middle-east.json
 // Usage: node scripts/import-grok-middle-east.mjs <me-zip data dir> <out.json>
 import fs from "node:fs";
 import path from "node:path";

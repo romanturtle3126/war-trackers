@@ -1,4 +1,4 @@
-# Daily update instructions (Mideast Ops Map)
+# Daily update instructions (World Conflicts Map: Middle East)
 
 A scheduled Claude routine can read this file every morning and follow it exactly. Edit this file to change what it researches.
 
@@ -116,4 +116,4 @@ If the merge failed, still push `UPDATE_LOG.md` alone on that branch. The **Acce
 
 ## 7. Alert and report
 
-If anything failed, send one `PushNotification` starting `Mideast Ops Map update FAILED:` with the reason in one sentence. Otherwise send none. End with a short summary: events added/updated (ids and labels), stats and lanes changed, which checklist sources you could or could not read, and whether the merge passed.
+If anything failed, send one `PushNotification` starting `World Conflicts Map (Middle East) update FAILED:` with the reason in one sentence. Otherwise send none. End with a short summary: events added/updated (ids and labels), stats and lanes changed, which checklist sources you could or could not read, and whether the merge passed.

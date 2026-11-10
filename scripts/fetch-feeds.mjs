@@ -45,7 +45,7 @@ const toIso = (s) => { if (!s) return null; const t = Date.parse(s); return isNa
 async function fetchFeed(f, kw) {
   const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 25000);
   try {
-    const r = await fetch(f.url, { signal: ctl.signal, headers: { "User-Agent": "Mozilla/5.0 (war-trackers feed bot)" } });
+    const r = await fetch(f.url, { signal: ctl.signal, headers: { "User-Agent": "Mozilla/5.0 (world-conflicts-map feed bot)" } });
     if (!r.ok) throw new Error("HTTP " + r.status);
     // Some feeds (UN News, Middle East Eye) send gzip without saying so; unpack it ourselves.
     let buf = Buffer.from(await r.arrayBuffer());

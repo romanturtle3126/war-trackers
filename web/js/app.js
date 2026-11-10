@@ -1,9 +1,9 @@
-/* War Trackers (Ukraine + Middle East ops maps) - vanilla JS, no build step. Runs as a web page (GitHub Pages) and inside the Android app (Capacitor). */
+/* World Conflicts Map (Ukraine + Middle East) - vanilla JS, no build step. Runs as a web page (GitHub Pages) and inside the Android app (Capacitor). */
 (function () {
   "use strict";
 
   /* ---------- Data source: live GitHub Pages copy → saved copy → copy bundled in the app ---------- */
-  var PAGES = "https://romanturtle3126.github.io/war-trackers/";
+  var PAGES = "https://romanturtle3126.github.io/world-conflicts-map/";
   var CAP = window.Capacitor;
   var NATIVE = !!(CAP && CAP.isNativePlatform && CAP.isNativePlatform());
   var params = new URLSearchParams(location.search);
@@ -145,7 +145,7 @@
     S.srcById = {};
     S.doc.sources.forEach(function (s) { S.srcById[s.id] = s; });
     S.groups = new Set((store("groups:" + S.cfg.id) || []).filter(function (g) { return S.cfg.groups.some(function (x) { return x.id === g; }); }));
-    $("#apptitle").textContent = S.cfg.title.toUpperCase(); document.title = S.cfg.title;
+    document.title = S.cfg.title;
     $("#zfit").setAttribute("aria-label", S.cfg.fitLabel || "Fit map");
     renderUpdated(); renderChips(); drawMap(first); renderPresets(); setupReplay(); renderFeed(); renderStats();
     applyRoute();

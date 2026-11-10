@@ -3,7 +3,7 @@
     {
       "id": "ukraine",
       "name": "Ukraine",
-      "title": "Ukraine Ops Map",
+      "title": "World Conflicts Map · Ukraine",
       "data": "data/ukraine.json",
       "feed": "data/ukraine-feed.json",
       "geo": "geo/eastern-europe.json",
@@ -257,7 +257,7 @@
     {
       "id": "middle-east",
       "name": "Middle East",
-      "title": "Mideast Ops Map",
+      "title": "World Conflicts Map · Middle East",
       "data": "data/middle-east.json",
       "feed": "data/middle-east-feed.json",
       "geo": "geo/middle-east.json",

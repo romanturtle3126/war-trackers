@@ -1,4 +1,4 @@
-# Daily update instructions (Ukraine Ops Map)
+# Daily update instructions (World Conflicts Map: Ukraine)
 
 The scheduled Claude routine reads this file every morning and follows it exactly. Edit this file to change what it researches; nothing else needs to change.
 
@@ -129,6 +129,6 @@ If the merge failed, still commit and push `UPDATE_LOG.md` alone on the same bra
 
 ## 7. Alert and report
 
-**If anything failed**, send one phone notification with the `PushNotification` tool, starting with `Ukraine Ops Map update FAILED:` and the reason in one short sentence. This covers: the merge still rejected after 3 tries, `git push` refused, or you could not reach any news source. If everything worked, send no notification.
+**If anything failed**, send one phone notification with the `PushNotification` tool, starting with `World Conflicts Map (Ukraine) update FAILED:` and the reason in one short sentence. This covers: the merge still rejected after 3 tries, `git push` refused, or you could not reach any news source. If everything worked, send no notification.
 
 Then end with a short summary: how many events were added or updated (ids and labels), which stats changed, which sources (including X/Telegram) you could or could not read, and whether the merge passed.

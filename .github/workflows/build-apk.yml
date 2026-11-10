@@ -80,19 +80,19 @@ jobs:
           APKSIGNER=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)apksigner
           "$APKSIGNER" verify --print-certs android/app/build/outputs/apk/release/app-release.apk | head -5
           mkdir -p dist
-          cp android/app/build/outputs/apk/release/app-release.apk "dist/UkraineOpsMap-${APP_VERSION_NAME}.apk"
+          cp android/app/build/outputs/apk/release/app-release.apk "dist/WorldConflicts-${APP_VERSION_NAME}.apk"
 
       - name: Publish GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "v${APP_VERSION_NAME}" "dist/UkraineOpsMap-${APP_VERSION_NAME}.apk" \
-            --title "Ukraine Ops Map ${APP_VERSION_NAME}" \
+          gh release create "v${APP_VERSION_NAME}" "dist/WorldConflicts-${APP_VERSION_NAME}.apk" \
+            --title "World Conflicts Map ${APP_VERSION_NAME}" \
             --notes "Signed Android build ${APP_VERSION_NAME} from commit ${GITHUB_SHA::7}. On your phone: download the .apk below, open it, and tap Install (or Update). Map data updates by itself every day; you do not need a new APK for that." \
             --latest
 
       - uses: actions/upload-artifact@v4
         with:
-          name: UkraineOpsMap-${{ env.APP_VERSION_NAME }}
+          name: WorldConflicts-${{ env.APP_VERSION_NAME }}
           path: dist/*.apk
           retention-days: 14
