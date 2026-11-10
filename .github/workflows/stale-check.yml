@@ -20,12 +20,14 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          UPDATED=$(node -e "console.log(require('./data/ukraine.json').meta.lastUpdated)")
+          # The oldest of the two maps decides.
+          STALEST=$(node -e "const f=['ukraine','middle-east'].map(m=>({m,t:require('./data/'+m+'.json').meta.lastUpdated})).sort((a,b)=>Date.parse(a.t)-Date.parse(b.t))[0];console.log(f.m+' '+f.t)")
+          MAP=${STALEST%% *}; UPDATED=${STALEST#* }
           AGE_H=$(node -e "console.log(Math.floor((Date.now()-Date.parse('$UPDATED'))/36e5))")
-          echo "Data last updated $UPDATED ($AGE_H hours ago)"
+          echo "Stalest map: $MAP, last updated $UPDATED ($AGE_H hours ago)"
           if [ "$AGE_H" -lt 30 ]; then echo "Fresh."; exit 0; fi
-          TITLE="Map data is stale: last updated $AGE_H hours ago"
-          BODY="The daily update hasn't changed data/ukraine.json since $UPDATED. Check UPDATE_LOG.md and the routine's recent runs at https://claude.ai/code/routines. Common causes: routine paused, Claude GitHub App removed, or the repo made private. This issue closes itself once data is fresh again (close it by hand otherwise)."
+          TITLE="Map data is stale ($MAP): last updated $AGE_H hours ago"
+          BODY="The daily update hasn't changed data/$MAP.json since $UPDATED. Check UPDATE_LOG.md and the routine's recent runs at https://claude.ai/code/routines. Common causes: routine paused, Claude GitHub App removed, or the repo made private. This issue closes itself once data is fresh again (close it by hand otherwise)."
           OPEN=$(gh issue list --label stale-data --state open --json number --jq '.[0].number')
           gh label create stale-data --color d93f0b --description "Daily data update missed" 2>/dev/null || true
           if [ -n "$OPEN" ]; then gh issue comment "$OPEN" --body "Still stale: $AGE_H hours since $UPDATED."; else gh issue create --title "$TITLE" --body "$BODY" --label stale-data; fi

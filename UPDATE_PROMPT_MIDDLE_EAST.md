@@ -22,14 +22,30 @@ Open every page you cite; only cite URLs you opened.
 - Analysts: ISW/CTP Iran Update (understandingwar.org / criticalthreats.org).
 - **Each party's official channels are that party's claim:** IDF, Israeli PMO, Gaza Ministry of Health / government media office, Wafa, Hezbollah, IRGC/Tasnim/IRNA, Houthi media (Saba, Al-Masirah), Saudi-led coalition / SPA, CENTCOM, Lebanese Ministry of Public Health.
 
-**X posts:** official and outlet accounts post first (`@IDF`, `@CENTCOM`, `@UKMTO_`, `@AJEnglish`, `@Reuters`). Find them with web search (`site:x.com UKMTO Hormuz November 9`) and read one through the public embed service with Bash:
-`curl -sL "https://publish.x.com/oembed?url=https%3A%2F%2Fx.com%2F<account>%2Fstatus%2F<id>"`. Cite the post URL. A claim found only on X is never `CONFIRMED`.
+**Official statements on X and Telegram.** Each party's officials post first on X and Telegram. Check them for overnight strikes, launch and interception claims, casualty reports and denials:
+- Israel: IDF (`@IDF` on X), Prime Minister's Office (`@IsraeliPM`).
+- US: CENTCOM (`@CENTCOM`).
+- Palestinian side: Gaza Ministry of Health and Gaza government media office (official Telegram channels), Wafa.
+- Lebanon / Hezbollah: Lebanese Ministry of Public Health; Hezbollah's media statements (often relayed by Al-Manar).
+- Iran: IRGC statements via Tasnim / IRNA (Telegram and X).
+- Yemen: the Houthi military spokesman's statements (Telegram, relayed by Al-Masirah / Saba); the Saudi-led coalition via SPA.
+- Monitors and outlets: UKMTO, UN OCHA oPt (`@ochaopt`), IAEA (`@iaeaorg`), `@AJEnglish`, `@Reuters`, `@AP`, `@ISWResearch`.
 
-**Checklist, every run (report each as read / not read):**
+Handles change; if one above is wrong or dead, find the official account with a web search and name the one you used in `notes`.
+
+How to read them (X usually blocks direct reading), exactly as for the Ukraine map:
+1. Find posts with web search, e.g. `site:x.com CENTCOM Houthi November 9` or `site:t.me tasnim Hormuz`.
+2. Read a single X post through the public embed service with Bash: `curl -sL "https://publish.x.com/oembed?url=https%3A%2F%2Fx.com%2F<account>%2Fstatus%2F<id>"`. The JSON's `html` field holds the post text and date.
+3. Read a public Telegram channel's preview with Bash: `curl -sL -A "Mozilla/5.0" https://t.me/s/<channel>`. Each post sits in a `tgme_widget_message_text` block, numbered in `data-post="<channel>/<n>"`, with its time in a `datetime` attribute. Cite the single post as `https://t.me/<channel>/<n>`.
+4. Cite the X or Telegram post URL itself. These are **that party's claim**: an event whose only sources are X/Telegram/official sites must be `ONE_PARTY` (or `DISPUTED`), never `CONFIRMED`. The validator enforces this.
+
+**Minimum checklist, every run (report each as read / not read):**
 - [ ] UKMTO advisories (shipping attacks in Hormuz / Red Sea / Gulf of Aden)
 - [ ] UN OCHA oPt latest situation report or flash update
 - [ ] ISW/CTP Iran Update (latest)
-- [ ] At least two X searches for the night's main events
+- [ ] IDF and CENTCOM statements (X)
+- [ ] At least one Telegram channel from the other side (Houthi spokesman, IRGC/Tasnim or Gaza MoH)
+- [ ] At least two X searches (`site:x.com ...`) for the night's main events, with any useful post read through the embed service
 - [ ] The headline leads file
 
 What to add: strikes with casualties, missile/drone attacks (with the attacker's claim and the defender's interception claim), ship attacks, ground operations, settler violence, major diplomacy that changes the fighting (ceasefire talks, mediation, IAEA access) as `type: "diplomacy"`.

@@ -1,6 +1,6 @@
 # Ukraine Ops Map + Mideast Ops Map
 
-Two maps in one app: recent events in the **Russia-Ukraine war** and in the **Middle East wars** (Gaza and the West Bank, Lebanon and Syria, the Iran war with the Gulf, Hormuz and Yemen, Iraq). Switch between them with the **UKRAINE / MIDDLE EAST** bar at the top. Every event is sourced and labelled **Confirmed**, **One party's claim**, **Disputed** or **Unverified**. It runs as an Android app (and as a web page). The Ukraine data updates itself every morning; the Middle East data is a snapshot from Oct 30, 2026 until its own daily update is switched on (see below).
+Two maps in one app: recent events in the **Russia-Ukraine war** and in the **Middle East wars** (Gaza and the West Bank, Lebanon and Syria, the Iran war with the Gulf, Hormuz and Yemen, Iraq). Switch between them with the **UKRAINE / MIDDLE EAST** bar at the top. Every event is sourced and labelled **Confirmed**, **One party's claim**, **Disputed** or **Unverified**. It runs as an Android app (and as a web page). Both maps' data update themselves every morning.
 
 - **App download (latest APK):** https://github.com/romanturtle3126/war-trackers/releases/latest
 - **Web version:** https://romanturtle3126.github.io/war-trackers/
@@ -26,15 +26,15 @@ Two maps in one app: recent events in the **Russia-Ukraine war** and in the **Mi
 - **Markers:** colour = front. A **dashed red ring** = disputed. **Expanding rings** = events on the day shown in the replay card. A **cyan glow** and **NEW** tag = added since you last opened the app. **Labels ⓘ** explains it all.
 - **Tap a dot** for its card: what happened, **who says what** (each side's version side by side), sources, and source-quality tags (**READ IN FULL**, **SNIPPET ONLY**, **ONLY ON X / TELEGRAM**). **Share** copies or shares a link that opens straight on that event. Swipe the card down, tap ×, or press Back to close.
 - **Middle East shipping lanes** (Hormuz, Red Sea, Suez) are moving dashed lines coloured by status; tap one for its card.
-- **▶** replays day by day; markers pop in as each day arrives. Drag the slider to jump to a day.
+- **▶** replays day by day; markers pop in as each day arrives. Drag the slider to jump to a day. **ONLY THIS DAY** (under the slider) shows just that day's events instead of everything up to it; the app remembers the setting.
 - **+ / − / FIT / EAST** glide the map; **FIT** shows all of Ukraine, **EAST** zooms to the eastern front. **+N off-map** appears when events (e.g. deep in Russia) are outside the view; tap it to include them.
 - **Feed** starts with **Since your last visit** (new and corrected events), then every event newest first (tap one to fly to it), then the latest **auto-pulled headlines** (unchecked news-feed items). **Stats** shows each side's figures side by side; the Middle East also has a diplomacy timeline, displacement figures and a Brent oil chart.
 - **Refresh:** tap ⟳, or pull down on Feed or Stats. The app also refreshes itself when reopened. The header shows **Data updated &lt;date&gt;**; **OFFLINE** means you're seeing the last copy the phone saved.
 - If your phone has *Settings → Accessibility → Visibility enhancements → Remove animations* turned on, the app respects it and stays still.
 
-## Middle East: daily update (not switched on yet)
+## Middle East: daily update
 
-The Middle East headlines already refresh daily with the Ukraine ones, but the map's events and stats only change when a research run updates them. Everything is ready for a second Claude routine: its instructions are in [`UPDATE_PROMPT_MIDDLE_EAST.md`](UPDATE_PROMPT_MIDDLE_EAST.md) and it uses the same safety checks and the same **Accept daily data update** workflow. Until it's on, the Middle East map shows an amber "not updated automatically yet" banner.
+A second Claude routine, **Mideast Ops Map daily update** (https://claude.ai/code/routines/trig_01U3NjELU4x4ZqGigkYYEStq), runs every day at about **6:30 AM Toronto**, 30 minutes after the Ukraine one. It follows [`UPDATE_PROMPT_MIDDLE_EAST.md`](UPDATE_PROMPT_MIDDLE_EAST.md) with the same method as Ukraine: the headline leads, each party's official X and Telegram posts, UKMTO, UN OCHA and ISW, a required checklist, and the same merge safety checks. It pushes to a `claude/data-me-<date>` branch, and the same **Accept daily data update** workflow merges it. A failure sends a phone notification starting *"Mideast Ops Map update FAILED"*, and the stale-data check covers both maps.
 
 ## How the daily update works (Ukraine)
 

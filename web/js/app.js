@@ -303,20 +303,40 @@
         marks.push({ i: i, g: w, core: core, x: p[0], y: p[1], n: g.length, k: n, a: g.length > 1 ? (2 * Math.PI * n) / g.length - Math.PI / 2 : 0, shown: false });
       });
     });
-    if (S.needFit && svg.getBoundingClientRect().width) { vb = boxTarget(HOME); S.needFit = false; }
+    if (S.needFit && wrapRect().width) { vb = boxTarget(HOME); S.needFit = false; }
     setVB();
     if (first) { // markers pop in on first open, oldest first
       marks.forEach(function (m, idx) { m.core.style.animationDelay = Math.min(idx * 7, 700) + "ms"; });
     }
   }
 
-  function view() {
-    var r = svg.getBoundingClientRect(); if (!r.width) return { x: vb.x, y: vb.y, w: vb.w, h: vb.h, s: 0.2, r: r };
-    var s = Math.max(vb.w / r.width, vb.h / r.height), w = r.width * s, h = r.height * s;
-    return { x: vb.x - (w - vb.w) / 2, y: vb.y - (h - vb.h) / 2, w: w, h: h, s: s, r: r };
+  // The map box on screen. Measured on #mapwrap (not the svg, which gets a CSS transform while moving).
+  var wrapEl = $("#mapwrap"), wrapR = null;
+  function wrapRect() { return wrapR || (wrapR = wrapEl.getBoundingClientRect()); }
+  window.addEventListener("resize", function () { wrapR = null; });
+  function viewOf(b) {
+    var r = wrapRect(); if (!r.width) { wrapR = null; return { x: b.x, y: b.y, w: b.w, h: b.h, s: 0.2, r: r }; }
+    var s = Math.max(b.w / r.width, b.h / r.height), w = r.width * s, h = r.height * s;
+    return { x: b.x - (w - b.w) / 2, y: b.y - (h - b.h) / 2, w: w, h: h, s: s, r: r };
   }
+  function view() { return viewOf(vb); }
+
+  // Smooth zooming: while a finger, wheel or button animation is moving the map, the picture that is already
+  // drawn is only slid and stretched with a CSS transform (done by the GPU, nearly free). The full redraw
+  // (borders, markers, labels) happens once when the movement ends, or when the stretch gets large.
+  var cvb = null, liveT = null;
+  function liveVB() {
+    if (!gMk) return;
+    if (!cvb) return setVB();
+    var c = viewOf(cvb), n = viewOf(vb), k = c.s / n.s;
+    if (k < 0.6 || k > 3) return setVB(); // stretched too far: redraw for real, then keep going
+    if (!wrapEl.classList.contains("moving")) wrapEl.classList.add("moving");
+    svg.style.transform = "translate(" + ((c.x - n.x) / n.s).toFixed(2) + "px," + ((c.y - n.y) / n.s).toFixed(2) + "px) scale(" + k.toFixed(5) + ")";
+  }
+  function endMove() { clearTimeout(liveT); liveT = null; if (wrapEl.classList.contains("moving") || svg.style.transform) setVB(); wrapEl.classList.remove("moving"); }
   function setVB() {
     if (!gMk) return;
+    wrapR = null; cvb = Object.assign({}, vb); svg.style.transform = "";
     svg.setAttribute("viewBox", [vb.x, vb.y, vb.w, vb.h].join(" "));
     var v = view(), s = v.s, zoom = HOME.w / vb.w, px = Math.max(0.85, Math.min(1.5, Math.pow(zoom, 0.22)));
     svg.style.setProperty("--u", s + "px");
@@ -346,8 +366,8 @@
     function step(now) {
       var k = Math.min(1, (now - t0) / ms), e = easeInOut(k), cx = f.x + f.w / 2 + (t.x + t.w / 2 - f.x - f.w / 2) * e, cy = f.y + f.h / 2 + (t.y + t.h / 2 - f.y - f.h / 2) * e;
       var w = f.w + (t.w - f.w) * e + bump * Math.sin(Math.PI * k), h = w * (f.h + (t.h - f.h) * e) / (f.w + (t.w - f.w) * e);
-      vb = { x: cx - w / 2, y: cy - h / 2, w: w, h: h }; setVB();
-      anim = k < 1 ? requestAnimationFrame(step) : null;
+      vb = { x: cx - w / 2, y: cy - h / 2, w: w, h: h };
+      if (k < 1) { liveVB(); anim = requestAnimationFrame(step); } else { anim = null; endMove(); setVB(); }
     }
     anim = requestAnimationFrame(step);
   }
@@ -359,7 +379,7 @@
   }
   // Fit a map box into the part of the screen not covered by the replay card (bottom ~110px).
   function boxTarget(b, padPx) {
-    var r = svg.getBoundingClientRect(), pad = padPx || 0, card = 110;
+    var r = wrapRect(), pad = padPx || 0, card = 110;
     if (!r.width) return { x: b.x, y: b.y, w: b.w, h: b.h };
     var availW = r.width - 2 * pad, availH = Math.max(80, r.height - card - 2 * pad);
     var sc = Math.max(b.w / availW, b.h / availH), w = r.width * sc, h = r.height * sc;
@@ -388,34 +408,44 @@
       vis.forEach(function (m) { x0 = Math.min(x0, m.x); y0 = Math.min(y0, m.y); x1 = Math.max(x1, m.x); y1 = Math.max(y1, m.y); });
       animateTo(boxTarget({ x: x0 - 4, y: y0 - 4, w: x1 - x0 + 8, h: y1 - y0 + 8 }, 20), 700);
     };
-    window.addEventListener("resize", function () { if (gMk) setVB(); });
-    svg.addEventListener("wheel", function (e) { e.preventDefault(); if (anim) { cancelAnimationFrame(anim); anim = null; } var p = toSvg(e.clientX, e.clientY), t = zoomTarget(e.deltaY < 0 ? 1.2 : 1 / 1.2, p[0], p[1]); vb = t; setVB(); }, { passive: false });
+    window.addEventListener("resize", function () { wrapR = null; if (gMk) setVB(); });
+    // Gestures are read on #mapwrap (the svg may be shifted by the live transform), ignoring the buttons on top of it.
+    var onMap = function (e) { return e.target === wrapEl || svg.contains(e.target); };
+    wrapEl.addEventListener("wheel", function (e) {
+      if (!onMap(e)) return;
+      e.preventDefault(); if (anim) { cancelAnimationFrame(anim); anim = null; }
+      var p = toSvg(e.clientX, e.clientY); vb = zoomTarget(e.deltaY < 0 ? 1.2 : 1 / 1.2, p[0], p[1]); liveVB();
+      clearTimeout(liveT); liveT = setTimeout(endMove, 180);
+    }, { passive: false });
     var pts = {}, pinch = null, start = null;
-    svg.addEventListener("pointerdown", function (e) {
-      if (anim) { cancelAnimationFrame(anim); anim = null; }
+    wrapEl.addEventListener("pointerdown", function (e) {
+      if (!onMap(e)) return;
+      if (anim) { cancelAnimationFrame(anim); anim = null; endMove(); }
       var g = e.target.closest && (e.target.closest("g.mk") || e.target.closest("g.lane"));
       start = Object.keys(pts).length ? null : { x: e.clientX, y: e.clientY, id: g ? g.getAttribute("data-id") : null, moved: false };
-      svg.setPointerCapture(e.pointerId); pts[e.pointerId] = [e.clientX, e.clientY]; svg.classList.add("drag");
+      pts[e.pointerId] = [e.clientX, e.clientY]; svg.classList.add("drag");
+      try { wrapEl.setPointerCapture(e.pointerId); } catch (x) { /* pointer already gone: still handle the gesture */ }
     });
-    svg.addEventListener("pointermove", function (e) {
+    wrapEl.addEventListener("pointermove", function (e) {
       if (!pts[e.pointerId]) return; var prev = pts[e.pointerId]; pts[e.pointerId] = [e.clientX, e.clientY]; var ids = Object.keys(pts);
       if (start && Math.hypot(e.clientX - start.x, e.clientY - start.y) > 8) start.moved = true;
       if (ids.length === 2) {
         if (start) start.moved = true;
         var a = pts[ids[0]], b = pts[ids[1]], d = Math.hypot(a[0] - b[0], a[1] - b[1]);
-        if (pinch) { var m = toSvg((a[0] + b[0]) / 2, (a[1] + b[1]) / 2); vb = zoomTarget(d / pinch, m[0], m[1]); setVB(); } pinch = d; return;
+        if (pinch) { var m = toSvg((a[0] + b[0]) / 2, (a[1] + b[1]) / 2); vb = zoomTarget(d / pinch, m[0], m[1]); liveVB(); } pinch = d; return;
       }
-      var s = view().s; vb.x -= (e.clientX - prev[0]) * s; vb.y -= (e.clientY - prev[1]) * s; setVB();
+      var s = view().s; vb.x -= (e.clientX - prev[0]) * s; vb.y -= (e.clientY - prev[1]) * s; liveVB();
     });
     function up(e) {
+      if (!pts[e.pointerId]) return;
       delete pts[e.pointerId]; pinch = null;
       if (!Object.keys(pts).length) {
-        svg.classList.remove("drag");
+        svg.classList.remove("drag"); endMove();
         if (e.type === "pointerup" && start && !start.moved) { if (start.id) nav("map", start.id, !!route().ev, false); else if (route().ev) closeSheet(); }
         start = null;
       }
     }
-    svg.addEventListener("pointerup", up); svg.addEventListener("pointercancel", up);
+    wrapEl.addEventListener("pointerup", up); wrapEl.addEventListener("pointercancel", up);
   }
   function renderPresets() {
     var box = $("#presets"); box.innerHTML = "";
@@ -428,9 +458,14 @@
   function toSvg(px, py) { var v = view(); return [v.x + (px - v.r.left) * v.s, v.y + (py - v.r.top) * v.s]; }
 
   /* ---------- Replay ---------- */
-  var days = [], timer = null;
+  var days = [], timer = null, dayOnly = !!store("dayOnly");
   function initReplay() {
     var s = $("#day");
+    // "Only this day": show just the events dated on the slider's day instead of everything up to it.
+    var dob = $("#dayonly");
+    function markDayOnly() { dob.classList.toggle("on", dayOnly); dob.setAttribute("aria-pressed", dayOnly); }
+    markDayOnly();
+    dob.onclick = function () { dayOnly = !dayOnly; store("dayOnly", dayOnly); markDayOnly(); applyDay(false); toast(dayOnly ? "SHOWING ONLY THIS DAY" : "SHOWING ALL DAYS UP TO THIS ONE"); };
     s.oninput = function () { stop(); applyDay(false); };
     $("#play").onclick = function () {
       if (timer) { stop(); return; }
@@ -455,12 +490,12 @@
     s.style.setProperty("--p", (days.length > 1 ? (100 * s.value) / (days.length - 1) : 100) + "%");
     $("#daylabel").textContent = fmtDate(d).toUpperCase() + (last ? (d === localDay() ? " · TODAY" : " · LATEST") : "");
     marks.forEach(function (m) {
-      var show = passes(m.i) && m.i.date <= d, today = show && m.i.date === d;
+      var show = passes(m.i) && (dayOnly ? m.i.date === d : m.i.date <= d), today = show && m.i.date === d;
       if (show && !m.shown) { m.g.classList.remove("pop"); void m.g.getBoundingClientRect(); m.g.classList.add("pop"); }
       m.shown = show; m.g.classList.toggle("gone", !show); m.g.classList.toggle("today", today);
       if (show) shown++; if (today) onDay++;
     });
-    $("#daycount").textContent = onDay + " on day · " + shown + " shown";
+    $("#daycount").textContent = dayOnly ? onDay + " event" + (onDay === 1 ? "" : "s") + " this day" : onDay + " on day · " + shown + " shown";
     updateOffscreen();
   }
 
@@ -509,7 +544,7 @@
     if (m) {
       gMk.appendChild(m.g);
       if (!passes(i)) { S.groups.clear(); store("groups:" + S.cfg.id, []); renderChips(); renderFeed(); }
-      if (!m.shown || !passes(i)) { stop(); $("#day").value = days.length - 1; applyDay(true); }
+      if (!m.shown || !passes(i)) { stop(); $("#day").value = dayOnly ? days.indexOf(i.date) : days.length - 1; applyDay(true); }
     }
     var h = '<div class="shead"><span class="d" style="background:' + esc(g.color) + '"></span>' + esc(g.label) + " · " + esc(TYPE_NAME[i.type] || i.type) + " " + badge(i.status) + tags(i) + '<button class="share" aria-label="Share a link to this event">Share</button><button class="close" aria-label="Close">×</button></div>' +
       "<h2>" + esc(i.title) + '</h2><div class="smeta">' + esc(dateText(i)) + " · " + esc(i.oblast) + " · " + esc(i.front) + (i.place && i.title.indexOf(i.place) < 0 ? " · " + esc(i.place) : "") + " · position: " + esc(PREC[i.coordPrecision] || i.coordPrecision) + "</div>" +

@@ -72,7 +72,10 @@ nav#tabs button.active svg{transform:translateY(-1px) scale(1.08)}
 
 /* Map */
 #mapwrap{position:relative;flex:1;background:#050608;touch-action:none;overflow:hidden}
-#map{width:100%;height:100%;display:block;cursor:grab;--u:1px}
+#map{width:100%;height:100%;display:block;cursor:grab;--u:1px;transform-origin:0 0;overflow:visible}
+/* While the map moves: one GPU layer, all looping animations paused (redrawn once when it stops). */
+#mapwrap.moving #map{will-change:transform}
+#mapwrap.moving #map *{animation-play-state:paused!important}
 #map.drag{cursor:grabbing}
 .sea{fill:#050608}
 .land{fill:#101216;stroke:#4a505b;stroke-width:1;stroke-dasharray:5 4;vector-effect:non-scaling-stroke;stroke-linejoin:round}
@@ -130,7 +133,9 @@ nav#tabs button.active svg{transform:translateY(-1px) scale(1.08)}
 .rp-top{display:flex;justify-content:space-between;align-items:baseline;gap:6px;font:12px var(--mono);letter-spacing:.2px;flex-wrap:wrap}
 .rp-top b{font-weight:800;white-space:nowrap}
 .rp-top span{color:var(--mut);white-space:nowrap;font-size:11px}
-.rp-bot{display:flex;justify-content:space-between;font:10.5px var(--mono);color:var(--mut);letter-spacing:.5px;margin-top:2px}
+.rp-bot{display:flex;justify-content:space-between;align-items:center;font:10.5px var(--mono);color:var(--mut);letter-spacing:.5px;margin-top:2px}
+.dayonly{height:26px;padding:0 10px;border-radius:13px;border:1px solid var(--line);background:#06070a;color:var(--mut);font:700 10.5px var(--mono);letter-spacing:.5px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.dayonly.on{background:#0c2233;color:var(--cyan);border-color:var(--cyan)}
 #day{width:100%;margin:6px 0 2px;-webkit-appearance:none;appearance:none;height:28px;background:transparent}
 #day::-webkit-slider-runnable-track{height:6px;border-radius:3px;background:linear-gradient(to right,var(--cyan) var(--p,100%),#2a2f38 var(--p,100%))}
 #day::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#d6f1ff;margin-top:-7px;border:0;box-shadow:0 0 0 4px rgba(56,189,248,.25)}
