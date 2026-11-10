@@ -1,12 +1,12 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-10T11:07:09+00:00",
+  "lastUpdated": "2026-11-10T11:39:04+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
     "source": "Al Jazeera",
     "ok": true,
-    "count": 6
+    "count": 7
    },
    {
     "source": "BBC News Middle East",
@@ -51,6 +51,42 @@
   ]
  },
  "items": [
+  {
+   "headline": "Qatar says US and Iran have responded positively to mediation",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/qatar-says-us-and-iran-have-responded-positively-mediation",
+   "date": "2026-11-10T11:29:02.000Z"
+  },
+  {
+   "headline": "Israel kills 14-year-old Palestinian boy in West Bank, wounds two others in Gaza",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/news/israel-kills-14-year-old-palestinian-boy-west-bank-wounds-two-gaza",
+   "date": "2026-11-10T11:25:29.000Z"
+  },
+  {
+   "headline": "Israeli forces kill Palestinian boy in West Bank, health ministry says",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cqpvgv318yyeo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-10T11:23:18.000Z"
+  },
+  {
+   "headline": "New Israel parliament to be sworn in as Eisenkot works to form new govt",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/video/20261110-new-israel-parliament-to-be-sworn-in-as-eisenkot-works-to-form-new-govt",
+   "date": "2026-11-10T11:22:39.000Z"
+  },
+  {
+   "headline": "Iran’s IRGC says two oil tankers catch fire in Strait of Hormuz",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-two-oil-tankers-catch-fire-strait-hormuz",
+   "date": "2026-11-10T11:08:15.000Z"
+  },
+  {
+   "headline": "France summons Iran’s ambassador over supermarket fridge ‘sabotage’",
+   "source": "Al Jazeera",
+   "link": "https://www.aljazeera.com/news/2026/11/10/france-summons-irans-ambassador-over-supermarket-fridge-sabotage?traffic_source=rss",
+   "date": "2026-11-10T10:51:02.000Z"
+  },
   {
    "headline": "Vanishing vessels and missing sailors: The Iran war's human cost at sea",
    "source": "Al-Monitor",
@@ -286,12 +322,6 @@
    "date": "2026-11-10T00:46:32.000Z"
   },
   {
-   "headline": "Saudi-led coalition says it intercepted Houthi missile",
-   "source": "Middle East Eye",
-   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-intercepted-houthi-missile-1",
-   "date": "2026-11-10T00:31:27.000Z"
-  },
-  {
    "headline": "Trump sees 'positive momentum' on Iran after Qatar PM talks",
    "source": "Al-Monitor",
    "link": "https://www.al-monitor.com/originals/2026/11/trump-sees-positive-momentum-iran-after-qatar-pm-talks",
@@ -308,18 +338,6 @@
    "source": "Al-Monitor",
    "link": "https://www.al-monitor.com/originals/2026/11/trump-says-us-military-action-against-iran-not-necessary-point",
    "date": "2026-11-09T22:46:48.000Z"
-  },
-  {
-   "headline": "Iranian senior official: 'STOP manufacturing FAKE NEWS about imaginary talks'",
-   "source": "Middle East Eye",
-   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-senior-official-stop-manufacturing-fake-news-about-imaginary",
-   "date": "2026-11-09T22:36:42.000Z"
-  },
-  {
-   "headline": "Qatari prime minister says discussions with Trump were 'positive'",
-   "source": "Middle East Eye",
-   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-prime-minister-says-discussions-trump-were-positive",
-   "date": "2026-11-09T22:05:42.000Z"
   },
   {
    "headline": "Trump tells Reuters that Qatar, Saudi Arabia want peaceful Iran deal, US ready for strikes if needed",
@@ -658,12 +676,6 @@
    "date": "2026-11-06T10:02:32.000Z"
   },
   {
-   "headline": "Major construction ongoing near Iran missile bases, satellite images suggest",
-   "source": "BBC News Middle East",
-   "link": "https://www.bbc.co.uk/news/articles/ckjrwx1r2d5ro?at_medium=RSS&at_campaign=rss",
-   "date": "2026-11-06T07:33:41.000Z"
-  },
-  {
    "headline": "Israel's Arab list backs Eisenkot as Netanyahu loses ultra-Orthodox support",
    "source": "France 24 Middle East",
    "link": "https://www.france24.com/en/middle-east/20261105-israel-main-arab-list-backs-eisenkot-to-form-government-after-election",
@@ -688,16 +700,10 @@
    "date": "2026-11-04T21:26:53.000Z"
   },
   {
-   "headline": "US midterms: Iran's deputy parliament speaker reacts to Trump's elections setback",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/video/20261104-us-midterms-iran-s-deputy-parliament-speaker-reacts-to-trump-s-elections-setback-1",
-   "date": "2026-11-04T16:50:06.000Z"
-  },
-  {
-   "headline": "Israel's president begins consultations with parties after election deadlock",
+   "headline": "What the US midterm results mean for the Middle East",
    "source": "BBC News Middle East",
-   "link": "https://www.bbc.co.uk/news/articles/c6z98z5z91ppo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-11-04T16:18:21.000Z"
+   "link": "https://www.bbc.co.uk/news/videos/cq74pedvwlw8o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-04T17:57:03.000Z"
   },
   {
    "headline": "Gunfire damages tents at Rafah displacement site in Gaza, as aid teams prepare for winter storms",
@@ -712,16 +718,16 @@
    "date": "2026-11-04T12:00:00.000Z"
   },
   {
-   "headline": "Trump says US 'won't be paying Israel' by end of year",
-   "source": "BBC News Middle East",
-   "link": "https://www.bbc.co.uk/news/articles/cmx2dlx86n9yo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-11-03T15:09:51.000Z"
-  },
-  {
    "headline": "Married off at 14: In Yemen’s war, women and girls suffer ‘devastating consequences’",
    "source": "UN News Middle East",
    "link": "https://news.un.org/feed/view/en/story/2026/11/1168730",
    "date": "2026-11-03T12:00:00.000Z"
+  },
+  {
+   "headline": "'I couldn't be silent': Iranian teen's mother seeking justice after daughter shot dead",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/videos/cwjdmp25mem9o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-02T06:05:34.000Z"
   },
   {
    "headline": "Iran killed her teenage daughter - now she is facing up to the regime",
