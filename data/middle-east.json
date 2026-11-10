@@ -2,13 +2,12 @@
  "schemaVersion": 1,
  "map": "middle-east",
  "meta": {
-  "lastUpdated": "2026-10-30T07:00:00-04:00",
-  "coverage": "2026-10-06 to 2026-10-30",
+  "lastUpdated": "2026-11-09T19:52:49-05:00",
+  "coverage": "2026-10-06 to 2026-11-09",
   "notes": [
-   "Snapshot as of Oct 30, 2026, ~7 AM ET (Toronto), imported from the original Grok tracker. Facts, labels and sources are unchanged.",
-   "A sample of incidents, not a complete count: Gaza and Lebanon strikes are near-daily.",
-   "Counts come from different parties, periods and methods; do not add them together.",
-   "Marker positions are approximate (see coordPrecision). Undated incidents sit on Oct 6 and say so."
+   "Refreshed 2026-11-10 (early morning Toronto) from Al Jazeera, France 24 (AFP), Times of Israel, Middle East Eye, Tasnim Telegram (read, nothing new used) and the headline feed.",
+   "Not read: BBC and Guardian (fetch blocked), UKMTO site (blocked page), OCHA oPt, ISW/CTP, IDF/CENTCOM X posts. Stats and lanes not refreshed: no verified new figures. Trump-Qatar PM talks of Nov 9 held in Washington (outside the map box) so not added.",
+   "Marker positions are approximate (see coordPrecision)."
   ]
  },
  "events": [
@@ -1464,6 +1463,151 @@
      "says": "Iran has not yet answered the Vance letter; any departure from its seven conditions is 'unacceptable'."
     }
    ]
+  },
+  {
+   "id": "taiz-1107",
+   "date": "2026-11-07",
+   "region": "yemen",
+   "oblast": "Yemen",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "airstrike",
+   "status": "DISPUTED",
+   "title": "Strikes: market in Taiz province, Yemen",
+   "caption": "At least 30 people were reportedly killed at a market in Taiz province. The Houthis blame Saudi air strikes; government forces and local authorities blame Houthi indiscriminate fire.",
+   "lat": 13.5795,
+   "lon": 44.0209,
+   "coordPrecision": "approx",
+   "place": "Taiz",
+   "sources": [
+    {
+     "id": "f24_1107",
+     "title": "France 24, Yemen: 30 dead in strikes on Taiz market, Nov 7",
+     "url": "https://www.france24.com/en/yemen-30-dead-in-strikes-on-taiz-market"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "Houthis",
+     "says": "Saudi air strikes killed the victims."
+    },
+    {
+     "who": "Yemeni government forces and local authorities",
+     "says": "The Houthis are responsible through indiscriminate fire."
+    }
+   ]
+  },
+  {
+   "id": "riyadh-1108",
+   "date": "2026-11-08",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "missile",
+   "status": "DISPUTED",
+   "title": "Missile: Aramco building, King Abdullah Financial District, Riyadh",
+   "caption": "The Houthis say they hit Riyadh's financial district, the airport and Aramco sites in four operations. Saudi Arabia says two ballistic missiles were intercepted and describes minor shrapnel damage to an Aramco administrative building. No casualties reported.",
+   "lat": 24.6877,
+   "lon": 46.7219,
+   "coordPrecision": "city",
+   "place": "Riyadh",
+   "sources": [
+    {
+     "id": "f24_1108",
+     "title": "France 24 (AFP), Houthis claim attack on Aramco building in Riyadh, Nov 8",
+     "url": "https://www.france24.com/en/middle-east/20261108-yemen-s-houthis-claim-attack-on-aramco-building-in-riyadh-s-financial-district"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Houthis",
+     "says": "Four operations with ballistic and cruise missiles and drones on the financial district, Riyadh airport, Aramco tanks and Abqaiq."
+    },
+    {
+     "who": "Saudi energy ministry",
+     "says": "Attempted attack on an Aramco administrative building; minor damage from falling shrapnel."
+    },
+    {
+     "who": "Saudi-led coalition (Turki al-Malki)",
+     "says": "Air defences intercepted and destroyed two ballistic missiles launched at Riyadh."
+    }
+   ]
+  },
+  {
+   "id": "medina-pipeline-1109",
+   "date": "2026-11-09",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "energy",
+   "status": "ONE_PARTY",
+   "title": "Attack: East-West oil pipeline, Medina region, Saudi Arabia",
+   "caption": "Saudi state media, citing the energy ministry, report a new attack on the East-West pipeline. A limited fire was put out, no injuries, operations unaffected. No attacker was named; the pipeline carries about 4 million barrels a day to Yanbu.",
+   "lat": 24.4686,
+   "lon": 39.6142,
+   "coordPrecision": "approx",
+   "place": "Medina",
+   "sources": [
+    {
+     "id": "aj_1109_pipe",
+     "title": "Al Jazeera, Saudi Arabia reports new attack on key East-West pipeline, Nov 9",
+     "url": "https://www.aljazeera.com/news/2026/11/9/saudi-arabia-reports-new-attack-on-key-east-west-pipeline"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Saudi Press Agency (energy ministry official)",
+     "says": "Attack in the Medina region; limited fire extinguished; no injuries; operations unaffected."
+    },
+    {
+     "who": "No party",
+     "says": "No one claimed responsibility in the article."
+    }
+   ]
+  },
+  {
+   "id": "nuseirat-1109",
+   "date": "2026-11-09",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "other",
+   "status": "ONE_PARTY",
+   "title": "Flood-related collapses at displacement camps, central Gaza",
+   "caption": "A sand embankment collapsed at a displacement camp in Deir al-Balah, killing at least five, four of them children, health officials say. A wall also fell on a tent in Nuseirat, injuring three. Heavy rain flooded more than 70,000 tents. Marker is placed at Nuseirat.",
+   "lat": 31.4486,
+   "lon": 34.3925,
+   "coordPrecision": "approx",
+   "place": "Nuseirat",
+   "sources": [
+    {
+     "id": "toi_1109_flood",
+     "title": "Times of Israel, Board of Peace warns Israel to send more winter aid, Nov 9",
+     "url": "https://www.timesofisrael.com/board-of-peace-warns-israel-to-send-more-winter-aid-to-gaza-as-idf-says-supplies-delivered/"
+    },
+    {
+     "id": "mee_1109_wall",
+     "title": "Middle East Eye live blog, wall collapses on tent in Gaza, Nov 9",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/three-injured-wall-collapses-displaced-familys-tent-gaza-al-jazeera"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "Health officials (via Times of Israel)",
+     "says": "At least five killed in the Deir al-Balah embankment collapse, four of them children."
+    },
+    {
+     "who": "Board of Peace",
+     "says": "Blames Israel for delaying shelter and water supplies and Hamas for refusing to disarm."
+    },
+    {
+     "who": "Israeli military",
+     "says": "More than 91,000 tents and 8,200 trucks of winter supplies have entered Gaza; blames the UN for not moving about half of approved items."
+    }
+   ]
   }
  ],
  "lanes": [
@@ -2310,6 +2454,31 @@
    "id": "x_ajenglish_2",
    "title": "Al Jazeera English on X (Pentagon cost)",
    "url": "https://x.com/AJEnglish/status/2115785722074705996"
+  },
+  {
+   "id": "f24_1108",
+   "title": "France 24 (AFP), Houthis claim attack on Aramco building in Riyadh, Nov 8",
+   "url": "https://www.france24.com/en/middle-east/20261108-yemen-s-houthis-claim-attack-on-aramco-building-in-riyadh-s-financial-district"
+  },
+  {
+   "id": "f24_1107",
+   "title": "France 24, Yemen: 30 dead in strikes on Taiz market, Nov 7",
+   "url": "https://www.france24.com/en/yemen-30-dead-in-strikes-on-taiz-market"
+  },
+  {
+   "id": "aj_1109_pipe",
+   "title": "Al Jazeera, Saudi Arabia reports new attack on key East-West pipeline, Nov 9",
+   "url": "https://www.aljazeera.com/news/2026/11/9/saudi-arabia-reports-new-attack-on-key-east-west-pipeline"
+  },
+  {
+   "id": "toi_1109_flood",
+   "title": "Times of Israel, Board of Peace warns Israel to send more winter aid, Nov 9",
+   "url": "https://www.timesofisrael.com/board-of-peace-warns-israel-to-send-more-winter-aid-to-gaza-as-idf-says-supplies-delivered/"
+  },
+  {
+   "id": "mee_1109_wall",
+   "title": "Middle East Eye live blog, wall collapses on tent in Gaza, Nov 9",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/three-injured-wall-collapses-displaced-familys-tent-gaza-al-jazeera"
   }
  ]
 }
