@@ -2,6 +2,15 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-10 06:38 Toronto — Middle East — OK
+- Added 4 event(s):
+  - `burqa-1110` 2026-11-10 [ONE_PARTY] Palestinian boy, 14, shot dead by Israeli forces in Burqa, near Nablus
+  - `chamchamal-1108` 2026-11-08 [UNVERIFIED] Drone attack on Khor Mor gasfield, Sulaymaniyah province, Iraq
+  - `riyadh-1110` 2026-11-10 [ONE_PARTY] Saudi-led coalition reports intercepting Houthi missiles at Riyadh, south and Eastern Province
+  - `sanaa-1110` 2026-11-10 [ONE_PARTY] Houthi media report Saudi strikes on fuel sites in Sanaa
+- 4 new source link(s)
+- Totals: 52 events, 18 stats, 75 sources; coverage 2026-10-06 to 2026-11-10
+
 ## 2026-11-10 06:06 Toronto — Ukraine — OK
 - Added 4 event(s):
   - `trypillia-1109` 2026-11-09 [ONE_PARTY] Russian strike hits Trypillia thermal power plant again
