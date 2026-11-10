@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-09T20:55:35+00:00",
+  "lastUpdated": "2026-11-10T00:53:29+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
@@ -26,7 +26,7 @@
    {
     "source": "BBC News Europe",
     "ok": true,
-    "count": 4
+    "count": 5
    },
    {
     "source": "UN News Europe",
@@ -36,7 +36,7 @@
    {
     "source": "Al Jazeera",
     "ok": true,
-    "count": 2
+    "count": 1
    },
    {
     "source": "UK Ministry of Defence (GOV.UK)",
@@ -46,6 +46,66 @@
   ]
  },
  "items": [
+  {
+   "headline": "Russian troops use recruited Africans as human shields in kill zone – intelligence",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4182985-russian-troops-use-recruited-africans-as-human-shields-in-kill-zone-intelligence.html",
+   "date": "2026-11-10T00:25:00.000Z"
+  },
+  {
+   "headline": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
+   "source": "BBC News Europe",
+   "link": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-10T00:09:49.000Z"
+  },
+  {
+   "headline": "Energy company warns of 'extremely serious' consequences after Russian forces strike Trypillia Thermal Power Plant",
+   "source": "Kyiv Independent",
+   "link": "https://kyivindependent.com/energy-company-warns-of-extremely-serious-consequences-after-russian-forces-strike-trypillia-thermal-power-plant/",
+   "date": "2026-11-09T23:50:44.000Z"
+  },
+  {
+   "headline": "DIU examines new Russian Geran-5 K5-K drone: Nearly 100 foreign components, most of them American",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4182825-diu-examines-new-russian-geran5-k5k-drone-nearly-100-foreign-components-most-of-them-american.html",
+   "date": "2026-11-09T23:30:00.000Z"
+  },
+  {
+   "headline": "Germany's Merz complains about unfair burden sharing, calls EU to prioritize new Ukraine loan",
+   "source": "Kyiv Independent",
+   "link": "https://kyivindependent.com/germanys-merz-complains-about-unfair-burden-sharing-calls-eu-to-prioritize-new-ukraine-loan/",
+   "date": "2026-11-09T22:55:28.000Z"
+  },
+  {
+   "headline": "Trump hopes to meet Xi and Putin at APEC summit in China",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-polytics/4182802-trump-hopes-to-meet-xi-and-putin-at-apec-summit-in-china.html",
+   "date": "2026-11-09T22:36:00.000Z"
+  },
+  {
+   "headline": "Drone strike kills worker at Zaporizhzhia Nuclear Power Plant, IAEA says",
+   "source": "Kyiv Independent",
+   "link": "https://kyivindependent.com/drone-strike-kills-worker-at-zaporizhzhia-nuclear-power-plant-iaea-says/",
+   "date": "2026-11-09T21:58:37.000Z"
+  },
+  {
+   "headline": "Zelensky expresses condolences to Türkiye following tragedy at steel plant",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-polytics/4183123-zelensky-expresses-condolences-to-turkiye-following-tragedy-at-steel-plant.html",
+   "date": "2026-11-09T21:52:00.000Z"
+  },
+  {
+   "headline": "War update: 148 clashes on front line since morning",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4183122-war-update-148-clashes-on-front-line-since-morning.html",
+   "date": "2026-11-09T21:28:00.000Z"
+  },
+  {
+   "headline": "Russian drone strikes apartment building in Kherson, injuring elderly woman",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4183118-russian-drone-strikes-apartment-building-in-kherson-injuring-elderly-woman.html",
+   "date": "2026-11-09T20:59:00.000Z"
+  },
   {
    "headline": "Electricity situation remains particularly difficult in Kyiv and Dnipro – Shmyhal",
    "source": "Ukrinform",
@@ -117,12 +177,6 @@
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/ukraine-war-latest-russia-suffers-record-daily-losses-for-2nd-time-in-a-month/",
    "date": "2026-11-09T18:34:24.000Z"
-  },
-  {
-   "headline": "Russian investigative newspaper Novaya Gazeta closes citing gov’t clampdown",
-   "source": "Al Jazeera",
-   "link": "https://www.aljazeera.com/news/2026/11/9/russian-investigative-newspaper-novaya-gazeta-closes-citing-govt-clampdown?traffic_source=rss",
-   "date": "2026-11-09T18:21:38.000Z"
   },
   {
    "headline": "US calls on Ukraine and Russia to end mutual strikes and refrain from retaliatory attacks",
@@ -365,12 +419,6 @@
    "date": "2026-11-09T14:09:32.000Z"
   },
   {
-   "headline": "Russian forces strike Kharkiv, injuring two adults, two-year-old child",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-ato/4182979-russian-forces-strike-kharkiv-injuring-two-adults-twoyearold-child.html",
-   "date": "2026-11-09T14:07:00.000Z"
-  },
-  {
    "headline": "President's Office announces members of Ukraine's delegation for Abu Dhabi talks",
    "source": "Ukrainska Pravda",
    "link": "https://www.pravda.com.ua/eng/news/2026/11/09/8061971/",
@@ -383,64 +431,16 @@
    "date": "2026-11-09T13:54:00.000Z"
   },
   {
-   "headline": "Canada unveils new Russia sanctions targeting defense industry, cyber activities",
-   "source": "Kyiv Independent",
-   "link": "https://kyivindependent.com/canada-unveils-new-russia-sanctions-targeting-defense-industry-cyber-activities/",
-   "date": "2026-11-09T13:52:20.000Z"
-  },
-  {
-   "headline": "Woman killed in Russian attack in Kyiv region's Vyshhorod district",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-ato/4182969-woman-killed-in-russian-attack-in-kyiv-regions-vyshhorod-district.html",
-   "date": "2026-11-09T13:44:00.000Z"
-  },
-  {
-   "headline": "Ukrainian delegation heads to Abu Dhabi for trilateral meeting",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-polytics/4182962-ukrainian-delegation-heads-to-abu-dhabi-for-trilateral-meeting.html",
-   "date": "2026-11-09T13:26:00.000Z"
-  },
-  {
-   "headline": "Ukraine strikes St. Petersburg plant producing missile fuel, General Staff says",
-   "source": "Kyiv Independent",
-   "link": "https://kyivindependent.com/ukraine-strikes-st-petersburg-plant-producing-missile-fuel-general-staff-says/",
-   "date": "2026-11-09T13:21:02.000Z"
-  },
-  {
    "headline": "Russian attack damages Actor's House theatre building in Zaporizhzhia",
    "source": "Ukrainska Pravda",
    "link": "https://www.pravda.com.ua/eng/news/2026/11/09/8061962/",
    "date": "2026-11-09T13:21:00.000Z"
   },
   {
-   "headline": "IMF begins talks that could unlock $1.67 billion tranche for Ukraine",
-   "source": "Kyiv Independent",
-   "link": "https://kyivindependent.com/imf-begins-talks-that-could-unlock-1-67-billion-tranche-for-ukraine/",
-   "date": "2026-11-09T13:18:08.000Z"
-  },
-  {
    "headline": "Trump is humiliated and angry – and Europe is where he’s free to lash out | Nathalie Tocci",
    "source": "The Guardian (Ukraine)",
    "link": "https://www.theguardian.com/commentisfree/2026/nov/09/donald-trump-humiliated-angry-europe",
    "date": "2026-11-09T13:10:43.000Z"
-  },
-  {
-   "headline": "Eight countries refuse to play against Russians in hockey – Bidnyi",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-sports/4182937-eight-countries-refuse-to-play-against-russians-in-hockey-bidnyi.html",
-   "date": "2026-11-09T12:57:00.000Z"
-  },
-  {
-   "headline": "Part of Rivne left without electricity due to overloaded power grid",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-ato/4182936-part-of-rivne-left-without-electricity-due-to-overloaded-power-grid.html",
-   "date": "2026-11-09T12:39:00.000Z"
-  },
-  {
-   "headline": "Russian drone debris that fell near school recovered in Kyiv’s Desnianskyi district",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-ato/4182932-russian-drone-debris-that-fell-near-school-recovered-in-kyivs-desnianskyi-district.html",
-   "date": "2026-11-09T12:18:00.000Z"
   },
   {
    "headline": "Security Council LIVE: Strikes on Ukraine’s power grid, as peace talks loom",

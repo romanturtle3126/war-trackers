@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-10T00:38:11+00:00",
+  "lastUpdated": "2026-11-10T00:53:30+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
@@ -15,8 +15,8 @@
    },
    {
     "source": "Times of Israel",
-    "ok": true,
-    "count": 15
+    "ok": false,
+    "error": "HTTP 403"
    },
    {
     "source": "UN News Middle East",
@@ -52,6 +52,12 @@
  },
  "items": [
   {
+   "headline": "Russia, Ukraine to meet for US-backed talks after Trump says broad deal possible",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/russia-ukraine-meet-us-backed-talks-after-trump-says-broad-deal-possible",
+   "date": "2026-11-10T00:46:32.000Z"
+  },
+  {
    "headline": "Saudi-led coalition says it intercepted Houthi missile",
    "source": "Middle East Eye",
    "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-intercepted-houthi-missile-1",
@@ -64,22 +70,10 @@
    "date": "2026-11-10T00:30:26.000Z"
   },
   {
-   "headline": "Iran war live: Trump says war ‘effectively over’, Iran demands ‘surrender’",
+   "headline": "Iran war live: Trump says escalation ‘unlikely’, Iran demands ‘surrender’",
    "source": "Al Jazeera",
    "link": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-war-effectively-over-iran-demands-surrender?traffic_source=rss",
    "date": "2026-11-09T23:55:23.000Z"
-  },
-  {
-   "headline": "Knesset readies to welcome dozens of new faces at Tuesday’s swearing-in",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/knesset-readies-to-welcome-dozens-of-new-faces-at-tuesdays-swearing-in/",
-   "date": "2026-11-09T23:48:46.000Z"
-  },
-  {
-   "headline": "Trump: US won’t launch new Iran offensive for now, ‘good chance’ deal within reach",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/liveblog-november-10-2026/",
-   "date": "2026-11-09T22:51:51.000Z"
   },
   {
    "headline": "Zelenskiy says Ukrainian battlefield successes strengthen Kyiv's position in talks",
@@ -94,19 +88,13 @@
    "date": "2026-11-09T22:46:48.000Z"
   },
   {
-   "headline": "Eisenkot, Liberman said to greenlight outreach to Haredim, reach agreement on Knesset speaker",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/eisenkot-liberman-said-to-greenlight-outreach-to-haredim-reach-agreement-on-knesset-speaker/",
-   "date": "2026-11-09T22:40:05.000Z"
-  },
-  {
    "headline": "Iranian senior official: 'STOP manufacturing FAKE NEWS about imaginary talks'",
    "source": "Middle East Eye",
    "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-senior-official-stop-manufacturing-fake-news-about-imaginary",
    "date": "2026-11-09T22:36:42.000Z"
   },
   {
-   "headline": "After meeting with Qatar PM, Trump declares Iran war ‘effectively over’",
+   "headline": "After meeting Qatar PM, Trump calls Iran war ‘effectively over’ militarily",
    "source": "Al Jazeera",
    "link": "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm?traffic_source=rss",
    "date": "2026-11-09T22:31:19.000Z"
@@ -124,36 +112,6 @@
    "date": "2026-11-09T22:05:42.000Z"
   },
   {
-   "headline": "Illinois voters approve proposals objecting to state law against Israel boycotts",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/illinois-voters-approve-proposals-objecting-to-state-law-against-israel-boycotts/",
-   "date": "2026-11-09T22:04:31.000Z"
-  },
-  {
-   "headline": "‘Curb your antisemitism’: Anti-Israel bike protesters met with Philly boos and humor",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/curb-your-antisemitism-anti-israel-bike-protesters-met-with-philly-boos-and-humor/",
-   "date": "2026-11-09T21:58:33.000Z"
-  },
-  {
-   "headline": "Police said to see little evidence to back Shin Bet probe into foreign election interference",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/police-said-to-see-little-evidence-to-back-shin-bet-probe-into-foreign-election-interference/",
-   "date": "2026-11-09T21:48:12.000Z"
-  },
-  {
-   "headline": "Last major independent newspaper in Russia shuts down due to political pressure",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/last-major-independent-newspaper-in-russia-shuts-down-due-to-political-pressure/",
-   "date": "2026-11-09T21:46:37.000Z"
-  },
-  {
-   "headline": "France blames Iran for cyberattack on supermarket fridges, warns of consequences",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/france-blames-iran-for-cyberattack-on-supermarket-fridges-warns-of-consequences/",
-   "date": "2026-11-09T21:45:40.000Z"
-  },
-  {
    "headline": "Trump: 'We are seeing positive momentum toward an end to this conflict'",
    "source": "Middle East Eye",
    "link": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-we-are-seeing-positive-momentum-toward-end-conflict",
@@ -166,22 +124,10 @@
    "date": "2026-11-09T21:00:31.000Z"
   },
   {
-   "headline": "Suspect attempted to enter Washington, DC, synagogue with firearm — police",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/suspect-attempted-to-enter-washington-dc-synagogue-with-firearm-police/",
-   "date": "2026-11-09T20:47:58.000Z"
-  },
-  {
    "headline": "Trump tells Reuters that Qatar, Saudi Arabia want peaceful Iran deal, US ready for strikes if needed",
    "source": "Al-Monitor",
    "link": "https://www.al-monitor.com/originals/2026/11/trump-tells-reuters-qatar-saudi-arabia-want-peaceful-iran-deal-us-ready-strikes",
    "date": "2026-11-09T20:46:30.000Z"
-  },
-  {
-   "headline": "Israel says winter supplies delivered to Gaza amid flooding; Board of Peace says it must do more",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/board-of-peace-warns-israel-to-send-more-winter-aid-to-gaza-as-idf-says-supplies-delivered/",
-   "date": "2026-11-09T20:41:26.000Z"
   },
   {
    "headline": "Trump says US ready to strike Iran 'if necessary', Reuters reports",
@@ -196,22 +142,10 @@
    "date": "2026-11-09T20:20:08.000Z"
   },
   {
-   "headline": "Palestinian Authority arrests suspects involved in sale of Jericho homes to settlers",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/palestinian-authority-arrests-suspects-involved-in-sale-of-jericho-homes-to-settlers/",
-   "date": "2026-11-09T20:07:02.000Z"
-  },
-  {
    "headline": "Will Eisenkot succeed in 'minefield of Israeli politics' where 'so many other generals' have failed?",
    "source": "France 24 Middle East",
    "link": "https://www.france24.com/en/tv-shows/spotlight/20261109-will-eisenkot-succeed-in-minefield-of-israeli-politics-where-so-many-other-generals-have-failed",
    "date": "2026-11-09T20:03:31.000Z"
-  },
-  {
-   "headline": "Returning to familiar playbook, Trump claims US midterm elections were stolen",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/returning-to-familiar-playbook-trump-claims-us-midterm-elections-were-stolen/",
-   "date": "2026-11-09T19:53:57.000Z"
   },
   {
    "headline": "How is Gaza coping with another severe winter?",
@@ -256,12 +190,6 @@
    "date": "2026-11-09T19:29:07.000Z"
   },
   {
-   "headline": "Israeli-Palestinian group says IDF West Bank chief must be sanctioned for ‘ethnic cleansing’",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/israeli-palestinian-group-says-idf-west-bank-chief-must-be-sanctioned-for-ethnic-cleansing/",
-   "date": "2026-11-09T19:16:27.000Z"
-  },
-  {
    "headline": "Slotkin, Van Hollen emerge as potential challengers to Schumer’s Senate leadership",
    "source": "Al-Monitor",
    "link": "https://www.al-monitor.com/originals/2026/11/slotkin-van-hollen-emerge-potential-challengers-schumers-senate-leadership",
@@ -272,18 +200,6 @@
    "source": "Middle East Eye",
    "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-destroyed-houthi-missile-facilities",
    "date": "2026-11-09T19:00:46.000Z"
-  },
-  {
-   "headline": "Germany set to have first female president, who pledges to ‘bring people together’",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/germanys-set-to-have-first-female-president-who-pledges-to-bring-people-together/",
-   "date": "2026-11-09T18:56:51.000Z"
-  },
-  {
-   "headline": "Despite tensions, Israeli, Dutch firms to establish weapons plant in Netherlands",
-   "source": "Times of Israel",
-   "link": "https://www.timesofisrael.com/despite-tensions-israeli-dutch-firms-to-establish-weapons-plant-in-netherlands/",
-   "date": "2026-11-09T18:53:36.000Z"
   },
   {
    "headline": "Qatar PM meets with Trump for talks on ending war on Iran",
@@ -356,12 +272,6 @@
    "source": "Al-Monitor",
    "link": "https://www.al-monitor.com/originals/2026/11/steel-factory-explosion-western-turkey-kills-least-16",
    "date": "2026-11-09T17:44:55.000Z"
-  },
-  {
-   "headline": "France says Iran behind 'unprecedented' cyberattacks on fridges",
-   "source": "Al-Monitor",
-   "link": "https://www.al-monitor.com/originals/2026/11/france-says-iran-behind-unprecedented-cyberattacks-fridges",
-   "date": "2026-11-09T17:30:33.000Z"
   },
   {
    "headline": "'Life in Gaza simply miserable': Amid flooding, lack of aid, conditions 'worsen' for Palestinians",
