@@ -47,13 +47,14 @@ What to add: major missile/drone attacks (with the attacker's launch numbers and
 
 Also check whether any existing event from the last 7 days needs correcting (casualty totals revised, a claim confirmed or refuted). Correct it by re-using its `id` with updated fields and say what changed in a note.
 
-Also refresh `stats` whose figures have new numbers (General Staff daily loss tally, Russian MoD shoot-down claims, UN civilian casualty reports). Keep each stat's `label` exactly the same so it replaces the old one.
+Also refresh `stats` whose figures have new numbers (General Staff daily loss tally, Russian MoD shoot-down claims, UN civilian casualty reports). Keep each stat's `label` exactly the same so it replaces the old one. Every stat you send must have a `status` label (usually `DISPUTED` when the sides' figures differ, `ONE_PARTY` when only one side publishes a figure, `CONFIRMED` only for independent counts such as the UN's) and an up-to-date `asOf` (the date you checked it).
 
 ## 2. Labels: be conservative
 
 - `CONFIRMED`: reported by authorities **and** at least one independent outlet (wire service, major newspaper, Kyiv Independent, BBC, UN, ISW geolocation). The validator rejects CONFIRMED events whose sources are all official, state-media or social posts.
 - `ONE_PARTY`: only Ukraine or only Russia says it.
-- `DISPUTED`: the sides' claims conflict. Add a `numbers` block with both claims side by side.
+- `DISPUTED`: the sides' claims conflict. Add a `claims` list with each side's version (and a `numbers` block if it's a count).
+- **Who says what:** whenever Ukraine and Russia (or a side and an independent assessor) describe the same event differently, add `claims`: `[{"who": "Ukraine's Air Force", "says": "...", "source": "<source id>"}, {"who": "Russia's MoD", "says": "...", "source": "<source id>"}]`. Only include a side that actually said something.
 - `UNVERIFIED`: reported but not confirmed, or it is only an analyst's assessment.
 - When unsure, pick the weaker label. Attribute claims in the caption ("Ukraine's Air Force says…", "Russia's MoD claims…").
 
@@ -96,7 +97,7 @@ Create `data/incoming/ukraine.json` (create the folder if needed):
 Rules:
 - New ids follow `place-MMDD` (lowercase, dashes), e.g. `odesa-1109`; add `-2` if taken. Check existing ids first.
 - Source ids follow `<outlet>_<MMDD>` or similar (e.g. `ki_1109`, `isw_1108`, `reuters_kharkiv_1109`). A new id must not already exist with a different URL.
-- Each new event needs: id, date, region, oblast, front, type, status, title, caption, lat, lon, coordPrecision, place, sources (and optionally numbers). No other fields.
+- Each new event needs: id, date, region, oblast, front, type, status, title, caption, lat, lon, coordPrecision, place, sources and `read` (`"full"` if you read at least one cited article in full, `"snippet"` if you only saw headlines or previews). Optional: claims, numbers. No other fields.
 - `region` values: `north` (Sumy, Chernihiv, Kharkiv incl. Kupiansk), `donbas` (Donetsk, Luhansk), `south` (Zaporizhzhia, Dnipropetrovsk, Kherson, Mykolaiv, Odesa), `crimea-sea` (Crimea, Black Sea, Sea of Azov), `rear` (Kyiv and all other Ukrainian regions), `russia` (anywhere in Russia incl. border oblasts).
 - `date` is the day the event happened (Kyiv time), not the publication day.
 - If you found nothing new, write the file with `"events": []` and an honest note. That is a valid result.

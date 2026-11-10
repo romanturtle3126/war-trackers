@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 // Pull headlines from open RSS/Atom feeds into data/<map>-feed.json. No dependencies.
 // Headlines are auto-pulled and shown as UNVERIFIED in the app's Feed tab.
-// Usage: node scripts/fetch-feeds.mjs [ukraine]
+// Usage: node scripts/fetch-feeds.mjs [ukraine|middle-east]
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import zlib from "node:zlib";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const FEEDS = {
@@ -21,6 +22,20 @@ const FEEDS = {
       { name: "UK Ministry of Defence (GOV.UK)", url: "https://www.gov.uk/government/organisations/ministry-of-defence.atom", filter: true },
     ],
   },
+  "middle-east": {
+    keywords: /israel|gaza|palestin|west bank|hamas|hezbollah|lebanon|syria|iran|tehran|iraq|yemen|houthi|hormuz|red sea|saudi|gulf|qatar|jordan|egypt|middle east|idf|irgc/i,
+    feeds: [
+      { name: "Al Jazeera", url: "https://www.aljazeera.com/xml/rss/all.xml", filter: true },
+      { name: "BBC News Middle East", url: "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml", filter: false },
+      { name: "Times of Israel", url: "https://www.timesofisrael.com/feed/", filter: false },
+      { name: "UN News Middle East", url: "https://news.un.org/feed/subscribe/en/news/region/middle-east/feed/rss.xml", filter: false },
+      { name: "The Guardian (Middle East)", url: "https://www.theguardian.com/world/middleeast/rss", filter: false },
+      { name: "France 24 Middle East", url: "https://www.france24.com/en/middle-east/rss", filter: false },
+      { name: "Al-Monitor", url: "https://www.al-monitor.com/rss", filter: false },
+      { name: "Middle East Eye", url: "https://www.middleeasteye.net/rss", filter: false },
+      { name: "UK Ministry of Defence (GOV.UK)", url: "https://www.gov.uk/government/organisations/ministry-of-defence.atom", filter: true },
+    ],
+  },
 };
 
 const decode = (s) => s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").replace(/<[^>]+>/g, "").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
@@ -32,7 +47,10 @@ async function fetchFeed(f, kw) {
   try {
     const r = await fetch(f.url, { signal: ctl.signal, headers: { "User-Agent": "Mozilla/5.0 (war-trackers feed bot)" } });
     if (!r.ok) throw new Error("HTTP " + r.status);
-    const xml = await r.text(), out = [];
+    // Some feeds (UN News, Middle East Eye) send gzip without saying so; unpack it ourselves.
+    let buf = Buffer.from(await r.arrayBuffer());
+    if (buf[0] === 0x1f && buf[1] === 0x8b) buf = zlib.gunzipSync(buf);
+    const xml = buf.toString("utf8"), out = [];
     for (const m of xml.matchAll(/<item[\s>][\s\S]*?<\/item>/gi)) out.push([tag(m[0], "title"), tag(m[0], "link"), tag(m[0], "pubDate") || tag(m[0], "dc:date")]);
     for (const m of xml.matchAll(/<entry[\s>][\s\S]*?<\/entry>/gi)) { const l = m[0].match(/<link[^>]*href="([^"]+)"/i); out.push([tag(m[0], "title"), l && l[1].replace(/&amp;/g, "&"), tag(m[0], "updated") || tag(m[0], "published")]); }
     return out.filter(([t, l]) => t && l && (!f.filter || kw.test(t))).slice(0, 25).map(([t, l, d]) => ({ headline: t, source: f.name, link: l.trim(), date: toIso(d) }));
@@ -41,6 +59,7 @@ async function fetchFeed(f, kw) {
 
 const mapId = process.argv[2] || "ukraine";
 const cfg = FEEDS[mapId];
+if (!cfg) { console.error(`unknown map "${mapId}"; one of ${Object.keys(FEEDS).join(", ")}`); process.exit(1); }
 const OUT = path.join(ROOT, `data/${mapId}-feed.json`);
 const entries = [], status = [];
 for (const f of cfg.feeds) {

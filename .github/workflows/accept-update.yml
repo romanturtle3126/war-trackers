@@ -31,12 +31,14 @@ jobs:
           git fetch origin main
           CHANGED=$(git diff --name-only origin/main...HEAD)
           echo "Changed files:"; echo "$CHANGED"
-          BAD=$(echo "$CHANGED" | grep -v -E '^(data/ukraine\.json|data/incoming/.*\.json|UPDATE_LOG\.md)$' || true)
+          BAD=$(echo "$CHANGED" | grep -v -E '^(data/(ukraine|middle-east)\.json|data/incoming/.*\.json|UPDATE_LOG\.md)$' || true)
           if [ -n "$BAD" ]; then echo "::error::Daily update touched files it is not allowed to change: $BAD"; exit 1; fi
           if [ -z "$CHANGED" ]; then echo "Nothing to merge"; fi
 
       - name: Validate
-        run: node scripts/validate.mjs data/ukraine.json
+        run: |
+          node scripts/validate.mjs data/ukraine.json
+          node scripts/validate.mjs data/middle-east.json
 
       - name: Merge into main and publish
         env:
@@ -48,6 +50,7 @@ jobs:
           git checkout -B main origin/main
           git merge --no-edit --no-ff "origin/$BRANCH" -m "Daily data update ($BRANCH)"
           node scripts/validate.mjs data/ukraine.json
+          node scripts/validate.mjs data/middle-east.json
           for i in 1 2 3; do git push origin main && break; sleep 5; git pull --no-rebase origin main; done
           git push origin --delete "$BRANCH" || true
           gh workflow run site.yml --ref main

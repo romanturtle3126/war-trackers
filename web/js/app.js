@@ -1,4 +1,4 @@
-/* Ukraine Ops Map - vanilla JS, no build step. Runs as a web page (GitHub Pages) and inside the Android app (Capacitor). */
+/* War Trackers (Ukraine + Middle East ops maps) - vanilla JS, no build step. Runs as a web page (GitHub Pages) and inside the Android app (Capacitor). */
 (function () {
   "use strict";
 
@@ -11,14 +11,11 @@
   var STALE_MS = 30 * 60 * 1000;
 
   var STATUS = { CONFIRMED: "CONFIRMED", ONE_PARTY: "ONE PARTY", DISPUTED: "DISPUTED", UNVERIFIED: "UNVERIFIED" };
-  var STATUS_TEXT = {
-    CONFIRMED: "Credible outlet or monitor with independent corroboration (imagery, footage or several outlets).",
-    ONE_PARTY: "Stated only by Ukrainian or Russian officials or their media; no independent confirmation.",
-    DISPUTED: "The sides, or a side and an independent assessor, give conflicting accounts.",
-    UNVERIFIED: "Reported, but not confirmed by a primary outlet."
-  };
-  var TYPE_NAME = { missile: "missile", drone: "drone", airstrike: "air strike", artillery: "shelling", energy: "energy", "deep-strike": "deep strike", frontline: "front line", claim: "territorial claim", ceasefire: "humanitarian", naval: "naval", other: "other" };
-  var CATS = { casualties: "CASUALTIES", equipment: "EQUIPMENT", shootdowns: "SHOOTDOWNS", territory: "TERRITORY", other: "OTHER" };
+  var TYPE_NAME = { missile: "missile", drone: "drone", airstrike: "air strike", artillery: "shelling", energy: "energy", "deep-strike": "deep strike", frontline: "front line", claim: "claim", ceasefire: "humanitarian", naval: "naval", ground: "ground fighting", diplomacy: "diplomacy", unrest: "unrest", other: "other" };
+  var CATS = { casualties: "CASUALTIES", humanitarian: "DISPLACEMENT & HUMANITARIAN", equipment: "EQUIPMENT", shootdowns: "SHOOTDOWNS", territory: "TERRITORY", diplomacy: "DIPLOMACY", economy: "OIL, SHIPPING & ECONOMY", other: "OTHER" };
+  var PREC = { city: "city", approx: "approximate", oblast: "region only" };
+  function statusText(k) { return (S.cfg && S.cfg.statusText && S.cfg.statusText[k]) || ""; }
+  function hlSet(cfg) { return new Set([].concat(cfg.highlight || [])); }
 
   var $ = function (s) { return document.querySelector(s); };
   var $$ = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
@@ -30,7 +27,7 @@
   function store(k, v) { try { if (v === undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k, JSON.stringify(v)); } catch (e) { return null; } }
   function localDay() { var d = new Date(); return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
 
-  var S = { maps: [], cfg: null, doc: null, from: "", fetchedAt: 0, srcById: {}, groups: new Set(), newIds: new Set(), loading: false };
+  var S = { maps: [], cfg: null, doc: null, from: "", fetchedAt: 0, srcById: {}, groups: new Set(), newIds: new Set(), updIds: new Set(), heads: null, loading: false, failed: false };
   var GROUP = {}; // region id -> group
   function groupOf(e) { return GROUP[e.region] || { id: "x", label: e.region, color: "#9ca3af" }; }
 
@@ -41,6 +38,7 @@
       .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
       .finally(function () { if (t) clearTimeout(t); });
   }
+  function laneById(id) { return ((S.doc && S.doc.lanes) || []).filter(function (l) { return l.id === id; })[0]; }
   function looksLikeData(d) { return d && Array.isArray(d.events) && d.events.length && d.meta && d.meta.lastUpdated && Array.isArray(d.sources); }
   function stampOf(d) { var t = Date.parse((d && d.meta && d.meta.lastUpdated) || ""); return isNaN(t) ? 0 : t; }
   function loadOne(path, ok) {
@@ -62,14 +60,23 @@
     initTabs(); initPanZoom(); initSheet(); initReplay(); initRefresh(); initLinks(); initBack(); initModal();
     fetchJSON("maps.json").then(function (m) {
       S.maps = m.maps;
-      var want = store("map") || S.maps[0].id;
+      var want = params.get("map") || store("map") || S.maps[0].id;
       setCfg(S.maps.filter(function (x) { return x.id === want; })[0] || S.maps[0]);
       var sw = $("#mapswitch");
       if (S.maps.length > 1) {
         sw.hidden = false;
-        sw.innerHTML = S.maps.map(function (x) { return '<option value="' + esc(x.id) + '">' + esc(x.name) + "</option>"; }).join("");
-        sw.value = S.cfg.id;
-        sw.onchange = function () { setCfg(S.maps.filter(function (x) { return x.id === sw.value; })[0]); store("map", S.cfg.id); S.doc = null; geo = null; vb = null; refresh(false); };
+        sw.innerHTML = S.maps.map(function (x) { return '<button role="tab" data-map="' + esc(x.id) + '">' + esc(x.name) + "</button>"; }).join("");
+        var mark = function () { $$("#mapswitch button").forEach(function (b) { var on = b.dataset.map === S.cfg.id; b.classList.toggle("on", on); b.setAttribute("aria-selected", on); }); };
+        mark();
+        $$("#mapswitch button").forEach(function (b) {
+          b.onclick = function () {
+            if (b.dataset.map === S.cfg.id || S.loading) return;
+            setCfg(S.maps.filter(function (x) { return x.id === b.dataset.map; })[0]); store("map", S.cfg.id); mark();
+            S.doc = null; S.heads = null; S.failed = false; geo = null; vb = null; stop();
+            if (route().ev) nav(route().tab, null, true);
+            refresh(false);
+          };
+        });
       }
       applyRoute();
       return refresh(false);
@@ -84,9 +91,11 @@
     if (S.loading) return Promise.resolve();
     S.loading = true; $("#refresh").classList.add("spin");
     var oldStamp = stampOf(S.doc), first = !S.doc;
+    var cfgNow = S.cfg;
+    if (cfgNow.feed) loadOne(cfgNow.feed, function (d) { return d && Array.isArray(d.items); }).then(function (r) { if (S.cfg === cfgNow) { S.heads = r.doc; if (S.doc) renderFeed(); } }, function () {});
     return Promise.all([loadOne(S.cfg.data, looksLikeData), loadGeo(S.cfg)])
       .then(function (r) {
-        S.doc = r[0].doc; S.from = r[0].from; S.fetchedAt = Date.now();
+        S.doc = r[0].doc; S.from = r[0].from; S.fetchedAt = Date.now(); S.failed = r[0].from !== "live" && (!!REMOTE || manual);
         var before = S.newIds.size;
         markNew();
         if (first || manual || stampOf(S.doc) !== oldStamp) renderAll(first);
@@ -96,14 +105,40 @@
           toast(S.from === "live" ? (n > 0 ? n + " NEW EVENT" + (n > 1 ? "S" : "") : "UP TO DATE") : "OFFLINE · " + (S.from === "saved" ? "SAVED" : "BUILT-IN") + " COPY");
         }
       })
-      .catch(function (e) { $("#updated").textContent = e.message; if (manual) toast("COULD NOT REFRESH"); })
+      .catch(function (e) { $("#updated").textContent = e.message; S.failed = true; renderStale(); if (manual) toast("COULD NOT REFRESH"); })
       .finally(function () { S.loading = false; $("#refresh").classList.remove("spin"); });
   }
   // Events not seen on a previous visit get a NEW tag and a cyan glow for this session.
+  // Also remembers a fingerprint of each event so corrected events show as UPDATED.
+  function fp(e) { var s = JSON.stringify([e.status, e.title, e.caption, e.lat, e.lon, e.sources.length, e.claims, e.numbers]), h = 0; for (var k = 0; k < s.length; k++) h = (h * 31 + s.charCodeAt(k)) | 0; return h; }
   function markNew() {
-    var key = "seen:" + S.cfg.id, seen = store(key), ids = S.doc.events.map(function (e) { return e.id; });
+    var key = "seen:" + S.cfg.id, seen = store(key), fkey = "fp:" + S.cfg.id, old = store(fkey), ids = S.doc.events.map(function (e) { return e.id; }), now = {};
     if (Array.isArray(seen)) { var set = new Set(seen); ids.forEach(function (id) { if (!set.has(id)) S.newIds.add(id); }); }
-    store(key, ids);
+    S.doc.events.forEach(function (e) { now[e.id] = fp(e); if (old && old[e.id] != null && old[e.id] !== now[e.id]) S.updIds.add(e.id); });
+    store(key, ids); store(fkey, now);
+  }
+  function tags(i) {
+    return (S.newIds.has(i.id) ? '<span class="new">NEW</span>' : S.updIds.has(i.id) ? '<span class="new upd">UPDATED</span>' : "");
+  }
+  // Source quality: read in full / snippet only / posted on X or Telegram.
+  function isSocial(u) { return /^https?:\/\/(www\.)?(x\.com|twitter\.com|t\.me)\//i.test(u || ""); }
+  function quality(i) {
+    var soc = i.sources.filter(function (s) { return isSocial((S.srcById[s.id] || s).url); }).length, q = [];
+    if (i.read === "full") q.push('<span class="q q-full">READ IN FULL</span>');
+    if (i.read === "snippet") q.push('<span class="q q-snip">SNIPPET ONLY</span>');
+    if (soc && soc === i.sources.length) q.push('<span class="q q-x">ONLY ON X / TELEGRAM</span>');
+    else if (soc) q.push('<span class="q q-x2">ALSO ON X / TELEGRAM</span>');
+    return q.length ? '<div class="qrow">' + q.join("") + "</div>" : "";
+  }
+  function renderStale() {
+    var b = $("#stale"); if (!b || !S.cfg) return;
+    var msg = "";
+    if (S.failed) msg = "Couldn't refresh. " + (S.doc ? "You're seeing the copy saved on this device, last updated " + fmtStamp(S.doc.meta.lastUpdated) + "." : "No data saved yet.");
+    else if (S.doc) {
+      var h = (Date.now() - stampOf(S.doc)) / 36e5;
+      if (h > 36) msg = "Data is " + (h < 72 ? Math.round(h) + " hours" : Math.round(h / 24) + " days") + " old. " + (S.cfg.staleNote || "The daily update may have stopped.");
+    }
+    b.textContent = msg; b.hidden = !msg;
   }
 
   function renderAll(first) {
@@ -111,12 +146,14 @@
     S.doc.sources.forEach(function (s) { S.srcById[s.id] = s; });
     S.groups = new Set((store("groups:" + S.cfg.id) || []).filter(function (g) { return S.cfg.groups.some(function (x) { return x.id === g; }); }));
     $("#apptitle").textContent = S.cfg.title.toUpperCase(); document.title = S.cfg.title;
+    $("#zfit").setAttribute("aria-label", S.cfg.fitLabel || "Fit map");
     renderUpdated(); renderChips(); drawMap(first); renderPresets(); setupReplay(); renderFeed(); renderStats();
     applyRoute();
   }
   function renderUpdated() {
     var tag = S.from === "live" ? "" : ' · <span class="off">OFFLINE</span>';
     $("#updated").innerHTML = "Data updated " + esc(fmtStamp(S.doc.meta.lastUpdated)) + tag;
+    renderStale();
   }
   function toast(msg) {
     var t = $(".toast"); if (!t) { t = document.createElement("div"); t.className = "toast"; $("#app").appendChild(t); }
@@ -215,11 +252,24 @@
     for (var lo = Math.ceil((cfg.bounds.minLon - 9) / gs) * gs; lo <= cfg.bounds.maxLon + 9; lo += gs) { var a = P(lo, cfg.bounds.maxLat + 6), b = P(lo, cfg.bounds.minLat - 6); d += "M" + a[0] + "," + a[1] + "V" + b[1]; lons.push(lo); }
     for (var la = Math.ceil((cfg.bounds.minLat - 6) / gs) * gs; la <= cfg.bounds.maxLat + 6; la += gs) { var c1 = P(cfg.bounds.minLon - 9, la), c2 = P(cfg.bounds.maxLon + 9, la); d += "M" + c1[0] + "," + c1[1] + "H" + c2[0]; lats.push(la); }
     el("path", { d: d, class: "grid" }, svg);
-    geo.countries.forEach(function (c) { el("path", { d: pathOf(c.rings), class: c.a3 === cfg.highlight ? "ua" : "land" }, svg); });
-    var hl = geo.countries.filter(function (c) { return c.a3 === cfg.highlight; })[0];
+    var HL = hlSet(cfg);
+    geo.countries.filter(function (c) { return !HL.has(c.a3); }).forEach(function (c) { el("path", { d: pathOf(c.rings), class: "land" }, svg); });
+    geo.countries.filter(function (c) { return HL.has(c.a3); }).forEach(function (c) { el("path", { d: pathOf(c.rings), class: "ua" }, svg); });
     (cfg.occupied || []).forEach(function (o) {
-      var rings = hl ? hl.rings.filter(function (r) { return inRing(o.inside, r); }) : [];
+      var rings = [];
+      if (o.area) (geo.areas || []).forEach(function (a) { if (a.name === o.area) rings = rings.concat(a.rings); });
+      else geo.countries.forEach(function (c) { if (HL.has(c.a3)) rings = rings.concat(c.rings.filter(function (r) { return inRing(o.inside, r); })); });
       if (rings.length) el("path", { d: pathOf(rings), class: "occ" }, svg);
+    });
+    // Lanes (e.g. shipping lanes): animated dashed lines in their status colour; tap for details.
+    S.laneEls = [];
+    var gLane = el("g", {}, svg);
+    ((S.doc && S.doc.lanes) || []).forEach(function (l) {
+      var d = "M" + l.points.map(function (p) { var q = P(p[0], p[1]); return q[0].toFixed(1) + "," + q[1].toFixed(1); }).join("L");
+      var w = el("g", { class: "lane", "data-id": l.id }, gLane);
+      el("path", { d: d, class: "lh" }, w); el("path", { d: d, class: "lv", stroke: l.color }, w);
+      el("title", {}, w).textContent = l.name;
+      S.laneEls.push(w);
     });
     gLbl = el("g", {}, svg);
     (cfg.countryLabels || []).forEach(function (l) { var p = P(l[1], l[2]); el("text", { x: p[0], y: p[1], class: "clbl" }, gLbl).textContent = l[0]; });
@@ -343,7 +393,7 @@
     var pts = {}, pinch = null, start = null;
     svg.addEventListener("pointerdown", function (e) {
       if (anim) { cancelAnimationFrame(anim); anim = null; }
-      var g = e.target.closest && e.target.closest("g.mk");
+      var g = e.target.closest && (e.target.closest("g.mk") || e.target.closest("g.lane"));
       start = Object.keys(pts).length ? null : { x: e.clientX, y: e.clientY, id: g ? g.getAttribute("data-id") : null, moved: false };
       svg.setPointerCapture(e.pointerId); pts[e.pointerId] = [e.clientX, e.clientY]; svg.classList.add("drag");
     });
@@ -423,8 +473,36 @@
     (ind || []).forEach(function (x) { h += '<div class="claim ind"><div class="who">INDEPENDENT</div>' + esc(x.value) + srcLink(x.source) + "</div>"; });
     return h + "</div>";
   }
+  // Multi-party "who says what": one box per party, side by side.
+  function partyBlock(list) {
+    return '<div class="claims' + (list.length > 2 ? " many" : "") + '">' + list.map(function (c, n) {
+      return '<div class="claim p' + (n % 4) + '"><div class="who">' + esc(String(c.who).toUpperCase()) + "</div>" + esc(c.says != null ? c.says : c.value) + srcLink(c.source) + "</div>";
+    }).join("") + "</div>";
+  }
+  function dateText(i) { return i.dateNote ? i.dateNote : fmtDate(i.date); }
+  function showLane(l) {
+    marks.forEach(function (x) { x.g.classList.remove("selected"); });
+    (S.laneEls || []).forEach(function (w) { w.classList.toggle("selected", w.getAttribute("data-id") === l.id); });
+    var h = '<div class="shead"><span class="d" style="background:' + esc(l.color) + '"></span>Shipping lane ' + badge(l.status) + '<button class="share" aria-label="Share a link to this lane">Share</button><button class="close" aria-label="Close">×</button></div>' +
+      "<h2>" + esc(l.name) + '</h2><div class="slab">STATUS</div><p>' + esc(l.text) + "</p>";
+    if (l.claims) h += '<div class="slab">WHO SAYS WHAT</div>' + partyBlock(l.claims);
+    h += '<div class="slab">SOURCES</div>' + (l.sources.length ? srcList(l.sources) : '<p class="note">No current source found. Shown for context only.</p>');
+    $("#sheetbody").innerHTML = h; $(".close").onclick = closeSheet; $(".share").onclick = function () { share(l.id, l.name); };
+    var sh = $("#sheet"); sh.style.transform = ""; sh.classList.add("open"); sh.setAttribute("aria-hidden", "false"); sh.scrollTop = 0;
+  }
+  // Share a link that opens this map on this event (the public web version, so it works for anyone).
+  function share(id, title) {
+    var base = NATIVE ? PAGES : location.origin + location.pathname;
+    var url = base + "?map=" + encodeURIComponent(S.cfg.id) + "#/map/" + encodeURIComponent(id);
+    if (navigator.share) { navigator.share({ title: title, url: url }).catch(function () {}); return; }
+    var done = function () { toast("LINK COPIED"); };
+    var fallback = function () { var t = document.createElement("textarea"); t.value = url; document.body.appendChild(t); t.select(); try { document.execCommand("copy"); done(); } catch (e) { prompt("Copy this link:", url); } t.remove(); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, fallback); else fallback();
+  }
   function showIncident(id, fly) {
-    var i = S.doc.events.filter(function (x) { return x.id === id; })[0]; if (!i) return hideSheet();
+    var i = S.doc.events.filter(function (x) { return x.id === id; })[0];
+    if (!i) { var ln = laneById(id); return ln ? showLane(ln) : hideSheet(); }
+    (S.laneEls || []).forEach(function (w) { w.classList.remove("selected"); });
     var g = groupOf(i);
     var m = marks.filter(function (x) { return x.i.id === id; })[0];
     marks.forEach(function (x) { x.g.classList.toggle("selected", x === m); });
@@ -433,16 +511,17 @@
       if (!passes(i)) { S.groups.clear(); store("groups:" + S.cfg.id, []); renderChips(); renderFeed(); }
       if (!m.shown || !passes(i)) { stop(); $("#day").value = days.length - 1; applyDay(true); }
     }
-    var h = '<div class="shead"><span class="d" style="background:' + esc(g.color) + '"></span>' + esc(g.label) + " · " + esc(TYPE_NAME[i.type] || i.type) + " " + badge(i.status) + (S.newIds.has(i.id) ? '<span class="new">NEW</span>' : "") + '<button class="close" aria-label="Close">×</button></div>' +
-      "<h2>" + esc(i.title) + '</h2><div class="smeta">' + esc(fmtDate(i.date)) + " · " + esc(i.oblast) + " · " + esc(i.front) + " · position: " + esc(i.coordPrecision) + "</div>" +
+    var h = '<div class="shead"><span class="d" style="background:' + esc(g.color) + '"></span>' + esc(g.label) + " · " + esc(TYPE_NAME[i.type] || i.type) + " " + badge(i.status) + tags(i) + '<button class="share" aria-label="Share a link to this event">Share</button><button class="close" aria-label="Close">×</button></div>' +
+      "<h2>" + esc(i.title) + '</h2><div class="smeta">' + esc(dateText(i)) + " · " + esc(i.oblast) + " · " + esc(i.front) + (i.place && i.title.indexOf(i.place) < 0 ? " · " + esc(i.place) : "") + " · position: " + esc(PREC[i.coordPrecision] || i.coordPrecision) + "</div>" +
       '<div class="slab">WHAT HAPPENED</div><p>' + esc(i.caption) + "</p>";
+    if (i.claims) h += '<div class="slab">WHO SAYS WHAT</div>' + partyBlock(i.claims);
     if (i.numbers) h += '<div class="slab">' + esc(i.numbers.label).toUpperCase() + "</div>" + claimsBlock(i.numbers, i.numbers.independent ? [i.numbers.independent] : []);
-    h += '<div class="slab">SOURCES</div>' + srcList(i.sources);
-    $("#sheetbody").innerHTML = h; $(".close").onclick = closeSheet;
+    h += '<div class="slab">SOURCES</div>' + quality(i) + srcList(i.sources);
+    $("#sheetbody").innerHTML = h; $(".close").onclick = closeSheet; $(".share").onclick = function () { share(i.id, i.title); };
     var sh = $("#sheet"); sh.style.transform = ""; sh.classList.add("open"); sh.setAttribute("aria-hidden", "false"); sh.scrollTop = 0;
     if (m) requestAnimationFrame(function () { if (fly) flyToMark(m); else ensureVisibleAboveSheet(m); });
   }
-  function hideSheet() { var sh = $("#sheet"); sh.classList.remove("open"); sh.style.transform = ""; sh.setAttribute("aria-hidden", "true"); marks.forEach(function (m) { m.g.classList.remove("selected"); }); }
+  function hideSheet() { var sh = $("#sheet"); sh.classList.remove("open"); sh.style.transform = ""; sh.setAttribute("aria-hidden", "true"); marks.forEach(function (m) { m.g.classList.remove("selected"); }); (S.laneEls || []).forEach(function (w) { w.classList.remove("selected"); }); }
   function closeSheet() { if (!route().ev) return hideSheet(); if ((history.state && history.state.depth) > 0) history.back(); else nav(route().tab, null, true); }
   function initSheet() {
     var g = $(".grip"), sh = $("#sheet"), y0 = null;
@@ -453,13 +532,29 @@
   }
 
   /* ---------- Feed ---------- */
+  function changeStrip() {
+    var n = [], u = [];
+    S.doc.events.forEach(function (e) { if (S.newIds.has(e.id)) n.push(e); else if (S.updIds.has(e.id)) u.push(e); });
+    if (!n.length && !u.length) return '<div class="chg quiet">No changes since your last visit. Events are never deleted, only added or corrected.</div>';
+    var item = function (e, t) { return '<a href="#/map/' + encodeURIComponent(e.id) + '" data-go="' + esc(e.id) + '"><b>' + t + "</b> " + esc(e.title) + "</a>"; };
+    return '<div class="chg"><div class="chg-h">SINCE YOUR LAST VISIT · ' + n.length + " NEW · " + u.length + " UPDATED</div>" +
+      n.slice(0, 8).map(function (e) { return item(e, "NEW"); }).join("") + u.slice(0, 8).map(function (e) { return item(e, "UPDATED"); }).join("") +
+      (n.length + u.length > 16 ? '<div class="chg-more">…and more below</div>' : "") + "</div>";
+  }
+  function headlines() {
+    var d = S.heads; if (!d || !d.items.length) return "";
+    return '<div class="sect">HEADLINES · AUTO-PULLED, NOT CHECKED</div><div class="heads">' + d.items.slice(0, 40).map(function (x) {
+      return '<a class="hl" href="' + esc(safeUrl(x.link)) + '"><span class="hs">' + esc(x.source) + (x.date ? " · " + esc(fmtStamp(x.date)) : "") + "</span>" + esc(x.headline) + "</a>";
+    }).join("") + '</div><div class="note">These come straight from news feeds. They are leads for the daily update, not map events, and are not labelled or verified.</div>';
+  }
   function renderFeed() {
     var list = S.doc.events.filter(passes).sort(function (a, b) { return a.date === b.date ? 0 : a.date < b.date ? 1 : -1; });
-    $("#feed").innerHTML = list.map(function (i, n) {
+    $("#feed").innerHTML = changeStrip() + list.map(function (i, n) {
       return '<article class="fcard" data-id="' + esc(i.id) + '" style="--c:' + esc(groupOf(i).color) + ";animation-delay:" + Math.min(n * 35, 500) + 'ms"><div class="fmeta"><span>' +
-        esc(fmtDate(i.date)) + " · " + esc(TYPE_NAME[i.type] || i.type) + " · " + esc(i.oblast) + "</span><span>" + badge(i.status) + (S.newIds.has(i.id) ? '<span class="new">NEW</span>' : "") + "</span></div><h3>" + esc(i.title) + "</h3><p>" + esc(i.caption) + "</p>" + srcList(i.sources) + "</article>";
-    }).join("") || '<div class="empty">No events for this filter.</div>';
+        esc(dateText(i)) + " · " + esc(TYPE_NAME[i.type] || i.type) + " · " + esc(i.oblast) + "</span><span>" + badge(i.status) + tags(i) + "</span></div><h3>" + esc(i.title) + "</h3><p>" + esc(i.caption) + "</p>" + quality(i) + srcList(i.sources) + "</article>";
+    }).join("") + (list.length ? "" : '<div class="empty">No events for this filter.</div>') + headlines();
     $$(".fcard").forEach(function (c) { c.onclick = function () { nav("map", c.dataset.id, false, true); }; });
+    $$(".chg a").forEach(function (a) { a.onclick = function (e) { e.preventDefault(); nav("map", a.dataset.go, false, true); }; });
   }
 
   /* ---------- Stats ---------- */
@@ -473,14 +568,38 @@
     }).join("") + "</div></div>";
     var byCat = {};
     S.doc.stats.forEach(function (f) { (byCat[f.category] = byCat[f.category] || []).push(f); });
+    var dip = S.doc.events.filter(function (e) { return e.type === "diplomacy"; }).sort(function (a, b) { return a.date < b.date ? 1 : -1; });
+    if (dip.length) h += '<div class="sect">DIPLOMACY TIMELINE</div><div class="scard tline">' + dip.map(function (e) {
+      return '<a class="tl" href="#/map/' + encodeURIComponent(e.id) + '" data-go="' + esc(e.id) + '"><span class="td">' + esc(dateText(e)) + "</span><span>" + esc(e.caption) + " " + badge(e.status) + "</span></a>";
+    }).join("") + "</div>";
     Object.keys(CATS).forEach(function (c) {
       if (!byCat[c]) return;
-      h += '<div class="sect">' + CATS[c] + "</div>" + byCat[c].map(function (f) {
-        return '<div class="scard"><h3>' + esc(f.label) + '</h3><div class="asof">as of ' + esc(fmtDate(f.asOf)) + "</div>" + claimsBlock(f, f.independent) + "</div>";
-      }).join("");
+      h += '<div class="sect">' + CATS[c] + "</div>" + byCat[c].map(statCard).join("");
     });
     $("#stats").innerHTML = h;
+    $$("#stats a[data-go]").forEach(function (a) { a.onclick = function (e) { e.preventDefault(); nav("map", a.dataset.go, false, true); }; });
     if (route().tab === "stats") animateBars();
+  }
+  function statCard(f) {
+    var h = '<div class="scard"><div class="sthead"><h3>' + esc(f.label) + "</h3>" + (f.status ? badge(f.status) : "") + '</div><div class="asof">as of ' + esc(f.asOfNote || fmtDate(f.asOf)) + "</div>";
+    if (f.headline) h += '<div class="big"' + (f.tone ? ' style="color:' + esc(f.tone) + '"' : "") + ">" + esc(f.headline) + "</div>";
+    if (f.sub) h += '<div class="ssub">' + esc(f.sub) + "</div>";
+    if (f.series && f.series.length > 1) h += spark(f.series);
+    if (f.rows) h += partyBlock(f.rows);
+    else if (f.ukraine || f.russia) h += claimsBlock(f, f.independent);
+    if (f.text) h += '<p class="stext">' + esc(f.text) + "</p>";
+    if (f.note) h += '<p class="note">' + esc(f.note) + "</p>";
+    if (f.sources && f.sources.length) h += srcList(f.sources.map(function (id) { return S.srcById[id] || { id: id, title: id, url: "#" }; }));
+    return h + "</div>";
+  }
+  // Small line chart for a stat's series (e.g. oil prices), scaled to the data, each value labelled.
+  function spark(series) {
+    var vals = series.map(function (p) { return p.value; }), lo = Math.min.apply(null, vals), hi = Math.max.apply(null, vals), span = hi - lo || 1;
+    var W = 320, x0 = 26, step = (W - 2 * x0) / (series.length - 1), Y = function (v) { return 92 - ((v - lo) / span) * 64; };
+    var pts = series.map(function (p, n) { return (x0 + n * step).toFixed(1) + "," + Y(p.value).toFixed(1); });
+    var g = '<svg class="spark" viewBox="0 0 ' + W + ' 122" role="img" aria-label="Chart"><polyline points="' + pts.join(" ") + '"/>';
+    series.forEach(function (p, n) { var x = x0 + n * step, y = Y(p.value); g += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="3.5"/><text class="v" x="' + x.toFixed(1) + '" y="' + (y - 9).toFixed(1) + '">' + esc(p.value % 1 ? p.value.toFixed(1) : p.value) + '</text><text class="l" x="' + x.toFixed(1) + '" y="116">' + esc(p.label) + "</text>"; });
+    return g + "</svg>";
   }
   function animateBars() {
     var f = $$("#stats .fill"); f.forEach(function (x) { x.style.transition = "none"; x.style.width = "0"; });
@@ -491,12 +610,13 @@
   function initModal() {
     $("#labelsbtn").onclick = function () {
       var g = S.cfg ? S.cfg.groups : [];
-      $("#modalbody").innerHTML = "<h3>What the labels mean</h3>" + Object.keys(STATUS).map(function (k) { return '<div class="lrow"><span>' + badge(k) + "</span><span>" + esc(STATUS_TEXT[k]) + "</span></div>"; }).join("") +
+      $("#modalbody").innerHTML = "<h3>What the labels mean</h3>" + Object.keys(STATUS).map(function (k) { return '<div class="lrow"><span>' + badge(k) + "</span><span>" + esc(statusText(k)) + "</span></div>"; }).join("") +
         '<div class="mkey">' + g.map(function (x) { return '<span><i class="dd" style="background:' + esc(x.color) + '"></i>' + esc(x.label) + "</span>"; }).join("") +
         '<span><i class="dd" style="border:1.6px dashed #f87171"></i>Dashed red ring: disputed</span>' +
         '<span><i class="dd" style="border:1.6px solid #9ca3af"></i>Expanding rings: events on the selected day</span>' +
         '<span><i class="dd" style="border:2px solid var(--cyan)"></i>Cyan glow: new since your last visit</span>' +
-        "<span>Crimea (shaded, dashed) is occupied Ukrainian territory. No front line is drawn.</span></div>";
+        (S.doc && S.doc.lanes && S.doc.lanes.length ? '<span><i class="dd lanekey"></i>Moving dashed line: shipping lane, coloured by status</span>' : "") +
+        (S.cfg && S.cfg.mapNote ? "<span>" + esc(S.cfg.mapNote) + "</span>" : "") + "</div>";
       $("#modal").hidden = false;
     };
     $("#modalclose").onclick = closeModal;

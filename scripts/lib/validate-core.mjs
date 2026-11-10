@@ -1,10 +1,11 @@
 // Shared data checks for data/<map>.json. Used by validate.mjs (CLI, CI) and merge-update.mjs (daily job).
 // See data/SCHEMA.md for the format these rules enforce.
 
-export const TYPES = ["missile", "drone", "airstrike", "artillery", "energy", "deep-strike", "frontline", "claim", "ceasefire", "naval", "other"];
+export const TYPES = ["missile", "drone", "airstrike", "artillery", "energy", "deep-strike", "frontline", "claim", "ceasefire", "naval", "ground", "diplomacy", "unrest", "other"];
 export const STATUSES = ["CONFIRMED", "ONE_PARTY", "DISPUTED", "UNVERIFIED"];
 export const PRECISIONS = ["city", "approx", "oblast"];
-export const STAT_CATEGORIES = ["casualties", "equipment", "shootdowns", "territory", "other"];
+export const STAT_CATEGORIES = ["casualties", "humanitarian", "equipment", "shootdowns", "territory", "diplomacy", "economy", "other"];
+const EVENT_FIELDS = ["id", "date", "dateNote", "region", "oblast", "front", "type", "status", "title", "caption", "lat", "lon", "coordPrecision", "sources", "numbers", "claims", "place", "read"];
 
 // Outlets that speak for one side (government, military, state media) or are unvetted social posts.
 // A CONFIRMED event needs at least one source that is NOT on this list.
@@ -12,6 +13,10 @@ export const PARTY_DOMAINS = [
   "gov.ua", "mil.gov.ua", "mod.gov.ua", "president.gov.ua", "ukrinform.net", "ukrinform.ua",
   "mil.ru", "mod.gov.ru", "kremlin.ru", "government.ru", "tass.ru", "tass.com", "ria.ru", "rg.ru", "iz.ru", "rt.com", "sputnikglobe.com", "interfax.ru",
   "t.me", "x.com", "twitter.com", "facebook.com", "telegram.org", "vk.com",
+  // Middle East: governments, militaries, armed groups and their media
+  "gov.il", "idf.il", "mod.gov.il", "pmo.gov.il", "wafa.ps", "moh.gov.ps", "gmo.ps", "moph.gov.lb", "nna-leb.gov.lb", "almanar.com.lb",
+  "sana.sy", "irna.ir", "tasnimnews.com", "farsnews.ir", "presstv.ir", "mehrnews.com", "sepahnews.ir", "president.ir", "mfa.gov.ir",
+  "saba.ye", "sabanew.net", "almasirah.net", "spa.gov.sa", "wam.ae", "centcom.mil", "defense.gov", "war.gov", "whitehouse.gov", "state.gov",
 ];
 
 const ID_RE = /^[a-z0-9][a-z0-9-]{2,63}$/;
@@ -23,6 +28,16 @@ export function isPartyUrl(url) { const h = hostOf(url); return !!h && PARTY_DOM
 function isUrl(u) { const h = typeof u === "string" && /^https?:\/\//.test(u) && hostOf(u); return !!h && h.includes("."); }
 function realDate(d) { if (typeof d !== "string" || !DATE_RE.test(d)) return false; const t = new Date(d + "T00:00:00Z"); return !isNaN(t) && t.toISOString().slice(0, 10) === d; }
 function str(v, max) { return typeof v === "string" && v.trim().length > 0 && v.length <= max; }
+const HEX_RE = /^#[0-9a-fA-F]{3,8}$/;
+function checkClaims(list, at, E, ref) {
+  if (!Array.isArray(list) || !list.length) return E.push(`${at}: claims must be a non-empty list`);
+  list.forEach((c, k) => {
+    if (!c || !str(c.who, 120) || !str(c.says, 800)) E.push(`${at}: claim #${k + 1} needs "who" and "says"`);
+    else ref(c.source, `${at} claim #${k + 1}`);
+    const extra = c ? Object.keys(c).filter((x) => !["who", "says", "source"].includes(x)) : [];
+    if (extra.length) E.push(`${at}: claim #${k + 1} unknown field(s) ${extra.join(", ")}`);
+  });
+}
 
 /**
  * @param doc parsed data file
@@ -68,7 +83,7 @@ export function validate(doc, mapCfg, opts = {}) {
     if (ids.has(e.id)) E.push(`${at}: duplicate id`);
     ids.add(e.id);
     if (!realDate(e.date)) E.push(`${at}: date must be a real YYYY-MM-DD date`);
-    else if (e.date < "2022-02-24") E.push(`${at}: date ${e.date} is before the full-scale invasion`);
+    else if (e.date < (mapCfg.minDate || "2022-02-24")) E.push(`${at}: date ${e.date} is before this map's start (${mapCfg.minDate || "2022-02-24"})`);
     else if (e.date > maxDate) E.push(`${at}: date ${e.date} is in the future`);
     if (!regions.has(e.region)) E.push(`${at}: region "${e.region}" must be one of ${[...regions].join(", ")}`);
     if (!str(e.oblast, 80)) E.push(`${at}: missing oblast`);
@@ -91,11 +106,34 @@ export function validate(doc, mapCfg, opts = {}) {
       if (e.status === "CONFIRMED" && e.sources.every((s) => s && isPartyUrl(s.url)))
         E.push(`${at}: CONFIRMED needs at least one independent source (all sources are official/state/social)`);
     }
-    const extra = Object.keys(e).filter((k) => !["id", "date", "region", "oblast", "front", "type", "status", "title", "caption", "lat", "lon", "coordPrecision", "sources", "numbers", "place"].includes(k));
+    const extra = Object.keys(e).filter((k) => !EVENT_FIELDS.includes(k));
     if (extra.length) E.push(`${at}: unknown field(s) ${extra.join(", ")}`);
     if (e.place != null && !str(e.place, 80)) E.push(`${at}: place must be a short town/city name`);
     if (e.numbers != null) checkNumbers(e.numbers, `${at} numbers`, E, ref, false);
+    if (e.claims != null) checkClaims(e.claims, at, E, ref);
+    if (e.dateNote != null && !str(e.dateNote, 80)) E.push(`${at}: dateNote must be a short text`);
+    if (e.read != null && !["full", "snippet"].includes(e.read)) E.push(`${at}: read must be "full" (a cited article was read in full) or "snippet" (only a headline or preview)`);
   });
+
+  // Lanes (optional): shipping lanes or other lines drawn on the map, with a status like events.
+  if (doc.lanes != null) {
+    if (!Array.isArray(doc.lanes)) E.push("lanes must be a list");
+    else doc.lanes.forEach((l, i) => {
+      const at = `lane ${l && l.id ? `"${l.id}"` : `#${i}`}`;
+      if (!l || !ID_RE.test(l.id || "")) return E.push(`${at}: id must be lowercase letters, digits and dashes`);
+      if (ids.has(l.id)) E.push(`${at}: id is already used by an event or lane`);
+      ids.add(l.id);
+      if (!str(l.name, 80)) E.push(`${at}: missing name`);
+      if (!STATUSES.includes(l.status)) E.push(`${at}: status must be one of ${STATUSES.join(", ")}`);
+      if (!str(l.text, 1500)) E.push(`${at}: missing text`);
+      if (!HEX_RE.test(l.color || "")) E.push(`${at}: color must be a hex colour`);
+      if (!Array.isArray(l.points) || l.points.length < 2 || l.points.some((p) => !Array.isArray(p) || p.length !== 2 || p.some((n) => typeof n !== "number") || p[1] < b.minLat || p[1] > b.maxLat || p[0] < b.minLon || p[0] > b.maxLon))
+        E.push(`${at}: points must be 2+ [lon, lat] pairs inside the map area`);
+      if (!Array.isArray(l.sources) || (!l.sources.length && l.status !== "UNVERIFIED")) E.push(`${at}: needs at least one source (only an UNVERIFIED context lane may have none)`);
+      else l.sources.forEach((s) => { const r = s && reg.get(s.id); if (!r) E.push(`${at}: source "${s && s.id}" is not in the sources list`); else { used.add(s.id); if (r.url !== s.url) E.push(`${at}: source "${s.id}" url differs from the sources list`); } });
+      if (l.claims != null) checkClaims(l.claims, at, E, ref);
+    });
+  }
 
   // Stats
   if (!Array.isArray(doc.stats)) E.push("stats must be a list");
@@ -104,7 +142,19 @@ export function validate(doc, mapCfg, opts = {}) {
     if (!f || !str(f.label, 200)) return E.push(`stats[${i}]: missing label`);
     if (!STAT_CATEGORIES.includes(f.category)) E.push(`${at}: category must be one of ${STAT_CATEGORIES.join(", ")}`);
     if (!realDate(f.asOf) || f.asOf > maxDate) E.push(`${at}: asOf must be a real date, not in the future`);
-    checkNumbers(f, at, E, ref, true);
+    if (f.status != null && !STATUSES.includes(f.status)) E.push(`${at}: status must be one of ${STATUSES.join(", ")}`);
+    for (const k of ["asOfNote", "headline", "sub"]) if (f[k] != null && !str(f[k], 200)) E.push(`${at}: ${k} must be a short text`);
+    for (const k of ["note", "text"]) if (f[k] != null && !str(f[k], 1500)) E.push(`${at}: ${k} must be text up to 1500 characters`);
+    if (f.tone != null && !HEX_RE.test(f.tone)) E.push(`${at}: tone must be a hex colour`);
+    if (f.sources != null) { if (!Array.isArray(f.sources)) E.push(`${at}: sources must be a list of source ids`); else f.sources.forEach((id) => ref(id, at)); }
+    if (f.series != null && (!Array.isArray(f.series) || f.series.some((p) => !p || !str(p.label, 20) || typeof p.value !== "number" || !isFinite(p.value)))) E.push(`${at}: series must be a list of {label, value}`);
+    if (f.rows != null) {
+      // Multi-party form: one row per party or counter.
+      if (!Array.isArray(f.rows) || !f.rows.length) E.push(`${at}: rows must be a non-empty list`);
+      else f.rows.forEach((r, k) => { if (!r || !str(r.who, 120) || !str(r.value, 600)) E.push(`${at}: row #${k + 1} needs "who" and "value"`); else ref(r.source, `${at} row #${k + 1}`); });
+    } else if (f.ukraine != null || f.russia != null) checkNumbers(f, at, E, ref, true);
+    else if (!f.text && !f.headline) E.push(`${at}: needs rows, ukraine/russia figures, a headline or text`);
+    if (f.sources == null && f.rows != null && !f.rows.some((r) => r.source)) E.push(`${at}: needs sources (a list of source ids) or a source on a row`);
   });
 
   for (const id of reg.keys()) if (!used.has(id)) W.push(`source "${id}" is not used by any event or stat`);

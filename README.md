@@ -1,10 +1,10 @@
-# Ukraine Ops Map
+# Ukraine Ops Map + Mideast Ops Map
 
-A map of recent events in the Russia-Ukraine war. Every event is sourced and labelled **Confirmed**, **One party's claim**, **Disputed** or **Unverified**. It runs as an Android app (and as a web page), and its data updates itself every morning.
+Two maps in one app: recent events in the **Russia-Ukraine war** and in the **Middle East wars** (Gaza and the West Bank, Lebanon and Syria, the Iran war with the Gulf, Hormuz and Yemen, Iraq). Switch between them with the **UKRAINE / MIDDLE EAST** bar at the top. Every event is sourced and labelled **Confirmed**, **One party's claim**, **Disputed** or **Unverified**. It runs as an Android app (and as a web page). The Ukraine data updates itself every morning; the Middle East data is a snapshot from Oct 30, 2026 until its own daily update is switched on (see below).
 
 - **App download (latest APK):** https://github.com/romanturtle3126/war-trackers/releases/latest
 - **Web version:** https://romanturtle3126.github.io/war-trackers/
-- **Live data file:** https://romanturtle3126.github.io/war-trackers/data/ukraine.json
+- **Live data files:** https://romanturtle3126.github.io/war-trackers/data/ukraine.json and `.../data/middle-east.json`
 - **What changed each day:** [`UPDATE_LOG.md`](UPDATE_LOG.md)
 
 ## Install on your Samsung Galaxy S23+
@@ -20,16 +20,23 @@ A map of recent events in the Russia-Ukraine war. Every event is sourced and lab
 
 ## Using it
 
-- **Chips** (North & East, South & Dnipro, Kyiv & rear, Russia/Crimea & sea) filter the map and the Feed. Tap several to combine; **All** resets.
+- **UKRAINE / MIDDLE EAST** at the top switches maps. The app remembers the last one.
+- An **amber banner** under the title means the data is more than 36 hours old or the app couldn't refresh. It says which.
+- **Chips** filter the map and the Feed by front (Ukraine: North & East, South & Dnipro, Kyiv & rear, Russia/Crimea & sea; Middle East: Gaza & West Bank, Lebanon & Syria, Iran war / Gulf / Yemen, Iraq & Iran internal). Tap several to combine; **All** resets.
 - **Markers:** colour = front. A **dashed red ring** = disputed. **Expanding rings** = events on the day shown in the replay card. A **cyan glow** and **NEW** tag = added since you last opened the app. **Labels ⓘ** explains it all.
-- **Tap a dot** for its card (what happened + sources). Swipe it down, tap ×, or press Back to close.
+- **Tap a dot** for its card: what happened, **who says what** (each side's version side by side), sources, and source-quality tags (**READ IN FULL**, **SNIPPET ONLY**, **ONLY ON X / TELEGRAM**). **Share** copies or shares a link that opens straight on that event. Swipe the card down, tap ×, or press Back to close.
+- **Middle East shipping lanes** (Hormuz, Red Sea, Suez) are moving dashed lines coloured by status; tap one for its card.
 - **▶** replays day by day; markers pop in as each day arrives. Drag the slider to jump to a day.
 - **+ / − / FIT / EAST** glide the map; **FIT** shows all of Ukraine, **EAST** zooms to the eastern front. **+N off-map** appears when events (e.g. deep in Russia) are outside the view; tap it to include them.
-- **Feed** lists every event, newest first; tap one to fly the map to it. **Stats** shows each side's figures side by side.
+- **Feed** starts with **Since your last visit** (new and corrected events), then every event newest first (tap one to fly to it), then the latest **auto-pulled headlines** (unchecked news-feed items). **Stats** shows each side's figures side by side; the Middle East also has a diplomacy timeline, displacement figures and a Brent oil chart.
 - **Refresh:** tap ⟳, or pull down on Feed or Stats. The app also refreshes itself when reopened. The header shows **Data updated &lt;date&gt;**; **OFFLINE** means you're seeing the last copy the phone saved.
 - If your phone has *Settings → Accessibility → Visibility enhancements → Remove animations* turned on, the app respects it and stays still.
 
-## How the daily update works
+## Middle East: daily update (not switched on yet)
+
+The Middle East headlines already refresh daily with the Ukraine ones, but the map's events and stats only change when a research run updates them. Everything is ready for a second Claude routine: its instructions are in [`UPDATE_PROMPT_MIDDLE_EAST.md`](UPDATE_PROMPT_MIDDLE_EAST.md) and it uses the same safety checks and the same **Accept daily data update** workflow. Until it's on, the Middle East map shows an amber "not updated automatically yet" banner.
+
+## How the daily update works (Ukraine)
 
 | When (Toronto) | What | Where |
 |---|---|---|
@@ -79,11 +86,13 @@ The APK is signed with a private key. **Android only installs an update if it's 
 
 ```
 web/                 the app (index.html, css, js, maps.json = per-map settings, geo/ = borders)
-data/ukraine.json    events + stats + sources (format: data/SCHEMA.md)
-data/ukraine-feed.json  auto-pulled headlines
+data/ukraine.json, data/middle-east.json   events + stats + sources (+ lanes) (format: data/SCHEMA.md)
+data/<map>-feed.json  auto-pulled headlines
+scripts/import-grok-middle-east.mjs  one-time import of the original Grok Middle East tracker
 scripts/validate.mjs     node scripts/validate.mjs [file] [--links]
 scripts/merge-update.mjs merges data/incoming/<map>.json safely (used by the routine)
-scripts/fetch-feeds.mjs  pulls RSS headlines
+scripts/fetch-feeds.mjs  pulls RSS headlines: node scripts/fetch-feeds.mjs ukraine|middle-east
+scripts/place.mjs        town lookup: node scripts/place.mjs [--map=middle-east] "Name"
 scripts/build-web.mjs    assembles www/ (app + bundled data) for Pages and Android
 scripts/serve.mjs        local preview at http://127.0.0.1:8765
 android/             Capacitor Android project (app id com.aaron.ukraineopsmap)
@@ -91,6 +100,6 @@ android/             Capacitor Android project (app id com.aaron.ukraineopsmap)
 ```
 
 The app always tries the live data on GitHub Pages first, then the last copy saved on the phone, then the copy built into the APK, so it works offline.
-Adding the Middle East map later: add an entry to `web/maps.json` plus `data/middle-east.json` (same schema). The app shows a map switcher automatically. See the end of `data/SCHEMA.md`.
+Adding a third map: see the end of `data/SCHEMA.md`.
 
-Place coordinates: GeoNames (CC BY 4.0), rebuilt with `scripts/build-places.mjs`. Map borders: Natural Earth (public domain), with Crimea shown as part of Ukraine. The red dashed front line is illustrative only.
+Place coordinates: GeoNames (CC BY 4.0), rebuilt with `scripts/build-places.mjs`. Map borders: Natural Earth (public domain), internationally recognised borders: Crimea shown as part of Ukraine (hatched, occupied), the Golan Heights as Syrian territory occupied by Israel (hatched). The red dashed front line is illustrative only.

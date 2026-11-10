@@ -7,30 +7,560 @@
       "data": "data/ukraine.json",
       "feed": "data/ukraine-feed.json",
       "geo": "geo/eastern-europe.json",
-      "highlight": "UKR",
-      "occupied": [{ "label": "CRIMEA (OCCUPIED)", "inside": [34.1, 44.95], "at": [34.3, 45.55] }],
-      "projection": { "lon0": 19, "lat0": 56, "kx": 6.7, "ky": 10 },
-      "home": { "minLon": 26.6, "minLat": 44.2, "maxLon": 40.3, "maxLat": 52.4 },
-      "presets": [{ "label": "EAST", "box": { "minLon": 34.2, "minLat": 46.4, "maxLon": 39.8, "maxLat": 50.9 } }],
-      "bounds": { "minLat": 40, "maxLat": 62, "minLon": 18, "maxLon": 62 },
+      "highlight": [
+        "UKR"
+      ],
+      "occupied": [
+        {
+          "label": "CRIMEA (OCCUPIED)",
+          "inside": [34.1, 44.95],
+          "at": [34.3, 45.55]
+        }
+      ],
+      "projection": {
+        "lon0": 19,
+        "lat0": 56,
+        "kx": 6.7,
+        "ky": 10
+      },
+      "home": {
+        "minLon": 26.6,
+        "minLat": 44.2,
+        "maxLon": 40.3,
+        "maxLat": 52.4
+      },
+      "presets": [
+        {
+          "label": "EAST",
+          "box": {
+            "minLon": 34.2,
+            "minLat": 46.4,
+            "maxLon": 39.8,
+            "maxLat": 50.9
+          }
+        }
+      ],
+      "bounds": {
+        "minLat": 40,
+        "maxLat": 62,
+        "minLon": 18,
+        "maxLon": 62
+      },
       "grid": 3,
       "regions": [
-        { "id": "north", "label": "North & Kharkiv" },
-        { "id": "donbas", "label": "Donbas" },
-        { "id": "south", "label": "South" },
-        { "id": "crimea-sea", "label": "Crimea & Black Sea" },
-        { "id": "rear", "label": "Ukraine rear" },
-        { "id": "russia", "label": "Russia" }
+        {
+          "id": "north",
+          "label": "North & Kharkiv"
+        },
+        {
+          "id": "donbas",
+          "label": "Donbas"
+        },
+        {
+          "id": "south",
+          "label": "South"
+        },
+        {
+          "id": "crimea-sea",
+          "label": "Crimea & Black Sea"
+        },
+        {
+          "id": "rear",
+          "label": "Ukraine rear"
+        },
+        {
+          "id": "russia",
+          "label": "Russia"
+        }
       ],
       "groups": [
-        { "id": "ne", "label": "North & East Ukraine", "color": "#f26b6b", "regions": ["north", "donbas"] },
-        { "id": "south", "label": "South & Dnipro", "color": "#f5a623", "regions": ["south"] },
-        { "id": "rear", "label": "Kyiv & rear Ukraine", "color": "#4f9df7", "regions": ["rear"] },
-        { "id": "ru", "label": "Russia, Crimea & sea", "color": "#a07cf0", "regions": ["russia", "crimea-sea"] }
+        {
+          "id": "ne",
+          "label": "North & East Ukraine",
+          "color": "#f26b6b",
+          "regions": [
+            "north",
+            "donbas"
+          ]
+        },
+        {
+          "id": "south",
+          "label": "South & Dnipro",
+          "color": "#f5a623",
+          "regions": [
+            "south"
+          ]
+        },
+        {
+          "id": "rear",
+          "label": "Kyiv & rear Ukraine",
+          "color": "#4f9df7",
+          "regions": [
+            "rear"
+          ]
+        },
+        {
+          "id": "ru",
+          "label": "Russia, Crimea & sea",
+          "color": "#a07cf0",
+          "regions": [
+            "russia",
+            "crimea-sea"
+          ]
+        }
       ],
-      "countryLabels": [["BELARUS", 28, 52.6], ["UKRAINE", 31.2, 49.1], ["MOLDOVA", 28.4, 47.6], ["ROMANIA", 24.8, 46.0], ["POLAND", 20.8, 51.5], ["RUSSIA", 44, 52.5], ["TURKEY", 33.5, 40.6]],
-      "seaLabels": [["Black Sea", 33.5, 43.2], ["Sea of Azov", 36.6, 46.15]],
-      "cities": [["Kyiv", 30.52, 50.45], ["Kharkiv", 36.23, 49.99], ["Odesa", 30.73, 46.48], ["Dnipro", 35.04, 48.46], ["Zaporizhzhia", 35.14, 47.84], ["Kherson", 32.62, 46.64], ["Sumy", 34.8, 50.91], ["Donetsk", 37.8, 48.0], ["Sevastopol", 33.52, 44.6], ["Kursk", 36.19, 51.73], ["Belgorod", 36.59, 50.6], ["Minsk", 27.56, 53.9], ["Chisinau", 28.86, 47.01], ["Bucharest", 26.1, 44.43], ["Lviv", 24.03, 49.84], ["Moscow", 37.62, 55.75], ["Rostov-on-Don", 39.72, 47.23]]
+      "countryLabels": [
+        [
+          "BELARUS",
+          28,
+          52.6
+        ],
+        [
+          "UKRAINE",
+          31.2,
+          49.1
+        ],
+        [
+          "MOLDOVA",
+          28.4,
+          47.6
+        ],
+        [
+          "ROMANIA",
+          24.8,
+          46
+        ],
+        [
+          "POLAND",
+          20.8,
+          51.5
+        ],
+        [
+          "RUSSIA",
+          44,
+          52.5
+        ],
+        [
+          "TURKEY",
+          33.5,
+          40.6
+        ]
+      ],
+      "seaLabels": [
+        [
+          "Black Sea",
+          33.5,
+          43.2
+        ],
+        [
+          "Sea of Azov",
+          36.6,
+          46.15
+        ]
+      ],
+      "cities": [
+        [
+          "Kyiv",
+          30.52,
+          50.45
+        ],
+        [
+          "Kharkiv",
+          36.23,
+          49.99
+        ],
+        [
+          "Odesa",
+          30.73,
+          46.48
+        ],
+        [
+          "Dnipro",
+          35.04,
+          48.46
+        ],
+        [
+          "Zaporizhzhia",
+          35.14,
+          47.84
+        ],
+        [
+          "Kherson",
+          32.62,
+          46.64
+        ],
+        [
+          "Sumy",
+          34.8,
+          50.91
+        ],
+        [
+          "Donetsk",
+          37.8,
+          48
+        ],
+        [
+          "Sevastopol",
+          33.52,
+          44.6
+        ],
+        [
+          "Kursk",
+          36.19,
+          51.73
+        ],
+        [
+          "Belgorod",
+          36.59,
+          50.6
+        ],
+        [
+          "Minsk",
+          27.56,
+          53.9
+        ],
+        [
+          "Chisinau",
+          28.86,
+          47.01
+        ],
+        [
+          "Bucharest",
+          26.1,
+          44.43
+        ],
+        [
+          "Lviv",
+          24.03,
+          49.84
+        ],
+        [
+          "Moscow",
+          37.62,
+          55.75
+        ],
+        [
+          "Rostov-on-Don",
+          39.72,
+          47.23
+        ]
+      ],
+      "statusText": {
+        "CONFIRMED": "Credible outlet or monitor with independent corroboration (imagery, footage or several outlets).",
+        "ONE_PARTY": "Stated only by Ukrainian or Russian officials or their media; no independent confirmation.",
+        "DISPUTED": "The sides, or a side and an independent assessor, give conflicting accounts.",
+        "UNVERIFIED": "Reported, but not confirmed by a primary outlet."
+      },
+      "mapNote": "Crimea (shaded, dashed) is occupied Ukrainian territory. No front line is drawn.",
+      "fitLabel": "Fit Ukraine"
+    },
+    {
+      "id": "middle-east",
+      "name": "Middle East",
+      "title": "Mideast Ops Map",
+      "data": "data/middle-east.json",
+      "feed": "data/middle-east-feed.json",
+      "geo": "geo/middle-east.json",
+      "minDate": "2023-10-07",
+      "highlight": [],
+      "occupied": [
+        {
+          "label": "GOLAN",
+          "area": "Golan Heights",
+          "at": [36.2, 33.35]
+        }
+      ],
+      "projection": {
+        "lon0": 22,
+        "lat0": 44,
+        "kx": 8.9,
+        "ky": 10
+      },
+      "home": {
+        "minLon": 32.5,
+        "minLat": 12.2,
+        "maxLon": 62,
+        "maxLat": 36.5
+      },
+      "presets": [
+        {
+          "label": "ISR",
+          "box": {
+            "minLon": 34,
+            "minLat": 29.6,
+            "maxLon": 36.6,
+            "maxLat": 33.9
+          }
+        },
+        {
+          "label": "GULF",
+          "box": {
+            "minLon": 48,
+            "minLat": 23,
+            "maxLon": 58.6,
+            "maxLat": 28.6
+          }
+        }
+      ],
+      "bounds": {
+        "minLat": 5,
+        "maxLat": 44,
+        "minLon": 22,
+        "maxLon": 68
+      },
+      "grid": 5,
+      "regions": [
+        {
+          "id": "gaza",
+          "label": "Gaza"
+        },
+        {
+          "id": "westbank",
+          "label": "West Bank"
+        },
+        {
+          "id": "lebanon",
+          "label": "Lebanon"
+        },
+        {
+          "id": "syria",
+          "label": "Syria"
+        },
+        {
+          "id": "israel",
+          "label": "Israel"
+        },
+        {
+          "id": "iran-war",
+          "label": "Iran (war with US/Israel)"
+        },
+        {
+          "id": "gulf",
+          "label": "Gulf, Saudi Arabia & Hormuz"
+        },
+        {
+          "id": "yemen",
+          "label": "Yemen & Red Sea"
+        },
+        {
+          "id": "iraq",
+          "label": "Iraq"
+        },
+        {
+          "id": "iran-internal",
+          "label": "Iran (internal)"
+        }
+      ],
+      "groups": [
+        {
+          "id": "pal",
+          "label": "Gaza & West Bank",
+          "color": "#f26b6b",
+          "regions": [
+            "gaza",
+            "westbank"
+          ]
+        },
+        {
+          "id": "north",
+          "label": "Lebanon & Syria",
+          "color": "#f5a623",
+          "regions": [
+            "lebanon",
+            "syria"
+          ]
+        },
+        {
+          "id": "iran",
+          "label": "Iran war / Gulf / Yemen",
+          "color": "#4f9df7",
+          "regions": [
+            "israel",
+            "iran-war",
+            "gulf",
+            "yemen"
+          ]
+        },
+        {
+          "id": "other",
+          "label": "Iraq & Iran internal",
+          "color": "#a07cf0",
+          "regions": [
+            "iraq",
+            "iran-internal"
+          ]
+        }
+      ],
+      "statusText": {
+        "CONFIRMED": "Reported by an independent monitor or several outlets, and not contested.",
+        "ONE_PARTY": "Reported only by one party or its officials (ministry, military, armed group, state media).",
+        "DISPUTED": "Parties give conflicting accounts. Each side's version is shown.",
+        "UNVERIFIED": "A single report that could not be confirmed, or a source that could not be read in full."
+      },
+      "mapNote": "Dashed lines are shipping lanes, coloured by status; tap one for details. The Golan Heights (hatched) are Syrian territory occupied by Israel. Borders are internationally recognised ones.",
+      "fitLabel": "Fit the region",
+      "countryLabels": [
+        [
+          "EGYPT",
+          29.6,
+          26.6
+        ],
+        [
+          "SAUDI ARABIA",
+          44.6,
+          23.6
+        ],
+        [
+          "IRAN",
+          54.5,
+          32.2
+        ],
+        [
+          "IRAQ",
+          43.6,
+          32.6
+        ],
+        [
+          "SYRIA",
+          38.6,
+          35.1
+        ],
+        [
+          "TURKEY",
+          35,
+          39.2
+        ],
+        [
+          "YEMEN",
+          47.2,
+          15.9
+        ],
+        [
+          "OMAN",
+          56.6,
+          20.6
+        ],
+        [
+          "SUDAN",
+          31,
+          15.5
+        ]
+      ],
+      "seaLabels": [
+        [
+          "Mediterranean Sea",
+          30,
+          33.6
+        ],
+        [
+          "Red Sea",
+          38.3,
+          20.2
+        ],
+        [
+          "Persian Gulf",
+          51.2,
+          27.6
+        ],
+        [
+          "Gulf of Oman",
+          58.8,
+          24.3
+        ],
+        [
+          "Arabian Sea",
+          62,
+          17
+        ],
+        [
+          "Gulf of Aden",
+          48,
+          12.6
+        ],
+        [
+          "Caspian Sea",
+          51,
+          41
+        ]
+      ],
+      "cities": [
+        [
+          "Gaza City",
+          34.46,
+          31.5
+        ],
+        [
+          "Beirut",
+          35.5,
+          33.89
+        ],
+        [
+          "Damascus",
+          36.29,
+          33.51
+        ],
+        [
+          "Cairo",
+          31.24,
+          30.04
+        ],
+        [
+          "Baghdad",
+          44.36,
+          33.31
+        ],
+        [
+          "Basra",
+          47.78,
+          30.51
+        ],
+        [
+          "Tehran",
+          51.39,
+          35.69
+        ],
+        [
+          "Bandar Abbas",
+          56.27,
+          27.18
+        ],
+        [
+          "Riyadh",
+          46.72,
+          24.69
+        ],
+        [
+          "Jeddah",
+          39.17,
+          21.49
+        ],
+        [
+          "Sanaa",
+          44.21,
+          15.35
+        ],
+        [
+          "Aden",
+          45.03,
+          12.79
+        ],
+        [
+          "Dubai",
+          55.27,
+          25.2
+        ],
+        [
+          "Doha",
+          51.53,
+          25.29
+        ],
+        [
+          "Muscat",
+          58.4,
+          23.59
+        ]
+      ],
+      "staleNote": "This map is not updated automatically yet."
     }
   ]
 }

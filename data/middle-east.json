@@ -1,0 +1,2315 @@
+{
+ "schemaVersion": 1,
+ "map": "middle-east",
+ "meta": {
+  "lastUpdated": "2026-10-30T07:00:00-04:00",
+  "coverage": "2026-10-06 to 2026-10-30",
+  "notes": [
+   "Snapshot as of Oct 30, 2026, ~7 AM ET (Toronto), imported from the original Grok tracker. Facts, labels and sources are unchanged.",
+   "A sample of incidents, not a complete count: Gaza and Lebanon strikes are near-daily.",
+   "Counts come from different parties, periods and methods; do not add them together.",
+   "Marker positions are approximate (see coordPrecision). Undated incidents sit on Oct 6 and say so."
+  ]
+ },
+ "events": [
+  {
+   "id": "kamal-adwan-1006",
+   "date": "2026-10-06",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "ground",
+   "status": "DISPUTED",
+   "title": "Shooting: Near Kamal Adwan Hospital, N. Gaza",
+   "caption": "A civil defence worker was killed while helping the wounded. Israel says he was a Hamas sniper.",
+   "lat": 31.54,
+   "lon": 34.52,
+   "coordPrecision": "approx",
+   "place": "Near Kamal Adwan Hospital, N. Gaza",
+   "sources": [
+    {
+     "id": "aj_1013",
+     "title": "Al Jazeera, Palestine weekly, Oct 13",
+     "url": "https://www.aljazeera.com/news/2026/10/13/palestine-weekly-gaza-marks-year-of-ceasefire-with-more-israeli-killing"
+    }
+   ],
+   "read": "full",
+   "dateNote": "Week of Oct 6-12",
+   "claims": [
+    {
+     "who": "Israeli military",
+     "says": "He was a Hamas sniper."
+    },
+    {
+     "who": "Hamas",
+     "says": "Rejects the claim."
+    },
+    {
+     "who": "Al Jazeera",
+     "says": "Not independently verified."
+    }
+   ]
+  },
+  {
+   "id": "jizan-najran-1006",
+   "date": "2026-10-06",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "missile",
+   "status": "CONFIRMED",
+   "title": "Missile: Jizan & Najran, Saudi Arabia",
+   "caption": "Houthi attacks on Saudi airports injured 3. Headline only.",
+   "lat": 17.2,
+   "lon": 43.5,
+   "coordPrecision": "approx",
+   "place": "Jizan & Najran, Saudi Arabia",
+   "sources": [
+    {
+     "id": "ap_1006",
+     "title": "AP, Oct 6",
+     "url": "https://apnews.com/article/iran-yemen-israel-saudi-uae-gaza-october-6-2026-efdbaff2e5931655543fd86638682ad5"
+    }
+   ],
+   "read": "snippet"
+  },
+  {
+   "id": "quneitra-syria-1006",
+   "date": "2026-10-06",
+   "region": "syria",
+   "oblast": "Syria",
+   "front": "Lebanon & Syria",
+   "type": "artillery",
+   "status": "UNVERIFIED",
+   "title": "Shelling: SW Quneitra, Syria",
+   "caption": "Israeli forces shelled an area in southwestern Quneitra. Headline only.",
+   "lat": 33.05,
+   "lon": 35.82,
+   "coordPrecision": "oblast",
+   "place": "SW Quneitra, Syria",
+   "sources": [
+    {
+     "id": "anadolu_3",
+     "title": "Anadolu Agency",
+     "url": "https://www.aa.com.tr/en/middle-east/israeli-forces-shell-area-in-southwestern-syria-s-quneitra/4088736"
+    }
+   ],
+   "read": "snippet",
+   "dateNote": "October, exact date not given"
+  },
+  {
+   "id": "dam-syria-1006",
+   "date": "2026-10-06",
+   "region": "syria",
+   "oblast": "Syria",
+   "front": "Lebanon & Syria",
+   "type": "ground",
+   "status": "UNVERIFIED",
+   "title": "Ground: Near a dam, southern Syria",
+   "caption": "About 10 Israeli military vehicles advanced near a dam. Headline only.",
+   "lat": 32.72,
+   "lon": 35.95,
+   "coordPrecision": "oblast",
+   "place": "Near a dam, southern Syria",
+   "sources": [
+    {
+     "id": "anadolu_4",
+     "title": "Anadolu Agency",
+     "url": "https://www.aa.com.tr/en/middle-east/10-israeli-military-vehicles-advance-near-dam-in-southern-syria/4090511"
+    }
+   ],
+   "read": "snippet",
+   "dateNote": "October, exact date not given"
+  },
+  {
+   "id": "maysan-province-1006",
+   "date": "2026-10-06",
+   "region": "iraq",
+   "oblast": "Iraq",
+   "front": "Iraq & Iran internal",
+   "type": "drone",
+   "status": "UNVERIFIED",
+   "title": "Drone: Maysan province, Iraq",
+   "caption": "Reported launch site for drones aimed at Saudi Arabia's East-West pipeline. Iraq removed a local commander.",
+   "lat": 31.84,
+   "lon": 47.15,
+   "coordPrecision": "oblast",
+   "place": "Maysan province, Iraq",
+   "sources": [
+    {
+     "id": "ilkha",
+     "title": "Ilke News Agency",
+     "url": "https://ilkha.com/english/world/iraq-dismisses-military-commander-after-drone-attacks-against-saudi-arabia--561637"
+    },
+    {
+     "id": "aj_1014",
+     "title": "Al Jazeera, Oct 14",
+     "url": "https://www.aljazeera.com/news/2026/10/14/iraq-pm-tells-saudi-crown-prince-iraqi-territory-wont-be-used-for-attacks"
+    }
+   ],
+   "read": "snippet",
+   "dateNote": "October, exact date not given"
+  },
+  {
+   "id": "burqa-bizzariya-1007",
+   "date": "2026-10-07",
+   "region": "westbank",
+   "oblast": "West Bank",
+   "front": "Gaza & West Bank",
+   "type": "unrest",
+   "status": "CONFIRMED",
+   "title": "Settler attack: Burqa / Bizzariya, Nablus",
+   "caption": "A 44-year-old olive picker was killed in a settler attack. Ambulances were delayed about an hour.",
+   "lat": 32.3,
+   "lon": 35.18,
+   "coordPrecision": "approx",
+   "place": "Burqa / Bizzariya, Nablus",
+   "sources": [
+    {
+     "id": "ocha_1015",
+     "title": "UN OCHA oPt Situation Report, Oct 15",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026"
+    },
+    {
+     "id": "aj_1013",
+     "title": "Al Jazeera, Palestine weekly, Oct 13",
+     "url": "https://www.aljazeera.com/news/2026/10/13/palestine-weekly-gaza-marks-year-of-ceasefire-with-more-israeli-killing"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "UN OCHA",
+     "says": "Killed during settler attack on olive harvesters."
+    },
+    {
+     "who": "Wafa (via Al Jazeera)",
+     "says": "Settlers and soldiers opened fire; at least 16 wounded."
+    }
+   ]
+  },
+  {
+   "id": "panda-mall-1010",
+   "date": "2026-10-10",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "airstrike",
+   "status": "DISPUTED",
+   "title": "Strike: Near Panda Mall, western Gaza City",
+   "caption": "A drone strike killed four people. Israel says they were Hamas fighters.",
+   "lat": 31.52,
+   "lon": 34.44,
+   "coordPrecision": "approx",
+   "place": "Near Panda Mall, western Gaza City",
+   "sources": [
+    {
+     "id": "aj_1013",
+     "title": "Al Jazeera, Palestine weekly, Oct 13",
+     "url": "https://www.aljazeera.com/news/2026/10/13/palestine-weekly-gaza-marks-year-of-ceasefire-with-more-israeli-killing"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Gaza reports (via Al Jazeera)",
+     "says": "Four Palestinians killed."
+    },
+    {
+     "who": "Israeli military",
+     "says": "Targeted members of Hamas's Nukhba force."
+    }
+   ]
+  },
+  {
+   "id": "ash-shujaiyyeh-1011",
+   "date": "2026-10-11",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "ground",
+   "status": "UNVERIFIED",
+   "title": "Ground: Ash Shuja'iyyeh junction, Gaza City",
+   "caption": "Israeli forces reportedly moved 'Yellow Line' markers west, raising fears of new displacement.",
+   "lat": 31.5,
+   "lon": 34.48,
+   "coordPrecision": "approx",
+   "place": "Ash Shuja'iyyeh junction, Gaza City",
+   "sources": [
+    {
+     "id": "ocha_1015",
+     "title": "UN OCHA oPt Situation Report, Oct 15",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "UN OCHA",
+     "says": "Markers 'reportedly' moved westward near the junction."
+    }
+   ]
+  },
+  {
+   "id": "al-zawayda-1011",
+   "date": "2026-10-11",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "airstrike",
+   "status": "CONFIRMED",
+   "title": "Strike: al-Zawayda, central Gaza",
+   "caption": "An airstrike hit a house after the Israeli military ordered residents out.",
+   "lat": 31.44,
+   "lon": 34.37,
+   "coordPrecision": "approx",
+   "place": "al-Zawayda, central Gaza",
+   "sources": [
+    {
+     "id": "aj_1013",
+     "title": "Al Jazeera, Palestine weekly, Oct 13",
+     "url": "https://www.aljazeera.com/news/2026/10/13/palestine-weekly-gaza-marks-year-of-ceasefire-with-more-israeli-killing"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "yater-froun-1012",
+   "date": "2026-10-12",
+   "region": "lebanon",
+   "oblast": "Lebanon",
+   "front": "Lebanon & Syria",
+   "type": "airstrike",
+   "status": "ONE_PARTY",
+   "title": "Strike: Yater & Froun, Bint Jbeil",
+   "caption": "Three killed by artillery, a landmine and leftover munitions, per Lebanese state media.",
+   "lat": 33.15,
+   "lon": 35.33,
+   "coordPrecision": "approx",
+   "place": "Yater & Froun, Bint Jbeil",
+   "sources": [
+    {
+     "id": "anadolu_1012",
+     "title": "Anadolu Agency, Oct 12",
+     "url": "https://www.aa.com.tr/en/world/3-killed-in-southern-lebanon-as-authorities-warn-of-israeli-cluster-bombs-landmines/4085879"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "Lebanon NNA (via Anadolu)",
+     "says": "3 killed."
+    }
+   ]
+  },
+  {
+   "id": "bukha-oman-1021",
+   "date": "2026-10-21",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "naval",
+   "status": "CONFIRMED",
+   "title": "Maritime: 11 nm W of Bukha, Oman",
+   "caption": "An anchored tanker was struck. Fire put out, crew safe.",
+   "lat": 26.15,
+   "lon": 56,
+   "coordPrecision": "approx",
+   "place": "11 nm W of Bukha, Oman",
+   "sources": [
+    {
+     "id": "ukmto",
+     "title": "UKMTO Warning 179/26",
+     "url": "https://www.ukmto.org/-/media/ukmto/products/20261021-ukmto_warning_179_26.pdf"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "UKMTO Warning 179/26",
+     "says": "Struck while at anchor; crew safe."
+    }
+   ]
+  },
+  {
+   "id": "centcom-hq-1021",
+   "date": "2026-10-21",
+   "region": "lebanon",
+   "oblast": "Lebanon",
+   "front": "Lebanon & Syria",
+   "type": "diplomacy",
+   "status": "UNVERIFIED",
+   "title": "Diplomacy: CENTCOM HQ, Tampa (symbolic marker)",
+   "caption": "Lebanese and Israeli military delegations held technical talks at CENTCOM, Oct 21-22. Marker is offshore and symbolic.",
+   "lat": 33.7,
+   "lon": 34.4,
+   "coordPrecision": "oblast",
+   "place": "CENTCOM HQ, Tampa (symbolic marker)",
+   "sources": [
+    {
+     "id": "lawandisrael_1012",
+     "title": "ITIC (Israeli think tank) report, Oct 12-19",
+     "url": "https://www.lawandisrael.org/wp-content/uploads/Topics/Gaza/2023-Conflict/ITIC/further-reports-2026/E_170_26-Hezb-Leb-12-19oct.pdf"
+    }
+   ],
+   "read": "snippet"
+  },
+  {
+   "id": "limah-oman-1022",
+   "date": "2026-10-22",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "naval",
+   "status": "CONFIRMED",
+   "title": "Maritime: 7 nm NE of Limah, Oman",
+   "caption": "A tanker was hit by an unknown projectile but reached port. No casualties.",
+   "lat": 25.98,
+   "lon": 56.45,
+   "coordPrecision": "approx",
+   "place": "7 nm NE of Limah, Oman",
+   "sources": [
+    {
+     "id": "anadolu_2",
+     "title": "Anadolu Agency",
+     "url": "https://www.aa.com.tr/en/middle-east/tanker-hit-by-unknown-projectile-in-strait-of-hormuz-uk-maritime-agency/4098861"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "UKMTO (via Anadolu)",
+     "says": "Unknown projectile; vessel continued to port."
+    }
+   ]
+  },
+  {
+   "id": "southern-syria-1023",
+   "date": "2026-10-23",
+   "region": "syria",
+   "oblast": "Syria",
+   "front": "Lebanon & Syria",
+   "type": "unrest",
+   "status": "UNVERIFIED",
+   "title": "Protest: Southern Syria",
+   "caption": "Hundreds of Syrians protested repeated Israeli incursions. Headline only.",
+   "lat": 32.75,
+   "lon": 36.1,
+   "coordPrecision": "oblast",
+   "place": "Southern Syria",
+   "sources": [
+    {
+     "id": "france24_1023",
+     "title": "France 24, Oct 23",
+     "url": "https://www.france24.com/en/live-news/20261023-hundreds-of-syrians-protest-repeated-israeli-incursions"
+    }
+   ],
+   "read": "snippet"
+  },
+  {
+   "id": "khash-saravan-1025",
+   "date": "2026-10-25",
+   "region": "iran-internal",
+   "oblast": "Iran",
+   "front": "Iraq & Iran internal",
+   "type": "other",
+   "status": "ONE_PARTY",
+   "title": "Armed group: Khash-Saravan road, Iran",
+   "caption": "A Baloch armed group set up a temporary checkpoint to hunt regime personnel, per its own footage.",
+   "lat": 27.9,
+   "lon": 61,
+   "coordPrecision": "approx",
+   "place": "Khash-Saravan road, Iran",
+   "sources": [
+    {
+     "id": "isw_1028",
+     "title": "ISW/CTP Iran Update, Oct 28",
+     "url": "https://understandingwar.org/research/middle-east/iran-update-october-28-2026/"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Mobarizoun Popular Front (Telegram)",
+     "says": "'Controlled' the road for a few hours."
+    }
+   ]
+  },
+  {
+   "id": "tehran-iran-1026",
+   "date": "2026-10-26",
+   "region": "iran-war",
+   "oblast": "Iran",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "diplomacy",
+   "status": "CONFIRMED",
+   "title": "Diplomacy: Tehran, Iran",
+   "caption": "Saudi, Pakistani and Turkish officials met Iran to avert a new war. No deal; talks continue.",
+   "lat": 35.69,
+   "lon": 51.39,
+   "coordPrecision": "approx",
+   "place": "Tehran, Iran",
+   "sources": [
+    {
+     "id": "ap_1026",
+     "title": "AP, Oct 26",
+     "url": "https://apnews.com/article/iran-israel-us-war-10-26-2026-36486edb61b3bf4e0df67e8a17123e44"
+    },
+    {
+     "id": "almonitor_1027",
+     "title": "Al-Monitor (Reuters), Houthis say they hit Ras Tanura, Oct 27",
+     "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-say-they-hit-saudi-ras-tanura-oil-refinery-missile"
+    }
+   ],
+   "read": "snippet"
+  },
+  {
+   "id": "ras-tanura-1027",
+   "date": "2026-10-27",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "missile",
+   "status": "ONE_PARTY",
+   "title": "Missile: Ras Tanura refinery, Saudi Arabia",
+   "caption": "The Houthis say a missile hit Saudi Arabia's largest refinery. Saudi Arabia has not confirmed.",
+   "lat": 26.64,
+   "lon": 50.16,
+   "coordPrecision": "approx",
+   "place": "Ras Tanura refinery, Saudi Arabia",
+   "sources": [
+    {
+     "id": "almonitor_1027",
+     "title": "Al-Monitor (Reuters), Houthis say they hit Ras Tanura, Oct 27",
+     "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-say-they-hit-saudi-ras-tanura-oil-refinery-missile"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Houthis (Yahya Saree)",
+     "says": "Ballistic missile hit the 550k bpd refinery and caused a fire."
+    },
+    {
+     "who": "Saudi authorities",
+     "says": "Did not immediately confirm."
+    },
+    {
+     "who": "Bloomberg source (via Reuters)",
+     "says": "Saudi Arabia contained a fire near the terminal."
+    }
+   ]
+  },
+  {
+   "id": "riyadh-saudi-1027",
+   "date": "2026-10-27",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "missile",
+   "status": "DISPUTED",
+   "title": "Missile: Riyadh, Saudi Arabia",
+   "caption": "Two ballistic missiles fired at Riyadh were intercepted. Falling debris damaged a building, a site and a car.",
+   "lat": 24.71,
+   "lon": 46.68,
+   "coordPrecision": "approx",
+   "place": "Riyadh, Saudi Arabia",
+   "sources": [
+    {
+     "id": "almonitor_1027",
+     "title": "Al-Monitor (Reuters), Houthis say they hit Ras Tanura, Oct 27",
+     "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-say-they-hit-saudi-ras-tanura-oil-refinery-missile"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Houthis",
+     "says": "Attacked the Saudi defence ministry building in Riyadh."
+    },
+    {
+     "who": "Saudi-led coalition / Civil Defence",
+     "says": "Intercepted two ballistic missiles; debris caused material damage only."
+    }
+   ]
+  },
+  {
+   "id": "eastern-province-1027",
+   "date": "2026-10-27",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "missile",
+   "status": "ONE_PARTY",
+   "title": "Missile: Eastern Province, Saudi Arabia",
+   "caption": "Coalition says it intercepted 3 ballistic missiles and 4 drones, with no casualties.",
+   "lat": 26.3,
+   "lon": 49.6,
+   "coordPrecision": "oblast",
+   "place": "Eastern Province, Saudi Arabia",
+   "sources": [
+    {
+     "id": "aj_1027",
+     "title": "Al Jazeera, Oct 27",
+     "url": "https://www.aljazeera.com/news/2026/10/27/saudi-led-coalition-destroys-four-houthi-drones"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "Saudi-led coalition",
+     "says": "3 missiles and 4 drones intercepted; no casualties."
+    }
+   ]
+  },
+  {
+   "id": "rafah-khan-1027",
+   "date": "2026-10-27",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "airstrike",
+   "status": "ONE_PARTY",
+   "title": "Strike: Rafah & Khan Younis area, Gaza",
+   "caption": "Gaza's health ministry says Israeli fire killed 14 in two days, including a 6-year-old girl.",
+   "lat": 31.3,
+   "lon": 34.27,
+   "coordPrecision": "approx",
+   "place": "Rafah & Khan Younis area, Gaza",
+   "sources": [
+    {
+     "id": "mee_1027",
+     "title": "Middle East Eye, Oct 27",
+     "url": "https://www.middleeasteye.net/news/israeli-forces-kill-14-gaza-un-commission-says-genocide-continues"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Gaza Ministry of Health (via MEE)",
+     "says": "14 killed in two days; tank fire west of Rafah."
+    },
+    {
+     "who": "Gaza Interior Ministry",
+     "says": "Two security personnel killed in Deir al-Balah."
+    },
+    {
+     "who": "Israeli military",
+     "says": "No statement found in source."
+    }
+   ]
+  },
+  {
+   "id": "saravan-iranshahr-1027",
+   "date": "2026-10-27",
+   "region": "iran-internal",
+   "oblast": "Iran",
+   "front": "Iraq & Iran internal",
+   "type": "other",
+   "status": "ONE_PARTY",
+   "title": "Security op: Saravan & Iranshahr, Iran",
+   "caption": "Iranian forces say they arrested Baloch militant cells. Numbers not given.",
+   "lat": 27.37,
+   "lon": 61.5,
+   "coordPrecision": "approx",
+   "place": "Saravan & Iranshahr, Iran",
+   "sources": [
+    {
+     "id": "isw_1028",
+     "title": "ISW/CTP Iran Update, Oct 28",
+     "url": "https://understandingwar.org/research/middle-east/iran-update-october-28-2026/"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Iranian defence media (via ISW)",
+     "says": "Unspecified number of fighters arrested."
+    }
+   ]
+  },
+  {
+   "id": "taiz-kahlan-1028",
+   "date": "2026-10-28",
+   "region": "yemen",
+   "oblast": "Yemen",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "claim",
+   "status": "UNVERIFIED",
+   "title": "Chemical claim: Central Taiz (Kahlan, al Aqroud), Yemen",
+   "caption": "Yemen's government accuses the Houthis of firing shells with toxic substances. No evidence was provided and ISW found no proof.",
+   "lat": 13.42,
+   "lon": 44.12,
+   "coordPrecision": "approx",
+   "place": "Central Taiz (Kahlan, al Aqroud), Yemen",
+   "sources": [
+    {
+     "id": "isw_1029",
+     "title": "ISW/CTP Iran Update, Oct 29",
+     "url": "https://understandingwar.org/research/middle-east/iran-update-october-29-2026/"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Yemeni government (Taiz media office)",
+     "says": "Houthi artillery may have contained 'internationally banned toxic substances'."
+    },
+    {
+     "who": "ISW/CTP",
+     "says": "No evidence provided; cannot verify."
+    }
+   ]
+  },
+  {
+   "id": "aden-airport-1028",
+   "date": "2026-10-28",
+   "region": "yemen",
+   "oblast": "Yemen",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "missile",
+   "status": "CONFIRMED",
+   "title": "Missile: Aden International Airport, Yemen",
+   "caption": "The Houthis hit Aden airport with at least two ballistic missiles after posting an evacuation warning.",
+   "lat": 12.83,
+   "lon": 45.03,
+   "coordPrecision": "approx",
+   "place": "Aden International Airport, Yemen",
+   "sources": [
+    {
+     "id": "isw_1028",
+     "title": "ISW/CTP Iran Update, Oct 28",
+     "url": "https://understandingwar.org/research/middle-east/iran-update-october-28-2026/"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "ISW/CTP (citing Reuters, Houthi channels)",
+     "says": "At least two ballistic missiles; airport hosts a government military base."
+    }
+   ]
+  },
+  {
+   "id": "taiz-city-1028",
+   "date": "2026-10-28",
+   "region": "yemen",
+   "oblast": "Yemen",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "ground",
+   "status": "CONFIRMED",
+   "title": "Ground: South & SW of Taiz City, Yemen",
+   "caption": "Government-aligned forces and Houthis fought outside Taiz. Each side published its own footage and claims.",
+   "lat": 13.55,
+   "lon": 44,
+   "coordPrecision": "approx",
+   "place": "South & SW of Taiz City, Yemen",
+   "sources": [
+    {
+     "id": "isw_1028",
+     "title": "ISW/CTP Iran Update, Oct 28",
+     "url": "https://understandingwar.org/research/middle-east/iran-update-october-28-2026/"
+    },
+    {
+     "id": "x_ajenglish_1029_7",
+     "title": "Al Jazeera English on X, Oct 29",
+     "url": "https://x.com/AJEnglish/status/2115854928975417438"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Houthis (geolocated footage)",
+     "says": "Fired an anti-tank missile at a government tank."
+    },
+    {
+     "who": "Yemeni govt-aligned forces",
+     "says": "Repelled Houthi attacks in al Misrakh and Sabr al Mawadim."
+    },
+    {
+     "who": "Houthi leader (Oct 29, via Al Jazeera)",
+     "says": "Denies besieging Taiz; says only weapons are blocked."
+    }
+   ]
+  },
+  {
+   "id": "strait-hormuz-1028",
+   "date": "2026-10-28",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "naval",
+   "status": "DISPUTED",
+   "title": "Maritime: Strait of Hormuz, southern route",
+   "caption": "Iran says three tankers hit mines and caught fire on an 'unauthorized' route. The US says the main lanes are clear.",
+   "lat": 26.45,
+   "lon": 56.45,
+   "coordPrecision": "approx",
+   "place": "Strait of Hormuz, southern route",
+   "sources": [
+    {
+     "id": "arabnews_1029_2",
+     "title": "Arab News (AFP), Iran claims four tankers hit mines, Oct 29",
+     "url": "https://www.arabnews.com/middle-east/irans-revolutionary-guards-say-three-oil-tankers-hit-mines-in-strait-of-hormuz-3008795"
+    },
+    {
+     "id": "gulfnews_1029",
+     "title": "Gulf News, CENTCOM rejects mine claims, Oct 29",
+     "url": "https://gulfnews.com/world/mena/us-military-rejects-iranian-mine-strike-claims-says-hormuz-transit-lanes-remain-clear-1.500727648"
+    },
+    {
+     "id": "iranintl_1028",
+     "title": "Iran International, Oct 28",
+     "url": "https://www.iranintl.com/en/202610286050"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "IRGC Navy (state broadcaster)",
+     "says": "Three 'violating' tankers exploded and caught fire on the unauthorized southern route. Tankers not named."
+    },
+    {
+     "who": "US CENTCOM (post on X)",
+     "says": "Claims are false; all primary transit routes cleared of mines; thousands of vessels pass safely."
+    },
+    {
+     "who": "Gulf News note",
+     "says": "CENTCOM did not address specific incidents; neither side's account independently verified."
+    }
+   ]
+  },
+  {
+   "id": "al-mawasi-1028",
+   "date": "2026-10-28",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "airstrike",
+   "status": "ONE_PARTY",
+   "title": "Strike: al-Mawasi, west of Rafah, Gaza",
+   "caption": "A drone strike hit an Economy Ministry post that checks aid trucks from Kerem Shalom. Four employees killed, 30 wounded.",
+   "lat": 31.33,
+   "lon": 34.25,
+   "coordPrecision": "approx",
+   "place": "al-Mawasi, west of Rafah, Gaza",
+   "sources": [
+    {
+     "id": "aj_1029",
+     "title": "Al Jazeera, Gaza strikes, Oct 29",
+     "url": "https://www.aljazeera.com/news/2026/10/29/israeli-strikes-hit-gaza-as-health-ministry-urges-rafah-opening"
+    },
+    {
+     "id": "middleeastmoni_1029",
+     "title": "Middle East Monitor (Anadolu), Oct 29",
+     "url": "https://www.middleeastmonitor.com/20261029-israel-kills-4-palestinians-in-strike-on-government-post-in-gaza-despite-ceasefire/"
+    },
+    {
+     "id": "toi",
+     "title": "Times of Israel liveblog",
+     "url": "https://www.timesofisrael.com/liveblog_entry/reports-four-palestinians-killed-in-strike-in-southern-gaza/"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Gaza government media office (via Anadolu)",
+     "says": "Four government employees killed, 30 wounded, six critically."
+    },
+    {
+     "who": "Israeli military",
+     "says": "No statement found."
+    }
+   ]
+  },
+  {
+   "id": "kfar-tebnit-1028",
+   "date": "2026-10-28",
+   "region": "lebanon",
+   "oblast": "Lebanon",
+   "front": "Lebanon & Syria",
+   "type": "airstrike",
+   "status": "ONE_PARTY",
+   "title": "Strike: Kfar Tebnit, Mansouri & Deir Mimas, S. Lebanon",
+   "caption": "Lebanese state media report two strikes on Kfar Tebnit, explosive drones over Mansouri and a demolition in Deir Mimas. Israel fired an interceptor at a suspected aerial target.",
+   "lat": 33.33,
+   "lon": 35.52,
+   "coordPrecision": "approx",
+   "place": "Kfar Tebnit, Mansouri & Deir Mimas, S. Lebanon",
+   "sources": [
+    {
+     "id": "anadolu_1029",
+     "title": "Anadolu Agency, south Lebanon, Oct 29",
+     "url": "https://www.aa.com.tr/en/middle-east/israeli-army-says-it-launched-interceptor-at-suspected-aerial-target-in-southern-lebanon/4104450"
+    },
+    {
+     "id": "anadolu",
+     "title": "Anadolu Agency",
+     "url": "https://www.aa.com.tr/en/middle-east/israel-carries-out-strikes-in-southern-lebanon-in-fresh-ceasefire-violations/4101864"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Lebanon NNA (via Anadolu)",
+     "says": "Strikes on Kfar Tebnit, Barashit outskirts, Wadi al-Hujayr; two explosive drones detonated over Mansouri."
+    },
+    {
+     "who": "Israeli military (on X)",
+     "says": "Launched an interceptor at a suspected aerial target near troops; no further details."
+    }
+   ]
+  },
+  {
+   "id": "khasab-oman-1029",
+   "date": "2026-10-29",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "naval",
+   "status": "CONFIRMED",
+   "title": "Maritime: 25 nm NE of Khasab, Oman",
+   "caption": "A small boat attached two explosive devices to an outbound tanker's hull. The blasts set the engine room on fire and briefly disabled it. Crew safe; the ship sailed on.",
+   "lat": 26.5,
+   "lon": 56.55,
+   "coordPrecision": "approx",
+   "place": "25 nm NE of Khasab, Oman",
+   "sources": [
+    {
+     "id": "arabnews_1030",
+     "title": "Arab News (Reuters), tanker continues journey, Oct 30",
+     "url": "https://www.arabnews.com/middle-east/fire-hit-tanker-continues-journey-after-being-attacked-in-strait-of-hormuz-ukmto-says-3008930"
+    },
+    {
+     "id": "seatrademariti_1030",
+     "title": "Seatrade Maritime (UKMTO alerts), Oct 30",
+     "url": "https://www.seatrade-maritime.com/security/tanker-catches-fire-in-hormuz-after-explosives-attached-to-hull"
+    },
+    {
+     "id": "x_ajenglish_1030_3",
+     "title": "Al Jazeera English on X, Oct 30",
+     "url": "https://x.com/AJEnglish/status/2116014041315573998"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "UKMTO (via Reuters)",
+     "says": "Two devices attached above the waterline; fire out; no environmental impact; attacker not identified."
+    },
+    {
+     "who": "Vanguard Tech (security firm, via Seatrade)",
+     "says": "Ship was the Panama-flagged tanker Louise 1; incident at 22:12 UTC."
+    }
+   ]
+  },
+  {
+   "id": "hormuz-corridor-1029",
+   "date": "2026-10-29",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "naval",
+   "status": "CONFIRMED",
+   "title": "Maritime: Southern corridor near Oman, Hormuz",
+   "caption": "A ship finishing an outbound transit was struck by an unknown projectile around 16:00 UTC. Position is approximate, from a UKMTO graphic.",
+   "lat": 26.25,
+   "lon": 56.7,
+   "coordPrecision": "approx",
+   "place": "Southern corridor near Oman, Hormuz",
+   "sources": [
+    {
+     "id": "seatrademariti_1030",
+     "title": "Seatrade Maritime (UKMTO alerts), Oct 30",
+     "url": "https://www.seatrade-maritime.com/security/tanker-catches-fire-in-hormuz-after-explosives-attached-to-hull"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "UKMTO (via Seatrade)",
+     "says": "Company Security Officer reported a strike by an unknown projectile."
+    }
+   ]
+  },
+  {
+   "id": "sirik-qeshm-1029",
+   "date": "2026-10-29",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "naval",
+   "status": "ONE_PARTY",
+   "title": "Explosions: Sea near Sirik & Qeshm Island, Iran",
+   "caption": "Iran's Fars agency reported several explosions heard at sea near Sirik and Qeshm Island. Cause not given.",
+   "lat": 26.7,
+   "lon": 56.75,
+   "coordPrecision": "approx",
+   "place": "Sea near Sirik & Qeshm Island, Iran",
+   "sources": [
+    {
+     "id": "x_ajenglish_1029",
+     "title": "Al Jazeera English on X, Oct 29",
+     "url": "https://x.com/AJEnglish/status/2115924112874840534"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "Fars news agency (Iranian state-linked)",
+     "says": "Local sources heard several explosions from the sea."
+    }
+   ]
+  },
+  {
+   "id": "riyadh-king-1029",
+   "date": "2026-10-29",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "missile",
+   "status": "DISPUTED",
+   "title": "Missile: Riyadh & King Khalid Airport, Saudi Arabia",
+   "caption": "Two ballistic missiles fired at Riyadh were shot down. Shrapnel wounded one person and damaged a house and a car. The Houthis say they hit the airport.",
+   "lat": 24.96,
+   "lon": 46.7,
+   "coordPrecision": "approx",
+   "place": "Riyadh & King Khalid Airport, Saudi Arabia",
+   "sources": [
+    {
+     "id": "aj_1030_2",
+     "title": "Al Jazeera, Houthis claim six attacks, Oct 30",
+     "url": "https://www.aljazeera.com/news/2026/10/30/houthi-forces-claim-six-attacks-on-saudi-airports-oil-facilities"
+    },
+    {
+     "id": "arabnews_1029",
+     "title": "Arab News, Oct 29",
+     "url": "https://www.arabnews.com/saudi-arabia/saudi-air-defenses-shoot-down-houthi-missiles-targeting-riyadh-3008889"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Saudi-led coalition / Civil Defence",
+     "says": "Two ballistic missiles intercepted; shrapnel wounded one citizen, damaged a house and a vehicle."
+    },
+    {
+     "who": "Houthis (Yahya Saree)",
+     "says": "Targeted King Khalid International Airport with multiple missiles."
+    }
+   ]
+  },
+  {
+   "id": "ras-tanura-1029",
+   "date": "2026-10-29",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "missile",
+   "status": "ONE_PARTY",
+   "title": "Missile: Ras Tanura, Abqaiq & Dammam, Saudi Arabia",
+   "caption": "The Houthis claim missile and drone attacks on Ras Tanura refinery, an Aramco site in Abqaiq and Dammam airport. No Saudi confirmation.",
+   "lat": 26.1,
+   "lon": 49.9,
+   "coordPrecision": "approx",
+   "place": "Ras Tanura, Abqaiq & Dammam, Saudi Arabia",
+   "sources": [
+    {
+     "id": "aj_1030_2",
+     "title": "Al Jazeera, Houthis claim six attacks, Oct 30",
+     "url": "https://www.aljazeera.com/news/2026/10/30/houthi-forces-claim-six-attacks-on-saudi-airports-oil-facilities"
+    },
+    {
+     "id": "mee_1029",
+     "title": "Middle East Eye, Oct 29",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-six-attacks-saudi-arabia-airports-and-oil-facilities"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Houthis (Yahya Saree, on X)",
+     "says": "Ballistic missile on Ras Tanura, missile on Abqaiq, drone on King Fahd Airport, Dammam."
+    },
+    {
+     "who": "Saudi authorities",
+     "says": "No confirmation of these claims (Reuters, Al Jazeera)."
+    }
+   ]
+  },
+  {
+   "id": "rabigh-refinery-1029",
+   "date": "2026-10-29",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "missile",
+   "status": "ONE_PARTY",
+   "title": "Missile: Rabigh refinery & Najran, Saudi Arabia",
+   "caption": "The Houthis also claim a ballistic missile on the Rabigh refinery and an attack on a Saudi military HQ in Najran. Not confirmed.",
+   "lat": 22.8,
+   "lon": 39.03,
+   "coordPrecision": "approx",
+   "place": "Rabigh refinery & Najran, Saudi Arabia",
+   "sources": [
+    {
+     "id": "aj_1030_2",
+     "title": "Al Jazeera, Houthis claim six attacks, Oct 30",
+     "url": "https://www.aljazeera.com/news/2026/10/30/houthi-forces-claim-six-attacks-on-saudi-airports-oil-facilities"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Houthis (Yahya Saree)",
+     "says": "Ballistic missile on Rabigh refinery; targeted Saudi troops' HQ in Najran."
+    },
+    {
+     "who": "Saudi authorities",
+     "says": "No confirmation."
+    }
+   ]
+  },
+  {
+   "id": "nevatim-ovda-1029",
+   "date": "2026-10-29",
+   "region": "israel",
+   "oblast": "Israel",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "other",
+   "status": "ONE_PARTY",
+   "title": "Military buildup: Nevatim & Ovda airbases, Israel",
+   "caption": "Israel's state broadcaster says 10 US military transport planes landed at Ovda and Nevatim in 24 hours as Israel prepares for a possible US attack on Iran.",
+   "lat": 31,
+   "lon": 35,
+   "coordPrecision": "approx",
+   "place": "Nevatim & Ovda airbases, Israel",
+   "sources": [
+    {
+     "id": "x_ajenglish_1029_2",
+     "title": "Al Jazeera English on X, Oct 29",
+     "url": "https://x.com/AJEnglish/status/2115940393376231498"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "Israeli state broadcaster (via Al Jazeera)",
+     "says": "10 US transport aircraft landed in the past 24 hours."
+    }
+   ]
+  },
+  {
+   "id": "maghazi-camp-1029",
+   "date": "2026-10-29",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "airstrike",
+   "status": "ONE_PARTY",
+   "title": "Strike: Maghazi camp, central Gaza",
+   "caption": "A drone fired two missiles at a civilian car in the camp, killing two Palestinians and wounding others, one critically.",
+   "lat": 31.42,
+   "lon": 34.39,
+   "coordPrecision": "approx",
+   "place": "Maghazi camp, central Gaza",
+   "sources": [
+    {
+     "id": "aj_1029",
+     "title": "Al Jazeera, Gaza strikes, Oct 29",
+     "url": "https://www.aljazeera.com/news/2026/10/29/israeli-strikes-hit-gaza-as-health-ministry-urges-rafah-opening"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Al Jazeera correspondent (Deir el-Balah)",
+     "says": "Two killed; strike came without warning."
+    },
+    {
+     "who": "Israeli military",
+     "says": "No statement found."
+    }
+   ]
+  },
+  {
+   "id": "mokha-dhubab-1029",
+   "date": "2026-10-29",
+   "region": "yemen",
+   "oblast": "Yemen",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "airstrike",
+   "status": "ONE_PARTY",
+   "title": "Airstrike: Mokha & Dhubab, Yemen Red Sea coast",
+   "caption": "Saudi or Yemeni government-aligned forces reportedly struck Houthi positions and the port of Mokha to cut Houthi resupply by sea.",
+   "lat": 13.3,
+   "lon": 43.3,
+   "coordPrecision": "approx",
+   "place": "Mokha & Dhubab, Yemen Red Sea coast",
+   "sources": [
+    {
+     "id": "isw_1029",
+     "title": "ISW/CTP Iran Update, Oct 29",
+     "url": "https://understandingwar.org/research/middle-east/iran-update-october-29-2026/"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Houthi and govt-aligned media (via ISW)",
+     "says": "Several rounds of airstrikes on Mokha and Dhubab, Oct 28-29."
+    },
+    {
+     "who": "Govt-aligned media (via ISW)",
+     "says": "Two Houthi vessels likely carrying weapons destroyed in the southern Red Sea (Oct 28)."
+    }
+   ]
+  },
+  {
+   "id": "western-yemen-1029",
+   "date": "2026-10-29",
+   "region": "yemen",
+   "oblast": "Yemen",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "airstrike",
+   "status": "ONE_PARTY",
+   "title": "Airstrike: Western Yemen (exact place not given)",
+   "caption": "The Houthi health ministry says Saudi strikes on residential areas killed 12. Marker position is approximate.",
+   "lat": 15.2,
+   "lon": 43.6,
+   "coordPrecision": "oblast",
+   "place": "Western Yemen (exact place not given)",
+   "sources": [
+    {
+     "id": "rte_1029",
+     "title": "RTE (AFP), Oct 29",
+     "url": "https://www.rte.ie/news/middle-east/2026/1029/1597280-middle-east/"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "Houthi health ministry (Saba, via AFP)",
+     "says": "Initial toll 12 killed, 3 critically injured."
+    },
+    {
+     "who": "Saudi-led coalition",
+     "says": "No statement found in source."
+    }
+   ]
+  },
+  {
+   "id": "khasab-oman-1029-2",
+   "date": "2026-10-29",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "naval",
+   "status": "CONFIRMED",
+   "title": "Maritime: 9 nm N of Khasab, Oman",
+   "caption": "A dhow caught fire and sank after a maritime security incident. Crew evacuated safely. Cause not stated.",
+   "lat": 26.33,
+   "lon": 56.25,
+   "coordPrecision": "approx",
+   "place": "9 nm N of Khasab, Oman",
+   "sources": [
+    {
+     "id": "arabnews_1029_2",
+     "title": "Arab News (AFP), Iran claims four tankers hit mines, Oct 29",
+     "url": "https://www.arabnews.com/middle-east/irans-revolutionary-guards-say-three-oil-tankers-hit-mines-in-strait-of-hormuz-3008795"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "UKMTO (via AFP)",
+     "says": "Vessel caught fire and sank; regional authorities say it was a dhow; crew safe."
+    }
+   ]
+  },
+  {
+   "id": "strait-hormuz-1029",
+   "date": "2026-10-29",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "naval",
+   "status": "DISPUTED",
+   "title": "Maritime: East of the Strait of Hormuz",
+   "caption": "Iran says a tanker hit a naval mine, caught fire and stopped. The tanker was not named.",
+   "lat": 25.7,
+   "lon": 57.1,
+   "coordPrecision": "approx",
+   "place": "East of the Strait of Hormuz",
+   "sources": [
+    {
+     "id": "arabnews_1029_2",
+     "title": "Arab News (AFP), Iran claims four tankers hit mines, Oct 29",
+     "url": "https://www.arabnews.com/middle-east/irans-revolutionary-guards-say-three-oil-tankers-hit-mines-in-strait-of-hormuz-3008795"
+    },
+    {
+     "id": "x_ajenglish_1029_3",
+     "title": "Al Jazeera English on X, Oct 29",
+     "url": "https://x.com/AJEnglish/status/2115819620464812410"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Iranian army (state TV)",
+     "says": "Tanker 'illegally operating' east of the strait struck mines, caught fire, cannot move."
+    },
+    {
+     "who": "US CENTCOM",
+     "says": "Iranian mine-strike reports are false; primary transit routes are cleared and remain so."
+    }
+   ]
+  },
+  {
+   "id": "strait-hormuz-1029-2",
+   "date": "2026-10-29",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "drone",
+   "status": "DISPUTED",
+   "title": "Drone: Western Strait of Hormuz",
+   "caption": "Iran's IRGC says it captured a US MQM-170 drone with electronic warfare. The US military denies it.",
+   "lat": 26.6,
+   "lon": 55.6,
+   "coordPrecision": "approx",
+   "place": "Western Strait of Hormuz",
+   "sources": [
+    {
+     "id": "arabnews_1029_2",
+     "title": "Arab News (AFP), Iran claims four tankers hit mines, Oct 29",
+     "url": "https://www.arabnews.com/middle-east/irans-revolutionary-guards-say-three-oil-tankers-hit-mines-in-strait-of-hormuz-3008795"
+    },
+    {
+     "id": "x_ajenglish_1029_4",
+     "title": "Al Jazeera English on X, Oct 29",
+     "url": "https://x.com/AJEnglish/status/2115741970354020749"
+    },
+    {
+     "id": "ap_1028",
+     "title": "AP, Oct 28-29 live coverage",
+     "url": "https://apnews.com/article/mideast-iran-israel-elections-netanyahu-october-282026-c11dac838a072af25ba8d0eb81d01035"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "IRGC Navy (state media)",
+     "says": "Captured a US 'spy and deception' drone."
+    },
+    {
+     "who": "US military (per AP)",
+     "says": "Denied the capture claim."
+    }
+   ]
+  },
+  {
+   "id": "halawa-camp-1029",
+   "date": "2026-10-29",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "airstrike",
+   "status": "ONE_PARTY",
+   "title": "Strike: Halawa camp, northern Gaza",
+   "caption": "An Israeli strike hit a large displacement camp east of Jabalia. Medical staff say one Palestinian was killed.",
+   "lat": 31.54,
+   "lon": 34.5,
+   "coordPrecision": "approx",
+   "place": "Halawa camp, northern Gaza",
+   "sources": [
+    {
+     "id": "x_ajenglish_1029_5",
+     "title": "Al Jazeera English on X, Oct 29",
+     "url": "https://x.com/AJEnglish/status/2115865677575893205"
+    },
+    {
+     "id": "mee_1029_2",
+     "title": "Middle East Eye, Oct 29",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-one-palestinian-attacks-gaza"
+    },
+    {
+     "id": "wafa_1029",
+     "title": "Wafa, Oct 29",
+     "url": "https://english.wafa.ps/Pages/Details/176437"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "Gaza medical staff (via Al Jazeera)",
+     "says": "One killed."
+    },
+    {
+     "who": "Wafa (local sources)",
+     "says": "One killed by a drone near Zainab al-Wazir School, east of Jabalia, in the evening. May be the same event."
+    },
+    {
+     "who": "Israeli military",
+     "says": "No statement found."
+    }
+   ]
+  },
+  {
+   "id": "mayfadoun-zawtar-1029",
+   "date": "2026-10-29",
+   "region": "lebanon",
+   "oblast": "Lebanon",
+   "front": "Lebanon & Syria",
+   "type": "artillery",
+   "status": "ONE_PARTY",
+   "title": "Shelling: Mayfadoun - Zawtar al-Sharqiyah, S. Lebanon",
+   "caption": "Lebanese state media report intermittent Israeli shelling in the morning. No casualties reported.",
+   "lat": 33.33,
+   "lon": 35.47,
+   "coordPrecision": "approx",
+   "place": "Mayfadoun - Zawtar al-Sharqiyah, S. Lebanon",
+   "sources": [
+    {
+     "id": "x_ajenglish_1029_6",
+     "title": "Al Jazeera English on X, Oct 29",
+     "url": "https://x.com/AJEnglish/status/2115787023290372321"
+    }
+   ],
+   "read": "snippet",
+   "claims": [
+    {
+     "who": "Lebanon NNA (via Al Jazeera)",
+     "says": "Intermittent Israeli shelling between the two villages."
+    }
+   ]
+  },
+  {
+   "id": "mecca-saudi-1030",
+   "date": "2026-10-30",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "drone",
+   "status": "DISPUTED",
+   "title": "Drone: Mecca region, Saudi Arabia",
+   "caption": "The Saudi-led coalition says it shot down a Houthi drone heading for the Mecca region. The Houthis deny launching anything at Saudi Arabia today.",
+   "lat": 21.42,
+   "lon": 39.83,
+   "coordPrecision": "approx",
+   "place": "Mecca region, Saudi Arabia",
+   "sources": [
+    {
+     "id": "aj_1030",
+     "title": "Al Jazeera live blog, Oct 30",
+     "url": "https://www.aljazeera.com/news/liveblog/2026/10/30/iran-war-live-irgc-says-four-tankers-struck-mines-in-strait-of-hormuz"
+    },
+    {
+     "id": "x_ajenglish_1030",
+     "title": "Al Jazeera English on X, Oct 30",
+     "url": "https://x.com/AJEnglish/status/2116029830533947788"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Saudi-led coalition spokesperson",
+     "says": "Intercepted and destroyed a Houthi drone launched towards the Mecca region."
+    },
+    {
+     "who": "Houthis",
+     "says": "Carried out no operations against Saudi territory today; targets are limited to oil facilities and military bases."
+    }
+   ]
+  },
+  {
+   "id": "tehran-iran-1030",
+   "date": "2026-10-30",
+   "region": "iran-war",
+   "oblast": "Iran",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "diplomacy",
+   "status": "CONFIRMED",
+   "title": "Diplomacy: Tehran, Iran (Qatari mediation)",
+   "caption": "Qatari mediators returned to Tehran to push for a US-Iran deal, reportedly in coordination with US officials.",
+   "lat": 35.9,
+   "lon": 51.6,
+   "coordPrecision": "approx",
+   "place": "Tehran, Iran (Qatari mediation)",
+   "sources": [
+    {
+     "id": "x_reuters_1030",
+     "title": "Reuters on X, Oct 30",
+     "url": "https://x.com/Reuters/status/2116073360572420140"
+    },
+    {
+     "id": "x_ajenglish_1030_2",
+     "title": "Al Jazeera English on X, Oct 30",
+     "url": "https://x.com/AJEnglish/status/2116087712008860023"
+    },
+    {
+     "id": "isw_1029",
+     "title": "ISW/CTP Iran Update, Oct 29",
+     "url": "https://understandingwar.org/research/middle-east/iran-update-october-29-2026/"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Official briefed on talks (Reuters)",
+     "says": "Qatari mediators returned to Tehran as part of efforts to reach a deal."
+    },
+    {
+     "who": "Tasnim (IRGC-affiliated, via ISW)",
+     "says": "Iran has not yet answered the Vance letter; any departure from its seven conditions is 'unacceptable'."
+    }
+   ]
+  }
+ ],
+ "lanes": [
+  {
+   "id": "hormuz-lane",
+   "name": "Strait of Hormuz",
+   "status": "DISPUTED",
+   "text": "Restricted since Feb 28. Iran treats the southern corridor as unauthorized and says it is mined. The US enforces a blockade of Iranian ports and says the primary lanes are clear. Oct 29: UKMTO logged a hull-limpet attack and a projectile strike on outbound ships.",
+   "color": "#ff4d6d",
+   "points": [
+    [
+     50.3,
+     27.2
+    ],
+    [
+     53.5,
+     26.5
+    ],
+    [
+     55.6,
+     26.4
+    ],
+    [
+     56.4,
+     26.55
+    ],
+    [
+     56.8,
+     26
+    ],
+    [
+     57.6,
+     25.2
+    ],
+    [
+     60.5,
+     24.2
+    ]
+   ],
+   "sources": [
+    {
+     "id": "seatrademariti_1030",
+     "title": "Seatrade Maritime (UKMTO alerts), Oct 30",
+     "url": "https://www.seatrade-maritime.com/security/tanker-catches-fire-in-hormuz-after-explosives-attached-to-hull"
+    },
+    {
+     "id": "cnbc_1030",
+     "title": "CNBC, Oct 30",
+     "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html"
+    },
+    {
+     "id": "gulfnews_1029",
+     "title": "Gulf News, CENTCOM rejects mine claims, Oct 29",
+     "url": "https://gulfnews.com/world/mena/us-military-rejects-iranian-mine-strike-claims-says-hormuz-transit-lanes-remain-clear-1.500727648"
+    },
+    {
+     "id": "arabnews_1029_2",
+     "title": "Arab News (AFP), Iran claims four tankers hit mines, Oct 29",
+     "url": "https://www.arabnews.com/middle-east/irans-revolutionary-guards-say-three-oil-tankers-hit-mines-in-strait-of-hormuz-3008795"
+    }
+   ],
+   "claims": [
+    {
+     "who": "IRGC (spokesman Hossein Mohebi, Oct 29)",
+     "says": "Prove the strait is cleared of mines 'with independent evidence, not a statement'."
+    },
+    {
+     "who": "US CENTCOM",
+     "says": "Primary routes cleared; 1.5 billion barrels exported via Hormuz since summer."
+    }
+   ]
+  },
+  {
+   "id": "red-sea-lane",
+   "name": "Red Sea / Bab el-Mandeb",
+   "status": "ONE_PARTY",
+   "text": "Contested. Houthi-Saudi fighting near Bab el-Mandeb; the 2022 truce has collapsed. No current transit count found.",
+   "color": "#ffb020",
+   "points": [
+    [
+     32.55,
+     29.8
+    ],
+    [
+     33.7,
+     27.6
+    ],
+    [
+     35.6,
+     24.6
+    ],
+    [
+     37.6,
+     21
+    ],
+    [
+     39.6,
+     17.5
+    ],
+    [
+     41.6,
+     14.6
+    ],
+    [
+     43.35,
+     12.6
+    ],
+    [
+     46,
+     12.3
+    ],
+    [
+     50,
+     13.2
+    ],
+    [
+     55,
+     14
+    ]
+   ],
+   "sources": [
+    {
+     "id": "almonitor_1027",
+     "title": "Al-Monitor (Reuters), Houthis say they hit Ras Tanura, Oct 27",
+     "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-say-they-hit-saudi-ras-tanura-oil-refinery-missile"
+    },
+    {
+     "id": "arabnews_1029_3",
+     "title": "Arab News, Bahrain warns UNSC, Oct 29",
+     "url": "https://www.arabnews.com/middle-east/houthis-and-iran-hijack-new-tech-to-threaten-red-sea-and-hormuz-shipping-bahrain-warns-3008887"
+    }
+   ]
+  },
+  {
+   "id": "suez-canal-lane",
+   "name": "Suez Canal",
+   "status": "UNVERIFIED",
+   "text": "No current transit figure found. Shown for context only.",
+   "color": "#9aa4b2",
+   "points": [
+    [
+     32.3,
+     31.4
+    ],
+    [
+     32.35,
+     30.6
+    ],
+    [
+     32.55,
+     29.95
+    ]
+   ],
+   "sources": []
+  }
+ ],
+ "stats": [
+  {
+   "label": "Gaza: killed since Oct 2023",
+   "category": "casualties",
+   "asOf": "2026-10-29",
+   "asOfNote": "Oct 29, 2026",
+   "status": "DISPUTED",
+   "rows": [
+    {
+     "who": "Gaza health authorities (via Wafa)",
+     "value": "74,570 killed, 175,808 injured (does not separate fighters)"
+    },
+    {
+     "who": "Israeli military",
+     "value": "No comparable total; says many killed were fighters"
+    }
+   ],
+   "note": "MoH figure was 74,561 on Oct 27 and 74,382 on Oct 12. MoH: 6 killed, 38 injured in the 24 hours to Oct 29.",
+   "sources": [
+    "wafa_1029",
+    "aj_1029"
+   ]
+  },
+  {
+   "label": "Gaza: killed since the Oct 10, 2025 ceasefire",
+   "category": "casualties",
+   "asOf": "2026-10-27",
+   "asOfNote": "Oct 27, 2026 (MoH); end July 2026 (UN)",
+   "status": "DISPUTED",
+   "rows": [
+    {
+     "who": "Gaza Ministry of Health (via Haaretz, Oct 29)",
+     "value": "1,574 killed; 21 killed this week"
+    },
+    {
+     "who": "Gaza govt media office (via Anadolu, Oct 29)",
+     "value": "1,568 killed, 5,648 wounded"
+    },
+    {
+     "who": "UN Human Rights Office (verified)",
+     "value": "1,076 deaths verified to end of July 2026"
+    },
+    {
+     "who": "Israeli military",
+     "value": "Says several of those killed were Hamas or Islamic Jihad fighters"
+    }
+   ],
+   "note": "UN verification lags; the counts cover different periods. Haaretz page is paywalled, headline and summary only.",
+   "sources": [
+    "haaretz_1029",
+    "middleeastmoni_1029",
+    "ocha_1015"
+   ]
+  },
+  {
+   "label": "West Bank, Sep 29 - Oct 12",
+   "category": "casualties",
+   "asOf": "2026-10-12",
+   "asOfNote": "Oct 12, 2026",
+   "status": "CONFIRMED",
+   "rows": [
+    {
+     "who": "UN OCHA",
+     "value": "5 Palestinians killed, 246 injured; 244 settler incidents"
+    }
+   ],
+   "sources": [
+    "ocha_1015"
+   ]
+  },
+  {
+   "label": "Lebanon: killed since Mar 2, 2026",
+   "category": "casualties",
+   "asOf": "2026-10-12",
+   "asOfNote": "Oct 12, 2026",
+   "status": "ONE_PARTY",
+   "rows": [
+    {
+     "who": "Lebanon Ministry of Public Health",
+     "value": "4,389 killed, 12,424 injured (8,956 killed since Oct 8, 2023)"
+    },
+    {
+     "who": "Hezbollah",
+     "value": "Publishes no count of its dead"
+    }
+   ],
+   "note": "Ministry does not separate civilians and fighters. No newer ministry total found. Anadolu (Oct 29) cites 4,386 killed, 12,407 injured and 1M+ displaced without naming its source; not used as the headline figure.",
+   "sources": [
+    "moph_1012",
+    "mtv_1012"
+   ]
+  },
+  {
+   "label": "Lebanon: internally displaced",
+   "category": "humanitarian",
+   "asOf": "2026-09-29",
+   "asOfNote": "Sep 29, 2026",
+   "status": "CONFIRMED",
+   "rows": [
+    {
+     "who": "IOM DTM",
+     "value": "329,686 displaced; 877,203 returned"
+    }
+   ],
+   "sources": [
+    "dtm"
+   ]
+  },
+  {
+   "label": "Iran: killed in the war",
+   "category": "casualties",
+   "asOf": "2026-10-30",
+   "asOfNote": "Mostly April 2026; no verified newer total",
+   "status": "DISPUTED",
+   "rows": [
+    {
+     "who": "HRANA (rights group)",
+     "value": "3,636 killed incl. 1,701 civilians, to Apr 7"
+    },
+    {
+     "who": "Iran forensic chief (Apr)",
+     "value": "More than 3,000 killed"
+    },
+    {
+     "who": "Iran Health Ministry",
+     "value": "At least 2,362 civilians killed (date not given)"
+    },
+    {
+     "who": "Iran International (opposition outlet)",
+     "value": "4,700+ security personnel killed"
+    }
+   ],
+   "note": "Last two figures are from a secondary compilation (GlobalSecurity), not primary pages.",
+   "sources": [
+    "reuters_0407",
+    "globalsec_1029"
+   ]
+  },
+  {
+   "label": "Yemen: since hostilities resumed this year",
+   "category": "casualties",
+   "asOf": "2026-10-29",
+   "asOfNote": "Oct 29, 2026",
+   "status": "UNVERIFIED",
+   "rows": [
+    {
+     "who": "UN figures (via AFP; agency not named)",
+     "value": "1,600+ killed, 275,000+ displaced"
+    },
+    {
+     "who": "Houthi health ministry",
+     "value": "12 killed in Saudi strikes Oct 29; 14 killed Oct 28"
+    }
+   ],
+   "note": "I could not find the underlying UN report.",
+   "sources": [
+    "rte_1029"
+   ]
+  },
+  {
+   "label": "Iran: displaced (early war)",
+   "category": "humanitarian",
+   "asOf": "2026-04-21",
+   "asOfNote": "Apr 21, 2026",
+   "status": "UNVERIFIED",
+   "rows": [
+    {
+     "who": "UNHCR",
+     "value": "About 3.2 million temporarily relocated (estimate)"
+    }
+   ],
+   "sources": [
+    "reliefweb"
+   ]
+  },
+  {
+   "label": "US service members killed",
+   "category": "casualties",
+   "asOf": "2026-10-27",
+   "asOfNote": "Oct 10-27, 2026",
+   "status": "DISPUTED",
+   "rows": [
+    {
+     "who": "Pentagon DCAS",
+     "value": "21 killed, 865 wounded (Oct 10)"
+    },
+    {
+     "who": "CENTCOM (via Jerusalem Post)",
+     "value": "18 killed"
+    }
+   ],
+   "note": "From secondary compilations; primary pages not opened.",
+   "sources": [
+    "thebostonrepor",
+    "globalsec_1029"
+   ]
+  },
+  {
+   "label": "Israel: killed by Iranian missiles since Feb 28",
+   "category": "casualties",
+   "asOf": "2026-10-27",
+   "asOfNote": "Oct 27, 2026",
+   "status": "UNVERIFIED",
+   "rows": [
+    {
+     "who": "Jerusalem Post tally (via GlobalSecurity)",
+     "value": "39 IDF soldiers and 23 civilians"
+    }
+   ],
+   "sources": [
+    "globalsec_1029"
+   ]
+  },
+  {
+   "label": "US/Israel - Iran",
+   "category": "diplomacy",
+   "asOf": "2026-10-30",
+   "asOfNote": "Oct 30, 2026",
+   "status": "ONE_PARTY",
+   "headline": "Paused, two tracks",
+   "tone": "#ff4d6d",
+   "text": "Qatari mediators back in Tehran Oct 30 (Reuters). Vance letter to Rezaei proposed direct talks; Iran has not replied and holds to its seven conditions (Tasnim via ISW). Trump says the outreach was about medical supplies. CENTCOM's Adm. Cooper briefed Trump on military options at the White House (WSJ via CNBC). US envoy Tom Barrack says a deal on a process is 'very close' but more strikes remain possible.",
+   "sources": [
+    "cnbc_1030"
+   ]
+  },
+  {
+   "label": "Israel - Gaza",
+   "category": "diplomacy",
+   "asOf": "2026-10-30",
+   "asOfNote": "Oct 30, 2026",
+   "status": "CONFIRMED",
+   "headline": "Ceasefire, stalled",
+   "tone": "#ffb020",
+   "text": "One year on: no stabilisation force, aid at about a third of the agreed rate, Israel controls nearly two thirds of the Strip.",
+   "sources": [
+    "aj_1013"
+   ]
+  },
+  {
+   "label": "Israel - Lebanon",
+   "category": "diplomacy",
+   "asOf": "2026-10-30",
+   "asOfNote": "Oct 30, 2026",
+   "status": "CONFIRMED",
+   "headline": "Framework, strikes continue",
+   "tone": "#ffb020",
+   "text": "Truce Jun 19 and framework Jun 26; Israeli forces still hold part of the south; CENTCOM technical talks Oct 21-22.",
+   "sources": [
+    "toi_2"
+   ]
+  },
+  {
+   "label": "Houthis - Saudi",
+   "category": "diplomacy",
+   "asOf": "2026-10-30",
+   "asOfNote": "Oct 30, 2026",
+   "status": "CONFIRMED",
+   "headline": "Active war",
+   "tone": "#ff4d6d",
+   "text": "2022 UN truce shattered. Houthis claimed six attacks on Saudi Arabia Oct 29 despite the Tehran meeting where Saudi Arabia and Iran agreed to keep talking. Yemen's government asked the UN Security Council to act over attacks on Aden airport.",
+   "sources": [
+    "aj_1030_2"
+   ]
+  },
+  {
+   "label": "Israel politics",
+   "category": "diplomacy",
+   "asOf": "2026-10-30",
+   "asOfNote": "Oct 30, 2026",
+   "status": "CONFIRMED",
+   "headline": "Hung parliament",
+   "tone": "#9aa4b2",
+   "text": "Oct 27 election: Netanyahu bloc 53 of 120; 61 needed.",
+   "sources": [
+    "ynetnews"
+   ]
+  },
+  {
+   "label": "Brent crude oil price",
+   "category": "economy",
+   "asOf": "2026-10-29",
+   "status": "CONFIRMED",
+   "headline": "$114.88",
+   "sub": "Brent settle, Oct 29 (-0.38%) · WTI $102.00",
+   "series": [
+    {
+     "label": "Oct 7",
+     "value": 100.2
+    },
+    {
+     "label": "Oct 16",
+     "value": 109.86
+    },
+    {
+     "label": "Oct 23",
+     "value": 116.72
+    },
+    {
+     "label": "Oct 27",
+     "value": 113.88
+    },
+    {
+     "label": "Oct 28",
+     "value": 115.32
+    },
+    {
+     "label": "Oct 29",
+     "value": 114.88
+    }
+   ],
+   "note": "Brent settle, USD/bbl, selected October dates. October range $100.20 to $116.72. Pre-war about $72. Oct 29 fell on US-Iran talk hopes; still the sixth-highest settle of 2026, up 11% this month (MarketWatch). December Brent expires Oct 30; OPEC+ meets Sunday.",
+   "sources": [
+    "euronext_1029",
+    "marketwatch_1029",
+    "cnbc_1028",
+    "oilandgasmiddl"
+   ]
+  },
+  {
+   "label": "Hormuz traffic",
+   "category": "economy",
+   "asOf": "2026-10-30",
+   "asOfNote": "MEASURES DIFFER · OCT 16-27",
+   "status": "DISPUTED",
+   "rows": [
+    {
+     "who": "Kpler (via O&G Middle East)",
+     "value": "~19 commodity vessels/day in 10 days to Oct 21 vs 100+ pre-war; crude ~8.5M bpd 7-day avg (Oct 16)"
+    },
+    {
+     "who": "ANZ research (via CNBC, Oct 27)",
+     "value": "Flows about 60% of normal"
+    },
+    {
+     "who": "US CENTCOM",
+     "value": "Helped Gulf states export 1.5 billion barrels via Hormuz since summer"
+    }
+   ],
+   "note": "The ANZ figure is via a secondary compilation (GlobalSecurity). Vessel counts and oil volumes are not directly comparable. IMO counted 34 confirmed attacks on vessels from Sep 28 to Oct 27, mostly in Hormuz (via Seatrade). CNBC says traffic is at single-digit daily passings.",
+   "sources": [
+    "seatrademariti_1030",
+    "arabnews_1029_2",
+    "globalsec_1029"
+   ]
+  },
+  {
+   "label": "Other energy & transport signals",
+   "category": "economy",
+   "asOf": "2026-10-30",
+   "asOfNote": "Oct 30, 2026",
+   "status": "UNVERIFIED",
+   "text": "Houthi attacks have grounded nearly 90% of flights at Riyadh airport (Reuters, via Al Jazeera on X, Oct 29). Air France extended its Riyadh and Dubai suspension. QatarEnergy is buying US LNG to hedge Hormuz disruption (Reuters on X, Oct 29). Pentagon told lawmakers the war has cost at least $47.1bn (via Al Jazeera on X).",
+   "sources": [
+    "x_ajenglish",
+    "x_reuters",
+    "x_ajenglish_2"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "aj_1030",
+   "title": "Al Jazeera live blog, Oct 30",
+   "url": "https://www.aljazeera.com/news/liveblog/2026/10/30/iran-war-live-irgc-says-four-tankers-struck-mines-in-strait-of-hormuz"
+  },
+  {
+   "id": "x_ajenglish_1030",
+   "title": "Al Jazeera English on X, Oct 30",
+   "url": "https://x.com/AJEnglish/status/2116029830533947788"
+  },
+  {
+   "id": "x_reuters_1030",
+   "title": "Reuters on X, Oct 30",
+   "url": "https://x.com/Reuters/status/2116073360572420140"
+  },
+  {
+   "id": "x_ajenglish_1030_2",
+   "title": "Al Jazeera English on X, Oct 30",
+   "url": "https://x.com/AJEnglish/status/2116087712008860023"
+  },
+  {
+   "id": "isw_1029",
+   "title": "ISW/CTP Iran Update, Oct 29",
+   "url": "https://understandingwar.org/research/middle-east/iran-update-october-29-2026/"
+  },
+  {
+   "id": "arabnews_1030",
+   "title": "Arab News (Reuters), tanker continues journey, Oct 30",
+   "url": "https://www.arabnews.com/middle-east/fire-hit-tanker-continues-journey-after-being-attacked-in-strait-of-hormuz-ukmto-says-3008930"
+  },
+  {
+   "id": "seatrademariti_1030",
+   "title": "Seatrade Maritime (UKMTO alerts), Oct 30",
+   "url": "https://www.seatrade-maritime.com/security/tanker-catches-fire-in-hormuz-after-explosives-attached-to-hull"
+  },
+  {
+   "id": "x_ajenglish_1030_3",
+   "title": "Al Jazeera English on X, Oct 30",
+   "url": "https://x.com/AJEnglish/status/2116014041315573998"
+  },
+  {
+   "id": "x_ajenglish_1029",
+   "title": "Al Jazeera English on X, Oct 29",
+   "url": "https://x.com/AJEnglish/status/2115924112874840534"
+  },
+  {
+   "id": "aj_1030_2",
+   "title": "Al Jazeera, Houthis claim six attacks, Oct 30",
+   "url": "https://www.aljazeera.com/news/2026/10/30/houthi-forces-claim-six-attacks-on-saudi-airports-oil-facilities"
+  },
+  {
+   "id": "arabnews_1029",
+   "title": "Arab News, Oct 29",
+   "url": "https://www.arabnews.com/saudi-arabia/saudi-air-defenses-shoot-down-houthi-missiles-targeting-riyadh-3008889"
+  },
+  {
+   "id": "mee_1029",
+   "title": "Middle East Eye, Oct 29",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-six-attacks-saudi-arabia-airports-and-oil-facilities"
+  },
+  {
+   "id": "x_ajenglish_1029_2",
+   "title": "Al Jazeera English on X, Oct 29",
+   "url": "https://x.com/AJEnglish/status/2115940393376231498"
+  },
+  {
+   "id": "aj_1029",
+   "title": "Al Jazeera, Gaza strikes, Oct 29",
+   "url": "https://www.aljazeera.com/news/2026/10/29/israeli-strikes-hit-gaza-as-health-ministry-urges-rafah-opening"
+  },
+  {
+   "id": "rte_1029",
+   "title": "RTE (AFP), Oct 29",
+   "url": "https://www.rte.ie/news/middle-east/2026/1029/1597280-middle-east/"
+  },
+  {
+   "id": "arabnews_1029_2",
+   "title": "Arab News (AFP), Iran claims four tankers hit mines, Oct 29",
+   "url": "https://www.arabnews.com/middle-east/irans-revolutionary-guards-say-three-oil-tankers-hit-mines-in-strait-of-hormuz-3008795"
+  },
+  {
+   "id": "x_ajenglish_1029_3",
+   "title": "Al Jazeera English on X, Oct 29",
+   "url": "https://x.com/AJEnglish/status/2115819620464812410"
+  },
+  {
+   "id": "x_ajenglish_1029_4",
+   "title": "Al Jazeera English on X, Oct 29",
+   "url": "https://x.com/AJEnglish/status/2115741970354020749"
+  },
+  {
+   "id": "ap_1028",
+   "title": "AP, Oct 28-29 live coverage",
+   "url": "https://apnews.com/article/mideast-iran-israel-elections-netanyahu-october-282026-c11dac838a072af25ba8d0eb81d01035"
+  },
+  {
+   "id": "x_ajenglish_1029_5",
+   "title": "Al Jazeera English on X, Oct 29",
+   "url": "https://x.com/AJEnglish/status/2115865677575893205"
+  },
+  {
+   "id": "mee_1029_2",
+   "title": "Middle East Eye, Oct 29",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-strike-kills-one-palestinian-attacks-gaza"
+  },
+  {
+   "id": "wafa_1029",
+   "title": "Wafa, Oct 29",
+   "url": "https://english.wafa.ps/Pages/Details/176437"
+  },
+  {
+   "id": "x_ajenglish_1029_6",
+   "title": "Al Jazeera English on X, Oct 29",
+   "url": "https://x.com/AJEnglish/status/2115787023290372321"
+  },
+  {
+   "id": "isw_1028",
+   "title": "ISW/CTP Iran Update, Oct 28",
+   "url": "https://understandingwar.org/research/middle-east/iran-update-october-28-2026/"
+  },
+  {
+   "id": "x_ajenglish_1029_7",
+   "title": "Al Jazeera English on X, Oct 29",
+   "url": "https://x.com/AJEnglish/status/2115854928975417438"
+  },
+  {
+   "id": "gulfnews_1029",
+   "title": "Gulf News, CENTCOM rejects mine claims, Oct 29",
+   "url": "https://gulfnews.com/world/mena/us-military-rejects-iranian-mine-strike-claims-says-hormuz-transit-lanes-remain-clear-1.500727648"
+  },
+  {
+   "id": "iranintl_1028",
+   "title": "Iran International, Oct 28",
+   "url": "https://www.iranintl.com/en/202610286050"
+  },
+  {
+   "id": "middleeastmoni_1029",
+   "title": "Middle East Monitor (Anadolu), Oct 29",
+   "url": "https://www.middleeastmonitor.com/20261029-israel-kills-4-palestinians-in-strike-on-government-post-in-gaza-despite-ceasefire/"
+  },
+  {
+   "id": "toi",
+   "title": "Times of Israel liveblog",
+   "url": "https://www.timesofisrael.com/liveblog_entry/reports-four-palestinians-killed-in-strike-in-southern-gaza/"
+  },
+  {
+   "id": "anadolu_1029",
+   "title": "Anadolu Agency, south Lebanon, Oct 29",
+   "url": "https://www.aa.com.tr/en/middle-east/israeli-army-says-it-launched-interceptor-at-suspected-aerial-target-in-southern-lebanon/4104450"
+  },
+  {
+   "id": "anadolu",
+   "title": "Anadolu Agency",
+   "url": "https://www.aa.com.tr/en/middle-east/israel-carries-out-strikes-in-southern-lebanon-in-fresh-ceasefire-violations/4101864"
+  },
+  {
+   "id": "almonitor_1027",
+   "title": "Al-Monitor (Reuters), Houthis say they hit Ras Tanura, Oct 27",
+   "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-say-they-hit-saudi-ras-tanura-oil-refinery-missile"
+  },
+  {
+   "id": "aj_1027",
+   "title": "Al Jazeera, Oct 27",
+   "url": "https://www.aljazeera.com/news/2026/10/27/saudi-led-coalition-destroys-four-houthi-drones"
+  },
+  {
+   "id": "mee_1027",
+   "title": "Middle East Eye, Oct 27",
+   "url": "https://www.middleeasteye.net/news/israeli-forces-kill-14-gaza-un-commission-says-genocide-continues"
+  },
+  {
+   "id": "ap_1026",
+   "title": "AP, Oct 26",
+   "url": "https://apnews.com/article/iran-israel-us-war-10-26-2026-36486edb61b3bf4e0df67e8a17123e44"
+  },
+  {
+   "id": "france24_1023",
+   "title": "France 24, Oct 23",
+   "url": "https://www.france24.com/en/live-news/20261023-hundreds-of-syrians-protest-repeated-israeli-incursions"
+  },
+  {
+   "id": "anadolu_2",
+   "title": "Anadolu Agency",
+   "url": "https://www.aa.com.tr/en/middle-east/tanker-hit-by-unknown-projectile-in-strait-of-hormuz-uk-maritime-agency/4098861"
+  },
+  {
+   "id": "ukmto",
+   "title": "UKMTO Warning 179/26",
+   "url": "https://www.ukmto.org/-/media/ukmto/products/20261021-ukmto_warning_179_26.pdf"
+  },
+  {
+   "id": "lawandisrael_1012",
+   "title": "ITIC (Israeli think tank) report, Oct 12-19",
+   "url": "https://www.lawandisrael.org/wp-content/uploads/Topics/Gaza/2023-Conflict/ITIC/further-reports-2026/E_170_26-Hezb-Leb-12-19oct.pdf"
+  },
+  {
+   "id": "anadolu_1012",
+   "title": "Anadolu Agency, Oct 12",
+   "url": "https://www.aa.com.tr/en/world/3-killed-in-southern-lebanon-as-authorities-warn-of-israeli-cluster-bombs-landmines/4085879"
+  },
+  {
+   "id": "ocha_1015",
+   "title": "UN OCHA oPt Situation Report, Oct 15",
+   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026"
+  },
+  {
+   "id": "aj_1013",
+   "title": "Al Jazeera, Palestine weekly, Oct 13",
+   "url": "https://www.aljazeera.com/news/2026/10/13/palestine-weekly-gaza-marks-year-of-ceasefire-with-more-israeli-killing"
+  },
+  {
+   "id": "ap_1006",
+   "title": "AP, Oct 6",
+   "url": "https://apnews.com/article/iran-yemen-israel-saudi-uae-gaza-october-6-2026-efdbaff2e5931655543fd86638682ad5"
+  },
+  {
+   "id": "anadolu_3",
+   "title": "Anadolu Agency",
+   "url": "https://www.aa.com.tr/en/middle-east/israeli-forces-shell-area-in-southwestern-syria-s-quneitra/4088736"
+  },
+  {
+   "id": "anadolu_4",
+   "title": "Anadolu Agency",
+   "url": "https://www.aa.com.tr/en/middle-east/10-israeli-military-vehicles-advance-near-dam-in-southern-syria/4090511"
+  },
+  {
+   "id": "ilkha",
+   "title": "Ilke News Agency",
+   "url": "https://ilkha.com/english/world/iraq-dismisses-military-commander-after-drone-attacks-against-saudi-arabia--561637"
+  },
+  {
+   "id": "aj_1014",
+   "title": "Al Jazeera, Oct 14",
+   "url": "https://www.aljazeera.com/news/2026/10/14/iraq-pm-tells-saudi-crown-prince-iraqi-territory-wont-be-used-for-attacks"
+  },
+  {
+   "id": "cnbc_1030",
+   "title": "CNBC, Oct 30",
+   "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html"
+  },
+  {
+   "id": "arabnews_1029_3",
+   "title": "Arab News, Bahrain warns UNSC, Oct 29",
+   "url": "https://www.arabnews.com/middle-east/houthis-and-iran-hijack-new-tech-to-threaten-red-sea-and-hormuz-shipping-bahrain-warns-3008887"
+  },
+  {
+   "id": "haaretz_1029",
+   "title": "Haaretz, Oct 29",
+   "url": "https://www.haaretz.com/gaza/2026-10-29/ty-article/.premium/israeli-strikes-in-gaza-killed-21-people-this-week-health-ministry-says/000001a1-87a7-ddb3-a9b5-e7ffc7c10000"
+  },
+  {
+   "id": "moph_1012",
+   "title": "Lebanon MoPH, Oct 12 update",
+   "url": "https://www.moph.gov.lb/ar/DynamicPages/index/18/87331/update-toll-of-the-aggression-12-10-2026"
+  },
+  {
+   "id": "mtv_1012",
+   "title": "MTV Lebanon, Oct 12",
+   "url": "https://www.mtv.com.lb/en/News/Local/1747406/health-ministry--8-956-killed-and-30-660-injured-since-march-2"
+  },
+  {
+   "id": "dtm",
+   "title": "IOM DTM Lebanon, Round 118",
+   "url": "https://dtm.iom.int/reports/lebanon-mobility-snapshot-round-118-01-october-2026"
+  },
+  {
+   "id": "reuters_0407",
+   "title": "Reuters, Apr 7",
+   "url": "https://www.reuters.com/world/middle-east/how-many-people-have-been-killed-us-israel-war-iran-2026-04-07/"
+  },
+  {
+   "id": "globalsec_1029",
+   "title": "GlobalSecurity Day 244 update, Oct 29",
+   "url": "https://www.globalsecurity.org/military/ops/iran-war-20261029.htm"
+  },
+  {
+   "id": "reliefweb",
+   "title": "UNHCR Flash Update #14",
+   "url": "https://reliefweb.int/report/iran-islamic-republic/unhcr-middle-east-situation-emergency-flash-update-14-21-april-2026"
+  },
+  {
+   "id": "thebostonrepor",
+   "title": "The Boston Report war tracker",
+   "url": "https://thebostonreport.com/warfare/iran-war-tracker/"
+  },
+  {
+   "id": "toi_2",
+   "title": "Times of Israel (Aoun)",
+   "url": "https://www.timesofisrael.com/liveblog_entry/lebanons-aoun-laments-lack-of-progress-on-ceasefire-idf-withdrawal-urges-european-support-for-lebanese-army/"
+  },
+  {
+   "id": "ynetnews",
+   "title": "Ynet, final count",
+   "url": "https://www.ynetnews.com/article/lzkcj5xqa"
+  },
+  {
+   "id": "euronext_1029",
+   "title": "Reuters via Euronext, Oct 29 settle",
+   "url": "https://live.euronext.com/en/financial-news/oil-prices-settles-lower-diplomacy-hopes-offset-some-mideast-supply-concerns"
+  },
+  {
+   "id": "marketwatch_1029",
+   "title": "MarketWatch, Oct 29",
+   "url": "https://www.marketwatch.com/livecoverage/stock-market-today-s-p-500-nasdaq-dow-alphabet-earnings-results-amazon-intel/card/oil-prices-settle-lower-for-the-third-time-in-four-days-Y7sIpaniSU6GTLbtp0cK"
+  },
+  {
+   "id": "cnbc_1028",
+   "title": "CNBC, Oct 28 (read in full)",
+   "url": "https://www.cnbc.com/2026/10/28/oil-price-today-wti-brent-hormuz.html"
+  },
+  {
+   "id": "oilandgasmiddl",
+   "title": "Oil & Gas Middle East, Brent drivers",
+   "url": "https://www.oilandgasmiddleeast.com/news/brent-crude-price-drivers"
+  },
+  {
+   "id": "x_ajenglish",
+   "title": "Al Jazeera English on X (Riyadh flights)",
+   "url": "https://x.com/AJEnglish/status/2115823653208350952"
+  },
+  {
+   "id": "x_reuters",
+   "title": "Reuters on X (QatarEnergy LNG)",
+   "url": "https://x.com/Reuters/status/2115858807909720369"
+  },
+  {
+   "id": "x_ajenglish_2",
+   "title": "Al Jazeera English on X (Pentagon cost)",
+   "url": "https://x.com/AJEnglish/status/2115785722074705996"
+  }
+ ]
+}

@@ -1,0 +1,955 @@
+{
+ "meta": {
+  "lastUpdated": "2026-11-10T00:38:11+00:00",
+  "note": "Auto-pulled headlines. Unverified until reviewed.",
+  "feeds": [
+   {
+    "source": "Al Jazeera",
+    "ok": true,
+    "count": 6
+   },
+   {
+    "source": "BBC News Middle East",
+    "ok": true,
+    "count": 25
+   },
+   {
+    "source": "Times of Israel",
+    "ok": true,
+    "count": 15
+   },
+   {
+    "source": "UN News Middle East",
+    "ok": true,
+    "count": 25
+   },
+   {
+    "source": "The Guardian (Middle East)",
+    "ok": true,
+    "count": 20
+   },
+   {
+    "source": "France 24 Middle East",
+    "ok": true,
+    "count": 25
+   },
+   {
+    "source": "Al-Monitor",
+    "ok": true,
+    "count": 20
+   },
+   {
+    "source": "Middle East Eye",
+    "ok": true,
+    "count": 20
+   },
+   {
+    "source": "UK Ministry of Defence (GOV.UK)",
+    "ok": true,
+    "count": 0
+   }
+  ]
+ },
+ "items": [
+  {
+   "headline": "Saudi-led coalition says it intercepted Houthi missile",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-intercepted-houthi-missile-1",
+   "date": "2026-11-10T00:31:27.000Z"
+  },
+  {
+   "headline": "Trump sees 'positive momentum' on Iran after Qatar PM talks",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/trump-sees-positive-momentum-iran-after-qatar-pm-talks",
+   "date": "2026-11-10T00:30:26.000Z"
+  },
+  {
+   "headline": "Iran war live: Trump says war ‘effectively over’, Iran demands ‘surrender’",
+   "source": "Al Jazeera",
+   "link": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-war-effectively-over-iran-demands-surrender?traffic_source=rss",
+   "date": "2026-11-09T23:55:23.000Z"
+  },
+  {
+   "headline": "Knesset readies to welcome dozens of new faces at Tuesday’s swearing-in",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/knesset-readies-to-welcome-dozens-of-new-faces-at-tuesdays-swearing-in/",
+   "date": "2026-11-09T23:48:46.000Z"
+  },
+  {
+   "headline": "Trump: US won’t launch new Iran offensive for now, ‘good chance’ deal within reach",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/liveblog-november-10-2026/",
+   "date": "2026-11-09T22:51:51.000Z"
+  },
+  {
+   "headline": "Zelenskiy says Ukrainian battlefield successes strengthen Kyiv's position in talks",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/zelenskiy-says-ukrainian-battlefield-successes-strengthen-kyivs-position-talks",
+   "date": "2026-11-09T22:46:48.000Z"
+  },
+  {
+   "headline": "Trump says US military action against Iran not necessary 'at this point'",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/trump-says-us-military-action-against-iran-not-necessary-point",
+   "date": "2026-11-09T22:46:48.000Z"
+  },
+  {
+   "headline": "Eisenkot, Liberman said to greenlight outreach to Haredim, reach agreement on Knesset speaker",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/eisenkot-liberman-said-to-greenlight-outreach-to-haredim-reach-agreement-on-knesset-speaker/",
+   "date": "2026-11-09T22:40:05.000Z"
+  },
+  {
+   "headline": "Iranian senior official: 'STOP manufacturing FAKE NEWS about imaginary talks'",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-senior-official-stop-manufacturing-fake-news-about-imaginary",
+   "date": "2026-11-09T22:36:42.000Z"
+  },
+  {
+   "headline": "After meeting with Qatar PM, Trump declares Iran war ‘effectively over’",
+   "source": "Al Jazeera",
+   "link": "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm?traffic_source=rss",
+   "date": "2026-11-09T22:31:19.000Z"
+  },
+  {
+   "headline": "Saudi Arabia reports new attack on key East-West pipeline",
+   "source": "Al Jazeera",
+   "link": "https://www.aljazeera.com/news/2026/11/9/saudi-arabia-reports-new-attack-on-key-east-west-pipeline?traffic_source=rss",
+   "date": "2026-11-09T22:10:52.000Z"
+  },
+  {
+   "headline": "Qatari prime minister says discussions with Trump were 'positive'",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-prime-minister-says-discussions-trump-were-positive",
+   "date": "2026-11-09T22:05:42.000Z"
+  },
+  {
+   "headline": "Illinois voters approve proposals objecting to state law against Israel boycotts",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/illinois-voters-approve-proposals-objecting-to-state-law-against-israel-boycotts/",
+   "date": "2026-11-09T22:04:31.000Z"
+  },
+  {
+   "headline": "‘Curb your antisemitism’: Anti-Israel bike protesters met with Philly boos and humor",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/curb-your-antisemitism-anti-israel-bike-protesters-met-with-philly-boos-and-humor/",
+   "date": "2026-11-09T21:58:33.000Z"
+  },
+  {
+   "headline": "Police said to see little evidence to back Shin Bet probe into foreign election interference",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/police-said-to-see-little-evidence-to-back-shin-bet-probe-into-foreign-election-interference/",
+   "date": "2026-11-09T21:48:12.000Z"
+  },
+  {
+   "headline": "Last major independent newspaper in Russia shuts down due to political pressure",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/last-major-independent-newspaper-in-russia-shuts-down-due-to-political-pressure/",
+   "date": "2026-11-09T21:46:37.000Z"
+  },
+  {
+   "headline": "France blames Iran for cyberattack on supermarket fridges, warns of consequences",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/france-blames-iran-for-cyberattack-on-supermarket-fridges-warns-of-consequences/",
+   "date": "2026-11-09T21:45:40.000Z"
+  },
+  {
+   "headline": "Trump: 'We are seeing positive momentum toward an end to this conflict'",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-we-are-seeing-positive-momentum-toward-end-conflict",
+   "date": "2026-11-09T21:45:08.000Z"
+  },
+  {
+   "headline": "US, Qatar talks on Iran negotiations were 'positive': Reports",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/us-qatar-talks-iran-negotiations-were-positive-reports",
+   "date": "2026-11-09T21:00:31.000Z"
+  },
+  {
+   "headline": "Suspect attempted to enter Washington, DC, synagogue with firearm — police",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/suspect-attempted-to-enter-washington-dc-synagogue-with-firearm-police/",
+   "date": "2026-11-09T20:47:58.000Z"
+  },
+  {
+   "headline": "Trump tells Reuters that Qatar, Saudi Arabia want peaceful Iran deal, US ready for strikes if needed",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/trump-tells-reuters-qatar-saudi-arabia-want-peaceful-iran-deal-us-ready-strikes",
+   "date": "2026-11-09T20:46:30.000Z"
+  },
+  {
+   "headline": "Israel says winter supplies delivered to Gaza amid flooding; Board of Peace says it must do more",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/board-of-peace-warns-israel-to-send-more-winter-aid-to-gaza-as-idf-says-supplies-delivered/",
+   "date": "2026-11-09T20:41:26.000Z"
+  },
+  {
+   "headline": "Trump says US ready to strike Iran 'if necessary', Reuters reports",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-ready-strike-iran-if-necessary-reuters-reports",
+   "date": "2026-11-09T20:32:47.000Z"
+  },
+  {
+   "headline": "France accuses Iran of supermarket fridge hacking",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-09T20:20:08.000Z"
+  },
+  {
+   "headline": "Palestinian Authority arrests suspects involved in sale of Jericho homes to settlers",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/palestinian-authority-arrests-suspects-involved-in-sale-of-jericho-homes-to-settlers/",
+   "date": "2026-11-09T20:07:02.000Z"
+  },
+  {
+   "headline": "Will Eisenkot succeed in 'minefield of Israeli politics' where 'so many other generals' have failed?",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/tv-shows/spotlight/20261109-will-eisenkot-succeed-in-minefield-of-israeli-politics-where-so-many-other-generals-have-failed",
+   "date": "2026-11-09T20:03:31.000Z"
+  },
+  {
+   "headline": "Returning to familiar playbook, Trump claims US midterm elections were stolen",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/returning-to-familiar-playbook-trump-claims-us-midterm-elections-were-stolen/",
+   "date": "2026-11-09T19:53:57.000Z"
+  },
+  {
+   "headline": "How is Gaza coping with another severe winter?",
+   "source": "Al Jazeera",
+   "link": "https://www.aljazeera.com/video/newsfeed/2026/11/9/how-is-gaza-coping-with-another-severe-winter?traffic_source=rss",
+   "date": "2026-11-09T19:47:46.000Z"
+  },
+  {
+   "headline": "Merz says Germany faces historic test over rise in antisemitism",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/merz-says-germany-faces-historic-test-over-rise-antisemitism",
+   "date": "2026-11-09T19:46:41.000Z"
+  },
+  {
+   "headline": "Four killed in sand embankment collapse in Gaza - video",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/video/2026/nov/09/four-killed-in-sand-embankment-collapse-in-gaza-video",
+   "date": "2026-11-09T19:38:08.000Z"
+  },
+  {
+   "headline": "'We think' the Iranians and Americans want to negotiate, Egyptian FM says",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261109-we-think-the-iranians-and-americans-want-to-negotiate-egyptian-fm-says",
+   "date": "2026-11-09T19:31:42.000Z"
+  },
+  {
+   "headline": "Trump 'Board of Peace' says Israel too slow as floods ravage Gaza",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/trump-board-peace-says-israel-too-slow-floods-ravage-gaza",
+   "date": "2026-11-09T19:31:11.000Z"
+  },
+  {
+   "headline": "To unseat Netanyahu, Israel's once-unyielding Liberman turns to compromise",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/unseat-netanyahu-israels-once-unyielding-liberman-turns-compromise",
+   "date": "2026-11-09T19:31:11.000Z"
+  },
+  {
+   "headline": "Syria denies sending troops to fight Houthis in return for Saudi loans",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/syria-denies-sending-troops-fight-houthis-return-saudi-loans",
+   "date": "2026-11-09T19:29:07.000Z"
+  },
+  {
+   "headline": "Israeli-Palestinian group says IDF West Bank chief must be sanctioned for ‘ethnic cleansing’",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/israeli-palestinian-group-says-idf-west-bank-chief-must-be-sanctioned-for-ethnic-cleansing/",
+   "date": "2026-11-09T19:16:27.000Z"
+  },
+  {
+   "headline": "Slotkin, Van Hollen emerge as potential challengers to Schumer’s Senate leadership",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/slotkin-van-hollen-emerge-potential-challengers-schumers-senate-leadership",
+   "date": "2026-11-09T19:14:02.000Z"
+  },
+  {
+   "headline": "Saudi-led coalition says it destroyed Houthi missile facilities",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-destroyed-houthi-missile-facilities",
+   "date": "2026-11-09T19:00:46.000Z"
+  },
+  {
+   "headline": "Germany set to have first female president, who pledges to ‘bring people together’",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/germanys-set-to-have-first-female-president-who-pledges-to-bring-people-together/",
+   "date": "2026-11-09T18:56:51.000Z"
+  },
+  {
+   "headline": "Despite tensions, Israeli, Dutch firms to establish weapons plant in Netherlands",
+   "source": "Times of Israel",
+   "link": "https://www.timesofisrael.com/despite-tensions-israeli-dutch-firms-to-establish-weapons-plant-in-netherlands/",
+   "date": "2026-11-09T18:53:36.000Z"
+  },
+  {
+   "headline": "Qatar PM meets with Trump for talks on ending war on Iran",
+   "source": "Al Jazeera",
+   "link": "https://www.aljazeera.com/video/newsfeed/2026/11/9/qatar-pm-meets-with-trump-for-talks-on-ending-war-on-iran?traffic_source=rss",
+   "date": "2026-11-09T18:48:00.000Z"
+  },
+  {
+   "headline": "Steel plant blast kills 16 in western Turkey",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/steel-plant-blast-kills-16-western-turkey",
+   "date": "2026-11-09T18:46:47.000Z"
+  },
+  {
+   "headline": "France launches G7+ ports alliance to target global narcotics routes",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/france-launches-g7-ports-alliance-target-global-narcotics-routes",
+   "date": "2026-11-09T18:46:47.000Z"
+  },
+  {
+   "headline": "Trump says US seeing 'strong inclination' to end Russia's war in Ukraine",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/trump-says-us-seeing-strong-inclination-end-russias-war-ukraine",
+   "date": "2026-11-09T18:46:47.000Z"
+  },
+  {
+   "headline": "Yemen government forces claim new advances as Houthi border attacks resume",
+   "source": "Al Jazeera",
+   "link": "https://www.aljazeera.com/news/2026/11/9/yemen-government-forces-claim-new-advances-as-houthi-border-attacks-resume?traffic_source=rss",
+   "date": "2026-11-09T18:37:03.000Z"
+  },
+  {
+   "headline": "Trump, Qatari prime minister discuss Iran negotiations in 45-minute meeting: Report",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-qatari-prime-minister-discuss-iran-negotiations-45-minute",
+   "date": "2026-11-09T18:30:45.000Z"
+  },
+  {
+   "headline": "Witnesses recount struggle to save people buried in ‘horrifying’ Gaza landslide",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/09/witnesses-struggle-save-people-buried-gaza-landslide",
+   "date": "2026-11-09T18:27:51.000Z"
+  },
+  {
+   "headline": "Displaced families suffer in Gaza floods as 70,000 tents wrecked – video",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/video/2026/nov/09/displaced-families-suffer-in-gaza-floods-as-70000-tents-wrecked-video",
+   "date": "2026-11-09T18:04:55.000Z"
+  },
+  {
+   "headline": "Iran was behind cyber-attack on French supermarket freezers, Paris says",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/09/france-blames-irans-revolutionary-guards-for-cyber-attacks-on-supermarket-fridges",
+   "date": "2026-11-09T17:54:40.000Z"
+  },
+  {
+   "headline": "Senior UAE official says Gulf faces 'prolonged uncertainty' with no settlement to Iran war",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/senior-uae-official-says-gulf-faces-prolonged-uncertainty-no-settlement",
+   "date": "2026-11-09T17:53:27.000Z"
+  },
+  {
+   "headline": "Senior UAE official says Gulf faces 'prolonged uncertainty' with no settlement to Iran war",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/news/senior-uae-official-says-gulf-faces-prolonged-uncertainty-no-settlement-war-iran",
+   "date": "2026-11-09T17:46:03.000Z"
+  },
+  {
+   "headline": "Steel factory explosion in western Turkey kills at least 16",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/steel-factory-explosion-western-turkey-kills-least-16",
+   "date": "2026-11-09T17:44:55.000Z"
+  },
+  {
+   "headline": "France says Iran behind 'unprecedented' cyberattacks on fridges",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/france-says-iran-behind-unprecedented-cyberattacks-fridges",
+   "date": "2026-11-09T17:30:33.000Z"
+  },
+  {
+   "headline": "'Life in Gaza simply miserable': Amid flooding, lack of aid, conditions 'worsen' for Palestinians",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/life-in-gaza-simply-miserable-amid-flooding-lack-of-aid-conditions-worsen-for-palestinians",
+   "date": "2026-11-09T17:26:51.000Z"
+  },
+  {
+   "headline": "Three injured as wall collapses on displaced family's tent in Gaza, Al Jazeera reports",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/three-injured-wall-collapses-displaced-familys-tent-gaza-al-jazeera",
+   "date": "2026-11-09T17:18:43.000Z"
+  },
+  {
+   "headline": "Iranian ambassador summoned over alleged cyberattacks on French supermarket fridges",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-ambassador-summoned-over-alleged-cyberattacks-french-supermarket",
+   "date": "2026-11-09T17:10:06.000Z"
+  },
+  {
+   "headline": "Anti-Muslim influence campaign targeting UK traced back to Israel",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/news/major-anti-muslim-influence-campaign-targeting-uk-elections-and-riots-traced-israel",
+   "date": "2026-11-09T16:41:08.000Z"
+  },
+  {
+   "headline": "Saudi energy ministry: East-West Pipeline hit in Madinah region",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-energy-ministry-east-west-pipeline-hit-madinah-region",
+   "date": "2026-11-09T16:35:06.000Z"
+  },
+  {
+   "headline": "Saudi, Omani foreign ministers call for continued diplomacy",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-omani-foreign-ministers-call-continued-diplomacy",
+   "date": "2026-11-09T16:11:13.000Z"
+  },
+  {
+   "headline": "Iran says no plan for US talks unless Washington meets seven conditions",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-no-plan-us-talks-unless-washington-meets-seven-conditions",
+   "date": "2026-11-09T15:55:49.000Z"
+  },
+  {
+   "headline": "Netanyahu calls for unity government without 'Hamas supporters'",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-calls-unity-government-not-relying-hamas-supporters",
+   "date": "2026-11-09T15:38:06.000Z"
+  },
+  {
+   "headline": "Israeli mob attacks Palestinian citizens during Lod rally",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/news/israeli-mob-attacks-palestinian-citizens-israel-lod-during-provocative-march",
+   "date": "2026-11-09T14:58:18.000Z"
+  },
+  {
+   "headline": "More than 200,000 join Amsterdam march against Gaza genocide",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/news/more-200000-join-amsterdam-march-against-gaza-genocide",
+   "date": "2026-11-09T14:46:58.000Z"
+  },
+  {
+   "headline": "Iran war: Will Trump's midterm defeat end or entrench the conflict with Tehran?",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/opinion/iran-war-will-trumps-midterm-defeat-end-or-entrench-conflict",
+   "date": "2026-11-09T14:44:51.000Z"
+  },
+  {
+   "headline": "Iran 'has mistaken perception' of US midterm result, expert says",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/iran-sees-golden-opportunity-for-a-sweetheart-deal-after-us-midterms-expert-says",
+   "date": "2026-11-09T13:49:33.000Z"
+  },
+  {
+   "headline": "‘I’m surrounded by millions of people but I could still die from the heat’ – This is climate breakdown",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/environment/ng-interactive/2026/nov/09/extreme-heat-mecca-hajj-pilgrimage-this-is-climate-breakdown-saudi-arabia",
+   "date": "2026-11-09T12:00:08.000Z"
+  },
+  {
+   "headline": "Deadly floods hit Iraq as thunderstorms sweep across region",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/environment/2026/nov/09/deadly-floods-iraq-thunderstorms-iran-portugal-japan-snow",
+   "date": "2026-11-09T10:59:06.000Z"
+  },
+  {
+   "headline": "Four killed in Gaza after sand embankment collapses onto tents, health ministry says",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cqd090ee8px5o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-09T10:41:57.000Z"
+  },
+  {
+   "headline": "Saudi Arabia intercepts Houthi missiles as Riyadh's Aramco building damaged",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/video/20261109-saudi-arabia-intercepts-houthi-missiles-as-riyadh-s-aramco-building-damaged",
+   "date": "2026-11-09T10:41:55.000Z"
+  },
+  {
+   "headline": "Israel's opposition leader Gadi Eisenkot has six weeks to form a government",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/video/20261109-israel-s-opposition-leader-gadi-eisenkot-has-six-weeks-to-form-a-government",
+   "date": "2026-11-09T10:36:05.000Z"
+  },
+  {
+   "headline": "Abandoned and traumatised: child refugees at ‘violent’ breaking point in Egypt after fleeing Sudan war",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/global-development/2026/nov/09/sudan-child-war-refugees-cairo-egypt-spiral-of-despair",
+   "date": "2026-11-09T10:00:06.000Z"
+  },
+  {
+   "headline": "A Fox Under a Pink Moon review – Iranian teen refugee paints boldly imaginative self-portrait",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/film/2026/nov/09/a-fox-under-a-pink-moon-review-iran-refugee",
+   "date": "2026-11-09T10:00:06.000Z"
+  },
+  {
+   "headline": "Aramco Tower hit in heart of Saudi capital as Houthis launch fresh strikes",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/c6ly3mjx958eo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-08T21:37:36.000Z"
+  },
+  {
+   "headline": "Israeli opposition leader Eisenkot begins the hard work of forging a coalition government",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/middle-east/20261108-israeli-opposition-leader-eisenkot-begins-the-hard-work-of-forging-a-coalition-government",
+   "date": "2026-11-08T21:10:13.000Z"
+  },
+  {
+   "headline": "Seven dead and more than 100 injured after trains collide in Egypt",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-08T19:58:02.000Z"
+  },
+  {
+   "headline": "Heavy rain floods displaced families’ tents in Gaza – in pictures",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/gallery/2026/nov/08/heavy-rain-floods-displaced-families-tents-gaza-in-pictures",
+   "date": "2026-11-08T18:50:12.000Z"
+  },
+  {
+   "headline": "Gadi Eisenkot reaches out to Netanyahu allies as he strives to form government",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/08/gadi-eisenkot-netanyahu-allies-form-israel-government",
+   "date": "2026-11-08T17:53:59.000Z"
+  },
+  {
+   "headline": "Collision of two trains in Egypt kills at least seven",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/08/egypt-two-trains-deadly-collision",
+   "date": "2026-11-08T17:51:17.000Z"
+  },
+  {
+   "headline": "Gadi Eisenkot receives mandate to form government",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/gadi-eisenkot-receives-mandate-to-form-government",
+   "date": "2026-11-08T16:58:11.000Z"
+  },
+  {
+   "headline": "Footage shows derailed carriages after fatal train crash in Egypt",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/videos/cw78p2km7d94o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-08T16:05:57.000Z"
+  },
+  {
+   "headline": "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/07/israel-president-gadi-eisenkot-form-government",
+   "date": "2026-11-08T14:26:14.000Z"
+  },
+  {
+   "headline": "Yemen's humanitarian crisis worsens",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/yemen-s-humanitarian-crisis-worsens",
+   "date": "2026-11-08T14:22:14.000Z"
+  },
+  {
+   "headline": "Iran executes three men for 'armed unrest' after January protests",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/ckly0ex633ydo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-08T13:37:50.000Z"
+  },
+  {
+   "headline": "Israeli president officially tasks Eisenkot with forming government",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/middle-east/20261108-middle-east-live-riyadh-financial-district-targeted-deadly-strikes-yemen-israel-eisenkot-netanyahu-coalition-government-elections",
+   "date": "2026-11-08T09:47:36.000Z"
+  },
+  {
+   "headline": "Israel's Arab-led parties gain influence",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/israel-s-arab-led-parties-gain-influence",
+   "date": "2026-11-08T09:43:26.000Z"
+  },
+  {
+   "headline": "Gaza: Heavy rain inundates thousands of tents",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/gaza-heavy-rain-inundates-thousands-of-tents",
+   "date": "2026-11-08T09:42:03.000Z"
+  },
+  {
+   "headline": "Yemen's Houthis claim attack on Aramco skyscraper in Riyadh",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/middle-east/20261108-yemen-s-houthis-claim-attack-on-aramco-building-in-riyadh-s-financial-district",
+   "date": "2026-11-08T08:11:54.000Z"
+  },
+  {
+   "headline": "Donald Trump’s power is on the wane. What next for Russia, Israel – and the rest of us? | Simon Tisdall",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/commentisfree/2026/nov/08/donald-trump-power-russia-israel-us-president",
+   "date": "2026-11-08T06:00:32.000Z"
+  },
+  {
+   "headline": "Houthis say at least 33 killed in Saudi air strike",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-08T04:03:12.000Z"
+  },
+  {
+   "headline": "Israel's president tasks opposition leader Eisenkot with forming government",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-07T22:19:59.000Z"
+  },
+  {
+   "headline": "Israeli president picks Netanyahu's rival Eisenkot to try to form government",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/middle-east/20261107-israeli-president-picks-netanyahu-s-rival-eisenkot-to-try-to-form-government",
+   "date": "2026-11-07T19:37:14.000Z"
+  },
+  {
+   "headline": "US offers $20m reward for information about Iran's nuclear programme",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/c6d091ev3p0jo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-07T18:14:38.000Z"
+  },
+  {
+   "headline": "Gaza wedding festival sees 250 couples married at the same time",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/videos/ckr5ygm78j76o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-07T17:58:41.000Z"
+  },
+  {
+   "headline": "Tens of thousands of tents flooded after heavy rains in Gaza",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cx240e5py64jo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-07T16:25:55.000Z"
+  },
+  {
+   "headline": "Court rules against Home Office in asylum seeker kidnapping case",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/law/2026/nov/07/court-of-appeal-rules-kidnap-for-ransom-libya-exploitation-trafficking-victims-asylum-seeker-home-office",
+   "date": "2026-11-07T13:00:11.000Z"
+  },
+  {
+   "headline": "Israel coalition talks gain momentum",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/israel-coalition-talks-gain-momentum",
+   "date": "2026-11-07T12:12:06.000Z"
+  },
+  {
+   "headline": "A ‘customer success story’: leaked documents show Cisco doubled down on Israeli military deals during Gaza war",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/07/israel-intelligence-cisco-gaza-palestine",
+   "date": "2026-11-07T12:00:12.000Z"
+  },
+  {
+   "headline": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/11/1168759",
+   "date": "2026-11-07T12:00:00.000Z"
+  },
+  {
+   "headline": "Yemen: 30 dead in strikes on Taiz market",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/yemen-30-dead-in-strikes-on-taiz-market",
+   "date": "2026-11-07T09:37:16.000Z"
+  },
+  {
+   "headline": "Strait of Hormuz could reopen as part of Qatari plan for Iran nuclear inspections",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections",
+   "date": "2026-11-07T07:00:04.000Z"
+  },
+  {
+   "headline": "US midterm results may help unite Israeli coalition to unseat Netanyahu",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/07/us-midterm-results-may-help-unite-israeli-coalition-to-unseat-netanyahu",
+   "date": "2026-11-07T06:00:04.000Z"
+  },
+  {
+   "headline": "US carries out another round of ‘minor’ strikes on Iran, Trump says",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/07/us-carries-out-another-round-of-minor-strikes-on-iran-trump-says",
+   "date": "2026-11-07T03:07:01.000Z"
+  },
+  {
+   "headline": "Israel’s election and self-definition invite questions | Letters",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/06/israels-election-and-self-definition-invite-questions",
+   "date": "2026-11-06T16:38:52.000Z"
+  },
+  {
+   "headline": "Is Israel opposition figure Gadi Eisenkot going to replace Benjamin Netanyahu?",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/video/20261106-is-israel-opposition-figure-gadi-eisenkot-going-to-replace-benjamin-netanyahu",
+   "date": "2026-11-06T13:25:57.000Z"
+  },
+  {
+   "headline": "US midterm results spark fears in Israel over future of two countries' ties",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cx30ee8018lvo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-06T13:23:44.000Z"
+  },
+  {
+   "headline": "‘We’ve been preparing for the worst all year’: uncertainty grips Iran after Trump midterms defeat",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/06/uncertainty-iran-donald-trump-midterms-defeat-war-repression",
+   "date": "2026-11-06T12:00:42.000Z"
+  },
+  {
+   "headline": "Israel's Eisenkot claims 'progress' in coalition talks as opposition eases on ultra-Orthodox draft",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/middle-east/20261106-israel-s-eisenkot-claims-significant-progress-in-coalition-talks-as-opposition-eases-on-ultra-orthodox-draft",
+   "date": "2026-11-06T11:43:55.000Z"
+  },
+  {
+   "headline": "Israel president to announce Sunday who will form new government",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/video/20261106-israel-president-to-announce-sunday-who-will-form-new-government",
+   "date": "2026-11-06T10:39:11.000Z"
+  },
+  {
+   "headline": "Netanyahu rival Eisenkot secures broad backing in bid to form government",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/video/20261106-netanyahu-rival-eisenkot-secures-broad-backing-in-bid-to-form-government",
+   "date": "2026-11-06T10:02:32.000Z"
+  },
+  {
+   "headline": "Major construction ongoing near Iran missile bases, satellite images suggest",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/ckjrwx1r2d5ro?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-06T07:33:41.000Z"
+  },
+  {
+   "headline": "Israel's Arab list backs Eisenkot as Netanyahu loses ultra-Orthodox support",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/middle-east/20261105-israel-main-arab-list-backs-eisenkot-to-form-government-after-election",
+   "date": "2026-11-05T14:43:59.000Z"
+  },
+  {
+   "headline": "Houthi missiles fired at Medina intercepted, Saudi coalition says",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/middle-east/20261105-houthi-missiles-fired-at-medina-intercepted-saudi-coalition-says",
+   "date": "2026-11-05T11:07:22.000Z"
+  },
+  {
+   "headline": "Could Democrats in Congress end the war in Iran?",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/videos/cqg7xkv1rze1o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-04T22:14:41.000Z"
+  },
+  {
+   "headline": "Netanyahu claims 'serious concerns' of foreign spending to sway Israeli election",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/middle-east/20261104-netanyahu-claims-serious-concerns-of-foreign-spending-to-sway-israeli-election",
+   "date": "2026-11-04T21:26:53.000Z"
+  },
+  {
+   "headline": "What the US midterm results mean for the Middle East",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/videos/cq74pedvwlw8o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-04T17:57:03.000Z"
+  },
+  {
+   "headline": "US midterms: Iran's deputy parliament speaker reacts to Trump's elections setback",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/video/20261104-us-midterms-iran-s-deputy-parliament-speaker-reacts-to-trump-s-elections-setback-1",
+   "date": "2026-11-04T16:50:06.000Z"
+  },
+  {
+   "headline": "Israel's president begins consultations with parties after election deadlock",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/c6z98z5z91ppo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-04T16:18:21.000Z"
+  },
+  {
+   "headline": "Gunfire damages tents at Rafah displacement site in Gaza, as aid teams prepare for winter storms",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/11/1168740",
+   "date": "2026-11-04T12:00:00.000Z"
+  },
+  {
+   "headline": "Syria’s undocumented children ‘pay the price’ of war and a law that shuts out mothers",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/11/1168737",
+   "date": "2026-11-04T12:00:00.000Z"
+  },
+  {
+   "headline": "What consequences for Israel as Democrats win the US midterm elections?",
+   "source": "France 24 Middle East",
+   "link": "https://www.france24.com/en/video/20261104-what-consequences-for-israel-as-democrats-win-the-us-midterm-elections",
+   "date": "2026-11-04T11:32:43.000Z"
+  },
+  {
+   "headline": "Trump says US 'won't be paying Israel' by end of year",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cmx2dlx86n9yo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-03T15:09:51.000Z"
+  },
+  {
+   "headline": "Married off at 14: In Yemen’s war, women and girls suffer ‘devastating consequences’",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/11/1168730",
+   "date": "2026-11-03T12:00:00.000Z"
+  },
+  {
+   "headline": "Iran killed her teenage daughter - now she is facing up to the regime",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/c3qjn8117kwjo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-02T06:00:54.000Z"
+  },
+  {
+   "headline": "‘They deserve to know the truth’: UN rights chief demands probe into staffer’s death in Houthi custody",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168716",
+   "date": "2026-10-31T12:00:00.000Z"
+  },
+  {
+   "headline": "UN rights office warns of deepening displacement ‘nightmare’ in Gaza",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168707",
+   "date": "2026-10-30T12:00:00.000Z"
+  },
+  {
+   "headline": "Yemen war makes reaching assistance too dangerous for many",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168706",
+   "date": "2026-10-30T12:00:00.000Z"
+  },
+  {
+   "headline": "How could Israel break election deadlock? Here are four scenarios",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cm62y46d97wwo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-10-29T09:06:48.000Z"
+  },
+  {
+   "headline": "Israel's election deadlock is a sign of the country's deep divisions",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cqz0ve94ygpjo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-10-28T20:53:02.000Z"
+  },
+  {
+   "headline": "Gaza: Families brace for fourth winter in tents as aid operations remain stymied",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168685",
+   "date": "2026-10-27T12:00:00.000Z"
+  },
+  {
+   "headline": "West Bank: Hebron crackdown displaces thousands, Türk warns of ethnic cleansing",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168672",
+   "date": "2026-10-26T12:00:00.000Z"
+  },
+  {
+   "headline": "The bitter row over military service that could shape Israel's future",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cmvg7w0x742do?at_medium=RSS&at_campaign=rss",
+   "date": "2026-10-24T23:03:21.000Z"
+  },
+  {
+   "headline": "West Bank: Guterres alarmed as Israel imposes sweeping closures after deadly Hebron attack",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168660",
+   "date": "2026-10-23T12:00:00.000Z"
+  },
+  {
+   "headline": "Yemen: Deepening concerns for Taiz City as aid is blocked from entering",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168654",
+   "date": "2026-10-23T12:00:00.000Z"
+  },
+  {
+   "headline": "Newborn twins fight for survival as conflict fuels Yemen's hunger crisis",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cr5ynl63v0pyo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-10-22T15:56:36.000Z"
+  },
+  {
+   "headline": "How Arab parties could hold critical balance of power in Israeli election",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cx8dzrp768j8o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-10-22T05:30:22.000Z"
+  },
+  {
+   "headline": "‘Ominous start’ to West Bank olive harvest amid settler attacks",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168644",
+   "date": "2026-10-21T12:00:00.000Z"
+  },
+  {
+   "headline": "Yemen war continues to force families from homes amid hunger and disease",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168629",
+   "date": "2026-10-20T12:00:00.000Z"
+  },
+  {
+   "headline": "Israel's far right find fertile ground among first-time voters",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/cmvg632xgndeo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-10-20T08:53:06.000Z"
+  },
+  {
+   "headline": "‘Season of fear’: Escalating Israeli attacks on West Bank olive farmers, deadly strikes on Gaza",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168625",
+   "date": "2026-10-19T12:00:00.000Z"
+  },
+  {
+   "headline": "Gaza: Funding cuts leave half a million without food assistance",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168622",
+   "date": "2026-10-19T12:00:00.000Z"
+  },
+  {
+   "headline": "Flour sacks turned flood barriers: Gaza faces another winter without safe shelter",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168619",
+   "date": "2026-10-17T12:00:00.000Z"
+  },
+  {
+   "headline": "Gaza: 340 children killed despite ceasefire agreement - UNICEF",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168611",
+   "date": "2026-10-16T12:00:00.000Z"
+  },
+  {
+   "headline": "Security Council LIVE: Deaths, demolitions spike in Gaza, West Bank",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168599",
+   "date": "2026-10-15T12:00:00.000Z"
+  },
+  {
+   "headline": "Hundreds of IDF investigations into killings still have no public outcome, BBC Verify finds",
+   "source": "BBC News Middle East",
+   "link": "https://www.bbc.co.uk/news/articles/c574e228vlygo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-10-15T05:00:23.000Z"
+  },
+  {
+   "headline": "Yemen: WFP warns of potential ‘humanitarian catastrophe’ as fighting blocks aid delivery",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168591",
+   "date": "2026-10-14T12:00:00.000Z"
+  },
+  {
+   "headline": "WHO calls for urgent health action across the Eastern Mediterranean",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168590",
+   "date": "2026-10-14T12:00:00.000Z"
+  },
+  {
+   "headline": "Yemen: Houthi siege, cholera outbreak and aid cuts put civilians in the crosshairs",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168589",
+   "date": "2026-10-13T12:00:00.000Z"
+  },
+  {
+   "headline": "Security Council LIVE: Syria’s fragile transition – economic strain, Israeli incursions and progress towards elections",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168578",
+   "date": "2026-10-12T12:00:00.000Z"
+  },
+  {
+   "headline": "Djibouti shipwreck: Death toll rises to 139 as 84 remain missing",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168573",
+   "date": "2026-10-11T12:00:00.000Z"
+  },
+  {
+   "headline": "Sustaining livelihoods amid crisis in Gaza",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168569",
+   "date": "2026-10-11T12:00:00.000Z"
+  },
+  {
+   "headline": "Amid heartache of Nepal flooding disaster, fear remains",
+   "source": "UN News Middle East",
+   "link": "https://news.un.org/feed/view/en/story/2026/10/1168561",
+   "date": "2026-10-09T12:00:00.000Z"
+  }
+ ]
+}

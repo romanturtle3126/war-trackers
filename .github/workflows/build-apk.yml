@@ -45,7 +45,9 @@ jobs:
         run: npm ci --no-audit --no-fund
 
       - name: Validate bundled data
-        run: node scripts/validate.mjs data/ukraine.json
+        run: |
+          node scripts/validate.mjs data/ukraine.json
+          node scripts/validate.mjs data/middle-east.json
 
       - name: Assemble web app and sync into Android project
         run: |
