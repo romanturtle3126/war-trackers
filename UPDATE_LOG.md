@@ -2,6 +2,21 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-11 06:10 Toronto — Ukraine — OK
+- Added 5 event(s):
+  - `dnipro-1110` 2026-11-10 [ONE_PARTY] Russian strike kills three in Dnipro
+  - `nizhyn-1110` 2026-11-10 [ONE_PARTY] Russia strikes energy infrastructure in Nizhyn
+  - `staraya-russa-1110` 2026-11-10 [ONE_PARTY] Ukraine's General Staff says it hit A-50 repair plant in Staraya Russa
+  - `kryvyi-rih-1111` 2026-11-11 [ONE_PARTY] Russia's MoD claims strike on 330 kV substation in Kryvyi Rih
+  - `mayaky-1111` 2026-11-11 [ONE_PARTY] Russia's MoD claims strikes on two substations in Odesa Oblast and a cargo ship
+- Stats: 0 updated, 2 added
+- 7 new source link(s)
+- Totals: 129 events, 34 stats, 207 sources; coverage 2026-10-10 to 2026-11-11
+
+## 2026-11-11 06:10 Toronto — Ukraine — FAILED (data not changed)
+- event "dnipro-1110": type "strike" must be one of missile, drone, airstrike, artillery, energy, deep-strike, frontline, claim, ceasefire, naval, ground, diplomacy, unrest, other
+- event "staraya-russa-1110": type "strike" must be one of missile, drone, airstrike, artillery, energy, deep-strike, frontline, claim, ceasefire, naval, ground, diplomacy, unrest, other
+
 ## 2026-11-10 06:38 Toronto — Middle East — OK
 - Added 4 event(s):
   - `burqa-1110` 2026-11-10 [ONE_PARTY] Palestinian boy, 14, shot dead by Israeli forces in Burqa, near Nablus
