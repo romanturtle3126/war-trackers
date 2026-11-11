@@ -2,6 +2,16 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-11 06:41 Toronto — Middle East — OK
+- Added 3 event(s):
+  - `khasab-1111` 2026-11-11 [DISPUTED] Tanker ablaze in eastern Hormuz; Iran says it hit a mine
+  - `gaza-1110` 2026-11-10 [ONE_PARTY] At least seven killed by Israeli fire in Gaza City and Khan Younis, medics say
+  - `marib-1110` 2026-11-10 [DISPUTED] Yemeni government and Houthis trade attacks across several fronts, both claim heavy losses
+- Stats: 1 updated, 0 added
+- Lanes: 1 updated
+- 5 new source link(s)
+- Totals: 55 events, 18 stats, 80 sources; coverage 2026-10-06 to 2026-11-11
+
 ## 2026-11-11 06:10 Toronto — Ukraine — OK
 - Added 5 event(s):
   - `dnipro-1110` 2026-11-10 [ONE_PARTY] Russian strike kills three in Dnipro

@@ -2,11 +2,11 @@
  "schemaVersion": 1,
  "map": "middle-east",
  "meta": {
-  "lastUpdated": "2026-11-10T06:38:26-05:00",
-  "coverage": "2026-10-06 to 2026-11-10",
+  "lastUpdated": "2026-11-11T06:41:13-05:00",
+  "coverage": "2026-10-06 to 2026-11-11",
   "notes": [
-   "Refreshed 2026-11-10 (UTC) from Al-Monitor (Reuters), Al Jazeera and the headline feed.",
-   "Not read: UKMTO, ISW/CTP, OCHA oPt (blocked, HTTP 403 or no data), IDF/CENTCOM X posts (search returned nothing for Nov 9-10), Tasnim Telegram (preview only old posts). Stats and lanes not refreshed: no verified new figures. US aircraft moved from RAF Mildenhall (WSJ via Al Jazeera) is outside the map box so not added.",
+   "Refreshed 2026-11-11 (UTC) from Al Jazeera, Al-Monitor (Reuters), Middle East Eye and the headline feed.",
+   "Not read: UKMTO site (Cloudflare block; the UKMTO report was seen only via Middle East Eye), ISW/CTP, OCHA oPt, IDF/CENTCOM X posts (embed service returns no timeline; search returned undated results), Tasnim Telegram preview (no datable posts), Saba Telegram. Lebanon not refreshed: no verified new reports read.",
    "Marker positions are approximate (see coordPrecision)."
   ]
  },
@@ -1730,6 +1730,119 @@
      "says": "Had not confirmed the strikes at the time of reporting."
     }
    ]
+  },
+  {
+   "id": "gaza-1110",
+   "date": "2026-11-10",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "airstrike",
+   "status": "ONE_PARTY",
+   "title": "At least seven killed by Israeli fire in Gaza City and Khan Younis, medics say",
+   "caption": "Medics say Israeli fire killed at least seven Palestinians on Nov 10: a father and his 13-year-old son in a strike on a shelter roof in Zeitoun, one person near a school in Daraj, three in a strike on a metal foundry in Sabra, and one man shot in Khan Younis. The Israeli military says it struck militants in Zeitoun and Daraj and did not immediately comment on the others. Marker is placed at Gaza City.",
+   "lat": 31.5016,
+   "lon": 34.4667,
+   "coordPrecision": "approx",
+   "place": "Gaza",
+   "sources": [
+    {
+     "id": "am_1111_gaza",
+     "title": "Al-Monitor (Reuters), Israeli fire kills seven, including a father and son, in Gaza, medics say, Nov 11",
+     "url": "https://www.al-monitor.com/originals/2026/11/israeli-fire-kills-seven-including-father-and-son-gaza-medics-say"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Gaza medics",
+     "says": "At least seven killed: Zeitoun (2), Daraj (1), Sabra (3), Khan Younis (1)."
+    },
+    {
+     "who": "Israeli military",
+     "says": "Struck militants in Zeitoun and Daraj; says Hamas is trying to regroup. No immediate comment on Khan Younis or Sabra."
+    },
+    {
+     "who": "Hamas",
+     "says": "Committed to the ceasefire; accuses Israel of trying to undermine it."
+    }
+   ]
+  },
+  {
+   "id": "marib-1110",
+   "date": "2026-11-10",
+   "region": "yemen",
+   "oblast": "Yemen",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "frontline",
+   "status": "DISPUTED",
+   "title": "Yemeni government and Houthis trade attacks across several fronts, both claim heavy losses",
+   "caption": "Government forces, in a counteroffensive they call Operation Dawn of Yemen, say they hit Houthi positions in Lahij, Taiz, Marib, al-Jawf, Hajjah and al-Bayda and killed or wounded about 190 fighters. The Houthis say Saudi-backed forces launched 109 air and missile attacks and claim strikes on Riyadh and an Aramco facility. Al Jazeera could not verify either side's claims. WHO says at least 1,771 killed and 7,959 wounded in Yemen since August. Marker is placed at Marib.",
+   "lat": 15.4543,
+   "lon": 45.3224,
+   "coordPrecision": "oblast",
+   "place": "Marib",
+   "sources": [
+    {
+     "id": "aj_1111_yemen",
+     "title": "Al Jazeera, Yemeni forces, Houthis exchange attacks, claim to inflict heavy losses, Nov 11",
+     "url": "https://www.aljazeera.com/news/2026/11/11/yemeni-forces-houthis-exchange-attacks-claim-to-inflict-heavy-losses"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Yemeni government forces (spokesman Majed al-Nuzaili)",
+     "says": "About 190 Houthi fighters killed or wounded; up to 130 vehicles and assets hit."
+    },
+    {
+     "who": "Houthis (spokesman Yahya Saree)",
+     "says": "109 Saudi-backed air strikes and missile attacks killed and wounded many civilians; dozens of government soldiers hit in al-Jawf."
+    }
+   ]
+  },
+  {
+   "id": "khasab-1111",
+   "date": "2026-11-11",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "naval",
+   "status": "DISPUTED",
+   "title": "Tanker ablaze in eastern Hormuz; Iran says it hit a mine",
+   "caption": "UKMTO reported a tanker incident in the Strait of Hormuz; the extent of damage and the crew's condition were not yet known. Iran's army says an oil tanker caught fire after hitting a naval mine in what it calls an unsafe, restricted area, and the IRGC says three tankers burned after hitting mines on an 'unauthorised route'. Al Jazeera notes UKMTO reported two tankers, one hit by an unknown projectile northeast of Lima, Oman. Marker is placed at Khasab, not the exact position.",
+   "lat": 26.1799,
+   "lon": 56.2477,
+   "coordPrecision": "oblast",
+   "place": "Khasab",
+   "sources": [
+    {
+     "id": "mee_1111_mine",
+     "title": "Middle East Eye, Iranian army says oil tanker ablaze in Hormuz Strait after hitting mine, Nov 11",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-army-says-oil-tanker-ablaze-hormuz-strait-after-hitting-mine"
+    },
+    {
+     "id": "mee_1111_ukmto",
+     "title": "Middle East Eye, UKMTO reports tanker incident in Hormuz Strait, Nov 11",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-reports-tanker-incident-hormuz-strait"
+    },
+    {
+     "id": "aj_1111_hormuz",
+     "title": "Al Jazeera, Iran denies talks with US, says Hormuz will stay shut until demands are met, Nov 11",
+     "url": "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Iranian army / IRGC",
+     "says": "Tanker(s) hit naval mines on an unauthorised route in the eastern strait; ship owners must coordinate with the armed forces."
+    },
+    {
+     "who": "UKMTO (via Middle East Eye / Al Jazeera)",
+     "says": "Incidents involving two tankers; one hit by an unknown projectile northeast of Lima, Oman; damage and crew status unknown."
+    }
+   ]
   }
  ],
  "lanes": [
@@ -1737,8 +1850,29 @@
    "id": "hormuz-lane",
    "name": "Strait of Hormuz",
    "status": "DISPUTED",
-   "text": "Restricted since Feb 28. Iran treats the southern corridor as unauthorized and says it is mined. The US enforces a blockade of Iranian ports and says the primary lanes are clear. Oct 29: UKMTO logged a hull-limpet attack and a projectile strike on outbound ships.",
-   "color": "#ff4d6d",
+   "text": "Restricted since Feb 28. Nov 11: Iran's army and IRGC say tankers burned after hitting mines on an unauthorised route in the eastern strait; UKMTO reported incidents involving two tankers. Iran's security chief says Hormuz stays shut until the US meets Iran's conditions; the US says it is open to diplomacy. Monitoring firms count at least 37 attacks on ships in and near the strait in November, the highest monthly total of the war (per Al Jazeera).",
+   "sources": [
+    {
+     "id": "mee_1111_mine",
+     "title": "Middle East Eye, Iranian army says oil tanker ablaze in Hormuz Strait after hitting mine, Nov 11",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-army-says-oil-tanker-ablaze-hormuz-strait-after-hitting-mine"
+    },
+    {
+     "id": "aj_1111_hormuz",
+     "title": "Al Jazeera, Iran denies talks with US, says Hormuz will stay shut until demands are met, Nov 11",
+     "url": "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met"
+    }
+   ],
+   "claims": [
+    {
+     "who": "Iran (security chief Rezaei)",
+     "says": "Hormuz will not reopen until the US meets Iran's seven conditions; denies talks in Qatar."
+    },
+    {
+     "who": "US (Trump, Rubio)",
+     "says": "Sees 'positive momentum'; open to diplomacy; no need for major combat operations."
+    }
+   ],
    "points": [
     [
      50.3,
@@ -1769,38 +1903,7 @@
      24.2
     ]
    ],
-   "sources": [
-    {
-     "id": "seatrademariti_1030",
-     "title": "Seatrade Maritime (UKMTO alerts), Oct 30",
-     "url": "https://www.seatrade-maritime.com/security/tanker-catches-fire-in-hormuz-after-explosives-attached-to-hull"
-    },
-    {
-     "id": "cnbc_1030",
-     "title": "CNBC, Oct 30",
-     "url": "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html"
-    },
-    {
-     "id": "gulfnews_1029",
-     "title": "Gulf News, CENTCOM rejects mine claims, Oct 29",
-     "url": "https://gulfnews.com/world/mena/us-military-rejects-iranian-mine-strike-claims-says-hormuz-transit-lanes-remain-clear-1.500727648"
-    },
-    {
-     "id": "arabnews_1029_2",
-     "title": "Arab News (AFP), Iran claims four tankers hit mines, Oct 29",
-     "url": "https://www.arabnews.com/middle-east/irans-revolutionary-guards-say-three-oil-tankers-hit-mines-in-strait-of-hormuz-3008795"
-    }
-   ],
-   "claims": [
-    {
-     "who": "IRGC (spokesman Hossein Mohebi, Oct 29)",
-     "says": "Prove the strait is cleared of mines 'with independent evidence, not a statement'."
-    },
-    {
-     "who": "US CENTCOM",
-     "says": "Primary routes cleared; 1.5 billion barrels exported via Hormuz since summer."
-    }
-   ]
+   "color": "#ff4d6d"
   },
   {
    "id": "red-sea-lane",
@@ -1912,31 +2015,26 @@
   {
    "label": "Gaza: killed since the Oct 10, 2025 ceasefire",
    "category": "casualties",
-   "asOf": "2026-10-27",
-   "asOfNote": "Oct 27, 2026 (MoH); end July 2026 (UN)",
+   "asOf": "2026-11-10",
+   "asOfNote": "Nov 10, 2026 (health officials via Reuters)",
    "status": "DISPUTED",
    "rows": [
     {
-     "who": "Gaza Ministry of Health (via Haaretz, Oct 29)",
-     "value": "1,574 killed; 21 killed this week"
+     "who": "Gaza health officials (via Reuters, Nov 11)",
+     "value": "At least 1,600 killed since the ceasefire"
     },
     {
-     "who": "Gaza govt media office (via Anadolu, Oct 29)",
-     "value": "1,568 killed, 5,648 wounded"
+     "who": "Israeli military",
+     "value": "Says four of its soldiers killed in that period; says Hamas is rebuilding"
     },
     {
      "who": "UN Human Rights Office (verified)",
      "value": "1,076 deaths verified to end of July 2026"
-    },
-    {
-     "who": "Israeli military",
-     "value": "Says several of those killed were Hamas or Islamic Jihad fighters"
     }
    ],
-   "note": "UN verification lags; the counts cover different periods. Haaretz page is paywalled, headline and summary only.",
+   "note": "UN verification lags; the counts cover different periods. Reuters also cites Palestinian authorities for more than 74,000 killed since Oct 2023.",
    "sources": [
-    "haaretz_1029",
-    "middleeastmoni_1029",
+    "am_1111_gaza",
     "ocha_1015"
    ]
   },
@@ -2621,6 +2719,31 @@
    "id": "am_1110_ye2",
    "title": "Al-Monitor (Reuters), Saba reports Saudi strikes on Sanaa, Nov 10",
    "url": "https://www.al-monitor.com/originals/2026/11/saudi-led-coalition-reports-houthi-missile-drone-interceptions-saba-reports-saudi"
+  },
+  {
+   "id": "mee_1111_mine",
+   "title": "Middle East Eye, Iranian army says oil tanker ablaze in Hormuz Strait after hitting mine, Nov 11",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-army-says-oil-tanker-ablaze-hormuz-strait-after-hitting-mine"
+  },
+  {
+   "id": "mee_1111_ukmto",
+   "title": "Middle East Eye, UKMTO reports tanker incident in Hormuz Strait, Nov 11",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-reports-tanker-incident-hormuz-strait"
+  },
+  {
+   "id": "aj_1111_hormuz",
+   "title": "Al Jazeera, Iran denies talks with US, says Hormuz will stay shut until demands are met, Nov 11",
+   "url": "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met"
+  },
+  {
+   "id": "am_1111_gaza",
+   "title": "Al-Monitor (Reuters), Israeli fire kills seven, including a father and son, in Gaza, medics say, Nov 11",
+   "url": "https://www.al-monitor.com/originals/2026/11/israeli-fire-kills-seven-including-father-and-son-gaza-medics-say"
+  },
+  {
+   "id": "aj_1111_yemen",
+   "title": "Al Jazeera, Yemeni forces, Houthis exchange attacks, claim to inflict heavy losses, Nov 11",
+   "url": "https://www.aljazeera.com/news/2026/11/11/yemeni-forces-houthis-exchange-attacks-claim-to-inflict-heavy-losses"
   }
  ]
 }
