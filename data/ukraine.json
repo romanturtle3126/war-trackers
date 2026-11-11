@@ -2,11 +2,11 @@
  "schemaVersion": 1,
  "map": "ukraine",
  "meta": {
-  "lastUpdated": "2026-11-10T06:06:21-05:00",
-  "coverage": "2026-10-10 to 2026-11-09",
+  "lastUpdated": "2026-11-11T06:10:44-05:00",
+  "coverage": "2026-10-10 to 2026-11-11",
   "notes": [
-   "Refreshed Nov 10, 2026 (UTC morning) from the Telegram channels of the Ukrainian General Staff (GeneralStaffZSU), Air Force (kpszsu, alert posts only) and Russian MoD (mod_russia), ISW Nov 9 assessment, the headline leads file, Kyiv Independent and Ukrinform.",
-   "X searches returned no usable posts. Ukrainska Pravda returned HTTP 403, so its Kharkiv and Dnipro items were not used. The Air Force overnight summary was read via the General Staff post. ISW Nov 10 not yet published. Russia's MoD claim of Nikolske (Sumy Oblast, Nov 10) was not added: no matching village could be placed in Sumy Oblast.",
+   "Refreshed Nov 11, 2026 (about 06:30 Toronto) from the Telegram channels of the Ukrainian General Staff (GeneralStaffZSU), Air Force (kpszsu, alert posts only) and Russian MoD (mod_russia), and Ukrinform and Kyiv Independent articles from Nov 10.",
+   "Not read this run: ISW assessment (not retrieved), X posts (web search returned nothing for the window), Reuters/AP direct. The headline feed ended at 18:04 UTC Nov 10, so Nov 11 daytime news is not covered.",
    "Coordinates are city-level or approximate (see coordPrecision); markers flagged 'oblast' are not geolocated.",
    "Casualty figures are as reported by the cited outlet at time of writing and may have been revised."
   ]
@@ -3557,6 +3557,126 @@
     }
    ],
    "read": "full"
+  },
+  {
+   "id": "dnipro-1110",
+   "date": "2026-11-10",
+   "region": "south",
+   "oblast": "Dnipropetrovsk",
+   "front": "Dnipropetrovsk",
+   "type": "artillery",
+   "status": "ONE_PARTY",
+   "title": "Russian strike kills three in Dnipro",
+   "caption": "Dnipropetrovsk regional military administration head Oleksandr Hanzha said on Telegram that three people were killed in a Russian strike on Dnipro on Nov 10 (Ukrainska Pravda describes a critical infrastructure facility) and five were injured in the region in more than 30 attacks that day, including in the Nikopol district. Ukrainian official account relayed by Ukrainian media only.",
+   "lat": 48.4666,
+   "lon": 35.0407,
+   "coordPrecision": "city",
+   "place": "Dnipro",
+   "sources": [
+    {
+     "id": "ukrinform_dnipro_1110",
+     "title": "Ukrinform: Russian forces attack Dnipropetrovsk Region more than 30 times in one day, killing three and injuring five (Nov 10)",
+     "url": "https://www.ukrinform.net/rubric-ato/4183486-russian-forces-attack-dnipropetrovsk-region-more-than-30-times-in-one-day-killing-three-and-injuring-five.html"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "nizhyn-1110",
+   "date": "2026-11-10",
+   "region": "rear",
+   "oblast": "Chernihiv",
+   "front": "Chernihiv",
+   "type": "energy",
+   "status": "ONE_PARTY",
+   "title": "Russia strikes energy infrastructure in Nizhyn",
+   "caption": "Nizhyn Mayor Oleksandr Kodola said on Facebook that energy infrastructure facilities in the city were hit on Nov 10 and attacks continued, slowing repair crews; twelve resilience centres were opened. Ukrinform reported no casualties. Ukrainian official account only.",
+   "lat": 51.0477,
+   "lon": 31.8884,
+   "coordPrecision": "city",
+   "place": "Nizhyn",
+   "sources": [
+    {
+     "id": "ukrinform_nizhyn_1110",
+     "title": "Ukrinform: Russia strikes energy infrastructure in Nizhyn (Nov 10)",
+     "url": "https://www.ukrinform.net/rubric-ato/4183484-russia-strikes-energy-infrastructure-in-nizhyn.html"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "staraya-russa-1110",
+   "date": "2026-11-10",
+   "region": "russia",
+   "oblast": "Novgorod",
+   "front": "Russia deep strikes",
+   "type": "deep-strike",
+   "status": "ONE_PARTY",
+   "title": "Ukraine's General Staff says it hit A-50 repair plant in Staraya Russa",
+   "caption": "Ukraine's General Staff says Ukrainian forces struck the 123rd Aircraft Repair Plant in Staraya Russa, Novgorod Oblast, which services A-50 airborne early-warning aircraft. Explosions and a fire were reported overnight; the extent of damage is still being assessed. No independent confirmation or Russian statement was found.",
+   "lat": 57.9962,
+   "lon": 31.36,
+   "coordPrecision": "city",
+   "place": "Staraya Russa",
+   "sources": [
+    {
+     "id": "ukrinform_a50_1110",
+     "title": "Ukrinform: Ukraine strikes Russian plant responsible for repairing A-50 spy planes, General Staff confirms (Nov 10)",
+     "url": "https://www.ukrinform.net/rubric-ato/4183386-ukraine-strikes-russian-plant-responsible-for-repairing-a50-spy-planes-general-staff-confirms.html"
+    },
+    {
+     "id": "gs_a50_1110",
+     "title": "General Staff of Ukraine (Telegram): strike on A-50 repair plant (Nov 10)",
+     "url": "https://t.me/GeneralStaffZSU/42858"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "kryvyi-rih-1111",
+   "date": "2026-11-11",
+   "region": "south",
+   "oblast": "Dnipropetrovsk",
+   "front": "Dnipropetrovsk",
+   "type": "energy",
+   "status": "ONE_PARTY",
+   "title": "Russia's MoD claims strike on 330 kV substation in Kryvyi Rih",
+   "caption": "Russia's MoD says drones hit a 330 kV electrical substation in Kryvyi Rih overnight on Nov 11, describing it as supporting Ukrainian military industry. No Ukrainian account or damage report was read.",
+   "lat": 47.9057,
+   "lon": 33.394,
+   "coordPrecision": "city",
+   "place": "Kryvyi Rih",
+   "sources": [
+    {
+     "id": "mod_strikes_1111",
+     "title": "Russian MoD (Telegram): strikes on energy sites and a ship overnight Nov 11",
+     "url": "https://t.me/mod_russia/68923"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "mayaky-1111",
+   "date": "2026-11-11",
+   "region": "south",
+   "oblast": "Odesa",
+   "front": "Odesa",
+   "type": "energy",
+   "status": "ONE_PARTY",
+   "title": "Russia's MoD claims strikes on two substations in Odesa Oblast and a cargo ship",
+   "caption": "Russia's MoD says drones hit 110 kV and 330 kV substations at Mayaky and Usatove in Odesa Oblast and a dry-cargo ship with military cargo in the Black Sea south-west of Odesa overnight on Nov 11. No Ukrainian account was read.",
+   "lat": 46.4125,
+   "lon": 30.2672,
+   "coordPrecision": "approx",
+   "place": "Mayaky",
+   "sources": [
+    {
+     "id": "mod_strikes_1111",
+     "title": "Russian MoD (Telegram): strikes on energy sites and a ship overnight Nov 11",
+     "url": "https://t.me/mod_russia/68923"
+    }
+   ],
+   "read": "full"
   }
  ],
  "stats": [
@@ -4165,6 +4285,36 @@
    "russia": {
     "value": "155 fixed-wing drones overnight over Novgorod, Bryansk, Belgorod, Kursk, Kaluga, Oryol and Smolensk oblasts, Krasnodar Krai and Crimea (MoD)",
     "source": "mod_pvo_1110"
+   },
+   "independent": []
+  },
+  {
+   "label": "Russian drones and missiles launched at Ukraine (night of Nov 10-11)",
+   "category": "shootdowns",
+   "asOf": "2026-11-11",
+   "status": "DISPUTED",
+   "ukraine": {
+    "value": "1 Kh-59/69 guided missile (from the Black Sea) and 163 strike drones (91 jet-powered Shahed-type) plus decoys; 14 Banderol/Dan-T and 130 drones downed or suppressed as of 08:00 (72 jet), 144 targets in total; hits at 17 locations, debris at 7 (General Staff/Air Force)",
+    "source": "gs_air_1111"
+   },
+   "russia": {
+    "value": "No launch count published; MoD claims drone strikes on a 330 kV substation in Kryvyi Rih, 110 and 330 kV substations at Mayaky and Usatove, and a cargo ship in the Black Sea",
+    "source": "mod_strikes_1111"
+   },
+   "independent": []
+  },
+  {
+   "label": "Ukrainian drones shot down over Russia (Nov 10-11)",
+   "category": "shootdowns",
+   "asOf": "2026-11-11",
+   "status": "ONE_PARTY",
+   "ukraine": {
+    "value": "No count published",
+    "source": null
+   },
+   "russia": {
+    "value": "627 fixed-wing drones overnight over 25 regions including Moscow region, Leningrad, Novgorod, Tatarstan, Krasnodar Krai, Crimea and the Sea of Azov (MoD)",
+    "source": "mod_pvo_1111"
    },
    "independent": []
   }
@@ -5169,6 +5319,41 @@
    "id": "ukrinform_dnipro_1109",
    "title": "Ukrinform: Russian attacks trigger power outages in parts of Dnipro and Kamianske (Nov 9)",
    "url": "https://www.ukrinform.net/rubric-ato/4183083-russian-attacks-trigger-power-outages-in-parts-of-dnipro-and-kamianske.html"
+  },
+  {
+   "id": "gs_air_1111",
+   "title": "General Staff of Ukraine (Telegram): 144 targets downed/suppressed overnight Nov 11",
+   "url": "https://t.me/GeneralStaffZSU/42863"
+  },
+  {
+   "id": "mod_pvo_1111",
+   "title": "Russian MoD (Telegram): 627 Ukrainian drones shot down overnight Nov 11",
+   "url": "https://t.me/mod_russia/68924"
+  },
+  {
+   "id": "ukrinform_dnipro_1110",
+   "title": "Ukrinform: Russian forces attack Dnipropetrovsk Region more than 30 times in one day, killing three and injuring five (Nov 10)",
+   "url": "https://www.ukrinform.net/rubric-ato/4183486-russian-forces-attack-dnipropetrovsk-region-more-than-30-times-in-one-day-killing-three-and-injuring-five.html"
+  },
+  {
+   "id": "ukrinform_nizhyn_1110",
+   "title": "Ukrinform: Russia strikes energy infrastructure in Nizhyn (Nov 10)",
+   "url": "https://www.ukrinform.net/rubric-ato/4183484-russia-strikes-energy-infrastructure-in-nizhyn.html"
+  },
+  {
+   "id": "ukrinform_a50_1110",
+   "title": "Ukrinform: Ukraine strikes Russian plant responsible for repairing A-50 spy planes, General Staff confirms (Nov 10)",
+   "url": "https://www.ukrinform.net/rubric-ato/4183386-ukraine-strikes-russian-plant-responsible-for-repairing-a50-spy-planes-general-staff-confirms.html"
+  },
+  {
+   "id": "gs_a50_1110",
+   "title": "General Staff of Ukraine (Telegram): strike on A-50 repair plant (Nov 10)",
+   "url": "https://t.me/GeneralStaffZSU/42858"
+  },
+  {
+   "id": "mod_strikes_1111",
+   "title": "Russian MoD (Telegram): strikes on energy sites and a ship overnight Nov 11",
+   "url": "https://t.me/mod_russia/68923"
   }
  ]
 }
