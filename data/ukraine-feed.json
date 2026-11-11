@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-11T11:11:18+00:00",
+  "lastUpdated": "2026-11-11T11:41:43+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
@@ -47,28 +47,64 @@
  },
  "items": [
   {
-   "headline": "Ukraine’s Zelenskyy ‘happy’ with US envoys’ approach as Russia talks enter second day – Europe live",
+   "headline": "Kherson marks fourth anniversary of its liberation",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-society/4183748-kherson-marks-fourth-anniversary-of-its-liberation.html",
+   "date": "2026-11-11T11:34:00.000Z"
+  },
+  {
+   "headline": "Ukraine-Russia talks end with deal on prisoner swap, but Moscow remains cool on European involvement – Europe live",
    "source": "The Guardian (Ukraine)",
    "link": "https://www.theguardian.com/world/live/2026/nov/11/europe-ukraine-russia-us-talks-abu-dhabi-zelenskyy-latest-news-updates",
-   "date": "2026-11-11T11:09:20.000Z"
+   "date": "2026-11-11T11:30:23.000Z"
+  },
+  {
+   "headline": "Russia strikes open-air market in Chornomorsk, killing one and injuring at least four",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4183746-russia-strikes-openair-market-in-chornomorsk-killing-one-and-injuring-at-least-four.html",
+   "date": "2026-11-11T11:23:00.000Z"
+  },
+  {
+   "headline": "Russian military may attempt another landing on Quarantine Island in Kherson, military intelligence",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4183742-russian-military-may-attempt-another-landing-on-quarantine-island-in-kherson-military-intelligence.html",
+   "date": "2026-11-11T11:20:00.000Z"
+  },
+  {
+   "headline": "Russian military may attempt another landing on Quarantine Island in Kherson, military intelligence",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4183737-russian-military-may-attempt-another-landing-on-quarantine-island-in-kherson-military-intelligence.html",
+   "date": "2026-11-11T11:13:00.000Z"
   },
   {
    "headline": "Netherlands working with Ukraine on joint air defense production",
    "source": "Ukrinform",
    "link": "https://www.ukrinform.net/rubric-economy/4183733-netherlands-working-with-ukraine-on-joint-air-defense-production.html",
-   "date": "2026-11-11T11:02:16.000Z"
+   "date": "2026-11-11T11:02:00.000Z"
   },
   {
    "headline": "Russian drone hits school grounds in Yahotyn, Kyiv Region",
    "source": "Ukrinform",
    "link": "https://www.ukrinform.net/rubric-ato/4183730-russian-drone-hits-school-grounds-in-yahotyn-kyiv-region.html",
-   "date": "2026-11-11T10:53:21.000Z"
+   "date": "2026-11-11T10:53:00.000Z"
+  },
+  {
+   "headline": "Russians attack Kharkiv three times in one morning, setting business and cars on fire",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/11/8062306/",
+   "date": "2026-11-11T10:51:00.000Z"
   },
   {
    "headline": "Large fire breaks out at Naftogaz facility in Dnipropetrovsk region following Russian attack",
    "source": "Ukrinform",
    "link": "https://www.ukrinform.net/rubric-ato/4183722-large-fire-breaks-out-at-naftogaz-facility-in-dnipropetrovsk-region-following-russian-attack.html",
    "date": "2026-11-11T10:44:00.000Z"
+  },
+  {
+   "headline": "Russian strike on market in Chornomorsk kills one, injures 11 – photos",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/11/8062304/",
+   "date": "2026-11-11T10:42:00.000Z"
   },
   {
    "headline": "Ukraine working with partners on drone escorts for ships in Black Sea",
@@ -341,46 +377,10 @@
    "date": "2026-11-11T05:00:30.000Z"
   },
   {
-   "headline": "Zelensky on front line situation assessments: Putin lives in different reality",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-ato/4183594-zelensky-on-front-line-situation-assessments-putin-lives-in-different-reality.html",
-   "date": "2026-11-11T04:59:00.000Z"
-  },
-  {
-   "headline": "Europe must appoint representative for peace negotiations by end of November – Zelensky",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-polytics/4183593-europe-must-appoint-representative-for-peace-negotiations-by-end-of-november-zelensky.html",
-   "date": "2026-11-11T04:38:00.000Z"
-  },
-  {
-   "headline": "Russia loses 2,580 soldiers over past day",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/11/8062252/",
-   "date": "2026-11-11T04:36:00.000Z"
-  },
-  {
-   "headline": "Zelensky presents Northern European partners with plan for getting through winter",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-economy/4183592-zelensky-presents-northern-european-partners-with-plan-for-getting-through-winter.html",
-   "date": "2026-11-11T04:21:00.000Z"
-  },
-  {
-   "headline": "Poland says Pentagon green lit for permanent U.S. military base",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-polytics/4183550-poland-says-pentagon-green-lit-for-permanent-us-military-base.html",
-   "date": "2026-11-11T03:35:00.000Z"
-  },
-  {
    "headline": "EU's Costa keeps Ukraine funding talks on late-November agenda despite Merz appeal",
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/eus-costa-keeps-ukraine-funding-talks-on-late-november-agenda-despite-merz-appeal/",
    "date": "2026-11-11T03:15:24.000Z"
-  },
-  {
-   "headline": "Situation in 34 settlements in Kherson Oblast is as critical as in Oleshky",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/11/8062249/",
-   "date": "2026-11-11T03:12:00.000Z"
   },
   {
    "headline": "Ukraine war briefing: Zelenskyy says Putin ‘lives in a different reality’ as Abu Dhabi talks get under way",

@@ -1,12 +1,12 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-11T11:11:19+00:00",
+  "lastUpdated": "2026-11-11T11:41:44+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
     "source": "Al Jazeera",
     "ok": true,
-    "count": 8
+    "count": 9
    },
    {
     "source": "BBC News Middle East",
@@ -30,8 +30,8 @@
    },
    {
     "source": "France 24 Middle East",
-    "ok": true,
-    "count": 25
+    "ok": false,
+    "error": "HTTP 403"
    },
    {
     "source": "Al-Monitor",
@@ -51,6 +51,30 @@
   ]
  },
  "items": [
+  {
+   "headline": "A journey down Egypt's Red Sea coast to find Sufi saints and a mystical lyre",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/news/journey-down-egypts-red-sea-coast-revealed-sufi-saints-and-mystical-lyre",
+   "date": "2026-11-11T11:26:26.000Z"
+  },
+  {
+   "headline": "Erdogan says developed countries must do more to finance climate crisis measures",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/erdogan-says-developed-countries-must-do-more-finance-climate-crisis",
+   "date": "2026-11-11T11:21:25.000Z"
+  },
+  {
+   "headline": "Hundreds of British Jews accuse Board of Deputies of 'genocide denial'",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/news/hundreds-british-jews-accuse-board-deputies-genocide-denial-open-letter",
+   "date": "2026-11-11T11:20:01.000Z"
+  },
+  {
+   "headline": "Israel kills Gaza goalkeeper days after playing in cup for slain athletes",
+   "source": "Al Jazeera",
+   "link": "https://www.aljazeera.com/video/newsfeed/2026/11/11/israel-kills-gaza-goalkeeper-days-after-playing-in-cup-for-slain-athletes?traffic_source=rss",
+   "date": "2026-11-11T10:57:39.000Z"
+  },
   {
    "headline": "US, Russia and Ukraine start second day of Abu Dhabi peace talks",
    "source": "Al-Monitor",
@@ -244,12 +268,6 @@
    "date": "2026-11-11T02:30:27.000Z"
   },
   {
-   "headline": "Egyptian journalist Lina Attalah faces prison as trial sparks international outcry",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/middle-east/20261111-lina-attalah-egypt-trial-prison",
-   "date": "2026-11-11T01:53:51.000Z"
-  },
-  {
    "headline": "US Treasury chief moved to military base after alleged Iranian threats: Report",
    "source": "Middle East Eye",
    "link": "https://www.middleeasteye.net/live-blog/live-blog-update/us-treasury-chief-moved-military-base-after-alleged-iranian-threats",
@@ -310,18 +328,6 @@
    "date": "2026-11-10T22:30:23.000Z"
   },
   {
-   "headline": "Fire breaks out on platform in Iran’s South Pars field",
-   "source": "Middle East Eye",
-   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/fire-breaks-out-platform-irans-south-pars-field",
-   "date": "2026-11-10T22:23:29.000Z"
-  },
-  {
-   "headline": "Eisenkot pushes October 7 inquiry as Netanyahu targets Arab parties in tense new parliament",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/middle-east/20261110-eisenkot-pushes-october-7-inquiry-as-netanyahu-targets-arab-parties-in-tense-new-parliament",
-   "date": "2026-11-10T21:53:40.000Z"
-  },
-  {
    "headline": "Iraq bars plane carrying Iran's soccer team from landing in Basra over US sanctions, officials say",
    "source": "Al-Monitor",
    "link": "https://www.al-monitor.com/originals/2026/11/iraq-bars-plane-carrying-irans-soccer-team-landing-basra-over-us-sanctions",
@@ -334,28 +340,10 @@
    "date": "2026-11-10T21:46:31.000Z"
   },
   {
-   "headline": "Asymmetric cyberwarfare: 'States increasingly use cyberattacks in support of their other objectives'",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/asymmetric-cyberwarfare-states-increasingly-use-cyberattacks-in-support-of-their-other-objectives",
-   "date": "2026-11-10T21:25:45.000Z"
-  },
-  {
-   "headline": "US charges three 'Iranian operatives' over UK air base plot",
-   "source": "Middle East Eye",
-   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/us-charges-three-iranian-operatives-over-uk-air-base-plot",
-   "date": "2026-11-10T21:13:56.000Z"
-  },
-  {
    "headline": "Ex-Iraqi MP Ahmed Alwani found dead in Lebanon: What to know",
    "source": "Al-Monitor",
    "link": "https://www.al-monitor.com/originals/2026/11/ex-iraqi-mp-ahmed-alwani-found-dead-lebanon-what-know",
    "date": "2026-11-10T21:12:31.000Z"
-  },
-  {
-   "headline": "Petition opposing Hakeem Jeffries as US House Speaker passes one million signatures",
-   "source": "Middle East Eye",
-   "link": "https://www.middleeasteye.net/news/petition-opposing-hakeem-jeffries-us-house-speaker-passes-one-million-signatures",
-   "date": "2026-11-10T21:03:39.000Z"
   },
   {
    "headline": "France supermarket hack marks new phase in Iran's shadow war",
@@ -394,12 +382,6 @@
    "date": "2026-11-10T15:21:18.000Z"
   },
   {
-   "headline": "Netanyahu bloc targets Arab lawmakers as Israel's new parliament is sworn in",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/middle-east/20261110-live-new-israeli-parliament-sworn-in-eisenkot-aims-to-form-government-netanyahu-knesset",
-   "date": "2026-11-10T14:40:16.000Z"
-  },
-  {
    "headline": "Iran rejects French claims it was behind supermarket fridge hacking",
    "source": "BBC News Middle East",
    "link": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
@@ -412,22 +394,10 @@
    "date": "2026-11-10T11:23:18.000Z"
   },
   {
-   "headline": "New Israel parliament to be sworn in as Eisenkot works to form new govt",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/video/20261110-new-israel-parliament-to-be-sworn-in-as-eisenkot-works-to-form-new-govt",
-   "date": "2026-11-10T11:22:39.000Z"
-  },
-  {
    "headline": "Trump says more US attacks on Iran 'highly unlikely'",
    "source": "BBC News Middle East",
    "link": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
    "date": "2026-11-10T09:40:31.000Z"
-  },
-  {
-   "headline": "Israel's new parliament to be sworn in as Eisenkot prepares government",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/middle-east/20261110-israel-s-new-parliament-to-be-sworn-in-as-eisenkot-forms-government",
-   "date": "2026-11-10T09:17:56.000Z"
   },
   {
    "headline": "New Knesset speaker could be key to ousting Netanyahu as Israel’s PM",
@@ -448,22 +418,10 @@
    "date": "2026-11-09T22:58:31.000Z"
   },
   {
-   "headline": "Will Eisenkot succeed in 'minefield of Israeli politics' where 'so many other generals' have failed?",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/tv-shows/spotlight/20261109-will-eisenkot-succeed-in-minefield-of-israeli-politics-where-so-many-other-generals-have-failed",
-   "date": "2026-11-09T20:03:31.000Z"
-  },
-  {
    "headline": "Four killed in sand embankment collapse in Gaza - video",
    "source": "The Guardian (Middle East)",
    "link": "https://www.theguardian.com/world/video/2026/nov/09/four-killed-in-sand-embankment-collapse-in-gaza-video",
    "date": "2026-11-09T19:38:08.000Z"
-  },
-  {
-   "headline": "'We think' the Iranians and Americans want to negotiate, Egyptian FM says",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261109-we-think-the-iranians-and-americans-want-to-negotiate-egyptian-fm-says",
-   "date": "2026-11-09T19:31:42.000Z"
   },
   {
    "headline": "Witnesses recount struggle to save people buried in ‘horrifying’ Gaza landslide",
@@ -484,18 +442,6 @@
    "date": "2026-11-09T17:54:40.000Z"
   },
   {
-   "headline": "'Life in Gaza simply miserable': Amid flooding, lack of aid, conditions 'worsen' for Palestinians",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/life-in-gaza-simply-miserable-amid-flooding-lack-of-aid-conditions-worsen-for-palestinians",
-   "date": "2026-11-09T17:26:51.000Z"
-  },
-  {
-   "headline": "Iran 'has mistaken perception' of US midterm result, expert says",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/iran-sees-golden-opportunity-for-a-sweetheart-deal-after-us-midterms-expert-says",
-   "date": "2026-11-09T13:49:33.000Z"
-  },
-  {
    "headline": "‘I’m surrounded by millions of people but I could still die from the heat’ – This is climate breakdown",
    "source": "The Guardian (Middle East)",
    "link": "https://www.theguardian.com/environment/ng-interactive/2026/nov/09/extreme-heat-mecca-hajj-pilgrimage-this-is-climate-breakdown-saudi-arabia",
@@ -514,18 +460,6 @@
    "date": "2026-11-09T10:41:57.000Z"
   },
   {
-   "headline": "Saudi Arabia intercepts Houthi missiles as Riyadh's Aramco building damaged",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/video/20261109-saudi-arabia-intercepts-houthi-missiles-as-riyadh-s-aramco-building-damaged",
-   "date": "2026-11-09T10:41:55.000Z"
-  },
-  {
-   "headline": "Israel's opposition leader Gadi Eisenkot has six weeks to form a government",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/video/20261109-israel-s-opposition-leader-gadi-eisenkot-has-six-weeks-to-form-a-government",
-   "date": "2026-11-09T10:36:05.000Z"
-  },
-  {
    "headline": "Abandoned and traumatised: child refugees at ‘violent’ breaking point in Egypt after fleeing Sudan war",
    "source": "The Guardian (Middle East)",
    "link": "https://www.theguardian.com/global-development/2026/nov/09/sudan-child-war-refugees-cairo-egypt-spiral-of-despair",
@@ -542,12 +476,6 @@
    "source": "BBC News Middle East",
    "link": "https://www.bbc.co.uk/news/articles/c6ly3mjx958eo?at_medium=RSS&at_campaign=rss",
    "date": "2026-11-08T21:37:36.000Z"
-  },
-  {
-   "headline": "Israeli opposition leader Eisenkot begins the hard work of forging a coalition government",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/middle-east/20261108-israeli-opposition-leader-eisenkot-begins-the-hard-work-of-forging-a-coalition-government",
-   "date": "2026-11-08T21:10:13.000Z"
   },
   {
    "headline": "Seven dead and more than 100 injured after trains collide in Egypt",
@@ -574,52 +502,16 @@
    "date": "2026-11-08T17:51:17.000Z"
   },
   {
-   "headline": "Gadi Eisenkot receives mandate to form government",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/gadi-eisenkot-receives-mandate-to-form-government",
-   "date": "2026-11-08T16:58:11.000Z"
-  },
-  {
    "headline": "Footage shows derailed carriages after fatal train crash in Egypt",
    "source": "BBC News Middle East",
    "link": "https://www.bbc.co.uk/news/videos/cw78p2km7d94o?at_medium=RSS&at_campaign=rss",
    "date": "2026-11-08T16:05:57.000Z"
   },
   {
-   "headline": "Yemen's humanitarian crisis worsens",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/yemen-s-humanitarian-crisis-worsens",
-   "date": "2026-11-08T14:22:14.000Z"
-  },
-  {
    "headline": "Iran executes three men for 'armed unrest' after January protests",
    "source": "BBC News Middle East",
    "link": "https://www.bbc.co.uk/news/articles/ckly0ex633ydo?at_medium=RSS&at_campaign=rss",
    "date": "2026-11-08T13:37:50.000Z"
-  },
-  {
-   "headline": "Israeli president officially tasks Eisenkot with forming government",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/middle-east/20261108-middle-east-live-riyadh-financial-district-targeted-deadly-strikes-yemen-israel-eisenkot-netanyahu-coalition-government-elections",
-   "date": "2026-11-08T09:47:36.000Z"
-  },
-  {
-   "headline": "Israel's Arab-led parties gain influence",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/israel-s-arab-led-parties-gain-influence",
-   "date": "2026-11-08T09:43:26.000Z"
-  },
-  {
-   "headline": "Gaza: Heavy rain inundates thousands of tents",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/gaza-heavy-rain-inundates-thousands-of-tents",
-   "date": "2026-11-08T09:42:03.000Z"
-  },
-  {
-   "headline": "Yemen's Houthis claim attack on Aramco skyscraper in Riyadh",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/middle-east/20261108-yemen-s-houthis-claim-attack-on-aramco-building-in-riyadh-s-financial-district",
-   "date": "2026-11-08T08:11:54.000Z"
   },
   {
    "headline": "Houthis say at least 33 killed in Saudi air strike",
@@ -634,12 +526,6 @@
    "date": "2026-11-07T22:19:59.000Z"
   },
   {
-   "headline": "Israeli president picks Netanyahu's rival Eisenkot to try to form government",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/middle-east/20261107-israeli-president-picks-netanyahu-s-rival-eisenkot-to-try-to-form-government",
-   "date": "2026-11-07T19:37:14.000Z"
-  },
-  {
    "headline": "Gaza wedding festival sees 250 couples married at the same time",
    "source": "BBC News Middle East",
    "link": "https://www.bbc.co.uk/news/videos/ckr5ygm78j76o?at_medium=RSS&at_campaign=rss",
@@ -652,46 +538,16 @@
    "date": "2026-11-07T16:25:55.000Z"
   },
   {
-   "headline": "Israel coalition talks gain momentum",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/israel-coalition-talks-gain-momentum",
-   "date": "2026-11-07T12:12:06.000Z"
-  },
-  {
    "headline": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
    "source": "UN News Middle East",
    "link": "https://news.un.org/feed/view/en/story/2026/11/1168759",
    "date": "2026-11-07T12:00:00.000Z"
   },
   {
-   "headline": "Yemen: 30 dead in strikes on Taiz market",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/yemen-30-dead-in-strikes-on-taiz-market",
-   "date": "2026-11-07T09:37:16.000Z"
-  },
-  {
-   "headline": "Is Israel opposition figure Gadi Eisenkot going to replace Benjamin Netanyahu?",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/video/20261106-is-israel-opposition-figure-gadi-eisenkot-going-to-replace-benjamin-netanyahu",
-   "date": "2026-11-06T13:25:57.000Z"
-  },
-  {
    "headline": "US midterm results spark fears in Israel over future of two countries' ties",
    "source": "BBC News Middle East",
    "link": "https://www.bbc.co.uk/news/articles/cx30ee8018lvo?at_medium=RSS&at_campaign=rss",
    "date": "2026-11-06T13:23:44.000Z"
-  },
-  {
-   "headline": "Israel's Eisenkot claims 'progress' in coalition talks as opposition eases on ultra-Orthodox draft",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/middle-east/20261106-israel-s-eisenkot-claims-significant-progress-in-coalition-talks-as-opposition-eases-on-ultra-orthodox-draft",
-   "date": "2026-11-06T11:43:55.000Z"
-  },
-  {
-   "headline": "Israel president to announce Sunday who will form new government",
-   "source": "France 24 Middle East",
-   "link": "https://www.france24.com/en/video/20261106-israel-president-to-announce-sunday-who-will-form-new-government",
-   "date": "2026-11-06T10:39:11.000Z"
   },
   {
    "headline": "Could Democrats in Congress end the war in Iran?",
