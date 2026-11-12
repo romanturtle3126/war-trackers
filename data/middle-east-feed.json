@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-12T11:06:05+00:00",
+  "lastUpdated": "2026-11-12T11:42:05+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
@@ -51,6 +51,24 @@
   ]
  },
  "items": [
+  {
+   "headline": "Cop31: Turkey signs $5.1bn loan deals to boost green transition",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/news/cop31-turkey-signs-green-transition-deals",
+   "date": "2026-11-12T11:33:43.000Z"
+  },
+  {
+   "headline": "Israeli strike on Gaza hospital deadliest since election",
+   "source": "Al-Monitor",
+   "link": "https://www.al-monitor.com/originals/2026/11/israeli-strike-gaza-hospital-deadliest-election",
+   "date": "2026-11-12T11:30:22.000Z"
+  },
+  {
+   "headline": "Israeli airstrike on Nasser hospital in Gaza kills surgeon and five others",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
+   "date": "2026-11-12T11:24:09.000Z"
+  },
   {
    "headline": "Yair Netanyahu to release book on 'deep state' war against his father",
    "source": "Middle East Eye",
@@ -238,12 +256,6 @@
    "date": "2026-11-11T23:03:27.000Z"
   },
   {
-   "headline": "UN committee votes for resolution on Palestinian sovereignty over natural resources",
-   "source": "Middle East Eye",
-   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/un-second-committee-votes-resolution-palestinian-sovereignty-over",
-   "date": "2026-11-11T22:55:59.000Z"
-  },
-  {
    "headline": "Motor racing-Hamilton urges Israel to let Gaza aid in after Rafah visit",
    "source": "Al-Monitor",
    "link": "https://www.al-monitor.com/originals/2026/11/motor-racing-hamilton-urges-israel-let-gaza-aid-after-rafah-visit",
@@ -308,12 +320,6 @@
    "source": "Al-Monitor",
    "link": "https://www.al-monitor.com/originals/2026/11/watchdog-urges-turkey-tighten-digital-asset-rules-144b-crypto-economy",
    "date": "2026-11-11T16:09:46.000Z"
-  },
-  {
-   "headline": "Russia's negotiator on Ukraine rejects option of territorial swaps with Kyiv, TASS reports",
-   "source": "Al-Monitor",
-   "link": "https://www.al-monitor.com/originals/2026/11/russias-negotiator-ukraine-rejects-option-territorial-swaps-kyiv-tass-reports",
-   "date": "2026-11-11T15:46:47.000Z"
   },
   {
    "headline": "Egyptian journalist's retrial adjourned as UN warns of 'assaults on press freedom'",
@@ -560,12 +566,6 @@
    "source": "BBC News Middle East",
    "link": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&at_campaign=rss",
    "date": "2026-11-08T19:58:02.000Z"
-  },
-  {
-   "headline": "Heavy rain floods displaced families’ tents in Gaza – in pictures",
-   "source": "The Guardian (Middle East)",
-   "link": "https://www.theguardian.com/world/gallery/2026/nov/08/heavy-rain-floods-displaced-families-tents-gaza-in-pictures",
-   "date": "2026-11-08T18:50:12.000Z"
   },
   {
    "headline": "Gadi Eisenkot receives mandate to form government",

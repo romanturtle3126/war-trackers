@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-12T11:06:04+00:00",
+  "lastUpdated": "2026-11-12T11:42:05+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
@@ -50,13 +50,31 @@
    "headline": "Ukraine hit by ‘significant’ Starshield disruptions as US envoys meet Putin, Zelenskyy says - Europe live",
    "source": "The Guardian (Ukraine)",
    "link": "https://www.theguardian.com/world/live/2026/nov/12/us-envoys-in-moscow-meeting-putin-abu-dhabi-trilateral-ukraine-ceasefire-talks-latest-news-updates",
-   "date": "2026-11-12T11:04:23.000Z"
+   "date": "2026-11-12T11:30:59.000Z"
+  },
+  {
+   "headline": "Tsikhanouskaya says Belarus must be included in Russia-Ukraine peace talks",
+   "source": "Kyiv Independent",
+   "link": "https://kyivindependent.com/tsikhanouskaya-says-belarus-must-be-included-in-russia-ukraine-peace-talks/",
+   "date": "2026-11-12T11:25:35.000Z"
+  },
+  {
+   "headline": "Ukrainian drones fly nearly 3,000 km again to strike Russia's largest oil refinery",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/12/8062494/",
+   "date": "2026-11-12T10:58:00.000Z"
   },
   {
    "headline": "Starshield speed restrictions return, hampering efforts to intercept Russian drones, Zelensky says",
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/starshield-speed-restrictions-return-hampering-efforts-to-intercept-russian-drones-zelensky-says/",
    "date": "2026-11-12T10:47:13.000Z"
+  },
+  {
+   "headline": "Trump helped Russia double diesel exports, but US received not a single shipment – FT",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/12/8062493/",
+   "date": "2026-11-12T10:46:00.000Z"
   },
   {
    "headline": "UK drone maker founded by Ukrainians hits £4.5bn value after raising £500m",
@@ -93,6 +111,12 @@
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/russian-attacks-kill-10-injure-40-across-ukraine-over-past-day-as-peace-talks-end/",
    "date": "2026-11-12T10:07:22.000Z"
+  },
+  {
+   "headline": "EU announces new sanctions against Russian oil refining and \"shadow fleet\"",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/12/8062478/",
+   "date": "2026-11-12T10:01:00.000Z"
   },
   {
    "headline": "Two firefighters killed and two injured in Russian strikes on Kyiv Oblast – photos",
@@ -209,18 +233,6 @@
    "date": "2026-11-12T05:00:31.000Z"
   },
   {
-   "headline": "Russia loses 2,150 soldiers and 47 artillery systems over past day",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/12/8062432/",
-   "date": "2026-11-12T04:55:00.000Z"
-  },
-  {
-   "headline": "Russia attacks energy infrastructure facilities and residential areas in Rivne Oblast, leaving parts without power",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/12/8062431/",
-   "date": "2026-11-12T04:34:00.000Z"
-  },
-  {
    "headline": "Russia attacks Khmelnytskyi Oblast energy infrastructure, leaving outages",
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/russia-attacks-khmelnytskyi-oblast-energy-infrastructure-leaving-outages/",
@@ -231,12 +243,6 @@
    "source": "The Guardian (Ukraine)",
    "link": "https://www.theguardian.com/world/2026/nov/12/ukraine-war-briefing-zelenskyy-sees-window-of-opportunity-for-peace-as-us-envoys-to-meet-putin",
    "date": "2026-11-12T01:58:18.000Z"
-  },
-  {
-   "headline": "Lithuania will provide Ukraine with essential energy equipment – Zelenskyy",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/12/8062426/",
-   "date": "2026-11-11T23:52:00.000Z"
   },
   {
    "headline": "Russia attacks Kyiv with ballistic missiles, drones hours after peace talks end",
@@ -267,12 +273,6 @@
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/ukraine-captures-first-indonesian-prisoner-of-war-as-russia-steps-up-foreign-recruitment/",
    "date": "2026-11-11T19:03:34.000Z"
-  },
-  {
-   "headline": "Zelensky arrives in Dublin for European Political Community summit, expects a debrief from Witkoff, Kushner",
-   "source": "Kyiv Independent",
-   "link": "https://kyivindependent.com/zelensky-arrives-in-dublin-for-european-political-community-summit-expects-a-debrief-from-witkoff-kushner/",
-   "date": "2026-11-11T17:56:29.000Z"
   },
   {
    "headline": "Ukraine talks in Abu Dhabi bring progress on prisoners but not on peace",
