@@ -2,11 +2,11 @@
  "schemaVersion": 1,
  "map": "ukraine",
  "meta": {
-  "lastUpdated": "2026-11-11T06:10:44-05:00",
-  "coverage": "2026-10-10 to 2026-11-11",
+  "lastUpdated": "2026-11-12T06:05:34-05:00",
+  "coverage": "2026-10-10 to 2026-11-12",
   "notes": [
-   "Refreshed Nov 11, 2026 (about 06:30 Toronto) from the Telegram channels of the Ukrainian General Staff (GeneralStaffZSU), Air Force (kpszsu, alert posts only) and Russian MoD (mod_russia), and Ukrinform and Kyiv Independent articles from Nov 10.",
-   "Not read this run: ISW assessment (not retrieved), X posts (web search returned nothing for the window), Reuters/AP direct. The headline feed ended at 18:04 UTC Nov 10, so Nov 11 daytime news is not covered.",
+   "Refreshed Nov 12, 2026 (about 06:30 Toronto) from Telegram channels of the Ukrainian General Staff (GeneralStaffZSU), Air Force (kpszsu, alert posts only) and Russian MoD (mod_russia), plus Kyiv Independent articles from Nov 11 and the headline leads file.",
+   "Not read this run: ISW/Critical Threats assessment (not retrieved), X posts (no X search tool available), Ukrainska Pravda articles (blocked by Cloudflare), Reuters/AP direct. Nov 12 daytime news is not covered.",
    "Coordinates are city-level or approximate (see coordPrecision); markers flagged 'oblast' are not geolocated.",
    "Casualty figures are as reported by the cited outlet at time of writing and may have been revised."
   ]
@@ -3677,16 +3677,166 @@
     }
    ],
    "read": "full"
+  },
+  {
+   "id": "chornomorsk-1111",
+   "date": "2026-11-11",
+   "region": "south",
+   "oblast": "Odesa",
+   "front": "Odesa",
+   "type": "drone",
+   "status": "ONE_PARTY",
+   "title": "Russian strike on crowded market in Chornomorsk kills at least four",
+   "caption": "Odesa Oblast Governor Oleh Kiper said a Russian strike hit a crowded market in central Chornomorsk on the morning of Nov 11, killing at least four people and injuring eight to ten, with residential buildings and cars damaged. Ukraine's Air Force had reported a jet-powered drone heading for the city; the Kyiv Independent says local authorities did not specify the weapon. Casualty figures come from Ukrainian officials and were still being updated; no Russian statement was read.",
+   "lat": 46.2991,
+   "lon": 30.6553,
+   "coordPrecision": "city",
+   "place": "Chornomorsk",
+   "sources": [
+    {
+     "id": "ki_chornomorsk_1111",
+     "title": "Kyiv Independent: Russian strike on crowded market in Odesa Oblast kills at least 4, injures 8 (Nov 11)",
+     "url": "https://kyivindependent.com/russian-strike-on-crowded-market-in-odesa-oblast-kills-at-least-3-injures-8/"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "substations-1111",
+   "date": "2026-11-11",
+   "region": "rear",
+   "oblast": "Vinnytsia",
+   "front": "Rear (Kyiv)",
+   "type": "energy",
+   "status": "ONE_PARTY",
+   "title": "Six major power substations hit in four central oblasts overnight",
+   "caption": "Ukrainian Prime Minister Serhii Koretskyi said Russian forces struck six major power substations in Vinnytsia, Kirovohrad, Zhytomyr and Cherkasy oblasts overnight on Nov 10-11, and damaged power lines in Kirovohrad and Rivne oblasts. Ukrenergo reported outages in eight oblasts, and Kyiv switched off streetlights to save power. A district heating facility in Kryvyi Rih was also hit. Marker is placed at Vinnytsia as a central reference point; the individual substations are not located. Figures come from Ukrainian officials as relayed by the Kyiv Independent.",
+   "lat": 49.2322,
+   "lon": 28.4687,
+   "coordPrecision": "oblast",
+   "place": "Vinnytsia",
+   "sources": [
+    {
+     "id": "ki_substations_1111",
+     "title": "Kyiv Independent: Russia strikes 6 major power substations, causing outages across Ukraine (Nov 11)",
+     "url": "https://kyivindependent.com/russia-strikes-6-major-power-substations-causing-outages-across-ukraine/"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "ust-luga-1111",
+   "date": "2026-11-11",
+   "region": "russia",
+   "oblast": "Leningrad Oblast, Russia",
+   "front": "Russia deep strikes",
+   "type": "deep-strike",
+   "status": "ONE_PARTY",
+   "title": "Ukraine says drones hit Ust-Luga oil port and a missile boat",
+   "caption": "Ukraine's General Staff says drones struck the Baltic port of Ust-Luga overnight on Nov 11, damaging five oil tanks (150,000 cubic metres in total), a hydrocracking unit, a cooling unit and a pumping station. The SBU says it also hit the Buyan-M missile boat Naro-Fominsk. Leningrad Oblast Governor Aleksandr Drozdenko confirmed a drone attack, said 150 drones were shot down, and reported a fire and three injured workers. The scale of damage is Ukraine's claim and has not been independently verified.",
+   "lat": 59.6676,
+   "lon": 28.2871,
+   "coordPrecision": "city",
+   "place": "Ust-Luga",
+   "sources": [
+    {
+     "id": "ki_ustluga_1111",
+     "title": "Kyiv Independent: Ukrainian drones reportedly target Russia's largest oil refinery, strike Baltic Sea port, missile boat (Nov 11)",
+     "url": "https://kyivindependent.com/ukraine-reportedly-strikes-ust-luga-baltic-sea-port-as-drones-attack-regions-across-russia/"
+    },
+    {
+     "id": "gs_ustluga_1111",
+     "title": "General Staff of Ukraine (Telegram): Ust-Luga oil infrastructure hit (Nov 11)",
+     "url": "https://t.me/GeneralStaffZSU/42872"
+    }
+   ],
+   "claims": [
+    {
+     "who": "Ukraine's General Staff",
+     "says": "Five oil tanks (150,000 m3), a hydrocracking unit, an air cooling unit and a pumping station damaged.",
+     "source": "gs_ustluga_1111"
+    },
+    {
+     "who": "Leningrad Oblast governor",
+     "says": "A drone attack happened; 150 drones shot down, a fire started and three workers were injured, none seriously.",
+     "source": "ki_ustluga_1111"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "shylivka-1111",
+   "date": "2026-11-11",
+   "region": "donbas",
+   "oblast": "Donetsk",
+   "front": "Kramatorsk / Fortress belt",
+   "type": "claim",
+   "status": "ONE_PARTY",
+   "title": "Russia's MoD claims capture of Shylivka (Donetsk) and Voskresenka (Zaporizhzhia)",
+   "caption": "In its Nov 11 daily summary, Russia's MoD says its forces took the settlements of Shylivka in Donetsk Oblast and Voskresenka in Zaporizhzhia Oblast. No Ukrainian response or independent confirmation was read, and the exact villages were not geolocated. Marker is placed at Kramatorsk as a regional reference.",
+   "lat": 48.7311,
+   "lon": 37.5678,
+   "coordPrecision": "oblast",
+   "place": "Kramatorsk",
+   "sources": [
+    {
+     "id": "mod_day_1111",
+     "title": "Russian MoD (Telegram): main events of the day, Nov 11",
+     "url": "https://t.me/mod_russia/68943"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "kyiv-1112",
+   "date": "2026-11-12",
+   "region": "rear",
+   "oblast": "Kyiv City",
+   "front": "Rear (Kyiv)",
+   "type": "missile",
+   "status": "ONE_PARTY",
+   "title": "Russia says it struck Kyiv-area defence plants and Zhytomyr substations overnight",
+   "caption": "Russia's MoD says it carried out a massive strike overnight on Nov 12 on military-industrial and energy sites in Kyiv, Kyiv Oblast and Zhytomyr, naming a drone factory in Kyiv, plants in Brovary, Kuzminets and Yahotyn, 330 kV and 110 kV substations in Zhytomyr and a cargo ship bound for Odesa. Ukraine's General Staff says Russia launched Iskander-M/KN-23/S-400 ballistic missiles, Zircon missiles, 123 Shahed-type drones (73 jet-powered) and decoys, and that air defences downed or suppressed 94 targets by 08:00, with hits at 17 locations. Casualties and damage were not read; both accounts are official claims.",
+   "lat": 50.4547,
+   "lon": 30.5238,
+   "coordPrecision": "approx",
+   "place": "Kyiv",
+   "sources": [
+    {
+     "id": "mod_strikes_1112",
+     "title": "Russian MoD (Telegram): massive strike on Kyiv, Kyiv Oblast and Zhytomyr (Nov 12)",
+     "url": "https://t.me/mod_russia/68950"
+    },
+    {
+     "id": "gs_air_1112",
+     "title": "General Staff of Ukraine (Telegram): 94 targets shot down/suppressed, night of Nov 12",
+     "url": "https://t.me/GeneralStaffZSU/42876"
+    }
+   ],
+   "claims": [
+    {
+     "who": "Russia's MoD",
+     "says": "Struck defence-industry and energy sites in Kyiv, Kyiv Oblast and Zhytomyr and a cargo ship heading to Odesa.",
+     "source": "mod_strikes_1112"
+    },
+    {
+     "who": "Ukraine's General Staff",
+     "says": "Launched ballistic and Zircon missiles and 123 Shahed-type drones; 94 targets downed or suppressed, hits at 17 locations.",
+     "source": "gs_air_1112"
+    }
+   ],
+   "read": "full"
   }
  ],
  "stats": [
   {
    "label": "Russian military personnel losses (cumulative, since Feb 24, 2022)",
    "category": "casualties",
-   "asOf": "2026-11-10",
+   "asOf": "2026-11-12",
+   "status": "ONE_PARTY",
    "ukraine": {
-    "value": "~1,611,600 killed and wounded (+2,220 in a day), Nov 10; Nov 8 was the record day at +2,980",
-    "source": "gs_ops_1110"
+    "value": "~1,616,300 killed and wounded, calculated from the Nov 10 total plus the General Staff's daily figures (+2,580 on Nov 11, +2,150 on Nov 12); the cumulative tally itself is posted as an image and was not read",
+    "source": "gs_ops_1112"
    },
    "russia": {
     "value": "No official cumulative figure published",
@@ -3701,8 +3851,7 @@
      "value": "ISW: at least 698,000 Russian casualties since Mar 11, 2025 (from General Staff data)",
      "source": "isw_1031"
     }
-   ],
-   "status": "ONE_PARTY"
+   ]
   },
   {
    "label": "Ukrainian military losses (Oct 24-30, 2026)",
@@ -4315,6 +4464,71 @@
    "russia": {
     "value": "627 fixed-wing drones overnight over 25 regions including Moscow region, Leningrad, Novgorod, Tatarstan, Krasnodar Krai, Crimea and the Sea of Azov (MoD)",
     "source": "mod_pvo_1111"
+   },
+   "independent": []
+  },
+  {
+   "label": "Russian drones and missiles launched at Ukraine (night of Nov 11-12)",
+   "category": "shootdowns",
+   "asOf": "2026-11-12",
+   "status": "DISPUTED",
+   "ukraine": {
+    "value": "Iskander-M/KN-23/S-400 ballistic missiles, Zircon missiles, 123 Shahed-type drones (73 jet-powered), Gerbera, Banderol/Dan-T and decoys; 5 Banderol/Dan-T and 89 drones (51 jet) downed or suppressed as of 08:00, 94 targets in total; hits at 17 locations, debris at 18 (General Staff)",
+    "source": "gs_air_1112"
+   },
+   "russia": {
+    "value": "No launch count published; MoD claims a massive strike on defence-industry and energy sites in Kyiv, Kyiv Oblast and Zhytomyr and a cargo ship near Odesa",
+    "source": "mod_strikes_1112"
+   },
+   "independent": []
+  },
+  {
+   "label": "Ukrainian drones shot down over Russia (Nov 11-12)",
+   "category": "shootdowns",
+   "asOf": "2026-11-12",
+   "status": "ONE_PARTY",
+   "ukraine": {
+    "value": "No count published",
+    "source": null
+   },
+   "russia": {
+    "value": "71 fixed-wing drones overnight over Belgorod, Bryansk, Kursk, Tula, Oryol, Rostov, the Moscow region and Crimea; 85 more during the day Nov 11 (8:00-20:00 Moscow time) over regions including Omsk (MoD)",
+    "source": "mod_pvo_1112"
+   },
+   "independent": []
+  },
+  {
+   "label": "Prisoner exchange agreed at Abu Dhabi talks (Nov 11)",
+   "category": "humanitarian",
+   "asOf": "2026-11-12",
+   "status": "CONFIRMED",
+   "ukraine": {
+    "value": "Chief negotiator Rustem Umerov: agreement reached on a 'large-scale' exchange; details and implementation still to be agreed",
+    "source": "ki_prisoners_1111"
+   },
+   "russia": {
+    "value": "Aide Vladimir Medinsky confirmed a fundamental agreement; TASS cites General Zorin saying more than 1,000 people on each side",
+    "source": "ki_prisoners_1111"
+   },
+   "independent": [
+    {
+     "value": "Kyiv Independent: neither side has disclosed the exact number or date; the last exchange was Oct 23 (270 people each)",
+     "source": "ki_prisoners_1111"
+    }
+   ]
+  },
+  {
+   "label": "Omsk refinery drone attack (Nov 11)",
+   "category": "other",
+   "asOf": "2026-11-12",
+   "status": "ONE_PARTY",
+   "ukraine": {
+    "value": "General Staff: fire at Russia's largest refinery in Omsk, about 2,500 km from the front; says five of Russia's five largest refineries have been hit since Oct 30",
+    "source": "gs_refineries_1112"
+   },
+   "russia": {
+    "value": "Omsk Oblast Governor Vitaly Khotsenko confirmed a Ukrainian drone attack; airport flights suspended and mobile internet restricted",
+    "source": "ki_ustluga_1111"
    },
    "independent": []
   }
@@ -5354,6 +5568,61 @@
    "id": "mod_strikes_1111",
    "title": "Russian MoD (Telegram): strikes on energy sites and a ship overnight Nov 11",
    "url": "https://t.me/mod_russia/68923"
+  },
+  {
+   "id": "mod_pvo_1112",
+   "title": "Russian MoD (Telegram): 71 Ukrainian drones intercepted overnight, Nov 12",
+   "url": "https://t.me/mod_russia/68949"
+  },
+  {
+   "id": "gs_ops_1112",
+   "title": "General Staff of Ukraine (Telegram): operational information as of 08:00 Nov 12",
+   "url": "https://t.me/GeneralStaffZSU/42875"
+  },
+  {
+   "id": "ki_prisoners_1111",
+   "title": "Kyiv Independent: 'Large-scale' prisoner exchange agreed as 2nd day of Abu Dhabi talks concludes, Umerov says (Nov 11)",
+   "url": "https://kyivindependent.com/large-scale-prisoner-exchange-agreed-as-2nd-day-of-abu-dhabi-talks-concludes-umerov-says/"
+  },
+  {
+   "id": "gs_refineries_1112",
+   "title": "General Staff of Ukraine (Telegram): five of Russia's five largest refineries hit (Nov 12)",
+   "url": "https://t.me/GeneralStaffZSU/42879"
+  },
+  {
+   "id": "ki_ustluga_1111",
+   "title": "Kyiv Independent: Ukrainian drones reportedly target Russia's largest oil refinery, strike Baltic Sea port, missile boat (Nov 11)",
+   "url": "https://kyivindependent.com/ukraine-reportedly-strikes-ust-luga-baltic-sea-port-as-drones-attack-regions-across-russia/"
+  },
+  {
+   "id": "gs_air_1112",
+   "title": "General Staff of Ukraine (Telegram): 94 targets shot down/suppressed, night of Nov 12",
+   "url": "https://t.me/GeneralStaffZSU/42876"
+  },
+  {
+   "id": "mod_strikes_1112",
+   "title": "Russian MoD (Telegram): massive strike on Kyiv, Kyiv Oblast and Zhytomyr (Nov 12)",
+   "url": "https://t.me/mod_russia/68950"
+  },
+  {
+   "id": "ki_chornomorsk_1111",
+   "title": "Kyiv Independent: Russian strike on crowded market in Odesa Oblast kills at least 4, injures 8 (Nov 11)",
+   "url": "https://kyivindependent.com/russian-strike-on-crowded-market-in-odesa-oblast-kills-at-least-3-injures-8/"
+  },
+  {
+   "id": "ki_substations_1111",
+   "title": "Kyiv Independent: Russia strikes 6 major power substations, causing outages across Ukraine (Nov 11)",
+   "url": "https://kyivindependent.com/russia-strikes-6-major-power-substations-causing-outages-across-ukraine/"
+  },
+  {
+   "id": "gs_ustluga_1111",
+   "title": "General Staff of Ukraine (Telegram): Ust-Luga oil infrastructure hit (Nov 11)",
+   "url": "https://t.me/GeneralStaffZSU/42872"
+  },
+  {
+   "id": "mod_day_1111",
+   "title": "Russian MoD (Telegram): main events of the day, Nov 11",
+   "url": "https://t.me/mod_russia/68943"
   }
  ]
 }
