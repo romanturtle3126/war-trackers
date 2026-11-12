@@ -2,6 +2,17 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-12 06:05 Toronto — Ukraine — OK
+- Added 5 event(s):
+  - `chornomorsk-1111` 2026-11-11 [ONE_PARTY] Russian strike on crowded market in Chornomorsk kills at least four
+  - `substations-1111` 2026-11-11 [ONE_PARTY] Six major power substations hit in four central oblasts overnight
+  - `ust-luga-1111` 2026-11-11 [ONE_PARTY] Ukraine says drones hit Ust-Luga oil port and a missile boat
+  - `shylivka-1111` 2026-11-11 [ONE_PARTY] Russia's MoD claims capture of Shylivka (Donetsk) and Voskresenka (Zaporizhzhia)
+  - `kyiv-1112` 2026-11-12 [ONE_PARTY] Russia says it struck Kyiv-area defence plants and Zhytomyr substations overnight
+- Stats: 1 updated, 4 added
+- 11 new source link(s)
+- Totals: 134 events, 38 stats, 218 sources; coverage 2026-10-10 to 2026-11-12
+
 ## 2026-11-11 06:41 Toronto — Middle East — OK
 - Added 3 event(s):
   - `khasab-1111` 2026-11-11 [DISPUTED] Tanker ablaze in eastern Hormuz; Iran says it hit a mine
