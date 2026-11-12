@@ -2,11 +2,11 @@
  "schemaVersion": 1,
  "map": "middle-east",
  "meta": {
-  "lastUpdated": "2026-11-11T06:41:13-05:00",
-  "coverage": "2026-10-06 to 2026-11-11",
+  "lastUpdated": "2026-11-12T06:41:36-05:00",
+  "coverage": "2026-10-06 to 2026-11-12",
   "notes": [
-   "Refreshed 2026-11-11 (UTC) from Al Jazeera, Al-Monitor (Reuters), Middle East Eye and the headline feed.",
-   "Not read: UKMTO site (Cloudflare block; the UKMTO report was seen only via Middle East Eye), ISW/CTP, OCHA oPt, IDF/CENTCOM X posts (embed service returns no timeline; search returned undated results), Tasnim Telegram preview (no datable posts), Saba Telegram. Lebanon not refreshed: no verified new reports read.",
+   "Refreshed 2026-11-12 (UTC) from Al Jazeera, Middle East Eye and the headline feed.",
+   "Not read: UKMTO and ISW/CTP (403 blocked), OCHA oPt, IDF/CENTCOM X posts (searches returned only older or secondary items), Tasnim and Gaza MoH Telegram previews (no datable posts parsed). BBC and Al-Monitor pages not opened.",
    "Marker positions are approximate (see coordPrecision)."
   ]
  },
@@ -1843,6 +1843,156 @@
      "says": "Incidents involving two tankers; one hit by an unknown projectile northeast of Lima, Oman; damage and crew status unknown."
     }
    ]
+  },
+  {
+   "id": "aden-1111",
+   "date": "2026-11-11",
+   "region": "yemen",
+   "oblast": "Yemen",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "artillery",
+   "status": "DISPUTED",
+   "title": "Houthi shelling hits al-Buraiqa district of Aden",
+   "caption": "Houthi shelling hit Aden's densely populated al-Buraiqa district, where the government is based; Yemen's information minister condemned it. Houthi spokesman Yahya Saree says ballistic missiles hit a Saudi coalition command centre in al-Buraiqa. Al Jazeera did not verify either account; no casualty figure was given.",
+   "lat": 12.7796,
+   "lon": 45.0385,
+   "coordPrecision": "approx",
+   "place": "Aden",
+   "sources": [
+    {
+     "id": "aj_1112_yemen",
+     "title": "Al Jazeera, Fighting intensifies in Yemen as Houthis deny targeting Mecca, Nov 12",
+     "url": "https://www.aljazeera.com/news/2026/11/12/fighting-intensifies-in-yemen-as-houthis-deny-targeting-mecca"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Yemeni government (Information Minister)",
+     "says": "Houthi shelling hit a densely populated district.",
+     "source": "aj_1112_yemen"
+    },
+    {
+     "who": "Houthis (Yahya Saree)",
+     "says": "Ballistic missiles struck a Saudi coalition command and control centre in al-Buraiqa.",
+     "source": "aj_1112_yemen"
+    }
+   ]
+  },
+  {
+   "id": "mecca-1111",
+   "date": "2026-11-11",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "missile",
+   "status": "DISPUTED",
+   "title": "Saudi Arabia says it intercepted Houthi missiles and drones; debris fell in Mecca province",
+   "caption": "Saudi Arabia says the Houthis fired drones at Mecca and the south and three cruise missiles at Riyadh, all intercepted, and that debris from two ballistic missiles fell in Sabuhah village, Mecca province. The Houthis deny targeting Mecca, saying a drone hit a pumping station in Yanbu and the missiles targeted Riyadh airport. Marker is placed at Mecca.",
+   "lat": 21.4266,
+   "lon": 39.8256,
+   "coordPrecision": "approx",
+   "place": "Mecca",
+   "sources": [
+    {
+     "id": "aj_1112_yemen",
+     "title": "Al Jazeera, Fighting intensifies in Yemen as Houthis deny targeting Mecca, Nov 12",
+     "url": "https://www.aljazeera.com/news/2026/11/12/fighting-intensifies-in-yemen-as-houthis-deny-targeting-mecca"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Saudi Arabia / Saudi-led coalition",
+     "says": "Intercepted drones toward Mecca and three cruise missiles toward Riyadh; debris from two ballistic missiles fell in Sabuhah.",
+     "source": "aj_1112_yemen"
+    },
+    {
+     "who": "Houthis",
+     "says": "Deny targeting Mecca; claim a Yanbu pumping station and Riyadh airport.",
+     "source": "aj_1112_yemen"
+    }
+   ]
+  },
+  {
+   "id": "khan-younis-1112",
+   "date": "2026-11-12",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "airstrike",
+   "status": "DISPUTED",
+   "title": "Israeli strike on Nasser Medical Complex, Khan Younis, kills at least six",
+   "caption": "An Israeli strike around 1 am hit the Nasser Medical Complex in Khan Younis, killing at least six Palestinians including a surgeon and at least one child, and wounding about 20, according to Middle East Eye. The Israeli military confirms the strike and says it targeted a senior Hamas militant and others hiding in the hospital; Hamas calls that a lie. Middle East Eye could not verify either account.",
+   "lat": 31.3402,
+   "lon": 34.3063,
+   "coordPrecision": "city",
+   "place": "Khan Younis",
+   "sources": [
+    {
+     "id": "mee_1112_nasser",
+     "title": "Middle East Eye, Israeli strike on Gaza hospital kills surgeon, child and patients, Nov 12",
+     "url": "https://www.middleeasteye.net/news/israeli-strike-gaza-hospital-kills-surgeon-child-and-patients"
+    },
+    {
+     "id": "mee_1112_morning",
+     "title": "Middle East Eye live blog, Morning update, Nov 12",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-667"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Israeli military (via Middle East Eye)",
+     "says": "Targeted a senior terrorist and other Hamas members hiding at Nasser Hospital.",
+     "source": "mee_1112_nasser"
+    },
+    {
+     "who": "Hamas and Palestinian health ministry",
+     "says": "Condemn a strike on a hospital; Hamas calls the military-use claims lies providing cover.",
+     "source": "mee_1112_nasser"
+    }
+   ]
+  },
+  {
+   "id": "tehran-1112",
+   "date": "2026-11-12",
+   "region": "iran-war",
+   "oblast": "Iran",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "claim",
+   "status": "UNVERIFIED",
+   "title": "Iran warns of retaliation without geographic limits; Israeli media report attack preparations",
+   "caption": "Iran's deputy armed forces chief says the updated target list allows a response without geographical limits, and security chief Mohsen Rezaei says US-linked bases from West Asia to Europe would be legitimate targets if the US starts another war. Israeli media report the security cabinet ordered stepped-up preparations for a possible attack on Iran; that is not confirmed by Israel. Iran says no talks with the US are under way. Marker is placed at Tehran.",
+   "lat": 35.6944,
+   "lon": 51.4215,
+   "coordPrecision": "approx",
+   "place": "Tehran",
+   "sources": [
+    {
+     "id": "aj_1112_iran",
+     "title": "Al Jazeera, Iran warns of expanded retaliation as Israel reportedly readies to attack, Nov 12",
+     "url": "https://www.aljazeera.com/news/2026/11/12/iran-warns-of-expanded-retaliation-as-israel-reportedly-readies-to-attack"
+    },
+    {
+     "id": "mee_1112_morning",
+     "title": "Middle East Eye live blog, Morning update, Nov 12",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-667"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Iran (Heydari, Rezaei)",
+     "says": "Response without geographic limits; US-linked bases would be targets.",
+     "source": "mee_1112_morning"
+    },
+    {
+     "who": "Israeli media (KAN, via Al Jazeera)",
+     "says": "Security cabinet ordered preparations for a possible attack on Iran.",
+     "source": "aj_1112_iran"
+    }
+   ]
   }
  ],
  "lanes": [
@@ -2125,22 +2275,22 @@
   {
    "label": "Yemen: since hostilities resumed this year",
    "category": "casualties",
-   "asOf": "2026-10-29",
-   "asOfNote": "Oct 29, 2026",
-   "status": "UNVERIFIED",
+   "asOf": "2026-11-08",
+   "asOfNote": "WHO, as of Nov 8 (via Al Jazeera)",
+   "status": "CONFIRMED",
    "rows": [
     {
-     "who": "UN figures (via AFP; agency not named)",
-     "value": "1,600+ killed, 275,000+ displaced"
+     "who": "WHO (via Al Jazeera)",
+     "value": "2,098 killed, 9,657 wounded; 320,000+ displaced since Aug 1"
     },
     {
      "who": "Houthi health ministry",
      "value": "12 killed in Saudi strikes Oct 29; 14 killed Oct 28"
     }
    ],
-   "note": "I could not find the underlying UN report.",
+   "note": "WHO says 2,000+ casualties in nine days to Nov 8. Does not separate fighters from civilians.",
    "sources": [
-    "rte_1029"
+    "aj_1112_yemen"
    ]
   },
   {
@@ -2265,15 +2415,11 @@
   {
    "label": "Brent crude oil price",
    "category": "economy",
-   "asOf": "2026-10-29",
+   "asOf": "2026-11-11",
    "status": "CONFIRMED",
-   "headline": "$114.88",
-   "sub": "Brent settle, Oct 29 (-0.38%) · WTI $102.00",
+   "headline": "$92.76",
+   "sub": "Brent settle, Nov 11 (+1.39%) · WTI $86.53",
    "series": [
-    {
-     "label": "Oct 7",
-     "value": 100.2
-    },
     {
      "label": "Oct 16",
      "value": 109.86
@@ -2293,14 +2439,15 @@
     {
      "label": "Oct 29",
      "value": 114.88
+    },
+    {
+     "label": "Nov 11",
+     "value": 92.76
     }
    ],
-   "note": "Brent settle, USD/bbl, selected October dates. October range $100.20 to $116.72. Pre-war about $72. Oct 29 fell on US-Iran talk hopes; still the sixth-highest settle of 2026, up 11% this month (MarketWatch). December Brent expires Oct 30; OPEC+ meets Sunday.",
+   "note": "Brent settle, USD/bbl. Rose $1.27 on Nov 11 after Tehran rejected a US proposal to move its 60% enriched uranium abroad; the prior session first fell over $3 when US officials downplayed new strikes. Only the Nov 11 settle was read this run; Oct 29 was $114.88.",
    "sources": [
-    "euronext_1029",
-    "marketwatch_1029",
-    "cnbc_1028",
-    "oilandgasmiddl"
+    "aj_1112_iran"
    ]
   },
   {
@@ -2744,6 +2891,26 @@
    "id": "aj_1111_yemen",
    "title": "Al Jazeera, Yemeni forces, Houthis exchange attacks, claim to inflict heavy losses, Nov 11",
    "url": "https://www.aljazeera.com/news/2026/11/11/yemeni-forces-houthis-exchange-attacks-claim-to-inflict-heavy-losses"
+  },
+  {
+   "id": "aj_1112_iran",
+   "title": "Al Jazeera, Iran warns of expanded retaliation as Israel reportedly readies to attack, Nov 12",
+   "url": "https://www.aljazeera.com/news/2026/11/12/iran-warns-of-expanded-retaliation-as-israel-reportedly-readies-to-attack"
+  },
+  {
+   "id": "aj_1112_yemen",
+   "title": "Al Jazeera, Fighting intensifies in Yemen as Houthis deny targeting Mecca, Nov 12",
+   "url": "https://www.aljazeera.com/news/2026/11/12/fighting-intensifies-in-yemen-as-houthis-deny-targeting-mecca"
+  },
+  {
+   "id": "mee_1112_nasser",
+   "title": "Middle East Eye, Israeli strike on Gaza hospital kills surgeon, child and patients, Nov 12",
+   "url": "https://www.middleeasteye.net/news/israeli-strike-gaza-hospital-kills-surgeon-child-and-patients"
+  },
+  {
+   "id": "mee_1112_morning",
+   "title": "Middle East Eye live blog, Morning update, Nov 12",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-667"
   }
  ]
 }

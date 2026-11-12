@@ -2,6 +2,16 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-12 06:41 Toronto — Middle East — OK
+- Added 4 event(s):
+  - `khan-younis-1112` 2026-11-12 [DISPUTED] Israeli strike on Nasser Medical Complex, Khan Younis, kills at least six
+  - `aden-1111` 2026-11-11 [DISPUTED] Houthi shelling hits al-Buraiqa district of Aden
+  - `mecca-1111` 2026-11-11 [DISPUTED] Saudi Arabia says it intercepted Houthi missiles and drones; debris fell in Mecca province
+  - `tehran-1112` 2026-11-12 [UNVERIFIED] Iran warns of retaliation without geographic limits; Israeli media report attack preparations
+- Stats: 2 updated, 0 added
+- 4 new source link(s)
+- Totals: 59 events, 18 stats, 84 sources; coverage 2026-10-06 to 2026-11-12
+
 ## 2026-11-12 06:05 Toronto — Ukraine — OK
 - Added 5 event(s):
   - `chornomorsk-1111` 2026-11-11 [ONE_PARTY] Russian strike on crowded market in Chornomorsk kills at least four
