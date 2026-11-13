@@ -2,11 +2,11 @@
  "schemaVersion": 1,
  "map": "middle-east",
  "meta": {
-  "lastUpdated": "2026-11-12T06:41:36-05:00",
-  "coverage": "2026-10-06 to 2026-11-12",
+  "lastUpdated": "2026-11-13T06:41:25-05:00",
+  "coverage": "2026-10-06 to 2026-11-13",
   "notes": [
-   "Refreshed 2026-11-12 (UTC) from Al Jazeera, Middle East Eye and the headline feed.",
-   "Not read: UKMTO and ISW/CTP (403 blocked), OCHA oPt, IDF/CENTCOM X posts (searches returned only older or secondary items), Tasnim and Gaza MoH Telegram previews (no datable posts parsed). BBC and Al-Monitor pages not opened.",
+   "Refreshed 2026-11-13 (UTC) from Al-Monitor (Reuters), Middle East Eye live blog and the headline feed; OCHA oPt updates page opened (headlines only).",
+   "Not read: UKMTO and ISW/CTP (403 blocked), IDF/CENTCOM X posts (searches returned no dated Nov 12-13 posts), Telegram previews for Tasnim, Saba and Al-Masirah (no posts parsed). Lebanon, Yemen and Gaza/Lebanon casualty totals not refreshed this run.",
    "Marker positions are approximate (see coordPrecision)."
   ]
  },
@@ -1993,6 +1993,130 @@
      "source": "aj_1112_iran"
     }
    ]
+  },
+  {
+   "id": "manama-1113",
+   "date": "2026-11-13",
+   "region": "gulf",
+   "oblast": "Bahrain",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "missile",
+   "status": "ONE_PARTY",
+   "title": "IRGC says it targeted a US early-warning radar in Bahrain",
+   "caption": "Iran's Revolutionary Guards say they targeted a US early-warning radar in Bahrain in retaliation for an air attack on a telecommunications tower in Sirik county, Hormozgan province, according to Iranian state media cited by Reuters. Reuters could not independently verify either incident and says it is the first such claimed attack on US assets in a Gulf country since early September. Neither the US nor Bahrain had commented; no casualties were reported. Marker is placed at Manama, not the target.",
+   "lat": 26.2279,
+   "lon": 50.5857,
+   "coordPrecision": "oblast",
+   "place": "Manama",
+   "sources": [
+    {
+     "id": "am_1113_bahrain",
+     "title": "Al-Monitor (Reuters), Iran's Guards say they targeted a US early-warning radar in Bahrain, Nov 13",
+     "url": "https://www.al-monitor.com/originals/2026/11/irans-guards-say-they-targeted-us-early-warning-radar-bahrain"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "IRGC (via Iranian state media)",
+     "says": "Targeted a US early-warning radar in Bahrain as retaliation for an air attack on a telecoms tower in Sirik."
+    },
+    {
+     "who": "US / Bahrain",
+     "says": "No comment reported."
+    }
+   ]
+  },
+  {
+   "id": "khasab-1113",
+   "date": "2026-11-13",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "naval",
+   "status": "ONE_PARTY",
+   "title": "IRGC Navy says LPG carrier exploded after hitting a sea mine in Hormuz",
+   "caption": "The IRGC Navy says a liquefied petroleum gas carrier suffered a 'very severe explosion' after hitting a sea mine in the Strait of Hormuz. It says the ship ignored warnings and passed with US fighter jet support, and warns vessels using 'unauthorised and dangerous routes' will face the same. Middle East Eye reported the claim without independent confirmation, casualty information or a UKMTO advisory. Marker is placed at Khasab, not the exact position.",
+   "lat": 26.1799,
+   "lon": 56.2477,
+   "coordPrecision": "oblast",
+   "place": "Khasab",
+   "sources": [
+    {
+     "id": "mee_1113_lpg",
+     "title": "Middle East Eye live blog, IRGC Navy says tanker explodes after hitting sea mine in Hormuz Strait, Nov 13",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-navy-says-tanker-explodes-after-hitting-sea-mine-hormuz-strait"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "IRGC Navy",
+     "says": "LPG carrier hit a sea mine and exploded after ignoring warnings and using an unauthorised route."
+    }
+   ]
+  },
+  {
+   "id": "bandar-abbas-1113",
+   "date": "2026-11-13",
+   "region": "iran-war",
+   "oblast": "Iran",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "drone",
+   "status": "ONE_PARTY",
+   "title": "Iran says its navy shot down a US MQ-1 Predator near Sirik coast",
+   "caption": "Iranian media, citing the navy, say it shot down a US MQ-1 Predator drone near the Sirik coast in the Kuhestak area off southern Iran; IRNA published images that appear to show damaged hardware. Middle East Eye did not confirm the claim and no US response was reported. Marker is placed at Bandar Abbas, not the crash site.",
+   "lat": 27.1865,
+   "lon": 56.2808,
+   "coordPrecision": "oblast",
+   "place": "Bandar Abbas",
+   "sources": [
+    {
+     "id": "mee_1113_drone",
+     "title": "Middle East Eye live blog, Iran reports shooting down US Predator drone off its southern coast, Nov 13",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-reports-shooting-down-us-predator-drone-its-southern-coast"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Iranian navy (via IRNA)",
+     "says": "Shot down a US MQ-1 Predator near Sirik."
+    },
+    {
+     "who": "US",
+     "says": "No response reported."
+    }
+   ]
+  },
+  {
+   "id": "gaza-1113",
+   "date": "2026-11-13",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "other",
+   "status": "ONE_PARTY",
+   "title": "Palestinian killed by Israeli gunfire in Tuffah, east of Gaza City, hospital says",
+   "caption": "Al-Shifa Hospital told Al Jazeera a Palestinian was killed by Israeli gunfire in the Tuffah neighbourhood east of Gaza City on Nov 13. No Israeli statement was included. Separately, Wafa reports Israeli forces raided Nablus neighbourhoods and the Old Askar camp, and searched homes in Beit Furik and Beit Dajan. Marker is placed at Gaza City.",
+   "lat": 31.5016,
+   "lon": 34.4667,
+   "coordPrecision": "approx",
+   "place": "Gaza",
+   "sources": [
+    {
+     "id": "mee_1113_gaza",
+     "title": "Middle East Eye live blog, Israeli forces kill Palestinian in Gaza, raid homes in occupied West Bank, Nov 13",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-gaza-raid-homes-occupied-west-bank"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Al-Shifa Hospital (via Al Jazeera)",
+     "says": "A Palestinian was killed by Israeli gunfire in Tuffah."
+    }
+   ]
   }
  ],
  "lanes": [
@@ -2911,6 +3035,26 @@
    "id": "mee_1112_morning",
    "title": "Middle East Eye live blog, Morning update, Nov 12",
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-667"
+  },
+  {
+   "id": "am_1113_bahrain",
+   "title": "Al-Monitor (Reuters), Iran's Guards say they targeted a US early-warning radar in Bahrain, Nov 13",
+   "url": "https://www.al-monitor.com/originals/2026/11/irans-guards-say-they-targeted-us-early-warning-radar-bahrain"
+  },
+  {
+   "id": "mee_1113_lpg",
+   "title": "Middle East Eye live blog, IRGC Navy says tanker explodes after hitting sea mine in Hormuz Strait, Nov 13",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-navy-says-tanker-explodes-after-hitting-sea-mine-hormuz-strait"
+  },
+  {
+   "id": "mee_1113_drone",
+   "title": "Middle East Eye live blog, Iran reports shooting down US Predator drone off its southern coast, Nov 13",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-reports-shooting-down-us-predator-drone-its-southern-coast"
+  },
+  {
+   "id": "mee_1113_gaza",
+   "title": "Middle East Eye live blog, Israeli forces kill Palestinian in Gaza, raid homes in occupied West Bank, Nov 13",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-gaza-raid-homes-occupied-west-bank"
   }
  ]
 }
