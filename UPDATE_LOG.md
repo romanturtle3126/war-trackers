@@ -2,6 +2,16 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-13 06:05 Toronto — Ukraine — OK
+- Added 4 event(s):
+  - `kyiv-1112-2` 2026-11-12 [ONE_PARTY] Drone hits apartment building in Kyiv's Solomianskyi district, one killed
+  - `chernihiv-1112` 2026-11-12 [ONE_PARTY] Two missiles hit Naftogaz oil and gas facility in Chernihiv region
+  - `zlatopil-1112` 2026-11-12 [ONE_PARTY] Banderol-type missiles destroy enterprise in Zlatopil, two civilians hurt
+  - `kotovka-1113` 2026-11-13 [ONE_PARTY] Russia's MoD claims capture of Kotovka in Kharkiv region
+- Stats: 1 updated, 2 added
+- 8 new source link(s)
+- Totals: 138 events, 40 stats, 226 sources; coverage 2026-10-10 to 2026-11-13
+
 ## 2026-11-12 06:41 Toronto — Middle East — OK
 - Added 4 event(s):
   - `khan-younis-1112` 2026-11-12 [DISPUTED] Israeli strike on Nasser Medical Complex, Khan Younis, kills at least six

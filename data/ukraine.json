@@ -2,11 +2,11 @@
  "schemaVersion": 1,
  "map": "ukraine",
  "meta": {
-  "lastUpdated": "2026-11-12T06:05:34-05:00",
-  "coverage": "2026-10-10 to 2026-11-12",
+  "lastUpdated": "2026-11-13T06:05:32-05:00",
+  "coverage": "2026-10-10 to 2026-11-13",
   "notes": [
-   "Refreshed Nov 12, 2026 (about 06:30 Toronto) from Telegram channels of the Ukrainian General Staff (GeneralStaffZSU), Air Force (kpszsu, alert posts only) and Russian MoD (mod_russia), plus Kyiv Independent articles from Nov 11 and the headline leads file.",
-   "Not read this run: ISW/Critical Threats assessment (not retrieved), X posts (no X search tool available), Ukrainska Pravda articles (blocked by Cloudflare), Reuters/AP direct. Nov 12 daytime news is not covered.",
+   "Refreshed Nov 13, 2026 (UTC morning) from Telegram channels of the Ukrainian General Staff (GeneralStaffZSU), Air Force (kpszsu, alert posts only) and Russian MoD (mod_russia), Ukrinform articles from Nov 12, Kyiv Independent's Nov 12 General Staff report and the headline leads file.",
+   "Not read this run: ISW/Critical Threats assessment, X posts (web search returned no usable X posts), Ukrainska Pravda, Reuters/AP direct. Nov 13 daytime news is not covered.",
    "Coordinates are city-level or approximate (see coordPrecision); markers flagged 'oblast' are not geolocated.",
    "Casualty figures are as reported by the cited outlet at time of writing and may have been revised."
   ]
@@ -3826,17 +3826,109 @@
     }
    ],
    "read": "full"
+  },
+  {
+   "id": "kyiv-1112-2",
+   "date": "2026-11-12",
+   "region": "rear",
+   "oblast": "Kyiv City",
+   "front": "Rear (Kyiv)",
+   "type": "drone",
+   "status": "ONE_PARTY",
+   "title": "Drone hits apartment building in Kyiv's Solomianskyi district, one killed",
+   "caption": "Kyiv Mayor Vitali Klitschko said on Telegram that a Russian drone strike set fire to the third to sixth floors of a nine-storey residential building in the Solomianskyi district. As of 10:00 one person, a 44-year-old woman, was dead and seven were injured, most with acute stress reactions, according to Ukrinform. The city prosecutor opened a war-crime investigation. Ukrainian official account relayed by Ukrainian media only.",
+   "lat": 50.4547,
+   "lon": 30.5238,
+   "coordPrecision": "approx",
+   "place": "Kyiv",
+   "sources": [
+    {
+     "id": "ukrinform_kyiv_1112",
+     "title": "Ukrinform: One killed, seven injured as Russian drone hits apartment building in Kyiv's Solomianskyi district (Nov 12)",
+     "url": "https://www.ukrinform.net/rubric-ato/4183954-one-killed-seven-injured-as-russian-drone-hits-apartment-building-in-kyivs-solomianskyi-district.html"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "chernihiv-1112",
+   "date": "2026-11-12",
+   "region": "rear",
+   "oblast": "Chernihiv",
+   "front": "Chernihiv",
+   "type": "energy",
+   "status": "ONE_PARTY",
+   "title": "Two missiles hit Naftogaz oil and gas facility in Chernihiv region",
+   "caption": "Naftogaz said on Facebook that Russia hit one of its oil and gas production facilities in Chernihiv Oblast with two missiles on Nov 12, causing significant damage to the production site and process equipment. No employees were hurt; they were in shelters. The exact location was not given, so the marker sits at the regional centre. Company statement relayed by Ukrinform only.",
+   "lat": 51.5054,
+   "lon": 31.2866,
+   "coordPrecision": "oblast",
+   "place": "Chernihiv",
+   "sources": [
+    {
+     "id": "ukrinform_naftogaz_1112",
+     "title": "Ukrinform: Russia strikes Naftogaz facility in Chernihiv region with two missiles (Nov 12)",
+     "url": "https://www.ukrinform.net/rubric-economy/4184055-russia-strikes-naftogaz-facility-in-chernihiv-region-with-two-missiles.html"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "zlatopil-1112",
+   "date": "2026-11-12",
+   "region": "north",
+   "oblast": "Kharkiv",
+   "front": "Kharkiv",
+   "type": "missile",
+   "status": "ONE_PARTY",
+   "title": "Banderol-type missiles destroy enterprise in Zlatopil, two civilians hurt",
+   "caption": "Zlatopil Mayor Mykola Baksheiev said on Telegram that two S-8000 (Banderol-type) missiles hit a civilian enterprise near a residential area on Nov 12. Two civilians, a man born in 1938 and a child born in 2015, were injured; the enterprise was heavily damaged and several homes, a garage and cars were hit. Preliminary information from a Ukrainian official, relayed by Ukrinform.",
+   "lat": 49.3765,
+   "lon": 36.2185,
+   "coordPrecision": "city",
+   "place": "Zlatopil",
+   "sources": [
+    {
+     "id": "ukrinform_zlatopil_1112",
+     "title": "Ukrinform: Russian forces strike Zlatopil in Kharkiv region: Enterprise destroyed, people injured (Nov 12)",
+     "url": "https://www.ukrinform.net/rubric-ato/4183911-russian-forces-strike-zlatopil-in-kharkiv-region-enterprise-destroyed-people-injured.html"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "kotovka-1113",
+   "date": "2026-11-13",
+   "region": "north",
+   "oblast": "Kharkiv",
+   "front": "Kharkiv",
+   "type": "claim",
+   "status": "ONE_PARTY",
+   "title": "Russia's MoD claims capture of Kotovka in Kharkiv region",
+   "caption": "Russia's Ministry of Defence says its Sever (North) group took control of the settlement of Kotovka in Kharkiv Oblast. No Ukrainian response or independent assessment was found, and the MoD post does not say which of several similarly named villages it means, so the marker sits at Kharkiv city and is not geolocated.",
+   "lat": 49.9818,
+   "lon": 36.2548,
+   "coordPrecision": "oblast",
+   "place": "Kharkiv",
+   "sources": [
+    {
+     "id": "mod_kotovka_1113",
+     "title": "Russian MoD (Telegram): Sever group takes Kotovka, Kharkiv region (Nov 13)",
+     "url": "https://t.me/mod_russia/68986"
+    }
+   ],
+   "read": "snippet"
   }
  ],
  "stats": [
   {
    "label": "Russian military personnel losses (cumulative, since Feb 24, 2022)",
    "category": "casualties",
-   "asOf": "2026-11-12",
+   "asOf": "2026-11-13",
    "status": "ONE_PARTY",
    "ukraine": {
-    "value": "~1,616,300 killed and wounded, calculated from the Nov 10 total plus the General Staff's daily figures (+2,580 on Nov 11, +2,150 on Nov 12); the cumulative tally itself is posted as an image and was not read",
-    "source": "gs_ops_1112"
+    "value": "~1,618,920 killed and wounded, calculated from the Nov 12 total of 1,616,330 (Kyiv Independent citing the General Staff) plus the General Staff's +2,590 for the past day (Nov 13 summary); the cumulative tally itself is posted as an image and was not read",
+    "source": "gs_ops_1113"
    },
    "russia": {
     "value": "No official cumulative figure published",
@@ -4529,6 +4621,36 @@
    "russia": {
     "value": "Omsk Oblast Governor Vitaly Khotsenko confirmed a Ukrainian drone attack; airport flights suspended and mobile internet restricted",
     "source": "ki_ustluga_1111"
+   },
+   "independent": []
+  },
+  {
+   "label": "Russian drones and missiles launched at Ukraine (night of Nov 12-13)",
+   "category": "shootdowns",
+   "asOf": "2026-11-13",
+   "status": "DISPUTED",
+   "ukraine": {
+    "value": "117 Shahed-type drones (63 jet-powered), Gerbera and Parodiya decoys; 80 downed or suppressed as of 07:30, a few still airborne; hits at 24 locations, debris at 10 (General Staff)",
+    "source": "gs_air_1113"
+   },
+   "russia": {
+    "value": "No launch count published; MoD says drones hit a cargo ship with weapons and military cargo in the Black Sea south-west of Odesa overnight",
+    "source": "mod_strikes_1113"
+   },
+   "independent": []
+  },
+  {
+   "label": "Ukrainian drones shot down over Russia (Nov 12-13)",
+   "category": "shootdowns",
+   "asOf": "2026-11-13",
+   "status": "ONE_PARTY",
+   "ukraine": {
+    "value": "No count published",
+    "source": null
+   },
+   "russia": {
+    "value": "MoD claims 1,198 fixed-wing drones intercepted overnight (20:00 Moscow time Nov 12 to 08:00 Nov 13) over Astrakhan, Belgorod, Bryansk, Vladimir, Volgograd, Voronezh, Kaluga, Kursk, Lipetsk, Oryol, Rostov, Ryazan, Saratov, Smolensk, Tver and Tula regions, the Moscow region, Crimea and the Black Sea; the figure is far above recent nights (71 on Nov 11-12) and was not independently checked",
+    "source": "mod_pvo_1113"
    },
    "independent": []
   }
@@ -5623,6 +5745,46 @@
    "id": "mod_day_1111",
    "title": "Russian MoD (Telegram): main events of the day, Nov 11",
    "url": "https://t.me/mod_russia/68943"
+  },
+  {
+   "id": "gs_ops_1113",
+   "title": "General Staff of Ukraine (Telegram): operational information as of 08:00 Nov 13",
+   "url": "https://t.me/GeneralStaffZSU/42882"
+  },
+  {
+   "id": "gs_air_1113",
+   "title": "General Staff of Ukraine (Telegram): air attack night of Nov 12-13",
+   "url": "https://t.me/GeneralStaffZSU/42883"
+  },
+  {
+   "id": "mod_pvo_1113",
+   "title": "Russian MoD (Telegram): air defence claims overnight Nov 13",
+   "url": "https://t.me/mod_russia/68974"
+  },
+  {
+   "id": "mod_strikes_1113",
+   "title": "Russian MoD (Telegram): cargo ship hit south-west of Odesa (Nov 13)",
+   "url": "https://t.me/mod_russia/68973"
+  },
+  {
+   "id": "ukrinform_kyiv_1112",
+   "title": "Ukrinform: One killed, seven injured as Russian drone hits apartment building in Kyiv's Solomianskyi district (Nov 12)",
+   "url": "https://www.ukrinform.net/rubric-ato/4183954-one-killed-seven-injured-as-russian-drone-hits-apartment-building-in-kyivs-solomianskyi-district.html"
+  },
+  {
+   "id": "ukrinform_naftogaz_1112",
+   "title": "Ukrinform: Russia strikes Naftogaz facility in Chernihiv region with two missiles (Nov 12)",
+   "url": "https://www.ukrinform.net/rubric-economy/4184055-russia-strikes-naftogaz-facility-in-chernihiv-region-with-two-missiles.html"
+  },
+  {
+   "id": "ukrinform_zlatopil_1112",
+   "title": "Ukrinform: Russian forces strike Zlatopil in Kharkiv region: Enterprise destroyed, people injured (Nov 12)",
+   "url": "https://www.ukrinform.net/rubric-ato/4183911-russian-forces-strike-zlatopil-in-kharkiv-region-enterprise-destroyed-people-injured.html"
+  },
+  {
+   "id": "mod_kotovka_1113",
+   "title": "Russian MoD (Telegram): Sever group takes Kotovka, Kharkiv region (Nov 13)",
+   "url": "https://t.me/mod_russia/68986"
   }
  ]
 }
