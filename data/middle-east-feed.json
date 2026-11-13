@@ -1,12 +1,12 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-13T11:06:03+00:00",
+  "lastUpdated": "2026-11-13T11:42:03+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
     "source": "Al Jazeera",
     "ok": true,
-    "count": 6
+    "count": 7
    },
    {
     "source": "BBC News Middle East",
@@ -52,6 +52,18 @@
  },
  "items": [
   {
+   "headline": "French government condemns Israel entry ban on Jean-Luc Melenchon",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/news/french-government-condemns-israel-entry-ban-jean-luc-melenchon",
+   "date": "2026-11-13T11:25:39.000Z"
+  },
+  {
+   "headline": "Anti-Muslim racism is a global system used to normalise mass killing",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/opinion/how-anti-muslim-racism-makes-mass-death-permissible",
+   "date": "2026-11-13T11:10:32.000Z"
+  },
+  {
    "headline": "Toyota reviewing use of forklifts by Israeli military after MEE investigation",
    "source": "Middle East Eye",
    "link": "https://www.middleeasteye.net/live-blog/live-blog-update/toyota-reviewing-use-forklifts-israeli-military-after-mee-investigation",
@@ -62,6 +74,12 @@
    "source": "Middle East Eye",
    "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-reports-shooting-down-us-predator-drone-its-southern-coast",
    "date": "2026-11-13T11:02:02.000Z"
+  },
+  {
+   "headline": "Iran threatens unlimited response over Strait of Hormuz after US attack",
+   "source": "Al Jazeera",
+   "link": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-reported-resul-serdar-iran-basij?traffic_source=rss",
+   "date": "2026-11-13T10:54:25.000Z"
   },
   {
    "headline": "France criticises 'demagogic' move by Israel to ban hard-left leader Melenchon",
@@ -236,18 +254,6 @@
    "source": "Middle East Eye",
    "link": "https://www.middleeasteye.net/live-blog/live-blog-update/how-gazas-winter-crisis-manufactured-israel",
    "date": "2026-11-13T02:26:53.000Z"
-  },
-  {
-   "headline": "How Western media framed the Israeli attack on Nasser Hospital",
-   "source": "Middle East Eye",
-   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/how-western-media-framed-israeli-attack-nasser-hospital",
-   "date": "2026-11-13T00:30:54.000Z"
-  },
-  {
-   "headline": "Bethlehem Church of the Nativity priest denied visa to speak at US event",
-   "source": "Middle East Eye",
-   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/bethlehem-church-nativity-priest-denied-visa-speak-us-event",
-   "date": "2026-11-12T23:45:05.000Z"
   },
   {
    "headline": "Publication of air crash probes falls short, safety advocates say",

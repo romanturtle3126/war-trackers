@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-13T11:06:02+00:00",
+  "lastUpdated": "2026-11-13T11:42:02+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
@@ -36,7 +36,7 @@
    {
     "source": "Al Jazeera",
     "ok": true,
-    "count": 3
+    "count": 2
    },
    {
     "source": "UK Ministry of Defence (GOV.UK)",
@@ -47,22 +47,40 @@
  },
  "items": [
   {
+   "headline": "Leaders meet in Dublin amid search for lead EU negotiator for peace talks with Russia - Europe live",
+   "source": "The Guardian (Ukraine)",
+   "link": "https://www.theguardian.com/world/live/2026/nov/13/eu-leaders-negotiations-ukraine-russia-dublin-ai-summit-kushner-witkoff-latest-news-updates",
+   "date": "2026-11-13T11:38:16.000Z"
+  },
+  {
+   "headline": "Russia strikes hospital in central Kyiv after SpaceX system falters again",
+   "source": "The Guardian (Ukraine)",
+   "link": "https://www.theguardian.com/world/2026/nov/13/russia-strikes-hospital-central-kyiv-spacex-starshield-system-fails",
+   "date": "2026-11-13T11:24:30.000Z"
+  },
+  {
+   "headline": "Ukraine continues fortifying border with Belarus amid persistent threat – SBGS spox",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4184301-ukraine-continues-fortifying-border-with-belarus-amid-persistent-threat-sbgs-spox.html",
+   "date": "2026-11-13T11:12:00.000Z"
+  },
+  {
    "headline": "Russian forces strike apartment building in Zaporizhzhia, four injured, including children",
    "source": "Ukrinform",
    "link": "https://www.ukrinform.net/rubric-ato/4184290-russian-forces-strike-apartment-building-in-zaporizhzhia-four-injured-including-children.html",
    "date": "2026-11-13T10:55:00.000Z"
   },
   {
-   "headline": "Leaders meet in Dublin amid search for lead EU negotiator for peace talks with Russia - Europe live",
-   "source": "The Guardian (Ukraine)",
-   "link": "https://www.theguardian.com/world/live/2026/nov/13/eu-leaders-negotiations-ukraine-russia-dublin-ai-summit-kushner-witkoff-latest-news-updates",
-   "date": "2026-11-13T10:52:16.000Z"
-  },
-  {
    "headline": "Russian attacks kill 9, injure 61 across Ukraine over past day, spark fire at Kyiv hospital",
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/russian-attacks-kill-9-injure-61-across-ukraine-over-past-day-spark-fire-at-kyiv-hospital/",
    "date": "2026-11-13T10:48:39.000Z"
+  },
+  {
+   "headline": "EU foreign policy chief warns Europe against falling into Russia's trap over security architecture discussions",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/13/8062699/",
+   "date": "2026-11-13T10:42:00.000Z"
   },
   {
    "headline": "Ukrainian battlefield successes shape allies’ stance and influence negotiations – Air Assault Forces Commander",
@@ -81,6 +99,12 @@
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/prosecutors-office-receives-order-to-probe-top-zelensky-ally-but-no-investigation-opened-so-far/",
    "date": "2026-11-13T10:16:58.000Z"
+  },
+  {
+   "headline": "Over 100 US congressmen demand restoration of Ukraine's access to Starshield",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/13/8062691/",
+   "date": "2026-11-13T10:16:00.000Z"
   },
   {
    "headline": "Russian attack on Odesa kills two, injures seven",
@@ -122,6 +146,12 @@
    "headline": "Vascular surgeon explains how wounded people should use tourniquets to avoid losing limb",
    "source": "Ukrinform",
    "link": "https://www.ukrinform.net/rubric-society/4184243-vascular-surgeon-explains-how-wounded-people-should-use-tourniquets-to-avoid-losing-limb.html",
+   "date": "2026-11-13T09:40:00.000Z"
+  },
+  {
+   "headline": "Woman killed and her daughter injured by explosion of unknown device in Kharkiv Oblast",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/13/8062675/",
    "date": "2026-11-13T09:40:00.000Z"
   },
   {
@@ -167,7 +197,7 @@
    "date": "2026-11-13T08:57:00.000Z"
   },
   {
-   "headline": "Car of former aide to fugitive ex-PM Azarov explodes in Moscow – video",
+   "headline": "Former aide to fugitive ex-PM Azarov targeted by car bomb in Moscow – video",
    "source": "Ukrainska Pravda",
    "link": "https://www.pravda.com.ua/eng/news/2026/11/13/8062667/",
    "date": "2026-11-13T08:46:00.000Z"
@@ -341,12 +371,6 @@
    "date": "2026-11-13T04:13:00.000Z"
   },
   {
-   "headline": "US envoys shuttle between Putin and Zelenskyy",
-   "source": "Al Jazeera",
-   "link": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
-   "date": "2026-11-13T04:12:01.000Z"
-  },
-  {
    "headline": "First four L-39 Skyfox aircraft could be delivered to Ukraine next year – Czech FM",
    "source": "Ukrinform",
    "link": "https://www.ukrinform.net/rubric-ato/4184101-first-four-l39-skyfox-aircraft-could-be-delivered-to-ukraine-next-year-czech-fm.html",
@@ -357,12 +381,6 @@
    "source": "The Guardian (Ukraine)",
    "link": "https://www.theguardian.com/world/2026/nov/13/ukraine-war-briefing-europe-to-join-negotiations-says-kushner-as-putin-warns-against-peace-keepers",
    "date": "2026-11-13T03:38:51.000Z"
-  },
-  {
-   "headline": "Humanitarian mission like one in Oleshky urgently needed in occupied Hola Prystan community",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-ato/4184076-humanitarian-mission-like-one-in-oleshky-urgently-needed-in-occupied-hola-prystan-community.html",
-   "date": "2026-11-13T02:24:00.000Z"
   },
   {
    "headline": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
@@ -383,28 +401,10 @@
    "date": "2026-11-13T01:44:53.000Z"
   },
   {
-   "headline": "Russians strike high-rise residential building in Rivne with drone, injuring six",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/13/8062625/",
-   "date": "2026-11-13T01:38:00.000Z"
-  },
-  {
-   "headline": "Drones attack Volgograd oil refinery: Russians queue for fuel – photo, video",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/13/8062627/",
-   "date": "2026-11-13T00:57:00.000Z"
-  },
-  {
    "headline": "Mass drone attack on Moscow grounds flights at region's airports",
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/mass-drone-attack-on-moscow-grounds-flights-at-regions-airports/",
    "date": "2026-11-12T23:32:58.000Z"
-  },
-  {
-   "headline": "Two people killed in Russian attack on Sumy Oblast",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/13/8062624/",
-   "date": "2026-11-12T23:13:00.000Z"
   },
   {
    "headline": "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
@@ -573,12 +573,6 @@
    "source": "The Guardian (Ukraine)",
    "link": "https://www.theguardian.com/world/2026/nov/09/russians-killed-ukraine-war-leaked-data",
    "date": "2026-11-09T14:58:01.000Z"
-  },
-  {
-   "headline": "Poland’s justice minister says investigation into Kraków shooting will aim to establish if the 24-year-old acted alone – Europe live",
-   "source": "The Guardian (Ukraine)",
-   "link": "https://www.theguardian.com/world/live/2026/nov/09/polands-krakow-attack-ukraine-russia-france-germany-europe-latest-news",
-   "date": "2026-11-09T14:17:54.000Z"
   },
   {
    "headline": "Security Council LIVE: Strikes on Ukraine’s power grid, as peace talks loom",
