@@ -2,6 +2,15 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-13 06:41 Toronto — Middle East — OK
+- Added 4 event(s):
+  - `manama-1113` 2026-11-13 [ONE_PARTY] IRGC says it targeted a US early-warning radar in Bahrain
+  - `khasab-1113` 2026-11-13 [ONE_PARTY] IRGC Navy says LPG carrier exploded after hitting a sea mine in Hormuz
+  - `bandar-abbas-1113` 2026-11-13 [ONE_PARTY] Iran says its navy shot down a US MQ-1 Predator near Sirik coast
+  - `gaza-1113` 2026-11-13 [ONE_PARTY] Palestinian killed by Israeli gunfire in Tuffah, east of Gaza City, hospital says
+- 4 new source link(s)
+- Totals: 63 events, 18 stats, 88 sources; coverage 2026-10-06 to 2026-11-13
+
 ## 2026-11-13 06:05 Toronto — Ukraine — OK
 - Added 4 event(s):
   - `kyiv-1112-2` 2026-11-12 [ONE_PARTY] Drone hits apartment building in Kyiv's Solomianskyi district, one killed
