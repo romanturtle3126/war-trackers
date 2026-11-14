@@ -2,11 +2,11 @@
  "schemaVersion": 1,
  "map": "middle-east",
  "meta": {
-  "lastUpdated": "2026-11-13T06:41:25-05:00",
-  "coverage": "2026-10-06 to 2026-11-13",
+  "lastUpdated": "2026-11-14T06:42:35-05:00",
+  "coverage": "2026-10-06 to 2026-11-14",
   "notes": [
-   "Refreshed 2026-11-13 (UTC) from Al-Monitor (Reuters), Middle East Eye live blog and the headline feed; OCHA oPt updates page opened (headlines only).",
-   "Not read: UKMTO and ISW/CTP (403 blocked), IDF/CENTCOM X posts (searches returned no dated Nov 12-13 posts), Telegram previews for Tasnim, Saba and Al-Masirah (no posts parsed). Lebanon, Yemen and Gaza/Lebanon casualty totals not refreshed this run.",
+   "Refreshed 2026-11-14 (UTC) from Middle East Eye live blog, Al Jazeera, ISW/CTP Iran Update (Nov 13), OCHA oPt situation report (Nov 13), the Houthi military spokesman's Telegram channel (army21ye) and Tasnim English (Telegram), plus the headline feed.",
+   "Not read: UKMTO site (403; figures come via Middle East Eye and Al Jazeera), IDF and CENTCOM X posts (searches returned no dated Nov 13-14 posts; the CENTCOM Bahrain statement is via Middle East Eye), Gaza MoH Telegram, Lebanon MoPH. Brent Nov 12-13 settles not found, so the Brent stat is unchanged.",
    "Marker positions are approximate (see coordPrecision)."
   ]
  },
@@ -1995,6 +1995,44 @@
    ]
   },
   {
+   "id": "lahij-1112",
+   "date": "2026-11-12",
+   "region": "yemen",
+   "oblast": "Yemen",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "frontline",
+   "status": "UNVERIFIED",
+   "title": "Houthi advance in southwest Lahij, then government-aligned counterattack with Saudi air support, ISW says",
+   "caption": "The ISW/CTP Iran Update of Nov 13 assesses that the Houthis launched a combined-arms offensive on Nov 11 and advanced about 12 km southwest from al Majza into al Shatt and al Sarih Junction, Madaribah wa al Arah District, on Nov 12, likely toward Jabal Kharaz. It says Yemeni government-aligned forces, with STC-aligned brigades reinforcing and Saudi aircraft providing air support, halted the advance and recaptured territory. This is an analyst assessment from open sources; the Houthi military spokesman separately claims ballistic-missile strikes on Saudi-led forces at Khorz in Lahij on Nov 12-13. Marker is at Lahij, not the front line.",
+   "lat": 13.0567,
+   "lon": 44.8819,
+   "coordPrecision": "oblast",
+   "place": "Lahij",
+   "sources": [
+    {
+     "id": "isw_1113",
+     "title": "Critical Threats / ISW, Iran Update, November 13, 2026",
+     "url": "https://www.criticalthreats.org/analysis/iran-update-november-13-2026"
+    },
+    {
+     "id": "tg_army21ye_4076",
+     "title": "Houthi military spokesman (Telegram), strikes on Saudi-aligned forces at Khorz, Lahij, Nov 13",
+     "url": "https://t.me/army21ye/4076"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "ISW/CTP (analyst)",
+     "says": "Houthi advance of about 12 km halted; government-aligned forces recaptured territory with Saudi air support."
+    },
+    {
+     "who": "Houthi military spokesman",
+     "says": "Ballistic missiles hit Saudi-led forces in Khorz and elsewhere in Lahij, with many killed and wounded (unverified)."
+    }
+   ]
+  },
+  {
    "id": "manama-1113",
    "date": "2026-11-13",
    "region": "gulf",
@@ -2117,36 +2155,184 @@
      "says": "A Palestinian was killed by Israeli gunfire in Tuffah."
     }
    ]
+  },
+  {
+   "id": "deir-el-balah-1113",
+   "date": "2026-11-13",
+   "region": "gaza",
+   "oblast": "Gaza",
+   "front": "Gaza & West Bank",
+   "type": "airstrike",
+   "status": "ONE_PARTY",
+   "title": "Six Palestinians killed in Israeli strikes and shelling across Gaza, medics say",
+   "caption": "Medical sources and witnesses told Middle East Eye six Palestinians were killed and about 20 wounded on Nov 13. They say a second strike in Deir el-Balah hit people helping the wounded from an earlier attack, and artillery shelled the area around the al-Qastal Towers east of the city and eastern Gaza City. Casualty figures come from medics, Wafa and Gaza's health ministry; no Israeli statement on these incidents was found. Marker is at Deir el-Balah, not each strike.",
+   "lat": 31.4183,
+   "lon": 34.3493,
+   "coordPrecision": "approx",
+   "place": "Deir el-Balah",
+   "sources": [
+    {
+     "id": "mee_1113_sixgaza",
+     "title": "Middle East Eye live blog, Six Palestinians killed in Israeli attacks across Gaza, Nov 13",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinians-killed-israeli-attacks-across-gaza"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Gaza medical sources / health ministry (via Middle East Eye)",
+     "says": "Six killed, about 20 wounded, including in a second strike on rescuers in Deir el-Balah."
+    },
+    {
+     "who": "Israel",
+     "says": "No statement on these incidents found."
+    }
+   ]
+  },
+  {
+   "id": "saada-1113",
+   "date": "2026-11-13",
+   "region": "yemen",
+   "oblast": "Yemen",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "airstrike",
+   "status": "ONE_PARTY",
+   "title": "Houthi media say Saudi-led coalition struck Saada city and shelled Razih",
+   "caption": "Houthi-run Al Masirah TV, as relayed by Middle East Eye citing Al Jazeera, reports coalition air strikes on southern parts of Saada city and artillery shelling of populated villages in Razih district on Friday. No casualty figures were given and no coalition response was found. Yemen's government military spokesman said government forces carried out 943 strikes and targeting operations against Houthi positions under 'Operation Dawn of Yemen'.",
+   "lat": 16.9402,
+   "lon": 43.7639,
+   "coordPrecision": "approx",
+   "place": "Saada",
+   "sources": [
+    {
+     "id": "mee_1114_saada",
+     "title": "Middle East Eye live blog, Houthis say Saudi-led coalition forces target Saada, Razih in Yemen, Nov 14",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-say-saudi-led-coalition-forces-target-saada-razih-yemen"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Houthi media (Al Masirah)",
+     "says": "Coalition air strikes on southern Saada city; shelling of villages in Razih."
+    },
+    {
+     "who": "Yemeni government military spokesman",
+     "says": "943 strikes and targeting operations against Houthi positions."
+    }
+   ]
+  },
+  {
+   "id": "riyadh-1113",
+   "date": "2026-11-13",
+   "region": "gulf",
+   "oblast": "Saudi Arabia",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "drone",
+   "status": "ONE_PARTY",
+   "title": "Houthis claim drone strikes on Riyadh airport and East-West pipeline pumping station",
+   "caption": "The Houthi military spokesman says on Telegram that forces hit King Khalid International Airport in Riyadh with a drone and pumping station No. 3 on the East-West pipeline, east of Riyadh, with two drones, 'successfully'. The same channel claims ballistic-missile and drone strikes on weapons stores at Ras Abbas camp in Aden. No Saudi statement, damage report or independent confirmation was found. Marker is at Riyadh, not the targets.",
+   "lat": 24.6877,
+   "lon": 46.7219,
+   "coordPrecision": "oblast",
+   "place": "Riyadh",
+   "sources": [
+    {
+     "id": "tg_army21ye_4079",
+     "title": "Houthi military spokesman (Telegram), strikes on Riyadh airport and East-West pipeline pumping station 3, Nov 13",
+     "url": "https://t.me/army21ye/4079"
+    },
+    {
+     "id": "tg_army21ye_4075",
+     "title": "Houthi military spokesman (Telegram), strike on weapons stores at Ras Abbas, Aden, Nov 13",
+     "url": "https://t.me/army21ye/4075"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "Houthi military spokesman",
+     "says": "Drones hit Riyadh airport and East-West pipeline pumping station 3; missiles and drones hit weapons stores in Aden."
+    },
+    {
+     "who": "Saudi Arabia",
+     "says": "No statement found."
+    }
+   ]
+  },
+  {
+   "id": "khasab-1114",
+   "date": "2026-11-14",
+   "region": "gulf",
+   "oblast": "Strait of Hormuz",
+   "front": "Iran war / Gulf / Yemen",
+   "type": "naval",
+   "status": "ONE_PARTY",
+   "title": "Iran says three tankers hit mines and caught fire in and near Hormuz",
+   "caption": "Iran's IRGC Navy says two tankers hit a naval mine in the south of the strait after switching off radar and positioning systems on an 'unauthorised route'; Iran's army navy says a third tanker, with tracking off, caught fire and stopped after hitting a mine in a 'prohibited zone' east of the strait. No vessel names were given and no independent confirmation was found. The US says it has cleared the main routes of mines and the strait is open to shipping (via Al Jazeera). Marker is at Khasab, not the exact position.",
+   "lat": 26.1799,
+   "lon": 56.2477,
+   "coordPrecision": "oblast",
+   "place": "Khasab",
+   "sources": [
+    {
+     "id": "mee_1114_tankers",
+     "title": "Middle East Eye live blog, Iran says three tankers hit by mines in Hormuz catch fire, Nov 14",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-three-tankers-hit-mines-hormuz-fire"
+    },
+    {
+     "id": "tasnim_tg_1114",
+     "title": "Tasnim News English (Telegram), Army Navy: incident involving a rogue oil tanker in the eastern Hormuz Strait, Nov 14",
+     "url": "https://t.me/Tasnimnews_en/46865"
+    }
+   ],
+   "read": "full",
+   "claims": [
+    {
+     "who": "IRGC Navy / Iran's army navy",
+     "says": "Three tankers hit mines while using unauthorised or prohibited routes with tracking systems off."
+    },
+    {
+     "who": "US military (via Al Jazeera)",
+     "says": "Main routes cleared of mines; strait open to commercial shipping."
+    }
+   ]
   }
  ],
  "lanes": [
   {
    "id": "hormuz-lane",
-   "name": "Strait of Hormuz",
    "status": "DISPUTED",
-   "text": "Restricted since Feb 28. Nov 11: Iran's army and IRGC say tankers burned after hitting mines on an unauthorised route in the eastern strait; UKMTO reported incidents involving two tankers. Iran's security chief says Hormuz stays shut until the US meets Iran's conditions; the US says it is open to diplomacy. Monitoring firms count at least 37 attacks on ships in and near the strait in November, the highest monthly total of the war (per Al Jazeera).",
+   "text": "Restricted since Feb 28. Nov 14: Iran's IRGC Navy and army navy say three tankers hit mines and caught fire; no independent confirmation. UKMTO counted at least seven tanker attacks in the week to Nov 11 and puts transits about 65% below pre-war. The UN says at least 25 seafarers have died since February. The US says routes are cleared and the strait is open; Iran says it stays shut until its conditions are met.",
    "sources": [
     {
-     "id": "mee_1111_mine",
-     "title": "Middle East Eye, Iranian army says oil tanker ablaze in Hormuz Strait after hitting mine, Nov 11",
-     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-army-says-oil-tanker-ablaze-hormuz-strait-after-hitting-mine"
+     "id": "mee_1114_tankers",
+     "title": "Middle East Eye live blog, Iran says three tankers hit by mines in Hormuz catch fire, Nov 14",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-three-tankers-hit-mines-hormuz-fire"
     },
     {
-     "id": "aj_1111_hormuz",
-     "title": "Al Jazeera, Iran denies talks with US, says Hormuz will stay shut until demands are met, Nov 11",
-     "url": "https://www.aljazeera.com/news/2026/11/11/iran-denies-talks-with-us-says-hormuz-will-stay-shut-until-demands-are-met"
+     "id": "mee_1113_ukmto",
+     "title": "Middle East Eye live blog, UKMTO says seven Hormuz tanker attacks recorded in a week, Nov 13-14",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-says-seven-hormuz-tanker-attacks-recorded-week"
+    },
+    {
+     "id": "aj_1114_seafarers",
+     "title": "Al Jazeera, UN says 25 seafarers killed in, around Hormuz since US-Israel war on Iran, Nov 14",
+     "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february"
     }
    ],
    "claims": [
     {
-     "who": "Iran (security chief Rezaei)",
-     "says": "Hormuz will not reopen until the US meets Iran's seven conditions; denies talks in Qatar."
+     "who": "Iran (IRGC Navy, army navy)",
+     "says": "Three tankers hit mines on unauthorised routes; Hormuz stays shut until the US meets Iran's conditions."
     },
     {
-     "who": "US (Trump, Rubio)",
-     "says": "Sees 'positive momentum'; open to diplomacy; no need for major combat operations."
+     "who": "US military (via Al Jazeera)",
+     "says": "Main routes cleared of mines; strait open to commercial shipping."
     }
    ],
+   "name": "Strait of Hormuz",
+   "color": "#ff4d6d",
    "points": [
     [
      50.3,
@@ -2176,14 +2362,26 @@
      60.5,
      24.2
     ]
-   ],
-   "color": "#ff4d6d"
+   ]
   },
   {
    "id": "red-sea-lane",
-   "name": "Red Sea / Bab el-Mandeb",
    "status": "ONE_PARTY",
-   "text": "Contested. Houthi-Saudi fighting near Bab el-Mandeb; the 2022 truce has collapsed. No current transit count found.",
+   "text": "Contested. Houthi-Saudi fighting continues on land and in the south of Saudi Arabia; the 2022 truce has collapsed. UKMTO reports no ship attacks in the Red Sea since Aug 24, and Bab al-Mandab transits about 24% below levels before the Houthis' Jul 22 blockade announcement (via Middle East Eye).",
+   "sources": [
+    {
+     "id": "mee_1113_ukmto",
+     "title": "Middle East Eye live blog, UKMTO says seven Hormuz tanker attacks recorded in a week, Nov 13-14",
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-says-seven-hormuz-tanker-attacks-recorded-week"
+    }
+   ],
+   "claims": [
+    {
+     "who": "UKMTO (via Middle East Eye)",
+     "says": "No Red Sea attacks since Aug 24; Bab al-Mandab transits about 24% below pre-blockade levels."
+    }
+   ],
+   "name": "Red Sea / Bab el-Mandeb",
    "color": "#ffb020",
    "points": [
     [
@@ -2226,18 +2424,6 @@
      55,
      14
     ]
-   ],
-   "sources": [
-    {
-     "id": "almonitor_1027",
-     "title": "Al-Monitor (Reuters), Houthis say they hit Ras Tanura, Oct 27",
-     "url": "https://www.al-monitor.com/originals/2026/10/yemens-houthis-say-they-hit-saudi-ras-tanura-oil-refinery-missile"
-    },
-    {
-     "id": "arabnews_1029_3",
-     "title": "Arab News, Bahrain warns UNSC, Oct 29",
-     "url": "https://www.arabnews.com/middle-east/houthis-and-iran-hijack-new-tech-to-threaten-red-sea-and-hormuz-shipping-bahrain-warns-3008887"
-    }
    ]
   },
   {
@@ -2289,13 +2475,17 @@
   {
    "label": "Gaza: killed since the Oct 10, 2025 ceasefire",
    "category": "casualties",
-   "asOf": "2026-11-10",
-   "asOfNote": "Nov 10, 2026 (health officials via Reuters)",
+   "asOf": "2026-11-13",
+   "asOfNote": "Nov 13, 2026 (Gaza health ministry via Middle East Eye; OCHA to Nov 9)",
    "status": "DISPUTED",
    "rows": [
     {
-     "who": "Gaza health officials (via Reuters, Nov 11)",
-     "value": "At least 1,600 killed since the ceasefire"
+     "who": "Gaza health ministry (via Middle East Eye, Nov 13)",
+     "value": "1,622 killed, 5,878 injured since the ceasefire"
+    },
+    {
+     "who": "Gaza health ministry (via UN OCHA, report of Nov 13)",
+     "value": "1,613 killed, 5,833 injured; 22 killed and 90 injured Nov 3-9"
     },
     {
      "who": "Israeli military",
@@ -2306,8 +2496,10 @@
      "value": "1,076 deaths verified to end of July 2026"
     }
    ],
-   "note": "UN verification lags; the counts cover different periods. Reuters also cites Palestinian authorities for more than 74,000 killed since Oct 2023.",
+   "note": "UN verification lags; the counts cover different periods. The Israeli military row dates from Nov 11 (Reuters).",
    "sources": [
+    "mee_1113_sixgaza",
+    "ocha_1113",
     "am_1111_gaza",
     "ocha_1015"
    ]
@@ -2577,28 +2769,31 @@
   {
    "label": "Hormuz traffic",
    "category": "economy",
-   "asOf": "2026-10-30",
-   "asOfNote": "MEASURES DIFFER · OCT 16-27",
+   "asOf": "2026-11-13",
+   "asOfNote": "UKMTO weekly overview to Nov 11; IMO to Nov 11",
    "status": "DISPUTED",
    "rows": [
     {
-     "who": "Kpler (via O&G Middle East)",
-     "value": "~19 commodity vessels/day in 10 days to Oct 21 vs 100+ pre-war; crude ~8.5M bpd 7-day avg (Oct 16)"
+     "who": "UKMTO (via Middle East Eye, Nov 13)",
+     "value": "Transits about 65% below pre-war: 139 outbound, 169 inbound last week vs 170 and 155 the week before; threat level severe; 163 conflict-related incidents since Feb 28"
     },
     {
-     "who": "ANZ research (via CNBC, Oct 27)",
-     "value": "Flows about 60% of normal"
+     "who": "UN / IMO (via Al Jazeera, Nov 14)",
+     "value": "At least 25 seafarers killed in and around Hormuz since February; 136 security incidents Mar 1-Nov 11 (35 in October, 10 so far in November)"
     },
     {
-     "who": "US CENTCOM",
-     "value": "Helped Gulf states export 1.5 billion barrels via Hormuz since summer"
+     "who": "US military (via Al Jazeera)",
+     "value": "Says main routes are cleared of mines and the strait is open"
+    },
+    {
+     "who": "Iran",
+     "value": "Requires approval to transit; says the strait stays shut until its conditions are met"
     }
    ],
-   "note": "The ANZ figure is via a secondary compilation (GlobalSecurity). Vessel counts and oil volumes are not directly comparable. IMO counted 34 confirmed attacks on vessels from Sep 28 to Oct 27, mostly in Hormuz (via Seatrade). CNBC says traffic is at single-digit daily passings.",
+   "note": "Counts from different monitors are not comparable. UKMTO page itself was blocked; figures are as relayed by Middle East Eye. Red Sea: UKMTO reports no attacks since Aug 24; Bab al-Mandab transits about 24% below pre-blockade levels.",
    "sources": [
-    "seatrademariti_1030",
-    "arabnews_1029_2",
-    "globalsec_1029"
+    "mee_1113_ukmto",
+    "aj_1114_seafarers"
    ]
   },
   {
@@ -3055,6 +3250,61 @@
    "id": "mee_1113_gaza",
    "title": "Middle East Eye live blog, Israeli forces kill Palestinian in Gaza, raid homes in occupied West Bank, Nov 13",
    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-kill-palestinian-gaza-raid-homes-occupied-west-bank"
+  },
+  {
+   "id": "mee_1113_sixgaza",
+   "title": "Middle East Eye live blog, Six Palestinians killed in Israeli attacks across Gaza, Nov 13",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinians-killed-israeli-attacks-across-gaza"
+  },
+  {
+   "id": "ocha_1113",
+   "title": "UN OCHA oPt, Humanitarian Situation Report, 13 November 2026",
+   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026"
+  },
+  {
+   "id": "mee_1113_ukmto",
+   "title": "Middle East Eye live blog, UKMTO says seven Hormuz tanker attacks recorded in a week, Nov 13-14",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-says-seven-hormuz-tanker-attacks-recorded-week"
+  },
+  {
+   "id": "aj_1114_seafarers",
+   "title": "Al Jazeera, UN says 25 seafarers killed in, around Hormuz since US-Israel war on Iran, Nov 14",
+   "url": "https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february"
+  },
+  {
+   "id": "mee_1114_tankers",
+   "title": "Middle East Eye live blog, Iran says three tankers hit by mines in Hormuz catch fire, Nov 14",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-three-tankers-hit-mines-hormuz-fire"
+  },
+  {
+   "id": "tasnim_tg_1114",
+   "title": "Tasnim News English (Telegram), Army Navy: incident involving a rogue oil tanker in the eastern Hormuz Strait, Nov 14",
+   "url": "https://t.me/Tasnimnews_en/46865"
+  },
+  {
+   "id": "isw_1113",
+   "title": "Critical Threats / ISW, Iran Update, November 13, 2026",
+   "url": "https://www.criticalthreats.org/analysis/iran-update-november-13-2026"
+  },
+  {
+   "id": "tg_army21ye_4076",
+   "title": "Houthi military spokesman (Telegram), strikes on Saudi-aligned forces at Khorz, Lahij, Nov 13",
+   "url": "https://t.me/army21ye/4076"
+  },
+  {
+   "id": "mee_1114_saada",
+   "title": "Middle East Eye live blog, Houthis say Saudi-led coalition forces target Saada, Razih in Yemen, Nov 14",
+   "url": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-say-saudi-led-coalition-forces-target-saada-razih-yemen"
+  },
+  {
+   "id": "tg_army21ye_4079",
+   "title": "Houthi military spokesman (Telegram), strikes on Riyadh airport and East-West pipeline pumping station 3, Nov 13",
+   "url": "https://t.me/army21ye/4079"
+  },
+  {
+   "id": "tg_army21ye_4075",
+   "title": "Houthi military spokesman (Telegram), strike on weapons stores at Ras Abbas, Aden, Nov 13",
+   "url": "https://t.me/army21ye/4075"
   }
  ]
 }

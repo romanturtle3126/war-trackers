@@ -2,6 +2,22 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-14 06:42 Toronto — Middle East — OK
+- Added 5 event(s):
+  - `deir-el-balah-1113` 2026-11-13 [ONE_PARTY] Six Palestinians killed in Israeli strikes and shelling across Gaza, medics say
+  - `khasab-1114` 2026-11-14 [ONE_PARTY] Iran says three tankers hit mines and caught fire in and near Hormuz
+  - `lahij-1112` 2026-11-12 [UNVERIFIED] Houthi advance in southwest Lahij, then government-aligned counterattack with Saudi air support, ISW says
+  - `saada-1113` 2026-11-13 [ONE_PARTY] Houthi media say Saudi-led coalition struck Saada city and shelled Razih
+  - `riyadh-1113` 2026-11-13 [ONE_PARTY] Houthis claim drone strikes on Riyadh airport and East-West pipeline pumping station
+- Stats: 2 updated, 0 added
+- Lanes: 2 updated
+- 11 new source link(s)
+- Totals: 68 events, 18 stats, 99 sources; coverage 2026-10-06 to 2026-11-14
+
+## 2026-11-14 06:42 Toronto — Middle East — FAILED (data not changed)
+- lane "hormuz-lane": missing name
+- lane "red-sea-lane": missing name
+
 ## 2026-11-14 06:05 Toronto — Ukraine — OK
 - Added 8 event(s):
   - `zaporizhzhia-1113` 2026-11-13 [ONE_PARTY] Russian strike on apartment buildings in Zaporizhzhia injures 50, including eight children
