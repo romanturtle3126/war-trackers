@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-14T11:05:57+00:00",
+  "lastUpdated": "2026-11-14T11:43:09+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
@@ -51,6 +51,18 @@
   ]
  },
  "items": [
+  {
+   "headline": "US air travel thrown into chaos as nationwide flights grounded over 'radar instability'",
+   "source": "Middle East Eye",
+   "link": "https://www.middleeasteye.net/news/us-air-travel-thrown-chaos-nationwide-flights-grounded-over-radar-instability",
+   "date": "2026-11-14T11:27:49.000Z"
+  },
+  {
+   "headline": "Eisenkot condemns Netanyahu’s ‘racist’ campaign against Israel’s Arab citizens",
+   "source": "The Guardian (Middle East)",
+   "link": "https://www.theguardian.com/world/2026/nov/13/eisenkot-accuses-netanyahu-of-racist-campaign-against-israels-arab-minority",
+   "date": "2026-11-14T11:11:03.000Z"
+  },
   {
    "headline": "UN climate chief urges speed as COP31 confronts fossil fuel divide",
    "source": "Al-Monitor",
@@ -236,18 +248,6 @@
    "source": "Middle East Eye",
    "link": "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinians-killed-israeli-attacks-across-gaza",
    "date": "2026-11-13T23:28:10.000Z"
-  },
-  {
-   "headline": "US responds to suspected drone activity over UK air base used in Iran strikes",
-   "source": "Middle East Eye",
-   "link": "https://www.middleeasteye.net/live-blog/live-blog-update/us-responds-suspected-drone-activity-over-uk-air-base-used-iran-strikes",
-   "date": "2026-11-13T22:42:20.000Z"
-  },
-  {
-   "headline": "Eisenkot accuses Netanyahu of ‘racist’ campaign against Israel’s Arab minority",
-   "source": "The Guardian (Middle East)",
-   "link": "https://www.theguardian.com/world/2026/nov/13/eisenkot-accuses-netanyahu-of-racist-campaign-against-israels-arab-minority",
-   "date": "2026-11-13T22:36:38.000Z"
   },
   {
    "headline": "Trump to hold summit with Xi, Putin in Shenzhen on Thursday, NY Post reports",

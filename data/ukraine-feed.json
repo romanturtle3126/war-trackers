@@ -1,6 +1,6 @@
 {
  "meta": {
-  "lastUpdated": "2026-11-14T11:05:56+00:00",
+  "lastUpdated": "2026-11-14T11:43:09+00:00",
   "note": "Auto-pulled headlines. Unverified until reviewed.",
   "feeds": [
    {
@@ -47,6 +47,60 @@
  },
  "items": [
   {
+   "headline": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+   "source": "BBC News Europe",
+   "link": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-11-14T11:41:20.000Z"
+  },
+  {
+   "headline": "Zelensky: Putin personally does not support ceasefire",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4184662-zelensky-putin-personally-does-not-support-ceasefire.html",
+   "date": "2026-11-14T11:37:00.000Z"
+  },
+  {
+   "headline": "Zelensky on Starshield restrictions in temporarily occupied territories: Ukraine to raise this issue at every level",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-polytics/4184661-zelensky-on-starshield-restrictions-in-temporarily-occupied-territories-ukraine-to-raise-this-issue-at-every-level.html",
+   "date": "2026-11-14T11:21:00.000Z"
+  },
+  {
+   "headline": "Ukraine's General Staff reports strike on oil facility in Russia's Samara Oblast and military airfield in Lipetsk",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/14/8062854/",
+   "date": "2026-11-14T11:15:00.000Z"
+  },
+  {
+   "headline": "US floats NATO membership for Ukraine in exchange for Donbas withdrawal, Zelensky says",
+   "source": "Kyiv Independent",
+   "link": "https://kyivindependent.com/us-floats-nato-membership-for-ukraine-in-exchange-for-donbas-withdrawal-zelensky-says/",
+   "date": "2026-11-14T11:11:26.000Z"
+  },
+  {
+   "headline": "SSU drones strike oil facility in Russia's Samara region",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4184658-ssu-drones-strike-oil-facility-in-russia39s-samara-region.html",
+   "date": "2026-11-14T11:10:26.000Z"
+  },
+  {
+   "headline": "Russian forces strike Derhachi with drone, leaving three injured",
+   "source": "Ukrinform",
+   "link": "https://www.ukrinform.net/rubric-ato/4184657-russian-forces-strike-derhachi-with-drone-leaving-three-injured.html",
+   "date": "2026-11-14T11:06:09.000Z"
+  },
+  {
+   "headline": "SpaceX not being honest about ‘political’ reasons for slowing Starshield, says Zelenskyy",
+   "source": "The Guardian (Ukraine)",
+   "link": "https://www.theguardian.com/world/2026/nov/14/spacex-not-honest-slowing-starshield-elon-musk-volodymyr-zelenskyy",
+   "date": "2026-11-14T11:05:33.000Z"
+  },
+  {
+   "headline": "Ukraine, Russia race to build military satellite networks as war rages on",
+   "source": "Al Jazeera",
+   "link": "https://www.aljazeera.com/news/2026/11/14/ukraine-russia-race-to-build-military-satellite-networks-as-war-rages-on?traffic_source=rss",
+   "date": "2026-11-14T11:00:39.000Z"
+  },
+  {
    "headline": "At least 7 killed, 80 injured in Russian attacks across Ukraine; Zaporizhzhia among worst hit",
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/at-least-7-killed-80-injured-in-russian-attacks-across-ukraine-zaporizhzhia-among-worst-hit/",
@@ -59,10 +113,10 @@
    "date": "2026-11-14T10:40:00.000Z"
   },
   {
-   "headline": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-   "source": "BBC News Europe",
-   "link": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-11-14T10:30:38.000Z"
+   "headline": "Russia strikes energy infrastructure in Odesa Oblast again, cutting power to 50,000 households",
+   "source": "Ukrainska Pravda",
+   "link": "https://www.pravda.com.ua/eng/news/2026/11/14/8062851/",
+   "date": "2026-11-14T10:32:00.000Z"
   },
   {
    "headline": "Zelensky: Russia seeks to revise Europe's security architecture",
@@ -257,12 +311,6 @@
    "date": "2026-11-14T05:05:53.000Z"
   },
   {
-   "headline": "Trump, Xi and Putin to hold first three-way summit in China",
-   "source": "Al Jazeera",
-   "link": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
-   "date": "2026-11-14T04:55:58.000Z"
-  },
-  {
    "headline": "US Democrats direct Musk to preserve records on Ukraine's Starlink restriction, WSJ reports",
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/us-democrats-direct-musk-to-preserve-records-on-ukraines-starlink-restriction-wsj-reports/",
@@ -323,18 +371,6 @@
    "date": "2026-11-14T01:45:00.000Z"
   },
   {
-   "headline": "SSU foils Russian plot to strike Kyiv, arrests suspected agent spying on military positions",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-crime/4184253-ssu-foils-russian-plot-to-strike-kyiv-arrests-suspected-agent-spying-on-military-positions.html",
-   "date": "2026-11-14T01:29:00.000Z"
-  },
-  {
-   "headline": "National Guard drones hit over 316,000 enemy targets since Russia’s full-scale invasion – Pivnenko",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-ato/4184233-national-guard-drones-hit-over-316000-enemy-targets-since-russias-fullscale-invasion-pivnenko.html",
-   "date": "2026-11-14T00:22:00.000Z"
-  },
-  {
    "headline": "Trump, Putin and Xi will meet in China to discuss nuclear arms control – NYP",
    "source": "Ukrainska Pravda",
    "link": "https://www.pravda.com.ua/eng/news/2026/11/14/8062814/",
@@ -345,18 +381,6 @@
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/us-air-force-responds-to-suspected-drone-activity-at-military-base-in-uk/",
    "date": "2026-11-13T23:57:40.000Z"
-  },
-  {
-   "headline": "Remains of Russian drone recovered from Dnipro River in Kyiv",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-ato/4184176-remains-of-russian-drone-recovered-from-dnipro-river-in-kyiv.html",
-   "date": "2026-11-13T23:26:00.000Z"
-  },
-  {
-   "headline": "Evacuees from Oleshky promptly issued documents and bank cards – Lubinets",
-   "source": "Ukrinform",
-   "link": "https://www.ukrinform.net/rubric-society/4184150-evacuees-from-oleshky-promptly-issued-documents-and-bank-cards-lubinets.html",
-   "date": "2026-11-13T22:35:00.000Z"
   },
   {
    "headline": "FAA orders nationwide ground stop for all US flight departures",
@@ -413,22 +437,10 @@
    "date": "2026-11-13T19:23:00.000Z"
   },
   {
-   "headline": "\"This is our time\": Polish PM Tusk reacts to announcement of Europe's role in Ukraine peace talks",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/13/8062802/",
-   "date": "2026-11-13T19:11:00.000Z"
-  },
-  {
    "headline": "Ukraine, Russia launch 'new format' for evacuating civilians from occupied territories, ombudsman says",
    "source": "Kyiv Independent",
    "link": "https://kyivindependent.com/ukraine-russia-launch-new-format-for-evacuating-civilians-from-occupied-territories-ombudsman-says/",
    "date": "2026-11-13T19:06:10.000Z"
-  },
-  {
-   "headline": "European Council president explains why EU has chosen team rather than single representative for Ukraine peace talks",
-   "source": "Ukrainska Pravda",
-   "link": "https://www.pravda.com.ua/eng/news/2026/11/13/8062799/",
-   "date": "2026-11-13T18:31:00.000Z"
   },
   {
    "headline": "Estonia bans Russian athletes as backlash intensifies",
@@ -471,12 +483,6 @@
    "source": "The Guardian (Ukraine)",
    "link": "https://www.theguardian.com/world/2026/nov/13/car-bomb-attack-moscow-russia",
    "date": "2026-11-13T13:01:44.000Z"
-  },
-  {
-   "headline": "Top security official released on $1.4 million bail in major corruption case",
-   "source": "Kyiv Independent",
-   "link": "https://kyivindependent.com/top-security-official-posts-1-4-million-bail-in-major-corruption-case/",
-   "date": "2026-11-13T12:51:58.000Z"
   },
   {
    "headline": "Russia strikes Zaporizhzhia, injures 50, including 8 children",
@@ -585,12 +591,6 @@
    "source": "The Guardian (Ukraine)",
    "link": "https://www.theguardian.com/world/2026/nov/11/ukraine-war-briefing-zelenskyy-says-putin-lives-in-a-different-reality-as-abu-dhabi-talks-get-under-way",
    "date": "2026-11-11T01:08:22.000Z"
-  },
-  {
-   "headline": "Russia-Ukraine talks ‘very productive,’ says US’s Rubio – as it happened",
-   "source": "The Guardian (Ukraine)",
-   "link": "https://www.theguardian.com/world/live/2026/nov/10/ukraine-russia-war-us-talks-abu-dhabi-europe-latest-news-updates",
-   "date": "2026-11-10T17:05:05.000Z"
   },
   {
    "headline": "Inside devastated front-line city that Russia wants Ukraine to give up",
