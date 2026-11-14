@@ -2,11 +2,11 @@
  "schemaVersion": 1,
  "map": "ukraine",
  "meta": {
-  "lastUpdated": "2026-11-13T06:05:32-05:00",
-  "coverage": "2026-10-10 to 2026-11-13",
+  "lastUpdated": "2026-11-14T06:05:19-05:00",
+  "coverage": "2026-10-10 to 2026-11-14",
   "notes": [
-   "Refreshed Nov 13, 2026 (UTC morning) from Telegram channels of the Ukrainian General Staff (GeneralStaffZSU), Air Force (kpszsu, alert posts only) and Russian MoD (mod_russia), Ukrinform articles from Nov 12, Kyiv Independent's Nov 12 General Staff report and the headline leads file.",
-   "Not read this run: ISW/Critical Threats assessment, X posts (web search returned no usable X posts), Ukrainska Pravda, Reuters/AP direct. Nov 13 daytime news is not covered.",
+   "Refreshed Nov 14, 2026 (UTC midday) from Telegram channels of the Ukrainian General Staff (GeneralStaffZSU), Air Force (kpszsu, alert posts only) and Russian MoD (mod_russia), Kyiv Independent and Ukrinform articles from Nov 13-14, and the headline leads file (pulled Nov 13 17:57 UTC, so it does not cover Nov 14).",
+   "Not read this run: ISW/Critical Threats assessment for Nov 13 (not found), X posts (two web searches returned no usable 2026 X posts), Ukrainska Pravda (blocked by Cloudflare), Reuters/AP direct.",
    "Coordinates are city-level or approximate (see coordPrecision); markers flagged 'oblast' are not geolocated.",
    "Casualty figures are as reported by the cited outlet at time of writing and may have been revised."
   ]
@@ -3918,17 +3918,226 @@
     }
    ],
    "read": "snippet"
+  },
+  {
+   "id": "zaporizhzhia-1113",
+   "date": "2026-11-13",
+   "region": "south",
+   "oblast": "Zaporizhzhia",
+   "front": "Zaporizhzhia",
+   "type": "missile",
+   "status": "ONE_PARTY",
+   "title": "Russian strike on apartment buildings in Zaporizhzhia injures 50, including eight children",
+   "caption": "Acting oblast administration head Mykhailo Semikin said a Russian morning attack hit a multi-storey residential building in the city's Kosmichnyi district, damaging apartments on three floors and starting fires; a nearby five-storey building was also damaged. The Kyiv Independent reports 50 injured including eight children, citing local authorities, and Suspilne's report that two projectiles from a Tornado-S rocket system struck. A rescue worker was later killed by a falling concrete slab while clearing debris. Governor Ivan Fedorov later said Russian attacks on the Zaporizhzhia area over the day killed three people, including a child, and injured 62. No Russian statement was read.",
+   "lat": 47.8517,
+   "lon": 35.1171,
+   "coordPrecision": "city",
+   "place": "Zaporizhzhia",
+   "sources": [
+    {
+     "id": "ki_zaporizhzhia_1113",
+     "title": "Kyiv Independent: Russia strikes Zaporizhzhia, injures 30, including 6 children (updated, Nov 13)",
+     "url": "https://kyivindependent.com/russia-strikes-zaporizhzhia-injures-13-including-5-children/"
+    },
+    {
+     "id": "ukrinform_zaporizhzhia_1113",
+     "title": "Ukrinform: Russian attack on Zaporizhzhia: injury toll rises to 25, rescue operations completed (Nov 13)",
+     "url": "https://www.ukrinform.net/rubric-ato/4184371-russian-attack-on-zaporizhzhia-injury-toll-rises-to-25-rescue-operations-completed.html"
+    },
+    {
+     "id": "ukrinform_zp_day_1114",
+     "title": "Ukrinform: Three killed, 62 injured in Russian attacks on Zaporizhzhia region over past day (Nov 14)",
+     "url": "https://www.ukrinform.net/rubric-ato/4184591-three-killed-62-injured-in-russian-attacks-on-zaporizhzhia-region-over-past-day.html"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "kyiv-1113",
+   "date": "2026-11-13",
+   "region": "rear",
+   "oblast": "Kyiv City",
+   "front": "Rear (Kyiv)",
+   "type": "drone",
+   "status": "CONFIRMED",
+   "title": "Drone debris sparks fire at Kyiv Institute of Traumatology; three injured, 30 evacuated",
+   "caption": "The Kyiv Independent reports that debris from a Russian drone started a fire early on Nov 13 at the Institute of Traumatology and Orthopedics in Shevchenkivskyi district, partly destroying the second floor. Ukraine's State Emergency Service said seven people were rescued; three were injured and about 30 evacuated. The hospital's medical director told the outlet the facility has suspended operations. No Russian statement was read.",
+   "lat": 50.4547,
+   "lon": 30.5238,
+   "coordPrecision": "approx",
+   "place": "Kyiv",
+   "sources": [
+    {
+     "id": "ki_kyivhospital_1113",
+     "title": "Kyiv Independent: 3 injured, dozens evacuated after Russian drone damages Kyiv medical facility in overnight attack (Nov 13)",
+     "url": "https://kyivindependent.com/3-injured-dozens-evacuated-after-russian-drone-damages-kyiv-medical-facility-in-overnight-attack/"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "odesa-1113",
+   "date": "2026-11-13",
+   "region": "south",
+   "oblast": "Odesa",
+   "front": "Odesa",
+   "type": "drone",
+   "status": "ONE_PARTY",
+   "title": "Russian attack on Odesa kills two women, injures seven",
+   "caption": "Odesa's regional prosecutor's office said two women, aged 44 and 50, were killed and seven residents injured in a Russian morning attack on Nov 13, which destroyed a private house and damaged vehicles, a veterinary clinic and a warehouse. Governor Oleh Kiper separately reported a first attack that hit a furniture production building and injured four people. Figures come from Ukrainian officials; no Russian statement on this attack was read.",
+   "lat": 46.4857,
+   "lon": 30.7438,
+   "coordPrecision": "city",
+   "place": "Odesa",
+   "sources": [
+    {
+     "id": "ukrinform_odesa_1113",
+     "title": "Ukrinform: Russian attack on Odesa kills two, injures seven (Nov 13)",
+     "url": "https://www.ukrinform.net/rubric-ato/4184271-russian-attack-on-odesa-kills-two-injures-seven.html"
+    },
+    {
+     "id": "ki_overview_1113",
+     "title": "Kyiv Independent: Russian attacks kill 9, injure 61 across Ukraine over past day, spark fire at Kyiv hospital (Nov 13)",
+     "url": "https://kyivindependent.com/russian-attacks-kill-9-injure-61-across-ukraine-over-past-day-spark-fire-at-kyiv-hospital/"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "volgograd-1113",
+   "date": "2026-11-13",
+   "region": "russia",
+   "oblast": "Volgograd, Russia",
+   "front": "Russia deep strikes",
+   "type": "drone",
+   "status": "ONE_PARTY",
+   "title": "Ukraine says it hit Lukoil Volgograd refinery; Russian governor reports four killed in the city",
+   "caption": "Ukraine's General Staff says drones struck the Lukoil-Volgogradneftepererabotka refinery (about 15 million tonnes a year) overnight on Nov 13, hitting four crude distillation units, a hydrotreating unit, a loading rack and six storage tanks, with a fire. The damage list is Ukraine's claim and was not independently assessed. The Kyiv Independent reports eyewitness footage of flames and that Volgograd governor Andrey Bocharov confirmed a 'massive' attack and fires in the southern industrial zone, later saying the attacks killed four people and injured two. No Russian MoD statement on refinery damage was read.",
+   "lat": 48.7138,
+   "lon": 44.4976,
+   "coordPrecision": "city",
+   "place": "Volgograd",
+   "sources": [
+    {
+     "id": "ki_volgograd_1113",
+     "title": "Kyiv Independent: Volgograd oil refinery, Rostov-on-Don production facility in flames following Ukrainian attack (Nov 13)",
+     "url": "https://kyivindependent.com/volgograd-oil-refinery-rostov-on-don-production-facility-in-flames-following-ukrainian-drone-attack/"
+    },
+    {
+     "id": "ukrinform_volgograd_1113",
+     "title": "Ukrinform: Ukraine's General Staff confirms strike on Lukoil refinery in Volgograd (Nov 13)",
+     "url": "https://www.ukrinform.net/rubric-ato/4184391-ukraines-general-staff-confirms-strike-on-lukoil-refinery-in-volgograd-oil-processing-units-hit.html"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "samara-1113",
+   "date": "2026-11-13",
+   "region": "russia",
+   "oblast": "Samara, Russia",
+   "front": "Russia deep strikes",
+   "type": "drone",
+   "status": "ONE_PARTY",
+   "title": "Ukraine's General Staff claims strike on Samara oil pumping and dispatch station",
+   "caption": "Ukraine's General Staff says Defence Forces hit the Samara linear production and dispatch station near the settlement of Prosvet on Nov 13, with several oil tanks on fire. It describes the site as where Urals export blend is mixed. No Russian statement and no independent confirmation were found; the marker is placed at Samara city.",
+   "lat": 53.2077,
+   "lon": 50.1355,
+   "coordPrecision": "approx",
+   "place": "Samara",
+   "sources": [
+    {
+     "id": "gs_samara_1114",
+     "title": "General Staff of Ukraine (Telegram): strikes on Samara station and Lipetsk-2 airfield (Nov 14)",
+     "url": "https://t.me/GeneralStaffZSU/42899"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "lipetsk-1113",
+   "date": "2026-11-13",
+   "region": "russia",
+   "oblast": "Lipetsk, Russia",
+   "front": "Russia deep strikes",
+   "type": "drone",
+   "status": "ONE_PARTY",
+   "title": "Ukraine's General Staff claims hits on Lipetsk-2 airfield",
+   "caption": "Ukraine's General Staff says it confirmed strikes on Nov 13 on the Lipetsk-2 airfield, hitting an aircraft-servicing equipment hangar, an aviation fuel tank and the central command post. No Russian statement and no independent confirmation were found.",
+   "lat": 52.5876,
+   "lon": 39.5515,
+   "coordPrecision": "approx",
+   "place": "Lipetsk",
+   "sources": [
+    {
+     "id": "gs_samara_1114",
+     "title": "General Staff of Ukraine (Telegram): strikes on Samara station and Lipetsk-2 airfield (Nov 14)",
+     "url": "https://t.me/GeneralStaffZSU/42899"
+    }
+   ],
+   "read": "full"
+  },
+  {
+   "id": "pryluky-1114",
+   "date": "2026-11-14",
+   "region": "rear",
+   "oblast": "Chernihiv",
+   "front": "Chernihiv",
+   "type": "claim",
+   "status": "ONE_PARTY",
+   "title": "Russia's MoD claims strike on Pryluky substation and a cargo ship bound for Odesa",
+   "caption": "Russia's Ministry of Defence says drones overnight hit a substation in Pryluky, Chernihiv region, which it says powers defence industry and military storage, a cargo ship carrying military cargo to Odesa, and two locomotives near Matviivka station in Zaporizhzhia region. No Ukrainian confirmation of these specific hits was read. Separately, Ukrinform quotes DTEK saying an attack on an energy facility in northern Odesa region on Nov 14 left 50,000 consumers without power.",
+   "lat": 50.5953,
+   "lon": 32.3838,
+   "coordPrecision": "city",
+   "place": "Pryluky",
+   "sources": [
+    {
+     "id": "mod_strikes_1114",
+     "title": "Russian MoD (Telegram): overnight strikes on energy, port and rail targets (Nov 14)",
+     "url": "https://t.me/mod_russia/69004"
+    },
+    {
+     "id": "ukrinform_odesa_energy_1114",
+     "title": "Ukrinform: Russian forces attack energy facility in Odesa region, nearly 50,000 consumers left without power (Nov 14)",
+     "url": "https://www.ukrinform.net/rubric-ato/4184613-russian-forces-attack-energy-facility-in-odesa-region-nearly-50000-consumers-left-without-power.html"
+    }
+   ],
+   "read": "snippet"
+  },
+  {
+   "id": "tersianka-1114",
+   "date": "2026-11-14",
+   "region": "south",
+   "oblast": "Zaporizhzhia",
+   "front": "Hulyaipole / Orikhiv",
+   "type": "claim",
+   "status": "ONE_PARTY",
+   "title": "Russia's MoD claims capture of Tersianka in Zaporizhzhia region",
+   "caption": "Russia's Ministry of Defence says its Vostok group 'liberated' the settlement of Tersianka in Zaporizhzhia Oblast. No Ukrainian response or independent assessment was found, and the post does not say which of two similarly named villages it means; the marker is the Zaporizhzhia Oblast one.",
+   "lat": 47.8832,
+   "lon": 35.8934,
+   "coordPrecision": "approx",
+   "place": "Tersianka",
+   "sources": [
+    {
+     "id": "mod_tersianka_1114",
+     "title": "Russian MoD (Telegram): Vostok group takes Tersianka, Zaporizhzhia region (Nov 14)",
+     "url": "https://t.me/mod_russia/69009"
+    }
+   ],
+   "read": "snippet"
   }
  ],
  "stats": [
   {
    "label": "Russian military personnel losses (cumulative, since Feb 24, 2022)",
    "category": "casualties",
-   "asOf": "2026-11-13",
+   "asOf": "2026-11-14",
    "status": "ONE_PARTY",
    "ukraine": {
-    "value": "~1,618,920 killed and wounded, calculated from the Nov 12 total of 1,616,330 (Kyiv Independent citing the General Staff) plus the General Staff's +2,590 for the past day (Nov 13 summary); the cumulative tally itself is posted as an image and was not read",
-    "source": "gs_ops_1113"
+    "value": "~1,620,630 killed and wounded, calculated from the Nov 13 figure of 1,618,920 plus the General Staff's +1,710 for the past day (Nov 14 summary); the cumulative tally itself is posted as an image and was not read",
+    "source": "gs_ops_1114"
    },
    "russia": {
     "value": "No official cumulative figure published",
@@ -4651,6 +4860,36 @@
    "russia": {
     "value": "MoD claims 1,198 fixed-wing drones intercepted overnight (20:00 Moscow time Nov 12 to 08:00 Nov 13) over Astrakhan, Belgorod, Bryansk, Vladimir, Volgograd, Voronezh, Kaluga, Kursk, Lipetsk, Oryol, Rostov, Ryazan, Saratov, Smolensk, Tver and Tula regions, the Moscow region, Crimea and the Black Sea; the figure is far above recent nights (71 on Nov 11-12) and was not independently checked",
     "source": "mod_pvo_1113"
+   },
+   "independent": []
+  },
+  {
+   "label": "Russian drones and missiles launched at Ukraine (night of Nov 13-14)",
+   "category": "shootdowns",
+   "asOf": "2026-11-14",
+   "status": "DISPUTED",
+   "ukraine": {
+    "value": "96 Shahed-type drones (61 jet-powered), Gerbera and Parodiya decoys; 81 downed or suppressed as of 07:30 (52 jet-powered), a few still airborne; hits at 8 locations, debris at 2 (General Staff)",
+    "source": "gs_air_1114"
+   },
+   "russia": {
+    "value": "No launch count published; MoD says drones hit a Pryluky substation, a cargo ship heading to Odesa and two locomotives near Matviivka station",
+    "source": "mod_strikes_1114"
+   },
+   "independent": []
+  },
+  {
+   "label": "Ukrainian drones shot down over Russia (Nov 13-14)",
+   "category": "shootdowns",
+   "asOf": "2026-11-14",
+   "status": "ONE_PARTY",
+   "ukraine": {
+    "value": "No count published",
+    "source": null
+   },
+   "russia": {
+    "value": "MoD claims 29 fixed-wing drones intercepted overnight over Belgorod, Bryansk, Tula and Rostov regions, the Moscow region and the Black and Azov Seas",
+    "source": "mod_pvo_1114"
    },
    "independent": []
   }
@@ -5785,6 +6024,81 @@
    "id": "mod_kotovka_1113",
    "title": "Russian MoD (Telegram): Sever group takes Kotovka, Kharkiv region (Nov 13)",
    "url": "https://t.me/mod_russia/68986"
+  },
+  {
+   "id": "gs_air_1114",
+   "title": "General Staff of Ukraine (Telegram): air attack night of Nov 13-14",
+   "url": "https://t.me/GeneralStaffZSU/42890"
+  },
+  {
+   "id": "gs_ops_1114",
+   "title": "General Staff of Ukraine (Telegram): operational information as of 08:00 Nov 14",
+   "url": "https://t.me/GeneralStaffZSU/42891"
+  },
+  {
+   "id": "mod_pvo_1114",
+   "title": "Russian MoD (Telegram): air defence claims overnight Nov 14",
+   "url": "https://t.me/mod_russia/69005"
+  },
+  {
+   "id": "ki_zaporizhzhia_1113",
+   "title": "Kyiv Independent: Russia strikes Zaporizhzhia, injures 30, including 6 children (updated, Nov 13)",
+   "url": "https://kyivindependent.com/russia-strikes-zaporizhzhia-injures-13-including-5-children/"
+  },
+  {
+   "id": "ukrinform_zaporizhzhia_1113",
+   "title": "Ukrinform: Russian attack on Zaporizhzhia: injury toll rises to 25, rescue operations completed (Nov 13)",
+   "url": "https://www.ukrinform.net/rubric-ato/4184371-russian-attack-on-zaporizhzhia-injury-toll-rises-to-25-rescue-operations-completed.html"
+  },
+  {
+   "id": "ukrinform_zp_day_1114",
+   "title": "Ukrinform: Three killed, 62 injured in Russian attacks on Zaporizhzhia region over past day (Nov 14)",
+   "url": "https://www.ukrinform.net/rubric-ato/4184591-three-killed-62-injured-in-russian-attacks-on-zaporizhzhia-region-over-past-day.html"
+  },
+  {
+   "id": "ki_kyivhospital_1113",
+   "title": "Kyiv Independent: 3 injured, dozens evacuated after Russian drone damages Kyiv medical facility in overnight attack (Nov 13)",
+   "url": "https://kyivindependent.com/3-injured-dozens-evacuated-after-russian-drone-damages-kyiv-medical-facility-in-overnight-attack/"
+  },
+  {
+   "id": "ukrinform_odesa_1113",
+   "title": "Ukrinform: Russian attack on Odesa kills two, injures seven (Nov 13)",
+   "url": "https://www.ukrinform.net/rubric-ato/4184271-russian-attack-on-odesa-kills-two-injures-seven.html"
+  },
+  {
+   "id": "ki_overview_1113",
+   "title": "Kyiv Independent: Russian attacks kill 9, injure 61 across Ukraine over past day, spark fire at Kyiv hospital (Nov 13)",
+   "url": "https://kyivindependent.com/russian-attacks-kill-9-injure-61-across-ukraine-over-past-day-spark-fire-at-kyiv-hospital/"
+  },
+  {
+   "id": "ki_volgograd_1113",
+   "title": "Kyiv Independent: Volgograd oil refinery, Rostov-on-Don production facility in flames following Ukrainian attack (Nov 13)",
+   "url": "https://kyivindependent.com/volgograd-oil-refinery-rostov-on-don-production-facility-in-flames-following-ukrainian-drone-attack/"
+  },
+  {
+   "id": "ukrinform_volgograd_1113",
+   "title": "Ukrinform: Ukraine's General Staff confirms strike on Lukoil refinery in Volgograd (Nov 13)",
+   "url": "https://www.ukrinform.net/rubric-ato/4184391-ukraines-general-staff-confirms-strike-on-lukoil-refinery-in-volgograd-oil-processing-units-hit.html"
+  },
+  {
+   "id": "gs_samara_1114",
+   "title": "General Staff of Ukraine (Telegram): strikes on Samara station and Lipetsk-2 airfield (Nov 14)",
+   "url": "https://t.me/GeneralStaffZSU/42899"
+  },
+  {
+   "id": "mod_strikes_1114",
+   "title": "Russian MoD (Telegram): overnight strikes on energy, port and rail targets (Nov 14)",
+   "url": "https://t.me/mod_russia/69004"
+  },
+  {
+   "id": "ukrinform_odesa_energy_1114",
+   "title": "Ukrinform: Russian forces attack energy facility in Odesa region, nearly 50,000 consumers left without power (Nov 14)",
+   "url": "https://www.ukrinform.net/rubric-ato/4184613-russian-forces-attack-energy-facility-in-odesa-region-nearly-50000-consumers-left-without-power.html"
+  },
+  {
+   "id": "mod_tersianka_1114",
+   "title": "Russian MoD (Telegram): Vostok group takes Tersianka, Zaporizhzhia region (Nov 14)",
+   "url": "https://t.me/mod_russia/69009"
   }
  ]
 }
