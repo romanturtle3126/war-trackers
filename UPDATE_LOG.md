@@ -2,6 +2,20 @@
 
 Newest first. Written by scripts/merge-update.mjs on every daily run.
 
+## 2026-11-14 06:05 Toronto — Ukraine — OK
+- Added 8 event(s):
+  - `zaporizhzhia-1113` 2026-11-13 [ONE_PARTY] Russian strike on apartment buildings in Zaporizhzhia injures 50, including eight children
+  - `kyiv-1113` 2026-11-13 [CONFIRMED] Drone debris sparks fire at Kyiv Institute of Traumatology; three injured, 30 evacuated
+  - `odesa-1113` 2026-11-13 [ONE_PARTY] Russian attack on Odesa kills two women, injures seven
+  - `volgograd-1113` 2026-11-13 [ONE_PARTY] Ukraine says it hit Lukoil Volgograd refinery; Russian governor reports four killed in the city
+  - `samara-1113` 2026-11-13 [ONE_PARTY] Ukraine's General Staff claims strike on Samara oil pumping and dispatch station
+  - `lipetsk-1113` 2026-11-13 [ONE_PARTY] Ukraine's General Staff claims hits on Lipetsk-2 airfield
+  - `pryluky-1114` 2026-11-14 [ONE_PARTY] Russia's MoD claims strike on Pryluky substation and a cargo ship bound for Odesa
+  - `tersianka-1114` 2026-11-14 [ONE_PARTY] Russia's MoD claims capture of Tersianka in Zaporizhzhia region
+- Stats: 1 updated, 2 added
+- 15 new source link(s)
+- Totals: 146 events, 42 stats, 241 sources; coverage 2026-10-10 to 2026-11-14
+
 ## 2026-11-13 06:41 Toronto — Middle East — OK
 - Added 4 event(s):
   - `manama-1113` 2026-11-13 [ONE_PARTY] IRGC says it targeted a US early-warning radar in Bahrain
